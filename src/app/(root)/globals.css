@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-star-red: #e21b23;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes happyHourIcon {
+  0% {
+    color: #e21b23;
+  }
+
+  50% {
+    color: #ffffff;
+  }
+
+  100% {
+    color: #e21b23;
+  }
+}
+
+.animate-happy-hour {
+  animation: happyHourIcon 1.5s ease-in-out infinite;
+}
