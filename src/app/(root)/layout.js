@@ -1,3 +1,6 @@
+
+
+import DesktopLayout from "../../../components/desktop/DesktopLayout";
 import Header from "../../../components/Header";
 import Navbar from "../../../components/Navbar";
 import "./globals.css";
@@ -13,7 +16,10 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         <Navbar/>
-        {children}
+
+        <DesktopLayout>
+          {children}
+        </DesktopLayout>
       </body>
     </html>
   );

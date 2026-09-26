@@ -2,7 +2,12 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
+import {
+  ChevronDown,
+  ChevronRight,
+  Menu,
+  X,
+} from "lucide-react";
 import categoryMenu from "../api/categoryMenu";
 
 
@@ -13,40 +18,46 @@ const Navbar = () => {
 
   return (
     <nav className="w-full border-b border-gray-200 bg-white font-jost">
-      {/* ================= DESKTOP NAVBAR ================= */}
+      {/* =====================================================
+          DESKTOP NAVBAR
+      ===================================================== */}
       <div className="hidden xl:block">
         <div className="mx-auto max-w-[1400px] px-3">
-          <div className="flex h-[54px] items-center justify-between">
-
+          <div className="flex min-h-[54px] items-center justify-between">
             {categoryMenu.map((category) => (
               <div
                 key={category.name}
-                className="relative h-full"
+                className="relative h-[54px]"
                 onMouseEnter={() => setActiveMenu(category.name)}
                 onMouseLeave={() => setActiveMenu(null)}
               >
-                {/* Main Category */}
+                {/* MAIN CATEGORY */}
                 <Link
-                  href={category.href}
+                  href={category.href || "#"}
                   className="flex h-full items-center gap-1 whitespace-nowrap px-2 text-[13px] font-medium text-gray-800 transition-colors hover:text-[#0b5d3b]"
                 >
                   {category.name}
 
                   {category.children?.length > 0 && (
-                    <ChevronDown size={13} strokeWidth={1.8} />
+                    <ChevronDown
+                      size={13}
+                      strokeWidth={1.8}
+                    />
                   )}
                 </Link>
 
-                {/* ================= LEVEL 1 DROPDOWN ================= */}
+                {/* LEVEL 1 DROPDOWN */}
                 {activeMenu === category.name &&
                   category.children?.length > 0 && (
                     <div
                       className="absolute left-0 top-full z-50 min-w-[245px] border border-gray-200 bg-white py-2 shadow-xl"
-                      onMouseEnter={() => setActiveMenu(category.name)}
+                      onMouseEnter={() =>
+                        setActiveMenu(category.name)
+                      }
                     >
                       {category.children.map((item) => (
                         <DesktopMenuItem
-                          key={item.name}
+                          key={item.href || item.name}
                           item={item}
                         />
                       ))}
@@ -58,20 +69,29 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* ================= TABLET / MOBILE NAVBAR ================= */}
+      {/* =====================================================
+          TABLET / MOBILE NAVBAR
+      ===================================================== */}
       <div className="xl:hidden">
-        <div className="flex h-[54px] items-center justify-between px-4">
+        <div className="flex min-h-[54px] items-center justify-between px-4">
           <span className="text-sm font-semibold text-gray-800">
             Categories
           </span>
 
           <button
             type="button"
-            onClick={() => setMobileOpen(!mobileOpen)}
+            onClick={() => {
+              setMobileOpen((prev) => !prev);
+              setMobileSubmenu(null);
+            }}
             className="flex h-9 w-9 items-center justify-center rounded border border-gray-200 text-gray-700"
             aria-label="Toggle categories"
           >
-            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+            {mobileOpen ? (
+              <X size={20} />
+            ) : (
+              <Menu size={20} />
+            )}
           </button>
         </div>
 
@@ -79,7 +99,7 @@ const Navbar = () => {
           <div className="border-t border-gray-200 bg-white">
             {categoryMenu.map((category) => (
               <MobileMenuItem
-                key={category.name}
+                key={category.href || category.name}
                 item={category}
                 mobileSubmenu={mobileSubmenu}
                 setMobileSubmenu={setMobileSubmenu}
@@ -95,24 +115,28 @@ const Navbar = () => {
 
 /* =========================================================
    DESKTOP MENU ITEM
+   Handles unlimited dropdown levels
 ========================================================= */
 
 const DesktopMenuItem = ({ item }) => {
   const [open, setOpen] = useState(false);
 
-  const hasChildren = item.children?.length > 0;
+  const hasChildren =
+    item.children && item.children.length > 0;
 
+  /* ---------- NORMAL LINK ---------- */
   if (!hasChildren) {
     return (
       <Link
         href={item.href || "#"}
-        className="flex items-center justify-between px-5 py-2.5 text-sm text-gray-700 transition-colors hover:bg-gray-50 hover:text-[#0b5d3b]"
+        className="flex items-center justify-between whitespace-nowrap px-5 py-2.5 text-sm text-gray-700 transition-colors hover:bg-gray-50 hover:text-[#0b5d3b]"
       >
         {item.name}
       </Link>
     );
   }
 
+  /* ---------- DROPDOWN ITEM ---------- */
   return (
     <div
       className="relative"
@@ -122,23 +146,23 @@ const DesktopMenuItem = ({ item }) => {
       <div className="flex items-center justify-between">
         <Link
           href={item.href || "#"}
-          className="flex-1 px-5 py-2.5 text-sm text-gray-700 transition-colors hover:bg-gray-50 hover:text-[#0b5d3b]"
+          className="flex-1 whitespace-nowrap px-5 py-2.5 text-sm text-gray-700 transition-colors hover:bg-gray-50 hover:text-[#0b5d3b]"
         >
           {item.name}
         </Link>
 
         <ChevronRight
           size={15}
-          className="mr-4 text-gray-400"
+          className="mr-4 shrink-0 text-gray-400"
         />
       </div>
 
-      {/* ================= LEVEL 2 / SUB-DROPDOWN ================= */}
+      {/* SUB DROPDOWN */}
       {open && (
         <div className="absolute left-full top-0 z-50 min-w-[230px] border border-gray-200 bg-white py-2 shadow-xl">
           {item.children.map((child) => (
             <DesktopMenuItem
-              key={child.name}
+              key={child.href || child.name}
               item={child}
             />
           ))}
@@ -150,6 +174,7 @@ const DesktopMenuItem = ({ item }) => {
 
 /* =========================================================
    MOBILE MENU ITEM
+   Handles unlimited submenu levels
 ========================================================= */
 
 const MobileMenuItem = ({
@@ -158,9 +183,14 @@ const MobileMenuItem = ({
   setMobileSubmenu,
   setMobileOpen,
 }) => {
-  const hasChildren = item.children?.length > 0;
-  const isOpen = mobileSubmenu === item.name;
+  const hasChildren =
+    item.children && item.children.length > 0;
 
+  const itemKey = item.href || item.name;
+
+  const isOpen = mobileSubmenu === itemKey;
+
+  /* ---------- NORMAL LINK ---------- */
   if (!hasChildren) {
     return (
       <Link
@@ -173,6 +203,7 @@ const MobileMenuItem = ({
     );
   }
 
+  /* ---------- MOBILE DROPDOWN ---------- */
   return (
     <div className="border-b border-gray-100">
       <div className="flex items-center justify-between">
@@ -187,7 +218,9 @@ const MobileMenuItem = ({
         <button
           type="button"
           onClick={() =>
-            setMobileSubmenu(isOpen ? null : item.name)
+            setMobileSubmenu(
+              isOpen ? null : itemKey
+            )
           }
           className="flex h-12 w-12 items-center justify-center text-gray-500"
           aria-label={`Open ${item.name} submenu`}
@@ -204,7 +237,7 @@ const MobileMenuItem = ({
         <div className="bg-gray-50">
           {item.children.map((child) => (
             <MobileMenuItem
-              key={child.name}
+              key={child.href || child.name}
               item={child}
               mobileSubmenu={mobileSubmenu}
               setMobileSubmenu={setMobileSubmenu}

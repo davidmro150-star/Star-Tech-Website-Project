@@ -1,5823 +1,5246 @@
 const productsData = [
-  // =========================
-  // BATCH 1 — PRODUCTS 1-50
-  // =========================
+  
+
+
+  // ================= DESKTOP PRODUCTS =================
+
+  {
+    id: 301,
+    title: "Core i3 10th Gen Desktop PC",
+    subtitle: "Entry Level Desktop Computer",
+    category: "Desktop",
+    subcategory: "Desktop PC",
+    description: "Reliable desktop computer for office work, study and everyday tasks.",
+    information: "Intel Core i3 processor, 8GB RAM, 256GB SSD and compact desktop casing.",
+    price: 35000,
+    image: "https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.3,
+    stock: 20,
+    size: "Small",
+    processor: "Core i3",
+    generation: "10th Gen",
+    ram: "8GB",
+    ssd: "256GB",
+  },
+
+  {
+    id: 302,
+    title: "Core i3 11th Gen Desktop PC",
+    subtitle: "Office & Home Desktop",
+    category: "Desktop",
+    subcategory: "Desktop PC",
+    description: "Affordable desktop system designed for office and home productivity.",
+    information: "Intel Core i3 11th Gen, 8GB RAM, 512GB SSD and standard desktop casing.",
+    price: 39000,
+    image: "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=800&q=80",
+    rating: 4.4,
+    stock: 18,
+    size: "Standard",
+    processor: "Core i3",
+    generation: "11th Gen",
+    ram: "8GB",
+    ssd: "512GB",
+  },
+
+  {
+    id: 303,
+    title: "Core i5 10th Gen Desktop PC",
+    subtitle: "Powerful Everyday Desktop",
+    category: "Desktop",
+    subcategory: "Desktop PC",
+    description: "Balanced desktop computer for business, study and general productivity.",
+    information: "Intel Core i5 processor, 16GB RAM, 512GB SSD and standard casing.",
+    price: 48000,
+    image: "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 22,
+    size: "Standard",
+    processor: "Core i5",
+    generation: "10th Gen",
+    ram: "16GB",
+    ssd: "512GB",
+  },
+
+  {
+    id: 304,
+    title: "Core i5 11th Gen Desktop PC",
+    subtitle: "Business Performance Desktop",
+    category: "Desktop",
+    subcategory: "Desktop PC",
+    description: "High-performance desktop for office applications and multitasking.",
+    information: "Intel Core i5 11th Gen, 16GB RAM, 512GB SSD and standard desktop case.",
+    price: 52000,
+    image: "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 15,
+    size: "Standard",
+    processor: "Core i5",
+    generation: "11th Gen",
+    ram: "16GB",
+    ssd: "512GB",
+  },
+
+  {
+    id: 305,
+    title: "Core i5 12th Gen Desktop PC",
+    subtitle: "Modern Productivity Desktop",
+    category: "Desktop",
+    subcategory: "Desktop PC",
+    description: "Modern desktop computer offering strong performance for productivity.",
+    information: "Intel Core i5 12th Gen, 16GB RAM, 1TB SSD and standard casing.",
+    price: 65000,
+    image: "https://images.unsplash.com/photo-1593642532400-2682810df593?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 17,
+    size: "Standard",
+    processor: "Core i5",
+    generation: "12th Gen",
+    ram: "16GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 306,
+    title: "Core i7 11th Gen Desktop PC",
+    subtitle: "High Performance Desktop",
+    category: "Desktop",
+    subcategory: "Desktop PC",
+    description: "Powerful desktop system for demanding productivity applications.",
+    information: "Intel Core i7 11th Gen, 16GB RAM, 1TB SSD and large desktop casing.",
+    price: 78000,
+    image: "https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 14,
+    size: "Large",
+    processor: "Core i7",
+    generation: "11th Gen",
+    ram: "16GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 307,
+    title: "Core i7 12th Gen Desktop PC",
+    subtitle: "Professional Performance Desktop",
+    category: "Desktop",
+    subcategory: "Desktop PC",
+    description: "Professional desktop designed for development, editing and multitasking.",
+    information: "Intel Core i7 12th Gen, 32GB RAM, 1TB SSD and large casing.",
+    price: 92000,
+    image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 12,
+    size: "Large",
+    processor: "Core i7",
+    generation: "12th Gen",
+    ram: "32GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 308,
+    title: "Core i7 13th Gen Desktop PC",
+    subtitle: "Advanced Professional Desktop",
+    category: "Desktop",
+    subcategory: "Desktop PC",
+    description: "Advanced desktop computer for professional workloads and creative applications.",
+    information: "Intel Core i7 13th Gen, 32GB RAM, 1TB SSD and large desktop case.",
+    price: 105000,
+    image: "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 10,
+    size: "Large",
+    processor: "Core i7",
+    generation: "13th Gen",
+    ram: "32GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 309,
+    title: "Core i9 12th Gen Desktop PC",
+    subtitle: "Extreme Performance Desktop",
+    category: "Desktop",
+    subcategory: "Performance Desktop",
+    description: "High-end desktop designed for demanding professional workloads.",
+    information: "Intel Core i9 12th Gen, 32GB RAM, 1TB SSD and premium large casing.",
+    price: 125000,
+    image: "https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 8,
+    size: "Large",
+    processor: "Core i9",
+    generation: "12th Gen",
+    ram: "32GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 310,
+    title: "Core i9 13th Gen Desktop PC",
+    subtitle: "Premium Performance Computer",
+    category: "Desktop",
+    subcategory: "Performance Desktop",
+    description: "Premium desktop computer for advanced professional and creative work.",
+    information: "Intel Core i9 13th Gen, 64GB RAM, 2TB SSD and premium casing.",
+    price: 145000,
+    image: "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 6,
+    size: "Large",
+    processor: "Core i9",
+    generation: "13th Gen",
+    ram: "64GB",
+    ssd: "2TB",
+  },
+
+  {
+    id: 311,
+    title: "Ryzen 5 5600G Desktop PC",
+    subtitle: "AMD Performance Desktop",
+    category: "Desktop",
+    subcategory: "AMD Desktop",
+    description: "Balanced AMD desktop for productivity and everyday computing.",
+    information: "AMD Ryzen 5 processor, 16GB RAM, 512GB SSD and standard casing.",
+    price: 45000,
+    image: "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 21,
+    size: "Standard",
+    processor: "Ryzen 5",
+    generation: "10th Gen",
+    ram: "16GB",
+    ssd: "512GB",
+  },
+
+  {
+    id: 312,
+    title: "Ryzen 5 7600 Desktop PC",
+    subtitle: "Next Generation AMD Desktop",
+    category: "Desktop",
+    subcategory: "AMD Desktop",
+    description: "Modern AMD desktop designed for productivity and performance.",
+    information: "AMD Ryzen 5 7600, 16GB RAM, 1TB SSD and standard casing.",
+    price: 58000,
+    image: "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 16,
+    size: "Standard",
+    processor: "Ryzen 5",
+    generation: "12th Gen",
+    ram: "16GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 313,
+    title: "Ryzen 7 5700X Desktop PC",
+    subtitle: "AMD Gaming & Workstation Desktop",
+    category: "Desktop",
+    subcategory: "AMD Desktop",
+    description: "Powerful AMD desktop suitable for gaming and professional workloads.",
+    information: "AMD Ryzen 7, 32GB RAM, 1TB SSD and large performance casing.",
+    price: 72000,
+    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 13,
+    size: "Large",
+    processor: "Ryzen 7",
+    generation: "11th Gen",
+    ram: "32GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 314,
+    title: "Ryzen 7 7700 Desktop PC",
+    subtitle: "High Performance AMD Computer",
+    category: "Desktop",
+    subcategory: "AMD Desktop",
+    description: "High-performance AMD desktop for gaming, development and editing.",
+    information: "AMD Ryzen 7 7700, 32GB RAM, 1TB SSD and premium casing.",
+    price: 85000,
+    image: "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 11,
+    size: "Large",
+    processor: "Ryzen 7",
+    generation: "13th Gen",
+    ram: "32GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 315,
+    title: "Ryzen 9 5900X Desktop PC",
+    subtitle: "Extreme AMD Workstation",
+    category: "Desktop",
+    subcategory: "AMD Workstation",
+    description: "Extreme AMD workstation for demanding professional workloads.",
+    information: "AMD Ryzen 9, 64GB RAM, 2TB SSD and premium large casing.",
+    price: 115000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 7,
+    size: "Large",
+    processor: "Ryzen 9",
+    generation: "11th Gen",
+    ram: "64GB",
+    ssd: "2TB",
+  },
+
+  {
+    id: 316,
+    title: "Ryzen 9 7900X Desktop PC",
+    subtitle: "Ultimate AMD Performance",
+    category: "Desktop",
+    subcategory: "AMD Workstation",
+    description: "Premium AMD workstation for advanced editing and professional workloads.",
+    information: "AMD Ryzen 9 7900X, 64GB RAM, 2TB SSD and premium performance casing.",
+    price: 135000,
+    image: "https://images.unsplash.com/photo-1587202372162-8e0f5f8c4f5f?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 5,
+    size: "Large",
+    processor: "Ryzen 9",
+    generation: "14th Gen",
+    ram: "64GB",
+    ssd: "2TB",
+  },
+    // ================= DESKTOP PRODUCTS 351–400 =================
+
+  // ================= APPLE MAC =================
+
+  {
+    id: 351,
+    title: "Apple Mac Mini M2 8GB 256GB",
+    subtitle: "Compact Apple Desktop",
+    category: "Desktop",
+    subcategory: "Apple Mac",
+    categoryPath: "desktop/apple-mac/mac-mini",
+    description: "Compact and powerful Apple desktop for office work, development and everyday productivity.",
+    information: "Apple M2 chip, 8GB unified memory and 256GB SSD.",
+    price: 85000,
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 12,
+    size: "Small",
+  },
+
+  {
+    id: 352,
+    title: "Apple Mac Mini M2 16GB 512GB",
+    subtitle: "High Performance Mac Mini",
+    category: "Desktop",
+    subcategory: "Apple Mac",
+    categoryPath: "desktop/apple-mac/mac-mini",
+    description: "Powerful compact Mac desktop for developers, designers and professionals.",
+    information: "Apple M2 chip, 16GB unified memory and 512GB SSD.",
+    price: 105000,
+    image: "https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 9,
+    size: "Small",
+  },
+
+  {
+    id: 353,
+    title: "Apple Mac Mini M2 Pro 16GB 512GB",
+    subtitle: "Professional Compact Desktop",
+    category: "Desktop",
+    subcategory: "Apple Mac",
+    categoryPath: "desktop/apple-mac/mac-mini",
+    description: "Professional compact desktop designed for demanding creative workloads.",
+    information: "Apple M2 Pro chip, 16GB unified memory and 512GB SSD.",
+    price: 145000,
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 7,
+    size: "Small",
+  },
+
+  {
+    id: 354,
+    title: "Apple Mac Studio M2 Max 32GB 512GB",
+    subtitle: "Professional Apple Workstation",
+    category: "Desktop",
+    subcategory: "Apple Mac",
+    categoryPath: "desktop/apple-mac/mac-studio",
+    description: "High-performance Apple workstation for professional creative applications.",
+    information: "Apple M2 Max chip, 32GB unified memory and 512GB SSD.",
+    price: 235000,
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 5,
+    size: "Standard",
+  },
+
+  {
+    id: 355,
+    title: "Apple Mac Studio M2 Max 64GB 1TB",
+    subtitle: "Advanced Creative Workstation",
+    category: "Desktop",
+    subcategory: "Apple Mac",
+    categoryPath: "desktop/apple-mac/mac-studio",
+    description: "Powerful workstation for video editing, 3D work and professional production.",
+    information: "Apple M2 Max chip, 64GB unified memory and 1TB SSD.",
+    price: 295000,
+    image: "https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 4,
+    size: "Standard",
+  },
+
+  {
+    id: 356,
+    title: "Apple Mac Pro M2 Ultra",
+    subtitle: "Ultimate Apple Workstation",
+    category: "Desktop",
+    subcategory: "Apple Mac",
+    categoryPath: "desktop/apple-mac/mac-pro",
+    description: "Extreme-performance Apple workstation for advanced professional workloads.",
+    information: "Apple M2 Ultra chip, 64GB unified memory and 1TB SSD.",
+    price: 520000,
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 2,
+    size: "Large",
+  },
+
+  {
+    id: 357,
+    title: "Apple iMac 24 Inch M3 8GB 256GB",
+    subtitle: "All-in-One Apple Desktop",
+    category: "Desktop",
+    subcategory: "Apple Mac",
+    categoryPath: "desktop/apple-mac/imac",
+    description: "Slim all-in-one Apple desktop designed for home, office and creative work.",
+    information: "24-inch display, Apple M3 chip, 8GB memory and 256GB SSD.",
+    price: 145000,
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 8,
+    size: "Standard",
+  },
+
+  {
+    id: 358,
+    title: "Apple iMac 24 Inch M3 16GB 512GB",
+    subtitle: "Premium All-in-One Mac",
+    category: "Desktop",
+    subcategory: "Apple Mac",
+    categoryPath: "desktop/apple-mac/imac",
+    description: "Premium all-in-one desktop with strong performance for professionals.",
+    information: "24-inch display, Apple M3 chip, 16GB memory and 512GB SSD.",
+    price: 185000,
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    size: "Standard",
+  },
+
+  // ================= GAMING PC - INTEL =================
+
+  {
+    id: 359,
+    title: "Intel Core i5 12400F Gaming PC",
+    subtitle: "Entry Gaming Desktop",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/intel/core-i5",
+    description: "Gaming desktop designed for smooth Full HD gaming and everyday performance.",
+    information: "Intel Core i5 12400F, 16GB RAM, 512GB SSD and dedicated graphics.",
+    price: 78000,
+    image: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 14,
+    size: "Standard",
+    processor: "Core i5",
+    generation: "12th Gen",
+    ram: "16GB",
+    ssd: "512GB",
+  },
+
+  {
+    id: 360,
+    title: "Intel Core i5 13400F Gaming PC",
+    subtitle: "Modern Gaming Desktop",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/intel/core-i5",
+    description: "Modern gaming PC for competitive gaming and demanding applications.",
+    information: "Intel Core i5 13400F, 16GB RAM, 1TB SSD and dedicated graphics.",
+    price: 92000,
+    image: "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 11,
+    size: "Standard",
+    processor: "Core i5",
+    generation: "13th Gen",
+    ram: "16GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 361,
+    title: "Intel Core i7 12700F Gaming PC",
+    subtitle: "High Performance Gaming PC",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/intel/core-i7",
+    description: "High-performance gaming desktop for demanding modern games.",
+    information: "Intel Core i7 12700F, 32GB RAM, 1TB SSD and dedicated graphics.",
+    price: 118000,
+    image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 9,
+    size: "Large",
+    processor: "Core i7",
+    generation: "12th Gen",
+    ram: "32GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 362,
+    title: "Intel Core i7 13700K Gaming PC",
+    subtitle: "Enthusiast Gaming Desktop",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/intel/core-i7",
+    description: "Enthusiast gaming PC for high FPS gaming, streaming and content creation.",
+    information: "Intel Core i7 13700K, 32GB RAM, 1TB SSD and high-end graphics.",
+    price: 155000,
+    image: "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    size: "Large",
+    processor: "Core i7",
+    generation: "13th Gen",
+    ram: "32GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 363,
+    title: "Intel Core i9 13900K Gaming PC",
+    subtitle: "Extreme Gaming Performance",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/intel/core-i9",
+    description: "Extreme gaming system for high-end gaming, streaming and professional workloads.",
+    information: "Intel Core i9 13900K, 64GB RAM, 2TB SSD and premium graphics.",
+    price: 225000,
+    image: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 4,
+    size: "Large",
+    processor: "Core i9",
+    generation: "13th Gen",
+    ram: "64GB",
+    ssd: "2TB",
+  },
+
+  {
+    id: 364,
+    title: "Intel Core i9 14900K Gaming PC",
+    subtitle: "Ultimate Intel Gaming PC",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/intel/core-i9",
+    description: "Premium gaming desktop built for extreme performance and demanding workloads.",
+    information: "Intel Core i9 14900K, 64GB RAM, 2TB SSD and flagship graphics.",
+    price: 275000,
+    image: "https://images.unsplash.com/photo-1587202372162-8e0f5f8c4f5f?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 3,
+    size: "Large",
+    processor: "Core i9",
+    generation: "14th Gen",
+    ram: "64GB",
+    ssd: "2TB",
+  },
+
+  // ================= GAMING PC - RYZEN =================
+
+  {
+    id: 365,
+    title: "Ryzen 5 5600 Gaming PC",
+    subtitle: "AMD Entry Gaming PC",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/ryzen/ryzen-5",
+    description: "Affordable AMD gaming PC for Full HD gaming and everyday use.",
+    information: "AMD Ryzen 5 processor, 16GB RAM, 512GB SSD and dedicated graphics.",
+    price: 72000,
+    image: "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 15,
+    size: "Standard",
+    processor: "Ryzen 5",
+    generation: "10th Gen",
+    ram: "16GB",
+    ssd: "512GB",
+  },
+
+  {
+    id: 366,
+    title: "Ryzen 5 7600 Gaming PC",
+    subtitle: "Next Generation AMD Gaming",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/ryzen/ryzen-5",
+    description: "Modern AMD gaming desktop for competitive gaming and productivity.",
+    information: "AMD Ryzen 5 7600, 16GB RAM, 1TB SSD and dedicated graphics.",
+    price: 98000,
+    image: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 10,
+    size: "Standard",
+    processor: "Ryzen 5",
+    generation: "12th Gen",
+    ram: "16GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 367,
+    title: "Ryzen 7 5700X Gaming PC",
+    subtitle: "AMD High Performance Gaming",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/ryzen/ryzen-7",
+    description: "High-performance AMD gaming system for gaming and streaming.",
+    information: "AMD Ryzen 7 5700X, 32GB RAM, 1TB SSD and dedicated graphics.",
+    price: 112000,
+    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 8,
+    size: "Large",
+    processor: "Ryzen 7",
+    generation: "11th Gen",
+    ram: "32GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 368,
+    title: "Ryzen 7 7700X Gaming PC",
+    subtitle: "Premium AMD Gaming Desktop",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/ryzen/ryzen-7",
+    description: "Premium AMD gaming PC for high refresh rate gaming and content creation.",
+    information: "AMD Ryzen 7 7700X, 32GB RAM, 1TB SSD and high-end graphics.",
+    price: 145000,
+    image: "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    size: "Large",
+    processor: "Ryzen 7",
+    generation: "13th Gen",
+    ram: "32GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 369,
+    title: "Ryzen 9 5900X Gaming PC",
+    subtitle: "AMD Enthusiast Gaming PC",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/ryzen/ryzen-9",
+    description: "Powerful AMD gaming system for demanding games and professional workloads.",
+    information: "AMD Ryzen 9 5900X, 64GB RAM, 1TB SSD and dedicated graphics.",
+    price: 158000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 5,
+    size: "Large",
+    processor: "Ryzen 9",
+    generation: "11th Gen",
+    ram: "64GB",
+    ssd: "1TB",
+  },
+
+  {
+    id: 370,
+    title: "Ryzen 9 7900X Gaming PC",
+    subtitle: "Ultimate AMD Gaming System",
+    category: "Desktop",
+    subcategory: "Gaming PC",
+    categoryPath: "desktop/gaming-pc/ryzen/ryzen-9",
+    description: "Extreme AMD gaming desktop for high-end gaming, streaming and production.",
+    information: "AMD Ryzen 9 7900X, 64GB RAM, 2TB SSD and flagship graphics.",
+    price: 225000,
+    image: "https://images.unsplash.com/photo-1587202372162-8e0f5f8c4f5f?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 3,
+    size: "Large",
+    processor: "Ryzen 9",
+    generation: "14th Gen",
+    ram: "64GB",
+    ssd: "2TB",
+  },
+
+  // ================= PC COMPONENTS =================
+
+  {
+    id: 371,
+    title: "Intel Core i5 12400 Processor",
+    subtitle: "12th Gen Desktop Processor",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/processor",
+    description: "Reliable Intel processor for modern desktop systems and gaming PCs.",
+    information: "Intel Core i5 12400 processor with multiple performance cores.",
+    price: 22000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 18,
+    size: "Small",
+    processor: "Core i5",
+    generation: "12th Gen",
+  },
+
+  {
+    id: 372,
+    title: "Intel Core i7 13700K Processor",
+    subtitle: "High Performance Intel CPU",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/processor",
+    description: "High-performance processor for gaming, development and content creation.",
+    information: "Intel Core i7 13700K desktop processor.",
+    price: 48000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 10,
+    size: "Small",
+    processor: "Core i7",
+    generation: "13th Gen",
+  },
+
+  {
+    id: 373,
+    title: "AMD Ryzen 5 7600 Processor",
+    subtitle: "Next Generation AMD CPU",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/processor",
+    description: "Modern AMD processor for gaming and high-performance desktop systems.",
+    information: "AMD Ryzen 5 7600 processor.",
+    price: 25000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 14,
+    size: "Small",
+    processor: "Ryzen 5",
+  },
+
+  {
+    id: 374,
+    title: "AMD Ryzen 7 7700X Processor",
+    subtitle: "High Performance AMD CPU",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/processor",
+    description: "Powerful AMD processor for gaming, development and creative workloads.",
+    information: "AMD Ryzen 7 7700X desktop processor.",
+    price: 42000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 9,
+    size: "Small",
+    processor: "Ryzen 7",
+  },
+
+  // ================= MOTHERBOARD =================
+
+  {
+    id: 375,
+    title: "MSI B660M DDR4 Motherboard",
+    subtitle: "Intel Desktop Motherboard",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/motherboard",
+    description: "Reliable motherboard for Intel desktop processors and gaming systems.",
+    information: "B660 chipset, DDR4 memory support and multiple expansion slots.",
+    price: 16500,
+    image: "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 13,
+    size: "Standard",
+  },
+
+  {
+    id: 376,
+    title: "ASUS B760 Gaming Motherboard",
+    subtitle: "Intel Gaming Motherboard",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/motherboard",
+    description: "Gaming motherboard designed for modern Intel processors.",
+    information: "B760 chipset, DDR5 support and high-speed expansion interfaces.",
+    price: 24500,
+    image: "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 10,
+    size: "Standard",
+  },
+
+  {
+    id: 377,
+    title: "Gigabyte B650 AMD Motherboard",
+    subtitle: "AMD AM5 Motherboard",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/motherboard",
+    description: "Modern AMD motherboard for Ryzen processors.",
+    information: "AMD B650 chipset with AM5 socket and DDR5 support.",
+    price: 23500,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 11,
+    size: "Standard",
+  },
+
+  // ================= RAM =================
+
+  {
+    id: 378,
+    title: "Kingston Fury 8GB DDR4 RAM",
+    subtitle: "Desktop Memory Module",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/ram",
+    description: "Reliable DDR4 memory for office and everyday desktop computers.",
+    information: "8GB DDR4 desktop memory module.",
+    price: 2800,
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 25,
+    size: "Small",
+    ram: "8GB",
+  },
+
+  {
+    id: 379,
+    title: "Corsair Vengeance 16GB DDR4 RAM",
+    subtitle: "Performance Desktop RAM",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/ram",
+    description: "High-quality DDR4 RAM for gaming and productivity systems.",
+    information: "16GB DDR4 desktop memory.",
+    price: 5200,
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 20,
+    size: "Small",
+    ram: "16GB",
+  },
+
+  {
+    id: 380,
+    title: "Kingston Fury 32GB DDR5 RAM",
+    subtitle: "Next Generation Desktop Memory",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/ram",
+    description: "High-speed DDR5 memory for modern gaming and professional desktops.",
+    information: "32GB DDR5 desktop memory module.",
+    price: 11500,
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 16,
+    size: "Small",
+    ram: "32GB",
+  },
+
+  // ================= GRAPHICS CARD =================
+
+  {
+    id: 381,
+    title: "NVIDIA GeForce RTX 4060 8GB",
+    subtitle: "Gaming Graphics Card",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/graphics-card",
+    description: "Modern NVIDIA graphics card for Full HD and high refresh rate gaming.",
+    information: "NVIDIA GeForce RTX 4060 with 8GB graphics memory.",
+    price: 42000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 12,
+    size: "Standard",
+  },
+
+  {
+    id: 382,
+    title: "NVIDIA GeForce RTX 4070 Super 12GB",
+    subtitle: "High Performance Graphics Card",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/graphics-card",
+    description: "High-performance graphics card for demanding gaming and creative workloads.",
+    information: "NVIDIA GeForce RTX 4070 Super with 12GB graphics memory.",
+    price: 82000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 7,
+    size: "Large",
+  },
+
+  {
+    id: 383,
+    title: "AMD Radeon RX 7600 8GB",
+    subtitle: "AMD Gaming Graphics Card",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/graphics-card",
+    description: "AMD graphics card designed for smooth Full HD gaming.",
+    information: "AMD Radeon RX 7600 with 8GB graphics memory.",
+    price: 39000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 10,
+    size: "Standard",
+  },
+
+  // ================= SSD =================
+
+  {
+    id: 384,
+    title: "Samsung 500GB NVMe SSD",
+    subtitle: "High Speed Desktop Storage",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/ssd",
+    description: "Fast NVMe SSD for desktop operating systems and applications.",
+    information: "500GB NVMe solid state drive.",
+    price: 5500,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 22,
+    size: "Small",
+    ssd: "512GB",
+  },
+
+  {
+    id: 385,
+    title: "WD Black 1TB NVMe SSD",
+    subtitle: "Performance Gaming SSD",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/ssd",
+    description: "High-performance NVMe SSD designed for gaming and professional workloads.",
+    information: "1TB NVMe solid state drive.",
+    price: 10500,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 15,
+    size: "Small",
+    ssd: "1TB",
+  },
+
+  {
+    id: 386,
+    title: "Samsung 2TB NVMe SSD",
+    subtitle: "Premium High Capacity SSD",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/ssd",
+    description: "Large-capacity high-speed SSD for gaming and professional applications.",
+    information: "2TB NVMe solid state drive.",
+    price: 22000,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 8,
+    size: "Small",
+    ssd: "2TB",
+  },
+
+  // ================= HDD =================
+
+  {
+    id: 387,
+    title: "Seagate 1TB Desktop HDD",
+    subtitle: "Desktop Hard Drive",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/hdd",
+    description: "Affordable storage solution for desktop computers.",
+    information: "1TB SATA desktop hard disk drive.",
+    price: 4500,
+    image: "https://images.unsplash.com/photo-1531492746076-161ca9b9e7f7?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 20,
+    size: "Standard",
+  },
+
+  {
+    id: 388,
+    title: "WD Blue 2TB Desktop HDD",
+    subtitle: "High Capacity Desktop Storage",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/hdd",
+    description: "High-capacity hard drive for desktop storage and backup.",
+    information: "2TB SATA desktop hard disk drive.",
+    price: 6500,
+    image: "https://images.unsplash.com/photo-1531492746076-161ca9b9e7f7?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 17,
+    size: "Standard",
+  },
+
+  {
+    id: 389,
+    title: "Seagate 4TB Desktop HDD",
+    subtitle: "Large Capacity Storage",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/hdd",
+    description: "Large-capacity desktop hard drive for extensive data storage.",
+    information: "4TB SATA desktop hard disk drive.",
+    price: 10500,
+    image: "https://images.unsplash.com/photo-1531492746076-161ca9b9e7f7?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 10,
+    size: "Standard",
+  },
+
+  // ================= ADDITIONAL PC COMPONENTS =================
+
+  {
+    id: 390,
+    title: "Cooler Master 650W Power Supply",
+    subtitle: "Reliable Desktop PSU",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/power-supply",
+    description: "Reliable power supply for gaming and productivity desktop computers.",
+    information: "650W desktop power supply with efficient power delivery.",
+    price: 8500,
+    image: "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 14,
+    size: "Standard",
+  },
+
+  {
+    id: 391,
+    title: "Corsair 750W Gaming Power Supply",
+    subtitle: "High Performance PSU",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/power-supply",
+    description: "High-performance power supply for gaming and powerful desktop systems.",
+    information: "750W power supply designed for gaming PCs.",
+    price: 12500,
+    image: "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 9,
+    size: "Standard",
+  },
+
+  {
+    id: 392,
+    title: "DeepCool Air CPU Cooler",
+    subtitle: "Desktop CPU Cooling",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/cpu-cooler",
+    description: "Efficient CPU air cooler for maintaining stable desktop temperatures.",
+    information: "Tower-style CPU air cooler with high airflow fan.",
+    price: 4500,
+    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 16,
+    size: "Standard",
+  },
+
+  {
+    id: 393,
+    title: "DeepCool 240mm Liquid CPU Cooler",
+    subtitle: "All-in-One Liquid Cooling",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/cpu-cooler",
+    description: "Liquid cooling solution for high-performance gaming and workstation PCs.",
+    information: "240mm all-in-one liquid CPU cooling system.",
+    price: 9500,
+    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 8,
+    size: "Large",
+  },
+
+  {
+    id: 394,
+    title: "NZXT Mid Tower Gaming Casing",
+    subtitle: "Modern Gaming PC Case",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/casing",
+    description: "Modern mid-tower casing designed for gaming and high-performance components.",
+    information: "Mid-tower PC casing with multiple cooling and expansion options.",
+    price: 9500,
+    image: "https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 12,
+    size: "Large",
+  },
+
+  {
+    id: 395,
+    title: "Corsair RGB Gaming Casing",
+    subtitle: "Premium RGB PC Case",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/casing",
+    description: "Premium gaming casing with RGB lighting and spacious component support.",
+    information: "ATX-compatible gaming casing with RGB lighting.",
+    price: 14500,
+    image: "https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 8,
+    size: "Large",
+  },
+
+  {
+    id: 396,
+    title: "ASUS WiFi PCIe Network Card",
+    subtitle: "Desktop Wireless Adapter",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/network-card",
+    description: "Wireless networking adapter for desktop computers.",
+    information: "PCIe WiFi adapter with high-speed wireless connectivity.",
+    price: 4200,
+    image: "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 15,
+    size: "Small",
+  },
+
+  {
+    id: 397,
+    title: "PCIe USB Expansion Card",
+    subtitle: "Desktop Connectivity Expansion",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/expansion-card",
+    description: "Expansion card that adds additional USB connectivity to desktop computers.",
+    information: "PCIe expansion card with multiple USB ports.",
+    price: 2500,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.4,
+    stock: 18,
+    size: "Small",
+  },
+
+  {
+    id: 398,
+    title: "Desktop DDR5 64GB Memory Kit",
+    subtitle: "Professional High Capacity RAM",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/ram",
+    description: "High-capacity DDR5 memory kit for professional desktop workloads.",
+    information: "64GB DDR5 desktop memory kit.",
+    price: 22500,
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 7,
+    size: "Small",
+    ram: "64GB",
+  },
+
+  {
+    id: 399,
+    title: "RTX 4080 Super 16GB Gaming GPU",
+    subtitle: "Enthusiast Graphics Card",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/graphics-card",
+    description: "High-end graphics card for demanding gaming and professional creative workloads.",
+    information: "NVIDIA RTX 4080 Super with 16GB graphics memory.",
+    price: 165000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 4,
+    size: "Large",
+  },
+
+  {
+    id: 400,
+    title: "AMD Radeon RX 7900 XTX 24GB",
+    subtitle: "Flagship AMD Graphics Card",
+    category: "Desktop",
+    subcategory: "PC Components",
+    categoryPath: "desktop/pc-components/graphics-card",
+    description: "Flagship AMD graphics card designed for high-end gaming and professional workloads.",
+    information: "AMD Radeon RX 7900 XTX with 24GB graphics memory.",
+    price: 145000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 3,
+    size: "Large",
+  },
+
+  // You can continue IDs 317–350
+];
+const componentsData = [
+  // =====================================================
+  // CPU — 1 to 8
+  // =====================================================
 
   {
     id: 1,
-    title: "ASUS Vivobook 15 X1504",
-    subtitle: "15.6-inch Everyday Laptop",
-    category: "Laptop",
-    subcategory: "Business Laptop",
-    descriptions: "A reliable everyday laptop for students, professionals, office work, browsing and entertainment.",
-    information: {
-      brand: "ASUS",
-      processor: "Intel Core i5-1335U",
-      ram: "16GB DDR4",
-      storage: "512GB SSD",
-      display: "15.6-inch FHD",
-      graphics: "Intel Iris Xe",
-      warranty: "2 Years"
-    },
-    price: 78500,
-    image: "/images/products/asus-vivobook-15.jpg",
-    rating: 4.6,
-    stock: 18,
-    size: "15.6-inch"
+    title: "AMD Ryzen 5 7600",
+    subtitle: "Ryzen 5 7600 Desktop Processor",
+    category: "Components",
+    subcategory: "CPU",
+    description: "6-core desktop processor for gaming and productivity.",
+    information: "AM5 processor with strong multi-core performance.",
+    price: 20500,
+    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 25,
+    processor: "AMD Ryzen 5 7600",
+    cores: "6 Cores",
+    threads: "12 Threads",
+    baseClock: "3.8 GHz",
+    boostClock: "5.1 GHz",
+    socket: "AM5",
+    cache: "38MB",
+    graphics: "Radeon Graphics",
+    power: "65W",
+    voltage: "1.35V",
+    warranty: "3 Years"
   },
 
   {
     id: 2,
-    title: "Lenovo IdeaPad Slim 3",
-    subtitle: "15.6-inch Performance Laptop",
-    category: "Laptop",
-    subcategory: "Business Laptop",
-    descriptions: "Slim and practical laptop designed for office work, education, programming and everyday productivity.",
-    information: {
-      brand: "Lenovo",
-      processor: "AMD Ryzen 5 7520U",
-      ram: "16GB",
-      storage: "512GB SSD",
-      display: "15.6-inch FHD",
-      graphics: "AMD Radeon Graphics",
-      warranty: "2 Years"
-    },
-    price: 69500,
-    image: "/images/products/lenovo-ideapad-slim-3.jpg",
-    rating: 4.5,
-    stock: 25,
-    size: "15.6-inch"
+    title: "AMD Ryzen 7 7700",
+    subtitle: "Ryzen 7 7700 Desktop Processor",
+    category: "Components",
+    subcategory: "CPU",
+    description: "High-performance 8-core processor for gaming and professional workloads.",
+    information: "Efficient AM5 processor with integrated Radeon graphics.",
+    price: 32500,
+    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 18,
+    processor: "AMD Ryzen 7 7700",
+    cores: "8 Cores",
+    threads: "16 Threads",
+    baseClock: "3.8 GHz",
+    boostClock: "5.3 GHz",
+    socket: "AM5",
+    cache: "40MB",
+    graphics: "Radeon Graphics",
+    power: "65W",
+    voltage: "1.35V",
+    warranty: "3 Years"
   },
 
   {
     id: 3,
-    title: "HP Victus 15",
-    subtitle: "Gaming Performance Laptop",
-    category: "Laptop",
-    subcategory: "Gaming Laptop",
-    descriptions: "Powerful gaming laptop suitable for gaming, programming, creative work and demanding applications.",
-    information: {
-      brand: "HP",
-      processor: "Intel Core i5-13420H",
-      ram: "16GB DDR4",
-      storage: "512GB SSD",
-      display: "15.6-inch FHD 144Hz",
-      graphics: "RTX 4050 6GB",
-      warranty: "2 Years"
-    },
-    price: 118000,
-    image: "/images/products/hp-victus-15.jpg",
-    rating: 4.7,
+    title: "AMD Ryzen 7 7800X3D",
+    subtitle: "Gaming Desktop Processor",
+    category: "Components",
+    subcategory: "CPU",
+    description: "High-end gaming processor with 3D V-Cache technology.",
+    information: "Designed for demanding gaming systems.",
+    price: 46500,
+    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
     stock: 12,
-    size: "15.6-inch"
+    processor: "AMD Ryzen 7 7800X3D",
+    cores: "8 Cores",
+    threads: "16 Threads",
+    baseClock: "4.2 GHz",
+    boostClock: "5.0 GHz",
+    socket: "AM5",
+    cache: "104MB",
+    graphics: "Radeon Graphics",
+    power: "120W",
+    voltage: "1.35V",
+    warranty: "3 Years"
   },
 
   {
     id: 4,
-    title: "Lenovo LOQ 15",
-    subtitle: "High Performance Gaming Laptop",
-    category: "Laptop",
-    subcategory: "Gaming Laptop",
-    descriptions: "High-performance gaming laptop with dedicated graphics and high refresh rate display.",
-    information: {
-      brand: "Lenovo",
-      processor: "Intel Core i7-13650HX",
-      ram: "16GB DDR5",
-      storage: "1TB SSD",
-      display: "15.6-inch FHD 144Hz",
-      graphics: "RTX 4060 8GB",
-      warranty: "2 Years"
-    },
-    price: 158000,
-    image: "/images/products/lenovo-loq-15.jpg",
+    title: "AMD Ryzen 9 7900X",
+    subtitle: "12-Core Desktop Processor",
+    category: "Components",
+    subcategory: "CPU",
+    description: "Powerful 12-core processor for professional workloads.",
+    information: "High-performance AM5 processor for workstation and gaming PCs.",
+    price: 52000,
+    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80",
     rating: 4.8,
-    stock: 9,
-    size: "15.6-inch"
+    stock: 10,
+    processor: "AMD Ryzen 9 7900X",
+    cores: "12 Cores",
+    threads: "24 Threads",
+    baseClock: "4.7 GHz",
+    boostClock: "5.6 GHz",
+    socket: "AM5",
+    cache: "76MB",
+    graphics: "Radeon Graphics",
+    power: "170W",
+    voltage: "1.35V",
+    warranty: "3 Years"
   },
 
   {
     id: 5,
-    title: "Dell Inspiron 15 3530",
-    subtitle: "Professional Everyday Laptop",
-    category: "Laptop",
-    subcategory: "Business Laptop",
-    descriptions: "Versatile laptop for office work, study, programming, browsing and multimedia.",
-    information: {
-      brand: "Dell",
-      processor: "Intel Core i5-1334U",
-      ram: "8GB",
-      storage: "512GB SSD",
-      display: "15.6-inch FHD",
-      graphics: "Intel Iris Xe",
-      warranty: "1 Year"
-    },
-    price: 72500,
-    image: "/images/products/dell-inspiron-15.jpg",
-    rating: 4.4,
-    stock: 21,
-    size: "15.6-inch"
+    title: "Intel Core i5-14400",
+    subtitle: "14th Gen Desktop Processor",
+    category: "Components",
+    subcategory: "CPU",
+    description: "Powerful Intel processor for everyday computing and gaming.",
+    information: "14th generation desktop CPU with hybrid architecture.",
+    price: 23500,
+    image: "https://images.unsplash.com/photo-1555617981-dac3880eac6b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 20,
+    processor: "Intel Core i5-14400",
+    cores: "10 Cores",
+    threads: "16 Threads",
+    baseClock: "2.5 GHz",
+    boostClock: "4.7 GHz",
+    socket: "LGA1700",
+    cache: "20MB",
+    graphics: "Intel UHD Graphics 730",
+    power: "65W",
+    voltage: "1.4V",
+    warranty: "3 Years"
   },
 
   {
     id: 6,
-    title: "Acer Aspire 5 A515",
-    subtitle: "Slim Productivity Laptop",
-    category: "Laptop",
-    subcategory: "Business Laptop",
-    descriptions: "Affordable productivity laptop for students, office users and everyday computing.",
-    information: {
-      brand: "Acer",
-      processor: "Intel Core i5-1240P",
-      ram: "16GB",
-      storage: "512GB SSD",
-      display: "15.6-inch FHD IPS",
-      graphics: "Intel Iris Xe",
-      warranty: "2 Years"
-    },
-    price: 73500,
-    image: "/images/products/acer-aspire-5.jpg",
-    rating: 4.5,
-    stock: 16,
-    size: "15.6-inch"
+    title: "Intel Core i5-14600K",
+    subtitle: "14th Gen Unlocked Desktop Processor",
+    category: "Components",
+    subcategory: "CPU",
+    description: "Unlocked Intel processor for gaming and performance computing.",
+    information: "Hybrid architecture with strong single and multi-core performance.",
+    price: 34500,
+    image: "https://images.unsplash.com/photo-1555617981-dac3880eac6b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 14,
+    processor: "Intel Core i5-14600K",
+    cores: "14 Cores",
+    threads: "20 Threads",
+    baseClock: "3.5 GHz",
+    boostClock: "5.3 GHz",
+    socket: "LGA1700",
+    cache: "24MB",
+    graphics: "Intel UHD Graphics 770",
+    power: "125W",
+    voltage: "1.4V",
+    warranty: "3 Years"
   },
 
   {
     id: 7,
-    title: "MSI Thin 15",
-    subtitle: "Entry Gaming Laptop",
-    category: "Laptop",
-    subcategory: "Gaming Laptop",
-    descriptions: "Slim gaming laptop offering dedicated graphics performance for modern games and creative applications.",
-    information: {
-      brand: "MSI",
-      processor: "Intel Core i5-13420H",
-      ram: "16GB",
-      storage: "512GB SSD",
-      display: "15.6-inch FHD 144Hz",
-      graphics: "RTX 4050 6GB",
-      warranty: "2 Years"
-    },
-    price: 112000,
-    image: "/images/products/msi-thin-15.jpg",
-    rating: 4.6,
-    stock: 11,
-    size: "15.6-inch"
+    title: "Intel Core i7-14700K",
+    subtitle: "14th Gen Performance Processor",
+    category: "Components",
+    subcategory: "CPU",
+    description: "High-performance Intel processor for gaming and workstation systems.",
+    information: "Powerful hybrid architecture with multiple performance cores.",
+    price: 46500,
+    image: "https://images.unsplash.com/photo-1555617981-dac3880eac6b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 9,
+    processor: "Intel Core i7-14700K",
+    cores: "20 Cores",
+    threads: "28 Threads",
+    baseClock: "3.4 GHz",
+    boostClock: "5.6 GHz",
+    socket: "LGA1700",
+    cache: "33MB",
+    graphics: "Intel UHD Graphics 770",
+    power: "125W",
+    voltage: "1.4V",
+    warranty: "3 Years"
   },
 
   {
     id: 8,
-    title: "ASUS TUF Gaming A15",
-    subtitle: "Durable Gaming Laptop",
-    category: "Laptop",
-    subcategory: "Gaming Laptop",
-    descriptions: "Durable gaming notebook with powerful processor, dedicated graphics and fast display.",
-    information: {
-      brand: "ASUS",
-      processor: "AMD Ryzen 7 7735HS",
-      ram: "16GB DDR5",
-      storage: "1TB SSD",
-      display: "15.6-inch FHD 144Hz",
-      graphics: "RTX 4060 8GB",
-      warranty: "2 Years"
-    },
-    price: 149000,
-    image: "/images/products/asus-tuf-a15.jpg",
-    rating: 4.8,
-    stock: 8,
-    size: "15.6-inch"
+    title: "Intel Core i9-14900K",
+    subtitle: "14th Gen Flagship Processor",
+    category: "Components",
+    subcategory: "CPU",
+    description: "High-end desktop processor for demanding workloads and gaming.",
+    information: "Flagship Intel desktop processor with high boost frequency.",
+    price: 62000,
+    image: "https://images.unsplash.com/photo-1555617981-dac3880eac6b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    processor: "Intel Core i9-14900K",
+    cores: "24 Cores",
+    threads: "32 Threads",
+    baseClock: "3.2 GHz",
+    boostClock: "6.0 GHz",
+    socket: "LGA1700",
+    cache: "36MB",
+    graphics: "Intel UHD Graphics 770",
+    power: "125W",
+    voltage: "1.4V",
+    warranty: "3 Years"
   },
+
+  // =====================================================
+  // CPU COOLER — 9 to 13
+  // =====================================================
 
   {
     id: 9,
-    title: "HP Pavilion Aero 13",
-    subtitle: "Lightweight Premium Laptop",
-    category: "Laptop",
-    subcategory: "Ultrabook",
-    descriptions: "Lightweight premium laptop designed for professionals who need portability and performance.",
-    information: {
-      brand: "HP",
-      processor: "AMD Ryzen 7 7735U",
-      ram: "16GB",
-      storage: "512GB SSD",
-      display: "13.3-inch WUXGA",
-      graphics: "AMD Radeon",
-      warranty: "2 Years"
-    },
-    price: 108000,
-    image: "/images/products/hp-pavilion-aero-13.jpg",
-    rating: 4.7,
-    stock: 10,
-    size: "13.3-inch"
+    title: "DeepCool AK400",
+    subtitle: "High Performance Air Cooler",
+    category: "Components",
+    subcategory: "CPU Cooler",
+    description: "Single tower CPU air cooler designed for efficient cooling.",
+    information: "Compatible with multiple Intel and AMD sockets.",
+    price: 3500,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 30,
+    type: "Air Cooler",
+    fanSize: "120mm",
+    fanSpeed: "500-1850 RPM",
+    socket: "AM4, AM5, LGA1700",
+    power: "4.2W",
+    voltage: "12V",
+    noiseLevel: "29 dBA",
+    size: "127 × 97 × 155 mm",
+    weight: "661g",
+    warranty: "1 Year"
   },
 
   {
     id: 10,
-    title: "Apple MacBook Air M3",
-    subtitle: "13.6-inch Premium Laptop",
-    category: "Laptop",
-    subcategory: "Ultrabook",
-    descriptions: "Premium lightweight laptop with efficient Apple silicon performance for work and creative tasks.",
-    information: {
-      brand: "Apple",
-      processor: "Apple M3",
-      ram: "8GB",
-      storage: "256GB SSD",
-      display: "13.6-inch Liquid Retina",
-      graphics: "Integrated",
-      warranty: "1 Year"
-    },
-    price: 132000,
-    image: "/images/products/macbook-air-m3.jpg",
-    rating: 4.9,
-    stock: 7,
-    size: "13.6-inch"
+    title: "DeepCool AK620",
+    subtitle: "Dual Tower CPU Air Cooler",
+    category: "Components",
+    subcategory: "CPU Cooler",
+    description: "High-performance dual tower cooler for powerful desktop processors.",
+    information: "Dual fan design provides efficient thermal performance.",
+    price: 7500,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 16,
+    type: "Dual Tower Air Cooler",
+    fanSize: "120mm",
+    fanSpeed: "300-1850 RPM",
+    socket: "AM4, AM5, LGA1700",
+    power: "6W",
+    voltage: "12V",
+    noiseLevel: "28 dBA",
+    size: "129 × 138 × 160 mm",
+    weight: "1.45 kg",
+    warranty: "1 Year"
   },
 
   {
     id: 11,
-    title: "Dell Latitude 5440",
-    subtitle: "Professional Business Laptop",
-    category: "Laptop",
-    subcategory: "Business Laptop",
-    descriptions: "Professional business laptop designed for productivity, meetings, office applications and mobility.",
-    information: {
-      brand: "Dell",
-      processor: "Intel Core i5-1345U",
-      ram: "16GB",
-      storage: "512GB SSD",
-      display: "14-inch FHD",
-      graphics: "Intel Iris Xe",
-      warranty: "3 Years"
-    },
-    price: 118000,
-    image: "/images/products/dell-latitude-5440.jpg",
-    rating: 4.7,
-    stock: 13,
-    size: "14-inch"
+    title: "Cooler Master Hyper 212",
+    subtitle: "Tower CPU Air Cooler",
+    category: "Components",
+    subcategory: "CPU Cooler",
+    description: "Popular tower-style CPU cooler for desktop computers.",
+    information: "Compact design with efficient heat dissipation.",
+    price: 4200,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 24,
+    type: "Air Cooler",
+    fanSize: "120mm",
+    fanSpeed: "650-1800 RPM",
+    socket: "AM4, AM5, LGA1700",
+    power: "4W",
+    voltage: "12V",
+    noiseLevel: "30 dBA",
+    size: "125 × 80 × 158 mm",
+    weight: "700g",
+    warranty: "1 Year"
   },
 
   {
     id: 12,
-    title: "Lenovo ThinkPad E14",
-    subtitle: "Business Productivity Laptop",
-    category: "Laptop",
-    subcategory: "Business Laptop",
-    descriptions: "Business-focused laptop offering a comfortable keyboard, dependable performance and strong productivity features.",
-    information: {
-      brand: "Lenovo",
-      processor: "Intel Core i5-1335U",
-      ram: "16GB",
-      storage: "512GB SSD",
-      display: "14-inch FHD",
-      graphics: "Intel Iris Xe",
-      warranty: "3 Years"
-    },
-    price: 102000,
-    image: "/images/products/thinkpad-e14.jpg",
+    title: "Corsair H100 RGB",
+    subtitle: "240mm Liquid CPU Cooler",
+    category: "Components",
+    subcategory: "CPU Cooler",
+    description: "240mm liquid cooling solution for high-performance processors.",
+    information: "Dual 120mm radiator fans with RGB lighting.",
+    price: 12500,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
     rating: 4.7,
-    stock: 15,
-    size: "14-inch"
+    stock: 11,
+    type: "Liquid Cooler",
+    radiatorSize: "240mm",
+    fanSize: "120mm × 2",
+    fanSpeed: "400-1850 RPM",
+    socket: "AM4, AM5, LGA1700",
+    power: "6W",
+    voltage: "12V",
+    noiseLevel: "35 dBA",
+    size: "277 × 120 × 27 mm",
+    warranty: "5 Years"
   },
 
   {
     id: 13,
-    title: "ASUS Zenbook 14 OLED",
-    subtitle: "Premium OLED Ultrabook",
-    category: "Laptop",
-    subcategory: "Ultrabook",
-    descriptions: "Premium ultrabook with OLED display, lightweight construction and excellent everyday performance.",
-    information: {
-      brand: "ASUS",
-      processor: "Intel Core Ultra 7",
-      ram: "16GB",
-      storage: "1TB SSD",
-      display: "14-inch 2.8K OLED",
-      graphics: "Intel Arc",
-      warranty: "2 Years"
-    },
-    price: 145000,
-    image: "/images/products/asus-zenbook-14.jpg",
-    rating: 4.9,
-    stock: 6,
-    size: "14-inch"
+    title: "NZXT Kraken 240",
+    subtitle: "240mm RGB Liquid Cooler",
+    category: "Components",
+    subcategory: "CPU Cooler",
+    description: "Premium 240mm all-in-one liquid CPU cooler.",
+    information: "Modern liquid cooling system with RGB lighting.",
+    price: 15500,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 8,
+    type: "Liquid Cooler",
+    radiatorSize: "240mm",
+    fanSize: "120mm × 2",
+    fanSpeed: "500-1800 RPM",
+    socket: "AM4, AM5, LGA1700",
+    power: "7W",
+    voltage: "12V",
+    noiseLevel: "36 dBA",
+    size: "275 × 120 × 30 mm",
+    warranty: "6 Years"
   },
+
+  // =====================================================
+  // MOTHERBOARD — 14 to 21
+  // =====================================================
 
   {
     id: 14,
-    title: "Acer Nitro V 15",
-    subtitle: "RTX Gaming Laptop",
-    category: "Laptop",
-    subcategory: "Gaming Laptop",
-    descriptions: "Gaming laptop built for modern gaming with dedicated NVIDIA graphics and a fast refresh rate.",
-    information: {
-      brand: "Acer",
-      processor: "Intel Core i5-13420H",
-      ram: "16GB",
-      storage: "512GB SSD",
-      display: "15.6-inch FHD 144Hz",
-      graphics: "RTX 4050 6GB",
-      warranty: "2 Years"
-    },
-    price: 109000,
-    image: "/images/products/acer-nitro-v15.jpg",
-    rating: 4.6,
-    stock: 14,
-    size: "15.6-inch"
+    title: "MSI B650M Gaming Plus WiFi",
+    subtitle: "AM5 DDR5 Gaming Motherboard",
+    category: "Components",
+    subcategory: "Motherboard",
+    description: "Feature-rich motherboard for modern AMD Ryzen processors.",
+    information: "Supports DDR5 memory, PCIe 4.0 and WiFi connectivity.",
+    price: 18500,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 15,
+    chipset: "AMD B650",
+    socket: "AM5",
+    ram: "DDR5",
+    ramSlots: "4",
+    maxRam: "256GB",
+    storage: "M.2 NVMe, SATA",
+    pcie: "PCIe 4.0",
+    connectivity: "WiFi 6E, Bluetooth, LAN",
+    size: "Micro ATX",
+    voltage: "12V",
+    warranty: "3 Years"
   },
 
   {
     id: 15,
-    title: "MSI Katana 15",
-    subtitle: "Performance Gaming Notebook",
-    category: "Laptop",
-    subcategory: "Gaming Laptop",
-    descriptions: "Performance-focused gaming notebook with powerful CPU and dedicated RTX graphics.",
-    information: {
-      brand: "MSI",
-      processor: "Intel Core i7-13620H",
-      ram: "16GB",
-      storage: "1TB SSD",
-      display: "15.6-inch FHD 144Hz",
-      graphics: "RTX 4060 8GB",
-      warranty: "2 Years"
-    },
-    price: 142000,
-    image: "/images/products/msi-katana-15.jpg",
-    rating: 4.7,
-    stock: 8,
-    size: "15.6-inch"
+    title: "ASUS TUF Gaming B650-Plus",
+    subtitle: "AMD AM5 ATX Motherboard",
+    category: "Components",
+    subcategory: "Motherboard",
+    description: "Durable ATX motherboard designed for AMD Ryzen processors.",
+    information: "Supports DDR5 memory and PCIe 5.0 connectivity.",
+    price: 22500,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 13,
+    chipset: "AMD B650",
+    socket: "AM5",
+    ram: "DDR5",
+    ramSlots: "4",
+    maxRam: "128GB",
+    storage: "M.2 NVMe, SATA",
+    pcie: "PCIe 5.0",
+    connectivity: "LAN, USB, Audio",
+    size: "ATX",
+    voltage: "12V",
+    warranty: "3 Years"
   },
 
   {
     id: 16,
-    title: "Dell OptiPlex 7010",
-    subtitle: "Professional Office Desktop",
-    category: "Desktop PC",
-    subcategory: "Office PC",
-    descriptions: "Reliable business desktop designed for office applications, accounting, browsing and productivity.",
-    information: {
-      brand: "Dell",
-      processor: "Intel Core i5-13500",
-      ram: "16GB",
-      storage: "512GB SSD",
-      graphics: "Intel UHD Graphics",
-      operatingSystem: "Windows 11 Pro",
-      warranty: "3 Years"
-    },
-    price: 82000,
-    image: "/images/products/dell-optiplex-7010.jpg",
-    rating: 4.6,
-    stock: 12,
-    size: "Mid Tower"
+    title: "Gigabyte B650 AORUS Elite AX",
+    subtitle: "AM5 Gaming Motherboard",
+    category: "Components",
+    subcategory: "Motherboard",
+    description: "Gaming motherboard with wireless connectivity and DDR5 support.",
+    information: "Designed for Ryzen gaming and productivity systems.",
+    price: 24500,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 10,
+    chipset: "AMD B650",
+    socket: "AM5",
+    ram: "DDR5",
+    ramSlots: "4",
+    maxRam: "192GB",
+    storage: "M.2 NVMe, SATA",
+    pcie: "PCIe 5.0",
+    connectivity: "WiFi 6E, Bluetooth, LAN",
+    size: "ATX",
+    voltage: "12V",
+    warranty: "3 Years"
   },
 
   {
     id: 17,
-    title: "HP Pro Tower 290",
-    subtitle: "Business Desktop Computer",
-    category: "Desktop PC",
-    subcategory: "Office PC",
-    descriptions: "Business desktop for office applications, data management, browsing and professional workloads.",
-    information: {
-      brand: "HP",
-      processor: "Intel Core i5-13500",
-      ram: "16GB",
-      storage: "512GB SSD",
-      graphics: "Intel UHD Graphics",
-      operatingSystem: "Windows 11 Pro",
-      warranty: "3 Years"
-    },
-    price: 79500,
-    image: "/images/products/hp-pro-tower-290.jpg",
-    rating: 4.5,
-    stock: 17,
-    size: "Mid Tower"
+    title: "MSI PRO B760M-A",
+    subtitle: "Intel LGA1700 Micro ATX Motherboard",
+    category: "Components",
+    subcategory: "Motherboard",
+    description: "Reliable motherboard for Intel 12th, 13th and 14th generation processors.",
+    information: "Supports DDR5 memory and PCIe connectivity.",
+    price: 16500,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 19,
+    chipset: "Intel B760",
+    socket: "LGA1700",
+    ram: "DDR5",
+    ramSlots: "4",
+    maxRam: "192GB",
+    storage: "M.2 NVMe, SATA",
+    pcie: "PCIe 4.0",
+    connectivity: "LAN, USB, Audio",
+    size: "Micro ATX",
+    voltage: "12V",
+    warranty: "3 Years"
   },
 
   {
     id: 18,
-    title: "Ryzen 5 Gaming PC",
-    subtitle: "Affordable Gaming Desktop",
-    category: "Desktop PC",
-    subcategory: "Gaming PC",
-    descriptions: "Custom gaming desktop suitable for 1080p gaming, streaming, programming and general productivity.",
-    information: {
-      brand: "Custom Build",
-      processor: "AMD Ryzen 5 5600",
-      ram: "16GB DDR4",
-      storage: "512GB NVMe SSD",
-      graphics: "RTX 3060 12GB",
-      powerSupply: "650W",
-      warranty: "1 Year"
-    },
-    price: 89500,
-    image: "/images/products/ryzen-5-gaming-pc.jpg",
+    title: "ASUS PRIME B760-PLUS",
+    subtitle: "Intel ATX DDR5 Motherboard",
+    category: "Components",
+    subcategory: "Motherboard",
+    description: "ATX motherboard for modern Intel desktop processors.",
+    information: "Balanced motherboard for gaming and office systems.",
+    price: 19000,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
     rating: 4.7,
-    stock: 10,
-    size: "Mid Tower"
+    stock: 16,
+    chipset: "Intel B760",
+    socket: "LGA1700",
+    ram: "DDR5",
+    ramSlots: "4",
+    maxRam: "192GB",
+    storage: "M.2 NVMe, SATA",
+    pcie: "PCIe 4.0",
+    connectivity: "LAN, USB, HDMI",
+    size: "ATX",
+    voltage: "12V",
+    warranty: "3 Years"
   },
 
   {
     id: 19,
-    title: "Core i7 Gaming PC",
-    subtitle: "High Performance Gaming Desktop",
-    category: "Desktop PC",
-    subcategory: "Gaming PC",
-    descriptions: "Powerful desktop computer for gaming, video editing, rendering and demanding applications.",
-    information: {
-      brand: "Custom Build",
-      processor: "Intel Core i7-14700F",
-      ram: "32GB DDR5",
-      storage: "1TB NVMe SSD",
-      graphics: "RTX 4070 Super 12GB",
-      powerSupply: "750W",
-      warranty: "1 Year"
-    },
-    price: 185000,
-    image: "/images/products/core-i7-gaming-pc.jpg",
+    title: "Gigabyte Z790 Gaming X AX",
+    subtitle: "Intel Z790 Gaming Motherboard",
+    category: "Components",
+    subcategory: "Motherboard",
+    description: "Premium motherboard for unlocked Intel processors.",
+    information: "Designed for high-performance gaming and workstation builds.",
+    price: 34500,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
     rating: 4.9,
-    stock: 5,
-    size: "Mid Tower"
+    stock: 7,
+    chipset: "Intel Z790",
+    socket: "LGA1700",
+    ram: "DDR5",
+    ramSlots: "4",
+    maxRam: "192GB",
+    storage: "M.2 NVMe, SATA",
+    pcie: "PCIe 5.0",
+    connectivity: "WiFi 6E, Bluetooth, LAN",
+    size: "ATX",
+    voltage: "12V",
+    warranty: "3 Years"
   },
 
   {
     id: 20,
-    title: "Ryzen 7 Creator PC",
-    subtitle: "Content Creation Desktop",
-    category: "Desktop PC",
-    subcategory: "Workstation PC",
-    descriptions: "High-performance desktop designed for video editing, graphic design, rendering and professional workloads.",
-    information: {
-      brand: "Custom Build",
-      processor: "AMD Ryzen 7 7700",
-      ram: "32GB DDR5",
-      storage: "2TB NVMe SSD",
-      graphics: "RTX 4070 12GB",
-      powerSupply: "750W",
-      warranty: "1 Year"
-    },
-    price: 172000,
-    image: "/images/products/ryzen-7-creator-pc.jpg",
-    rating: 4.8,
-    stock: 6,
-    size: "Mid Tower"
+    title: "ASRock B650M Pro RS",
+    subtitle: "AM5 Micro ATX Motherboard",
+    category: "Components",
+    subcategory: "Motherboard",
+    description: "Affordable AM5 motherboard for modern Ryzen systems.",
+    information: "Supports DDR5 memory and PCIe 4.0.",
+    price: 14500,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 21,
+    chipset: "AMD B650",
+    socket: "AM5",
+    ram: "DDR5",
+    ramSlots: "4",
+    maxRam: "192GB",
+    storage: "M.2 NVMe, SATA",
+    pcie: "PCIe 4.0",
+    connectivity: "LAN, USB, Audio",
+    size: "Micro ATX",
+    voltage: "12V",
+    warranty: "3 Years"
   },
 
   {
     id: 21,
-    title: "AOC 24G2SP",
-    subtitle: "24-inch 165Hz Gaming Monitor",
-    category: "Monitor",
-    subcategory: "Gaming Monitor",
-    descriptions: "Fast IPS gaming monitor with high refresh rate for smooth gaming and responsive gameplay.",
-    information: {
-      brand: "AOC",
-      resolution: "1920 x 1080",
-      panel: "IPS",
-      refreshRate: "165Hz",
-      responseTime: "1ms",
-      ports: "HDMI, DisplayPort",
-      warranty: "3 Years"
-    },
-    price: 22500,
-    image: "/images/products/aoc-24g2sp.jpg",
-    rating: 4.7,
-    stock: 22,
-    size: "24-inch"
+    title: "MSI MAG Z790 Tomahawk",
+    subtitle: "Intel Z790 DDR5 Gaming Motherboard",
+    category: "Components",
+    subcategory: "Motherboard",
+    description: "Premium gaming motherboard for Intel processors.",
+    information: "High-end board with multiple expansion and storage options.",
+    price: 37500,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    chipset: "Intel Z790",
+    socket: "LGA1700",
+    ram: "DDR5",
+    ramSlots: "4",
+    maxRam: "192GB",
+    storage: "M.2 NVMe, SATA",
+    pcie: "PCIe 5.0",
+    connectivity: "WiFi 6E, Bluetooth, LAN",
+    size: "ATX",
+    voltage: "12V",
+    warranty: "3 Years"
   },
+
+  // =====================================================
+  // RAM — 22 to 27
+  // =====================================================
 
   {
     id: 22,
-    title: "MSI G274F",
-    subtitle: "27-inch Rapid IPS Gaming Monitor",
-    category: "Monitor",
-    subcategory: "Gaming Monitor",
-    descriptions: "High refresh rate gaming monitor with rapid IPS panel for smooth gaming and multimedia.",
-    information: {
-      brand: "MSI",
-      resolution: "1920 x 1080",
-      panel: "Rapid IPS",
-      refreshRate: "180Hz",
-      responseTime: "1ms",
-      ports: "HDMI, DisplayPort",
-      warranty: "3 Years"
-    },
-    price: 33500,
-    image: "/images/products/msi-g274f.jpg",
-    rating: 4.8,
-    stock: 14,
-    size: "27-inch"
+    title: "Corsair Vengeance 16GB DDR5",
+    subtitle: "16GB DDR5 Desktop Memory",
+    category: "Components",
+    subcategory: "RAM",
+    description: "High-speed DDR5 memory for gaming and productivity.",
+    information: "Designed for modern Intel and AMD desktop platforms.",
+    price: 6200,
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 40,
+    ram: "16GB",
+    type: "DDR5",
+    speed: "5600MHz",
+    voltage: "1.25V",
+    size: "DIMM",
+    capacity: "16GB",
+    warranty: "Lifetime"
   },
 
   {
     id: 23,
-    title: "LG UltraGear 27GR75Q",
-    subtitle: "27-inch QHD Gaming Monitor",
-    category: "Monitor",
-    subcategory: "Gaming Monitor",
-    descriptions: "QHD gaming monitor with high refresh rate and fast response time for competitive gaming.",
-    information: {
-      brand: "LG",
-      resolution: "2560 x 1440",
-      panel: "IPS",
-      refreshRate: "165Hz",
-      responseTime: "1ms",
-      ports: "HDMI, DisplayPort",
-      warranty: "3 Years"
-    },
-    price: 46500,
-    image: "/images/products/lg-ultragear-27.jpg",
-    rating: 4.8,
-    stock: 11,
-    size: "27-inch"
+    title: "Kingston Fury Beast 16GB",
+    subtitle: "DDR5 5200MHz Desktop RAM",
+    category: "Components",
+    subcategory: "RAM",
+    description: "Fast DDR5 memory module for modern desktop computers.",
+    information: "Suitable for gaming and everyday performance systems.",
+    price: 5800,
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 35,
+    ram: "16GB",
+    type: "DDR5",
+    speed: "5200MHz",
+    voltage: "1.25V",
+    size: "DIMM",
+    capacity: "16GB",
+    warranty: "Lifetime"
   },
 
   {
     id: 24,
-    title: "Dell SE2422H",
-    subtitle: "24-inch Full HD Monitor",
-    category: "Monitor",
-    subcategory: "Office Monitor",
-    descriptions: "Affordable Full HD monitor for office work, study, browsing and everyday computing.",
-    information: {
-      brand: "Dell",
-      resolution: "1920 x 1080",
-      panel: "VA",
-      refreshRate: "75Hz",
-      responseTime: "5ms",
-      ports: "HDMI, VGA",
-      warranty: "3 Years"
-    },
-    price: 17500,
-    image: "/images/products/dell-se2422h.jpg",
-    rating: 4.5,
-    stock: 30,
-    size: "24-inch"
+    title: "G.Skill Ripjaws S5 32GB",
+    subtitle: "DDR5 6000MHz Desktop RAM",
+    category: "Components",
+    subcategory: "RAM",
+    description: "High-speed 32GB memory kit for gaming and productivity.",
+    information: "Low-profile DDR5 memory designed for modern systems.",
+    price: 10500,
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 22,
+    ram: "32GB",
+    type: "DDR5",
+    speed: "6000MHz",
+    voltage: "1.35V",
+    size: "DIMM",
+    capacity: "32GB",
+    warranty: "Lifetime"
   },
 
   {
     id: 25,
-    title: "Samsung ViewFinity S7",
-    subtitle: "32-inch 4K Professional Monitor",
-    category: "Monitor",
-    subcategory: "Professional Monitor",
-    descriptions: "Large 4K monitor designed for productivity, content creation, design and professional workflows.",
-    information: {
-      brand: "Samsung",
-      resolution: "3840 x 2160",
-      panel: "IPS",
-      refreshRate: "60Hz",
-      responseTime: "5ms",
-      ports: "HDMI, DisplayPort, USB-C",
-      warranty: "3 Years"
-    },
-    price: 62000,
-    image: "/images/products/samsung-viewfinity-s7.jpg",
-    rating: 4.8,
-    stock: 8,
-    size: "32-inch"
+    title: "Corsair Vengeance RGB 32GB",
+    subtitle: "DDR5 RGB Gaming Memory",
+    category: "Components",
+    subcategory: "RAM",
+    description: "RGB DDR5 memory kit designed for gaming systems.",
+    information: "High-speed memory with customizable RGB lighting.",
+    price: 12500,
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 18,
+    ram: "32GB",
+    type: "DDR5",
+    speed: "6000MHz",
+    voltage: "1.35V",
+    size: "DIMM",
+    capacity: "32GB",
+    lighting: "RGB",
+    warranty: "Lifetime"
   },
 
   {
     id: 26,
-    title: "Samsung Galaxy A55",
-    subtitle: "Premium Midrange Smartphone",
-    category: "Smartphone",
-    subcategory: "Android Phone",
-    descriptions: "Premium midrange smartphone with bright display, capable camera system and long battery life.",
-    information: {
-      brand: "Samsung",
-      processor: "Exynos 1480",
-      ram: "8GB",
-      storage: "128GB",
-      display: "6.6-inch Super AMOLED",
-      camera: "50MP Triple Camera",
-      battery: "5000mAh",
-      warranty: "1 Year"
-    },
-    price: 45500,
-    image: "/images/products/samsung-galaxy-a55.jpg",
-    rating: 4.7,
-    stock: 25,
-    size: "6.6-inch"
+    title: "Kingston Fury Beast 32GB",
+    subtitle: "DDR4 3200MHz Desktop RAM",
+    category: "Components",
+    subcategory: "RAM",
+    description: "Reliable DDR4 memory for Intel and AMD desktop systems.",
+    information: "Suitable for gaming, office and workstation computers.",
+    price: 7200,
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 30,
+    ram: "32GB",
+    type: "DDR4",
+    speed: "3200MHz",
+    voltage: "1.35V",
+    size: "DIMM",
+    capacity: "32GB",
+    warranty: "Lifetime"
   },
 
   {
     id: 27,
-    title: "Xiaomi Redmi Note 13",
-    subtitle: "Value Performance Smartphone",
-    category: "Smartphone",
-    subcategory: "Budget Phone",
-    descriptions: "Feature-rich smartphone offering an AMOLED display, capable camera and dependable daily performance.",
-    information: {
-      brand: "Xiaomi",
-      processor: "Snapdragon 685",
-      ram: "8GB",
-      storage: "256GB",
-      display: "6.67-inch AMOLED",
-      camera: "108MP Triple Camera",
-      battery: "5000mAh",
-      warranty: "1 Year"
-    },
-    price: 24500,
-    image: "/images/products/redmi-note-13.jpg",
-    rating: 4.5,
-    stock: 35,
-    size: "6.67-inch"
+    title: "TeamGroup T-Force Delta 16GB",
+    subtitle: "DDR5 RGB Gaming RAM",
+    category: "Components",
+    subcategory: "RAM",
+    description: "Gaming memory module with RGB lighting and high-speed performance.",
+    information: "Designed for modern DDR5 gaming platforms.",
+    price: 6800,
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 27,
+    ram: "16GB",
+    type: "DDR5",
+    speed: "6000MHz",
+    voltage: "1.35V",
+    size: "DIMM",
+    capacity: "16GB",
+    lighting: "RGB",
+    warranty: "Lifetime"
   },
+
+  // =====================================================
+  // SSD — 28 to 33
+  // =====================================================
 
   {
     id: 28,
-    title: "OnePlus Nord CE 4",
-    subtitle: "Fast Charging 5G Smartphone",
-    category: "Smartphone",
-    subcategory: "Android Phone",
-    descriptions: "Modern 5G smartphone with fast charging, smooth display and strong everyday performance.",
-    information: {
-      brand: "OnePlus",
-      processor: "Snapdragon 7 Gen 3",
-      ram: "8GB",
-      storage: "128GB",
-      display: "6.7-inch AMOLED 120Hz",
-      camera: "50MP Dual Camera",
-      battery: "5500mAh",
-      warranty: "1 Year"
-    },
-    price: 38500,
-    image: "/images/products/oneplus-nord-ce4.jpg",
-    rating: 4.7,
-    stock: 18,
-    size: "6.7-inch"
+    title: "Samsung 990 EVO 1TB",
+    subtitle: "1TB NVMe M.2 SSD",
+    category: "Components",
+    subcategory: "SSD",
+    description: "High-speed NVMe SSD for fast system performance.",
+    information: "Suitable for gaming, workstation and everyday computing.",
+    price: 12500,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 22,
+    storage: "1TB",
+    ssd: "NVMe",
+    interface: "PCIe 4.0",
+    readSpeed: "5000 MB/s",
+    writeSpeed: "4200 MB/s",
+    size: "M.2 2280",
+    voltage: "3.3V",
+    warranty: "5 Years"
   },
 
   {
     id: 29,
-    title: "Google Pixel 8",
-    subtitle: "AI Powered Camera Smartphone",
-    category: "Smartphone",
-    subcategory: "Flagship Phone",
-    descriptions: "Premium Google smartphone featuring advanced camera processing, clean Android and AI-powered features.",
-    information: {
-      brand: "Google",
-      processor: "Google Tensor G3",
-      ram: "8GB",
-      storage: "128GB",
-      display: "6.2-inch OLED 120Hz",
-      camera: "50MP Dual Camera",
-      battery: "4575mAh",
-      warranty: "1 Year"
-    },
-    price: 72000,
-    image: "/images/products/google-pixel-8.jpg",
-    rating: 4.8,
-    stock: 8,
-    size: "6.2-inch"
+    title: "WD Black SN850X 1TB",
+    subtitle: "High Performance NVMe SSD",
+    category: "Components",
+    subcategory: "SSD",
+    description: "Gaming-focused NVMe SSD with high read and write speeds.",
+    information: "Designed for gaming PCs and performance workstations.",
+    price: 14500,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 16,
+    storage: "1TB",
+    ssd: "NVMe",
+    interface: "PCIe 4.0",
+    readSpeed: "7300 MB/s",
+    writeSpeed: "6300 MB/s",
+    size: "M.2 2280",
+    voltage: "3.3V",
+    warranty: "5 Years"
   },
 
   {
     id: 30,
-    title: "Samsung Galaxy S24 Ultra",
-    subtitle: "Premium Flagship Smartphone",
-    category: "Smartphone",
-    subcategory: "Flagship Phone",
-    descriptions: "Premium flagship smartphone with advanced cameras, powerful processor, S Pen and high-quality display.",
-    information: {
-      brand: "Samsung",
-      processor: "Snapdragon 8 Gen 3",
-      ram: "12GB",
-      storage: "256GB",
-      display: "6.8-inch Dynamic AMOLED 2X",
-      camera: "200MP Quad Camera",
-      battery: "5000mAh",
-      warranty: "1 Year"
-    },
-    price: 145000,
-    image: "/images/products/galaxy-s24-ultra.jpg",
-    rating: 4.9,
-    stock: 6,
-    size: "6.8-inch"
+    title: "Crucial P3 Plus 1TB",
+    subtitle: "PCIe 4.0 NVMe SSD",
+    category: "Components",
+    subcategory: "SSD",
+    description: "Affordable high-speed NVMe storage for desktop systems.",
+    information: "Good choice for gaming and everyday storage.",
+    price: 9500,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 30,
+    storage: "1TB",
+    ssd: "NVMe",
+    interface: "PCIe 4.0",
+    readSpeed: "5000 MB/s",
+    writeSpeed: "3600 MB/s",
+    size: "M.2 2280",
+    voltage: "3.3V",
+    warranty: "5 Years"
   },
 
   {
     id: 31,
-    title: "Samsung Galaxy Tab S9 FE",
-    subtitle: "10.9-inch Android Tablet",
-    category: "Tablet",
-    subcategory: "Android Tablet",
-    descriptions: "Versatile Android tablet suitable for education, entertainment, note-taking and productivity.",
-    information: {
-      brand: "Samsung",
-      processor: "Exynos 1380",
-      ram: "6GB",
-      storage: "128GB",
-      display: "10.9-inch LCD",
-      battery: "8000mAh",
-      connectivity: "WiFi",
-      warranty: "1 Year"
-    },
-    price: 52000,
-    image: "/images/products/galaxy-tab-s9-fe.jpg",
-    rating: 4.7,
-    stock: 14,
-    size: "10.9-inch"
+    title: "Kingston NV2 500GB",
+    subtitle: "500GB NVMe M.2 SSD",
+    category: "Components",
+    subcategory: "SSD",
+    description: "Compact NVMe SSD for affordable desktop upgrades.",
+    information: "Suitable for operating systems, applications and games.",
+    price: 5200,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 35,
+    storage: "500GB",
+    ssd: "NVMe",
+    interface: "PCIe 4.0",
+    readSpeed: "3500 MB/s",
+    writeSpeed: "2100 MB/s",
+    size: "M.2 2280",
+    voltage: "3.3V",
+    warranty: "3 Years"
   },
 
   {
     id: 32,
-    title: "Xiaomi Pad 6",
-    subtitle: "11-inch Performance Tablet",
-    category: "Tablet",
-    subcategory: "Android Tablet",
-    descriptions: "Powerful Android tablet with high refresh rate display for entertainment, study and productivity.",
-    information: {
-      brand: "Xiaomi",
-      processor: "Snapdragon 870",
-      ram: "8GB",
-      storage: "256GB",
-      display: "11-inch 144Hz",
-      battery: "8840mAh",
-      connectivity: "WiFi",
-      warranty: "1 Year"
-    },
-    price: 42000,
-    image: "/images/products/xiaomi-pad-6.jpg",
+    title: "Samsung 870 EVO 1TB",
+    subtitle: "1TB SATA SSD",
+    category: "Components",
+    subcategory: "SSD",
+    description: "Reliable SATA SSD for desktop and laptop upgrades.",
+    information: "Suitable for systems without NVMe support.",
+    price: 10500,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
     rating: 4.8,
-    stock: 17,
-    size: "11-inch"
+    stock: 20,
+    storage: "1TB",
+    ssd: "SATA SSD",
+    interface: "SATA III",
+    readSpeed: "560 MB/s",
+    writeSpeed: "530 MB/s",
+    size: '2.5"',
+    voltage: "5V",
+    warranty: "5 Years"
   },
 
   {
     id: 33,
-    title: "Apple iPad Air M2",
-    subtitle: "11-inch Performance Tablet",
-    category: "Tablet",
-    subcategory: "Productivity Tablet",
-    descriptions: "Powerful and portable tablet for creative work, study, entertainment and professional productivity.",
-    information: {
-      brand: "Apple",
-      processor: "Apple M2",
-      ram: "8GB",
-      storage: "128GB",
-      display: "11-inch Liquid Retina",
-      battery: "Up to 10 Hours",
-      connectivity: "WiFi",
-      warranty: "1 Year"
-    },
-    price: 78000,
-    image: "/images/products/ipad-air-m2.jpg",
-    rating: 4.9,
-    stock: 9,
-    size: "11-inch"
+    title: "Lexar NM790 2TB",
+    subtitle: "2TB PCIe 4.0 NVMe SSD",
+    category: "Components",
+    subcategory: "SSD",
+    description: "Large-capacity high-speed SSD for gaming and professional workloads.",
+    information: "Provides fast storage for large applications and games.",
+    price: 21500,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 12,
+    storage: "2TB",
+    ssd: "NVMe",
+    interface: "PCIe 4.0",
+    readSpeed: "7400 MB/s",
+    writeSpeed: "6500 MB/s",
+    size: "M.2 2280",
+    voltage: "3.3V",
+    warranty: "5 Years"
   },
+
+  // =====================================================
+  // HDD — 34 to 37
+  // =====================================================
 
   {
     id: 34,
-    title: "Lenovo Tab M11",
-    subtitle: "11-inch Family Tablet",
-    category: "Tablet",
-    subcategory: "Android Tablet",
-    descriptions: "Affordable family tablet suitable for education, streaming, browsing and everyday entertainment.",
-    information: {
-      brand: "Lenovo",
-      processor: "MediaTek Helio G88",
-      ram: "8GB",
-      storage: "128GB",
-      display: "11-inch 90Hz",
-      battery: "7040mAh",
-      connectivity: "WiFi",
-      warranty: "1 Year"
-    },
-    price: 28500,
-    image: "/images/products/lenovo-tab-m11.jpg",
-    rating: 4.4,
-    stock: 20,
-    size: "11-inch"
+    title: "Western Digital Blue 1TB HDD",
+    subtitle: "1TB Desktop Hard Drive",
+    category: "Components",
+    subcategory: "HDD",
+    description: "Reliable storage drive for desktop computers.",
+    information: "Suitable for documents, media and general storage.",
+    price: 5500,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 35,
+    storage: "1TB",
+    hdd: "SATA HDD",
+    interface: "SATA III",
+    rpm: "7200 RPM",
+    cache: "64MB",
+    size: '3.5"',
+    voltage: "5V / 12V",
+    warranty: "2 Years"
   },
 
   {
     id: 35,
-    title: "NVIDIA RTX 4060",
-    subtitle: "8GB Gaming Graphics Card",
-    category: "Graphics Card",
-    subcategory: "NVIDIA GPU",
-    descriptions: "Modern gaming graphics card designed for smooth 1080p and entry-level 1440p gaming.",
-    information: {
-      brand: "NVIDIA",
-      chipset: "GeForce RTX 4060",
-      memory: "8GB GDDR6",
-      memoryBus: "128-bit",
-      interface: "PCI Express 4.0",
-      ports: "HDMI, DisplayPort",
-      warranty: "3 Years"
-    },
-    price: 42000,
-    image: "/images/products/rtx-4060.jpg",
-    rating: 4.7,
-    stock: 13,
-    size: null
+    title: "Seagate Barracuda 2TB",
+    subtitle: "2TB Desktop Hard Drive",
+    category: "Components",
+    subcategory: "HDD",
+    description: "Large-capacity hard drive for desktop storage.",
+    information: "Ideal for media libraries and general file storage.",
+    price: 6800,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 28,
+    storage: "2TB",
+    hdd: "SATA HDD",
+    interface: "SATA III",
+    rpm: "7200 RPM",
+    cache: "256MB",
+    size: '3.5"',
+    voltage: "5V / 12V",
+    warranty: "2 Years"
   },
 
   {
     id: 36,
-    title: "NVIDIA RTX 4060 Ti",
-    subtitle: "8GB High Performance GPU",
-    category: "Graphics Card",
-    subcategory: "NVIDIA GPU",
-    descriptions: "High-performance graphics card for gaming, streaming, content creation and GPU acceleration.",
-    information: {
-      brand: "NVIDIA",
-      chipset: "GeForce RTX 4060 Ti",
-      memory: "8GB GDDR6",
-      memoryBus: "128-bit",
-      interface: "PCI Express 4.0",
-      ports: "HDMI, DisplayPort",
-      warranty: "3 Years"
-    },
-    price: 57000,
-    image: "/images/products/rtx-4060-ti.jpg",
-    rating: 4.8,
-    stock: 9,
-    size: null
+    title: "Western Digital Blue 4TB",
+    subtitle: "4TB Desktop Storage Drive",
+    category: "Components",
+    subcategory: "HDD",
+    description: "High-capacity hard drive for large data storage.",
+    information: "Suitable for backups, media and office storage.",
+    price: 10500,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 18,
+    storage: "4TB",
+    hdd: "SATA HDD",
+    interface: "SATA III",
+    rpm: "5400 RPM",
+    cache: "256MB",
+    size: '3.5"',
+    voltage: "5V / 12V",
+    warranty: "2 Years"
   },
 
   {
     id: 37,
-    title: "Gigabyte RTX 4070 Super",
-    subtitle: "12GB Advanced Gaming GPU",
-    category: "Graphics Card",
-    subcategory: "NVIDIA GPU",
-    descriptions: "Powerful GPU designed for high-refresh-rate 1440p gaming and demanding creative workloads.",
-    information: {
-      brand: "Gigabyte",
-      chipset: "GeForce RTX 4070 Super",
-      memory: "12GB GDDR6X",
-      memoryBus: "192-bit",
-      interface: "PCI Express 4.0",
-      ports: "HDMI, DisplayPort",
-      warranty: "3 Years"
-    },
-    price: 92000,
-    image: "/images/products/rtx-4070-super.jpg",
-    rating: 4.9,
-    stock: 6,
-    size: null
+    title: "Seagate IronWolf 4TB",
+    subtitle: "4TB NAS Hard Drive",
+    category: "Components",
+    subcategory: "HDD",
+    description: "NAS-focused hard drive for continuous storage workloads.",
+    information: "Designed for NAS systems and multi-user environments.",
+    price: 13500,
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 14,
+    storage: "4TB",
+    hdd: "NAS HDD",
+    interface: "SATA III",
+    rpm: "5400 RPM",
+    cache: "256MB",
+    size: '3.5"',
+    voltage: "5V / 12V",
+    warranty: "3 Years"
   },
+
+  // =====================================================
+  // GRAPHICS CARD — 38 to 44
+  // =====================================================
 
   {
     id: 38,
-    title: "AMD Radeon RX 7600",
-    subtitle: "8GB Gaming Graphics Card",
-    category: "Graphics Card",
-    subcategory: "AMD GPU",
-    descriptions: "Affordable modern graphics card for smooth 1080p gaming and everyday GPU workloads.",
-    information: {
-      brand: "AMD",
-      chipset: "Radeon RX 7600",
-      memory: "8GB GDDR6",
-      memoryBus: "128-bit",
-      interface: "PCI Express 4.0",
-      ports: "HDMI, DisplayPort",
-      warranty: "3 Years"
-    },
-    price: 39000,
-    image: "/images/products/radeon-rx-7600.jpg",
-    rating: 4.6,
+    title: "ASUS GeForce RTX 4060 8GB",
+    subtitle: "RTX 4060 Gaming Graphics Card",
+    category: "Components",
+    subcategory: "Graphics Card",
+    description: "Modern graphics card for 1080p and 1440p gaming.",
+    information: "Supports ray tracing and modern gaming technologies.",
+    price: 42000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
     stock: 12,
-    size: null
+    graphics: "GeForce RTX 4060",
+    vram: "8GB",
+    memoryType: "GDDR6",
+    memoryBus: "128-bit",
+    interface: "PCIe 4.0",
+    resolution: "7680 × 4320",
+    power: "115W",
+    voltage: "12V",
+    size: "227mm",
+    warranty: "3 Years"
   },
 
   {
     id: 39,
-    title: "Intel Core i5 14400",
-    subtitle: "10-Core Desktop Processor",
-    category: "Processor",
-    subcategory: "Intel Processor",
-    descriptions: "Balanced desktop processor for gaming, productivity, programming and everyday professional workloads.",
-    information: {
-      brand: "Intel",
-      socket: "LGA1700",
-      cores: "10",
-      threads: "16",
-      baseClock: "2.5GHz",
-      boostClock: "4.7GHz",
-      cache: "20MB",
-      warranty: "3 Years"
-    },
-    price: 28500,
-    image: "/images/products/core-i5-14400.jpg",
+    title: "Gigabyte RTX 4060 Ti 8GB",
+    subtitle: "RTX 4060 Ti Gaming GPU",
+    category: "Components",
+    subcategory: "Graphics Card",
+    description: "Performance graphics card for high-quality gaming.",
+    information: "Suitable for 1080p and 1440p gaming.",
+    price: 52000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
     rating: 4.8,
-    stock: 18,
-    size: null
+    stock: 9,
+    graphics: "GeForce RTX 4060 Ti",
+    vram: "8GB",
+    memoryType: "GDDR6",
+    memoryBus: "128-bit",
+    interface: "PCIe 4.0",
+    resolution: "7680 × 4320",
+    power: "160W",
+    voltage: "12V",
+    size: "281mm",
+    warranty: "3 Years"
   },
 
   {
     id: 40,
-    title: "Intel Core i7 14700K",
-    subtitle: "High Performance Desktop CPU",
-    category: "Processor",
-    subcategory: "Intel Processor",
-    descriptions: "High-performance processor for gaming, rendering, development, editing and demanding applications.",
-    information: {
-      brand: "Intel",
-      socket: "LGA1700",
-      cores: "20",
-      threads: "28",
-      baseClock: "3.4GHz",
-      boostClock: "5.6GHz",
-      cache: "33MB",
-      warranty: "3 Years"
-    },
-    price: 52000,
-    image: "/images/products/core-i7-14700k.jpg",
+    title: "MSI GeForce RTX 4070 12GB",
+    subtitle: "RTX 4070 Gaming Graphics Card",
+    category: "Components",
+    subcategory: "Graphics Card",
+    description: "High-performance GPU for 1440p and 4K gaming.",
+    information: "Advanced graphics card with ray tracing support.",
+    price: 78000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
     rating: 4.9,
-    stock: 8,
-    size: null
+    stock: 7,
+    graphics: "GeForce RTX 4070",
+    vram: "12GB",
+    memoryType: "GDDR6X",
+    memoryBus: "192-bit",
+    interface: "PCIe 4.0",
+    resolution: "7680 × 4320",
+    power: "200W",
+    voltage: "12V",
+    size: "308mm",
+    warranty: "3 Years"
   },
 
   {
     id: 41,
-    title: "AMD Ryzen 5 7600",
-    subtitle: "AM5 Desktop Processor",
-    category: "Processor",
-    subcategory: "AMD Processor",
-    descriptions: "Efficient modern AMD processor for gaming, programming and general high-performance desktop computing.",
-    information: {
-      brand: "AMD",
-      socket: "AM5",
-      cores: "6",
-      threads: "12",
-      baseClock: "3.8GHz",
-      boostClock: "5.1GHz",
-      cache: "38MB",
-      warranty: "3 Years"
-    },
-    price: 23500,
-    image: "/images/products/ryzen-5-7600.jpg",
-    rating: 4.8,
-    stock: 15,
-    size: null
+    title: "ASUS GeForce RTX 4070 Super 12GB",
+    subtitle: "RTX 4070 Super Gaming GPU",
+    category: "Components",
+    subcategory: "Graphics Card",
+    description: "Powerful GPU for high-refresh 1440p and 4K gaming.",
+    information: "Designed for demanding gaming and creative workloads.",
+    price: 89000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    graphics: "GeForce RTX 4070 Super",
+    vram: "12GB",
+    memoryType: "GDDR6X",
+    memoryBus: "192-bit",
+    interface: "PCIe 4.0",
+    resolution: "7680 × 4320",
+    power: "220W",
+    voltage: "12V",
+    size: "310mm",
+    warranty: "3 Years"
   },
 
   {
     id: 42,
-    title: "AMD Ryzen 7 7800X3D",
-    subtitle: "Ultimate Gaming Processor",
-    category: "Processor",
-    subcategory: "AMD Processor",
-    descriptions: "High-end gaming processor featuring large 3D cache for excellent gaming performance.",
-    information: {
-      brand: "AMD",
-      socket: "AM5",
-      cores: "8",
-      threads: "16",
-      baseClock: "4.2GHz",
-      boostClock: "5.0GHz",
-      cache: "104MB",
-      warranty: "3 Years"
-    },
-    price: 52000,
-    image: "/images/products/ryzen-7-7800x3d.jpg",
-    rating: 4.9,
-    stock: 7,
-    size: null
+    title: "AMD Radeon RX 7600 8GB",
+    subtitle: "Radeon Gaming Graphics Card",
+    category: "Components",
+    subcategory: "Graphics Card",
+    description: "Affordable gaming graphics card for modern 1080p gaming.",
+    information: "Good option for mainstream gaming systems.",
+    price: 38000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 13,
+    graphics: "Radeon RX 7600",
+    vram: "8GB",
+    memoryType: "GDDR6",
+    memoryBus: "128-bit",
+    interface: "PCIe 4.0",
+    resolution: "7680 × 4320",
+    power: "165W",
+    voltage: "12V",
+    size: "204mm",
+    warranty: "3 Years"
   },
 
   {
     id: 43,
-    title: "MSI PRO B760M-A",
-    subtitle: "DDR5 Intel Motherboard",
-    category: "Motherboard",
-    subcategory: "Intel Motherboard",
-    descriptions: "Feature-rich motherboard for modern Intel desktop processors and DDR5 memory.",
-    information: {
-      brand: "MSI",
-      chipset: "B760",
-      socket: "LGA1700",
-      memory: "DDR5",
-      memorySlots: "4",
-      expansion: "PCIe 4.0",
-      warranty: "3 Years"
-    },
-    price: 18500,
-    image: "/images/products/msi-pro-b760m.jpg",
-    rating: 4.7,
-    stock: 16,
-    size: "Micro ATX"
+    title: "Sapphire Radeon RX 7800 XT",
+    subtitle: "16GB Gaming Graphics Card",
+    category: "Components",
+    subcategory: "Graphics Card",
+    description: "High-performance Radeon GPU for 1440p gaming.",
+    information: "Large VRAM capacity for demanding modern games.",
+    price: 72000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 8,
+    graphics: "Radeon RX 7800 XT",
+    vram: "16GB",
+    memoryType: "GDDR6",
+    memoryBus: "256-bit",
+    interface: "PCIe 4.0",
+    resolution: "7680 × 4320",
+    power: "263W",
+    voltage: "12V",
+    size: "320mm",
+    warranty: "3 Years"
   },
 
   {
     id: 44,
-    title: "ASUS TUF Gaming B650",
-    subtitle: "AM5 DDR5 Gaming Motherboard",
-    category: "Motherboard",
-    subcategory: "AMD Motherboard",
-    descriptions: "Durable AM5 motherboard designed for modern Ryzen processors and high-performance gaming systems.",
-    information: {
-      brand: "ASUS",
-      chipset: "B650",
-      socket: "AM5",
-      memory: "DDR5",
-      memorySlots: "4",
-      expansion: "PCIe 4.0",
-      warranty: "3 Years"
-    },
-    price: 24500,
-    image: "/images/products/asus-tuf-b650.jpg",
-    rating: 4.8,
-    stock: 11,
-    size: "ATX"
+    title: "Gigabyte GeForce RTX 4080 Super",
+    subtitle: "16GB High-End Gaming GPU",
+    category: "Components",
+    subcategory: "Graphics Card",
+    description: "High-end graphics card for demanding 4K gaming.",
+    information: "Designed for enthusiasts and professional graphics workloads.",
+    price: 145000,
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 4,
+    graphics: "GeForce RTX 4080 Super",
+    vram: "16GB",
+    memoryType: "GDDR6X",
+    memoryBus: "256-bit",
+    interface: "PCIe 4.0",
+    resolution: "7680 × 4320",
+    power: "320W",
+    voltage: "12V",
+    size: "342mm",
+    warranty: "3 Years"
   },
+
+  // =====================================================
+  // POWER SUPPLY — 45 to 47
+  // =====================================================
 
   {
     id: 45,
-    title: "Corsair Vengeance 16GB",
-    subtitle: "DDR4 Desktop RAM",
-    category: "RAM",
-    subcategory: "DDR4 RAM",
-    descriptions: "Reliable high-performance DDR4 memory suitable for gaming, productivity and everyday desktop systems.",
-    information: {
-      brand: "Corsair",
-      capacity: "16GB",
-      type: "DDR4",
-      speed: "3200MHz",
-      configuration: "2 x 8GB",
-      voltage: "1.35V",
-      warranty: "Lifetime"
-    },
-    price: 5200,
-    image: "/images/products/corsair-vengeance-16gb.jpg",
-    rating: 4.8,
-    stock: 35,
-    size: null
+    title: "Corsair CV650 650W",
+    subtitle: "650W 80 Plus Bronze PSU",
+    category: "Components",
+    subcategory: "Power Supply",
+    description: "Reliable power supply for gaming and desktop systems.",
+    information: "650W power delivery with 80 Plus Bronze efficiency.",
+    price: 7200,
+    image: "https://images.unsplash.com/photo-1555617981-dac3880eac6b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 18,
+    power: "650W",
+    efficiency: "80 Plus Bronze",
+    voltage: "100-240V",
+    connectivity: "ATX, PCIe, SATA",
+    fanSize: "120mm",
+    size: "150 × 125 × 86 mm",
+    warranty: "3 Years"
   },
 
   {
     id: 46,
-    title: "Kingston Fury Beast 32GB",
-    subtitle: "DDR5 High Speed RAM",
-    category: "RAM",
-    subcategory: "DDR5 RAM",
-    descriptions: "High-speed DDR5 memory designed for modern gaming PCs, workstations and productivity systems.",
-    information: {
-      brand: "Kingston",
-      capacity: "32GB",
-      type: "DDR5",
-      speed: "6000MHz",
-      configuration: "2 x 16GB",
-      voltage: "1.35V",
-      warranty: "Lifetime"
-    },
-    price: 12500,
-    image: "/images/products/kingston-fury-beast-32gb.jpg",
-    rating: 4.9,
-    stock: 20,
-    size: null
+    title: "Cooler Master MWE 750",
+    subtitle: "750W 80 Plus Bronze PSU",
+    category: "Components",
+    subcategory: "Power Supply",
+    description: "Reliable 750W power supply for gaming PCs.",
+    information: "Suitable for mid-range and high-performance graphics cards.",
+    price: 8500,
+    image: "https://images.unsplash.com/photo-1555617981-dac3880eac6b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 15,
+    power: "750W",
+    efficiency: "80 Plus Bronze",
+    voltage: "100-240V",
+    connectivity: "ATX, PCIe, SATA",
+    fanSize: "120mm",
+    size: "150 × 140 × 86 mm",
+    warranty: "5 Years"
   },
 
   {
     id: 47,
-    title: "Samsung 990 EVO 1TB",
-    subtitle: "High Speed NVMe SSD",
-    category: "Storage",
-    subcategory: "NVMe SSD",
-    descriptions: "Fast NVMe solid-state drive for operating systems, applications, gaming and professional workloads.",
-    information: {
-      brand: "Samsung",
-      capacity: "1TB",
-      interface: "PCIe 5.0 x2 / PCIe 4.0 x4",
-      formFactor: "M.2 2280",
-      readSpeed: "5000MB/s",
-      writeSpeed: "4200MB/s",
-      warranty: "5 Years"
-    },
-    price: 11500,
-    image: "/images/products/samsung-990-evo-1tb.jpg",
+    title: "Corsair RM850e",
+    subtitle: "850W 80 Plus Gold Modular PSU",
+    category: "Components",
+    subcategory: "Power Supply",
+    description: "High-efficiency modular power supply for gaming systems.",
+    information: "Fully modular design for clean PC builds.",
+    price: 15500,
+    image: "https://images.unsplash.com/photo-1555617981-dac3880eac6b?auto=format&fit=crop&w=800&q=80",
     rating: 4.9,
-    stock: 28,
-    size: "M.2 2280"
+    stock: 9,
+    power: "850W",
+    efficiency: "80 Plus Gold",
+    voltage: "100-240V",
+    connectivity: "ATX, PCIe, SATA, EPS",
+    fanSize: "135mm",
+    size: "150 × 140 × 86 mm",
+    modular: "Fully Modular",
+    warranty: "7 Years"
   },
+
+  // =====================================================
+  // PC CASE — 48 to 50
+  // =====================================================
 
   {
     id: 48,
-    title: "WD Black SN770 1TB",
-    subtitle: "Gaming NVMe SSD",
-    category: "Storage",
-    subcategory: "NVMe SSD",
-    descriptions: "High-performance NVMe SSD designed for gaming, applications and fast system storage.",
-    information: {
-      brand: "Western Digital",
-      capacity: "1TB",
-      interface: "PCIe Gen4",
-      formFactor: "M.2 2280",
-      readSpeed: "5150MB/s",
-      writeSpeed: "4900MB/s",
-      warranty: "5 Years"
-    },
-    price: 10500,
-    image: "/images/products/wd-black-sn770-1tb.jpg",
+    title: "NZXT H5 Flow",
+    subtitle: "Mid Tower ATX Gaming Case",
+    category: "Components",
+    subcategory: "PC Case",
+    description: "Modern airflow-focused gaming PC case.",
+    information: "Supports ATX, Micro ATX and Mini ITX motherboards.",
+    price: 9500,
+    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=800&q=80",
     rating: 4.8,
-    stock: 24,
-    size: "M.2 2280"
+    stock: 14,
+    type: "Mid Tower",
+    motherboardSupport: "ATX, Micro ATX, Mini ITX",
+    gpuLength: "365mm",
+    cpuCoolerHeight: "165mm",
+    fanSupport: "120mm / 140mm",
+    connectivity: "USB 3.2, USB-C, Audio",
+    size: "464 × 227 × 446 mm",
+    weight: "6.6 kg",
+    color: "Black",
+    warranty: "2 Years"
   },
 
   {
     id: 49,
-    title: "Seagate Barracuda 2TB",
-    subtitle: "Desktop Internal Hard Drive",
-    category: "Storage",
-    subcategory: "Hard Drive",
-    descriptions: "Large-capacity internal hard drive suitable for documents, media, backups and general storage.",
-    information: {
-      brand: "Seagate",
-      capacity: "2TB",
-      interface: "SATA 6Gb/s",
-      rotationSpeed: "7200RPM",
-      cache: "256MB",
-      formFactor: "3.5-inch",
-      warranty: "2 Years"
-    },
-    price: 7200,
-    image: "/images/products/seagate-barracuda-2tb.jpg",
-    rating: 4.6,
-    stock: 30,
-    size: "3.5-inch"
+    title: "Corsair 4000D Airflow",
+    subtitle: "ATX Mid Tower PC Case",
+    category: "Components",
+    subcategory: "PC Case",
+    description: "Airflow-focused ATX case for gaming and workstation builds.",
+    information: "Spacious internal layout with excellent cooling support.",
+    price: 10500,
+    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 17,
+    type: "Mid Tower",
+    motherboardSupport: "ATX, Micro ATX, Mini ITX",
+    gpuLength: "360mm",
+    cpuCoolerHeight: "170mm",
+    fanSupport: "120mm / 140mm",
+    connectivity: "USB 3.0, USB-C, Audio",
+    size: "453 × 230 × 466 mm",
+    weight: "7.8 kg",
+    color: "Black",
+    warranty: "2 Years"
   },
 
   {
     id: 50,
-    title: "DeepCool CC560",
-    subtitle: "Airflow Mid Tower Gaming Case",
-    category: "PC Casing",
-    subcategory: "Mid Tower Case",
-    descriptions: "Modern airflow-focused PC case with spacious internal layout and support for gaming components.",
-    information: {
-      brand: "DeepCool",
-      motherboardSupport: "ATX / Micro ATX / Mini ITX",
-      fanSupport: "Up to 6 Fans",
-      gpuLength: "370mm",
-      radiatorSupport: "Up to 360mm",
-      frontPanel: "USB 3.0, Audio",
-      warranty: "1 Year"
-    },
-    price: 6500,
-    image: "/images/products/deepcool-cc560.jpg",
-    rating: 4.7,
-    stock: 19,
-    size: "Mid Tower"
-  },
-    // =========================
-  // BATCH 2 — PRODUCTS 51-100
-  // =========================
-
-  {
-    id: 51,
-    title: "Cooler Master MWE 650 Bronze",
-    subtitle: "650W 80 Plus Bronze Power Supply",
-    category: "Power Supply",
-    subcategory: "80 Plus PSU",
-    descriptions: "Reliable power supply designed for mainstream gaming and productivity desktop computers.",
-    information: {
-      brand: "Cooler Master",
-      wattage: "650W",
-      efficiency: "80 Plus Bronze",
-      modular: "Non-Modular",
-      fanSize: "120mm",
-      protection: "OVP / OPP / SCP",
-      warranty: "5 Years"
-    },
-    price: 7200,
-    image: "/images/products/cooler-master-mwe-650.jpg",
-    rating: 4.6,
-    stock: 24,
-    size: "650W"
-  },
-
-  {
-    id: 52,
-    title: "Corsair CX750",
-    subtitle: "750W Bronze Gaming Power Supply",
-    category: "Power Supply",
-    subcategory: "80 Plus PSU",
-    descriptions: "Dependable 750W power supply suitable for gaming PCs and systems with dedicated graphics cards.",
-    information: {
-      brand: "Corsair",
-      wattage: "750W",
-      efficiency: "80 Plus Bronze",
-      modular: "Non-Modular",
-      fanSize: "120mm",
-      protection: "OVP / OPP / SCP",
-      warranty: "5 Years"
-    },
-    price: 8500,
-    image: "/images/products/corsair-cx750.jpg",
-    rating: 4.7,
-    stock: 18,
-    size: "750W"
-  },
-
-  {
-    id: 53,
-    title: "DeepCool PK750D",
-    subtitle: "750W 80 Plus Bronze PSU",
-    category: "Power Supply",
-    subcategory: "80 Plus PSU",
-    descriptions: "Efficient power supply for gaming and workstation systems requiring dependable power delivery.",
-    information: {
-      brand: "DeepCool",
-      wattage: "750W",
-      efficiency: "80 Plus Bronze",
-      modular: "Non-Modular",
-      fanSize: "120mm",
-      protection: "OVP / OPP / SCP",
-      warranty: "5 Years"
-    },
-    price: 7800,
-    image: "/images/products/deepcool-pk750d.jpg",
-    rating: 4.5,
-    stock: 21,
-    size: "750W"
-  },
-
-  {
-    id: 54,
-    title: "Antec CSK 550",
-    subtitle: "550W Bronze Power Supply",
-    category: "Power Supply",
-    subcategory: "80 Plus PSU",
-    descriptions: "Affordable and reliable PSU for office computers and entry-level gaming systems.",
-    information: {
-      brand: "Antec",
-      wattage: "550W",
-      efficiency: "80 Plus Bronze",
-      modular: "Non-Modular",
-      fanSize: "120mm",
-      protection: "OVP / OPP / SCP",
-      warranty: "5 Years"
-    },
-    price: 5800,
-    image: "/images/products/antec-csk-550.jpg",
-    rating: 4.5,
-    stock: 27,
-    size: "550W"
-  },
-
-  {
-    id: 55,
-    title: "Thermaltake Toughpower GF A3",
-    subtitle: "850W Gold Modular PSU",
-    category: "Power Supply",
-    subcategory: "80 Plus PSU",
-    descriptions: "High-quality modular power supply designed for powerful gaming and workstation PCs.",
-    information: {
-      brand: "Thermaltake",
-      wattage: "850W",
-      efficiency: "80 Plus Gold",
-      modular: "Fully Modular",
-      fanSize: "140mm",
-      protection: "OVP / OPP / SCP / OTP",
-      warranty: "10 Years"
-    },
-    price: 15500,
-    image: "/images/products/thermaltake-gf-a3.jpg",
-    rating: 4.9,
-    stock: 8,
-    size: "850W"
-  },
-
-  {
-    id: 56,
-    title: "DeepCool AK400",
-    subtitle: "High Performance CPU Air Cooler",
-    category: "CPU Cooler",
-    subcategory: "Air Cooler",
-    descriptions: "Compact tower air cooler providing efficient cooling for mainstream desktop processors.",
-    information: {
-      brand: "DeepCool",
-      coolerType: "Air Cooler",
-      fanSize: "120mm",
-      heatPipes: "4",
-      tdp: "220W",
-      socket: "Intel / AMD",
-      warranty: "3 Years"
-    },
-    price: 3600,
-    image: "/images/products/deepcool-ak400.jpg",
-    rating: 4.8,
-    stock: 30,
-    size: "120mm"
-  },
-
-  {
-    id: 57,
-    title: "Thermalright Assassin X 120",
-    subtitle: "120mm Tower CPU Cooler",
-    category: "CPU Cooler",
-    subcategory: "Air Cooler",
-    descriptions: "Efficient tower cooler with low noise and strong thermal performance for desktop CPUs.",
-    information: {
-      brand: "Thermalright",
-      coolerType: "Air Cooler",
-      fanSize: "120mm",
-      heatPipes: "4",
-      tdp: "180W",
-      socket: "Intel / AMD",
-      warranty: "1 Year"
-    },
-    price: 3200,
-    image: "/images/products/thermalright-assassin-x.jpg",
-    rating: 4.7,
-    stock: 19,
-    size: "120mm"
-  },
-
-  {
-    id: 58,
-    title: "Cooler Master Hyper 212",
-    subtitle: "Popular Tower CPU Cooler",
-    category: "CPU Cooler",
-    subcategory: "Air Cooler",
-    descriptions: "Popular CPU tower cooler offering balanced cooling performance for gaming and productivity PCs.",
-    information: {
-      brand: "Cooler Master",
-      coolerType: "Air Cooler",
-      fanSize: "120mm",
-      heatPipes: "4",
-      tdp: "180W",
-      socket: "Intel / AMD",
-      warranty: "2 Years"
-    },
-    price: 4500,
-    image: "/images/products/hyper-212.jpg",
-    rating: 4.6,
-    stock: 22,
-    size: "120mm"
-  },
-
-  {
-    id: 59,
-    title: "DeepCool LS520 SE",
-    subtitle: "240mm Liquid CPU Cooler",
-    category: "CPU Cooler",
-    subcategory: "Liquid Cooler",
-    descriptions: "240mm all-in-one liquid cooler designed for powerful gaming processors and high-performance systems.",
-    information: {
-      brand: "DeepCool",
-      coolerType: "Liquid Cooler",
-      radiator: "240mm",
-      fans: "2 x 120mm",
-      pumpSpeed: "3100 RPM",
-      socket: "Intel / AMD",
-      warranty: "3 Years"
-    },
-    price: 8500,
-    image: "/images/products/deepcool-ls520.jpg",
-    rating: 4.8,
-    stock: 10,
-    size: "240mm"
-  },
-
-  {
-    id: 60,
-    title: "Corsair H100 RGB",
-    subtitle: "240mm Performance Liquid Cooler",
-    category: "CPU Cooler",
-    subcategory: "Liquid Cooler",
-    descriptions: "Premium 240mm liquid cooling solution for high-performance gaming and workstation processors.",
-    information: {
-      brand: "Corsair",
-      coolerType: "Liquid Cooler",
-      radiator: "240mm",
-      fans: "2 x 120mm",
-      lighting: "RGB",
-      socket: "Intel / AMD",
-      warranty: "5 Years"
-    },
-    price: 12500,
-    image: "/images/products/corsair-h100.jpg",
-    rating: 4.8,
-    stock: 7,
-    size: "240mm"
-  },
-
-  {
-    id: 61,
-    title: "Fantech Maxfit61",
-    subtitle: "Compact Mechanical Gaming Keyboard",
-    category: "Keyboard",
-    subcategory: "Mechanical Keyboard",
-    descriptions: "Compact mechanical keyboard designed for gaming, programming and daily desktop use.",
-    information: {
-      brand: "Fantech",
-      switch: "Mechanical",
-      layout: "60%",
-      connection: "USB / Wireless",
-      lighting: "RGB",
-      keycaps: "Double Shot",
-      warranty: "1 Year"
-    },
-    price: 4800,
-    image: "/images/products/fantech-maxfit61.jpg",
-    rating: 4.7,
-    stock: 25,
-    size: "60%"
-  },
-
-  {
-    id: 62,
-    title: "Redragon K552 Kumara",
-    subtitle: "87-Key Mechanical Gaming Keyboard",
-    category: "Keyboard",
-    subcategory: "Mechanical Keyboard",
-    descriptions: "Durable mechanical gaming keyboard with compact tenkeyless layout and RGB lighting.",
-    information: {
-      brand: "Redragon",
-      switch: "Outemu Mechanical",
-      layout: "TKL",
-      connection: "USB",
-      lighting: "RGB",
-      keyCount: "87 Keys",
-      warranty: "1 Year"
-    },
-    price: 3500,
-    image: "/images/products/redragon-k552.jpg",
-    rating: 4.6,
-    stock: 32,
-    size: "TKL"
-  },
-
-  {
-    id: 63,
-    title: "Keychron K2",
-    subtitle: "Wireless Mechanical Keyboard",
-    category: "Keyboard",
-    subcategory: "Mechanical Keyboard",
-    descriptions: "Wireless mechanical keyboard suitable for programming, office work and multi-device setups.",
-    information: {
-      brand: "Keychron",
-      switch: "Mechanical",
-      layout: "75%",
-      connection: "Bluetooth / USB-C",
-      lighting: "RGB",
-      battery: "4000mAh",
-      warranty: "1 Year"
-    },
-    price: 8500,
-    image: "/images/products/keychron-k2.jpg",
-    rating: 4.8,
-    stock: 11,
-    size: "75%"
-  },
-
-  {
-    id: 64,
-    title: "Logitech K120",
-    subtitle: "USB Office Keyboard",
-    category: "Keyboard",
-    subcategory: "Office Keyboard",
-    descriptions: "Simple and reliable wired keyboard for office computers, education and everyday typing.",
-    information: {
-      brand: "Logitech",
-      switch: "Membrane",
-      layout: "Full Size",
-      connection: "USB",
-      keyCount: "104 Keys",
-      spillResistance: "Yes",
-      warranty: "1 Year"
-    },
-    price: 950,
-    image: "/images/products/logitech-k120.jpg",
-    rating: 4.5,
-    stock: 50,
-    size: "Full Size"
-  },
-
-  {
-    id: 65,
-    title: "A4Tech Bloody B160N",
-    subtitle: "Gaming Keyboard and Mouse Combo",
-    category: "Keyboard",
-    subcategory: "Gaming Keyboard",
-    descriptions: "Affordable gaming keyboard designed for beginners and everyday gamers.",
-    information: {
-      brand: "A4Tech",
-      switch: "Membrane",
-      connection: "USB",
-      lighting: "RGB",
-      layout: "Full Size",
-      warranty: "1 Year"
-    },
-    price: 2200,
-    image: "/images/products/bloody-b160n.jpg",
-    rating: 4.4,
-    stock: 28,
-    size: "Full Size"
-  },
-
-  {
-    id: 66,
-    title: "Logitech G102 Lightsync",
-    subtitle: "RGB Gaming Mouse",
-    category: "Mouse",
-    subcategory: "Gaming Mouse",
-    descriptions: "Lightweight gaming mouse with accurate sensor and customizable RGB lighting.",
-    information: {
-      brand: "Logitech",
-      sensor: "8000 DPI",
-      buttons: "6",
-      connection: "USB",
-      lighting: "RGB",
-      pollingRate: "1000Hz",
-      warranty: "1 Year"
-    },
-    price: 2200,
-    image: "/images/products/logitech-g102.jpg",
-    rating: 4.8,
-    stock: 45,
-    size: "Standard"
-  },
-
-  {
-    id: 67,
-    title: "Razer DeathAdder Essential",
-    subtitle: "Ergonomic Gaming Mouse",
-    category: "Mouse",
-    subcategory: "Gaming Mouse",
-    descriptions: "Ergonomic gaming mouse designed for comfortable long gaming sessions and accurate tracking.",
-    information: {
-      brand: "Razer",
-      sensor: "6400 DPI",
-      buttons: "5",
-      connection: "USB",
-      lighting: "Green",
-      pollingRate: "1000Hz",
-      warranty: "1 Year"
-    },
-    price: 2600,
-    image: "/images/products/razer-deathadder-essential.jpg",
-    rating: 4.7,
-    stock: 21,
-    size: "Standard"
-  },
-
-  {
-    id: 68,
-    title: "Fantech Crypto VX7",
-    subtitle: "Lightweight Wireless Gaming Mouse",
-    category: "Mouse",
-    subcategory: "Gaming Mouse",
-    descriptions: "Lightweight wireless gaming mouse with high precision sensor and responsive performance.",
-    information: {
-      brand: "Fantech",
-      sensor: "12000 DPI",
-      buttons: "6",
-      connection: "Wireless / USB",
-      battery: "Rechargeable",
-      pollingRate: "1000Hz",
-      warranty: "1 Year"
-    },
-    price: 3200,
-    image: "/images/products/fantech-crypto-vx7.jpg",
-    rating: 4.7,
-    stock: 18,
-    size: "Standard"
-  },
-
-  {
-    id: 69,
-    title: "Logitech M185",
-    subtitle: "Wireless Office Mouse",
-    category: "Mouse",
-    subcategory: "Office Mouse",
-    descriptions: "Compact wireless mouse designed for office work, laptops and everyday browsing.",
-    information: {
-      brand: "Logitech",
-      sensor: "1000 DPI",
-      buttons: "3",
-      connection: "2.4GHz Wireless",
-      battery: "1 x AA",
-      range: "10m",
-      warranty: "1 Year"
-    },
-    price: 1100,
-    image: "/images/products/logitech-m185.jpg",
-    rating: 4.5,
-    stock: 55,
-    size: "Compact"
-  },
-
-  {
-    id: 70,
-    title: "Rapoo N200",
-    subtitle: "USB Optical Office Mouse",
-    category: "Mouse",
-    subcategory: "Office Mouse",
-    descriptions: "Simple wired optical mouse for desktop computers, office applications and daily use.",
-    information: {
-      brand: "Rapoo",
-      sensor: "1000 DPI",
-      buttons: "3",
-      connection: "USB",
-      cableLength: "1.2m",
-      sensorType: "Optical",
-      warranty: "1 Year"
-    },
-    price: 550,
-    image: "/images/products/rapoo-n200.jpg",
-    rating: 4.4,
-    stock: 70,
-    size: "Standard"
-  },
-
-  {
-    id: 71,
-    title: "HyperX Cloud III",
-    subtitle: "Wired Gaming Headset",
-    category: "Headphone",
-    subcategory: "Gaming Headset",
-    descriptions: "Comfortable gaming headset with clear audio, microphone and long-session comfort.",
-    information: {
-      brand: "HyperX",
-      driver: "53mm",
-      connection: "3.5mm / USB",
-      microphone: "Detachable",
-      surround: "DTS Headphone:X",
-      compatibility: "PC / Console",
-      warranty: "2 Years"
-    },
-    price: 11500,
-    image: "/images/products/hyperx-cloud-iii.jpg",
-    rating: 4.8,
-    stock: 13,
-    size: "Over Ear"
-  },
-
-  {
-    id: 72,
-    title: "Razer BlackShark V2",
-    subtitle: "Esports Gaming Headset",
-    category: "Headphone",
-    subcategory: "Gaming Headset",
-    descriptions: "Gaming headset designed for competitive gaming with detailed audio and clear voice communication.",
-    information: {
-      brand: "Razer",
-      driver: "50mm",
-      connection: "3.5mm",
-      microphone: "Detachable",
-      surround: "7.1 Surround",
-      compatibility: "PC / Console",
-      warranty: "1 Year"
-    },
-    price: 9500,
-    image: "/images/products/razer-blackshark-v2.jpg",
-    rating: 4.7,
-    stock: 10,
-    size: "Over Ear"
-  },
-
-  {
-    id: 73,
-    title: "Sony WH-CH520",
-    subtitle: "Wireless On-Ear Headphone",
-    category: "Headphone",
-    subcategory: "Wireless Headphone",
-    descriptions: "Lightweight wireless headphone with long battery life for music, calls and everyday entertainment.",
-    information: {
-      brand: "Sony",
-      connection: "Bluetooth 5.2",
-      battery: "Up to 50 Hours",
-      microphone: "Built-in",
-      charging: "USB-C",
-      audio: "Stereo",
-      warranty: "1 Year"
-    },
-    price: 4500,
-    image: "/images/products/sony-wh-ch520.jpg",
-    rating: 4.7,
-    stock: 24,
-    size: "On Ear"
-  },
-
-  {
-    id: 74,
-    title: "JBL Tune 760NC",
-    subtitle: "Wireless Noise Cancelling Headphone",
-    category: "Headphone",
-    subcategory: "Wireless Headphone",
-    descriptions: "Wireless over-ear headphone featuring active noise cancellation and long battery life.",
-    information: {
-      brand: "JBL",
-      connection: "Bluetooth 5.0",
-      battery: "Up to 50 Hours",
-      noiseCancellation: "Active ANC",
-      microphone: "Built-in",
-      charging: "USB-C",
-      warranty: "1 Year"
-    },
-    price: 8500,
-    image: "/images/products/jbl-tune-760nc.jpg",
-    rating: 4.6,
-    stock: 15,
-    size: "Over Ear"
-  },
-
-  {
-    id: 75,
-    title: "Anker Soundcore Q20i",
-    subtitle: "Hybrid Noise Cancelling Headphone",
-    category: "Headphone",
-    subcategory: "Wireless Headphone",
-    descriptions: "Comfortable wireless headphone with hybrid active noise cancellation and extended battery life.",
-    information: {
-      brand: "Anker",
-      connection: "Bluetooth 5.0",
-      battery: "40 Hours ANC",
-      noiseCancellation: "Hybrid ANC",
-      microphone: "Built-in",
-      charging: "USB-C",
-      warranty: "18 Months"
-    },
-    price: 5200,
-    image: "/images/products/soundcore-q20i.jpg",
-    rating: 4.7,
-    stock: 19,
-    size: "Over Ear"
-  },
-
-  {
-    id: 76,
-    title: "TP-Link Archer C6",
-    subtitle: "AC1200 Dual Band WiFi Router",
-    category: "Networking",
-    subcategory: "WiFi Router",
-    descriptions: "Dual-band wireless router suitable for home internet, streaming, browsing and small offices.",
-    information: {
-      brand: "TP-Link",
-      wirelessSpeed: "1200Mbps",
-      bands: "2.4GHz + 5GHz",
-      ports: "4 x LAN",
-      antennas: "4 External",
-      security: "WPA/WPA2",
-      warranty: "1 Year"
-    },
-    price: 3200,
-    image: "/images/products/tp-link-archer-c6.jpg",
-    rating: 4.7,
-    stock: 40,
-    size: "AC1200"
-  },
-
-  {
-    id: 77,
-    title: "TP-Link Archer AX23",
-    subtitle: "AX1800 WiFi 6 Router",
-    category: "Networking",
-    subcategory: "WiFi Router",
-    descriptions: "Modern WiFi 6 router offering fast wireless connectivity for homes and small offices.",
-    information: {
-      brand: "TP-Link",
-      wirelessSpeed: "1800Mbps",
-      standard: "WiFi 6",
-      bands: "2.4GHz + 5GHz",
-      ports: "4 x Gigabit LAN",
-      antennas: "4 External",
-      warranty: "1 Year"
-    },
-    price: 5800,
-    image: "/images/products/tp-link-archer-ax23.jpg",
-    rating: 4.8,
-    stock: 22,
-    size: "AX1800"
-  },
-
-  {
-    id: 78,
-    title: "Tenda AC10",
-    subtitle: "AC1200 Smart Dual Band Router",
-    category: "Networking",
-    subcategory: "WiFi Router",
-    descriptions: "Affordable dual-band router for home internet, streaming and connected devices.",
-    information: {
-      brand: "Tenda",
-      wirelessSpeed: "1200Mbps",
-      bands: "2.4GHz + 5GHz",
-      ports: "3 x LAN",
-      antennas: "4 External",
-      security: "WPA/WPA2",
-      warranty: "1 Year"
-    },
-    price: 2850,
-    image: "/images/products/tenda-ac10.jpg",
-    rating: 4.5,
-    stock: 34,
-    size: "AC1200"
-  },
-
-  {
-    id: 79,
-    title: "Mercusys MR70X",
-    subtitle: "AX1800 WiFi 6 Router",
-    category: "Networking",
-    subcategory: "WiFi Router",
-    descriptions: "Affordable WiFi 6 router designed for fast home networking and multiple connected devices.",
-    information: {
-      brand: "Mercusys",
-      wirelessSpeed: "1800Mbps",
-      standard: "WiFi 6",
-      bands: "2.4GHz + 5GHz",
-      ports: "3 x Gigabit",
-      antennas: "4 External",
-      warranty: "1 Year"
-    },
-    price: 4100,
-    image: "/images/products/mercusys-mr70x.jpg",
-    rating: 4.6,
-    stock: 26,
-    size: "AX1800"
-  },
-
-  {
-    id: 80,
-    title: "D-Link DGS-108",
-    subtitle: "8-Port Gigabit Network Switch",
-    category: "Networking",
-    subcategory: "Network Switch",
-    descriptions: "Compact unmanaged Gigabit switch for expanding wired network connections at home or office.",
-    information: {
-      brand: "D-Link",
-      ports: "8 x Gigabit",
-      switchingCapacity: "16Gbps",
-      management: "Unmanaged",
-      installation: "Plug and Play",
-      power: "External Adapter",
-      warranty: "1 Year"
-    },
-    price: 2800,
-    image: "/images/products/dlink-dgs-108.jpg",
-    rating: 4.7,
-    stock: 31,
-    size: "8 Port"
-  },
-
-  {
-    id: 81,
-    title: "Epson EcoTank L3250",
-    subtitle: "All-in-One Ink Tank Printer",
-    category: "Printer",
-    subcategory: "Ink Tank Printer",
-    descriptions: "All-in-one ink tank printer for home, school and small office printing, scanning and copying.",
-    information: {
-      brand: "Epson",
-      printerType: "Ink Tank",
-      functions: "Print / Scan / Copy",
-      connectivity: "USB / WiFi",
-      printSpeed: "Black 10 ipm",
-      paperSize: "A4",
-      warranty: "1 Year"
-    },
-    price: 20500,
-    image: "/images/products/epson-l3250.jpg",
-    rating: 4.8,
-    stock: 15,
-    size: "A4"
-  },
-
-  {
-    id: 82,
-    title: "Canon PIXMA G3010",
-    subtitle: "Wireless Ink Tank Printer",
-    category: "Printer",
-    subcategory: "Ink Tank Printer",
-    descriptions: "Wireless multifunction printer with refillable ink tanks for economical home and office printing.",
-    information: {
-      brand: "Canon",
-      printerType: "Ink Tank",
-      functions: "Print / Scan / Copy",
-      connectivity: "USB / WiFi",
-      printSpeed: "Black 8.8 ipm",
-      paperSize: "A4",
-      warranty: "1 Year"
-    },
-    price: 18500,
-    image: "/images/products/canon-g3010.jpg",
-    rating: 4.6,
-    stock: 17,
-    size: "A4"
-  },
-
-  {
-    id: 83,
-    title: "HP Smart Tank 580",
-    subtitle: "Wireless All-in-One Printer",
-    category: "Printer",
-    subcategory: "Ink Tank Printer",
-    descriptions: "High-yield ink tank printer designed for economical home, education and small office printing.",
-    information: {
-      brand: "HP",
-      printerType: "Ink Tank",
-      functions: "Print / Scan / Copy",
-      connectivity: "USB / WiFi",
-      mobilePrinting: "HP Smart App",
-      paperSize: "A4",
-      warranty: "1 Year"
-    },
-    price: 22000,
-    image: "/images/products/hp-smart-tank-580.jpg",
-    rating: 4.7,
-    stock: 12,
-    size: "A4"
-  },
-
-  {
-    id: 84,
-    title: "Brother DCP-T420W",
-    subtitle: "Wireless Ink Tank Multifunction Printer",
-    category: "Printer",
-    subcategory: "Ink Tank Printer",
-    descriptions: "Economical wireless ink tank printer for home and small office document printing.",
-    information: {
-      brand: "Brother",
-      printerType: "Ink Tank",
-      functions: "Print / Scan / Copy",
-      connectivity: "USB / WiFi",
-      paperSize: "A4",
-      mobilePrinting: "Brother Mobile Connect",
-      warranty: "1 Year"
-    },
-    price: 19500,
-    image: "/images/products/brother-dcp-t420w.jpg",
-    rating: 4.6,
-    stock: 10,
-    size: "A4"
-  },
-
-  {
-    id: 85,
-    title: "HP LaserJet M111w",
-    subtitle: "Compact Wireless Laser Printer",
-    category: "Printer",
-    subcategory: "Laser Printer",
-    descriptions: "Compact monochrome laser printer designed for fast and efficient document printing.",
-    information: {
-      brand: "HP",
-      printerType: "Monochrome Laser",
-      functions: "Print",
-      connectivity: "USB / WiFi",
-      printSpeed: "20 ppm",
-      paperSize: "A4",
-      warranty: "1 Year"
-    },
+    title: "Lian Li Lancool III",
+    subtitle: "Premium ATX Gaming Case",
+    category: "Components",
+    subcategory: "PC Case",
+    description: "Premium high-airflow case designed for powerful gaming PCs.",
+    information: "Large internal space with extensive cooling and component support.",
     price: 16500,
-    image: "/images/products/hp-laserjet-m111w.jpg",
-    rating: 4.5,
-    stock: 9,
-    size: "A4"
-  },
-
-  {
-    id: 86,
-    title: "Canon EOS R50",
-    subtitle: "24MP Mirrorless Camera",
-    category: "Camera",
-    subcategory: "Mirrorless Camera",
-    descriptions: "Compact mirrorless camera suitable for photography, content creation and beginner videography.",
-    information: {
-      brand: "Canon",
-      sensor: "24.2MP APS-C",
-      lensMount: "RF Mount",
-      video: "4K",
-      autofocus: "Dual Pixel CMOS AF",
-      connectivity: "WiFi / Bluetooth",
-      warranty: "1 Year"
-    },
-    price: 92000,
-    image: "/images/products/canon-eos-r50.jpg",
-    rating: 4.8,
-    stock: 5,
-    size: "APS-C"
-  },
-
-  {
-    id: 87,
-    title: "Sony Alpha ZV-E10",
-    subtitle: "Content Creator Mirrorless Camera",
-    category: "Camera",
-    subcategory: "Mirrorless Camera",
-    descriptions: "Compact interchangeable-lens camera designed for vloggers, creators and photography enthusiasts.",
-    information: {
-      brand: "Sony",
-      sensor: "24.2MP APS-C",
-      lensMount: "E Mount",
-      video: "4K",
-      autofocus: "Real-time Tracking",
-      connectivity: "WiFi / Bluetooth",
-      warranty: "1 Year"
-    },
-    price: 88000,
-    image: "/images/products/sony-zv-e10.jpg",
-    rating: 4.8,
-    stock: 6,
-    size: "APS-C"
-  },
-
-  {
-    id: 88,
-    title: "Nikon Z30",
-    subtitle: "Vlogging Mirrorless Camera",
-    category: "Camera",
-    subcategory: "Mirrorless Camera",
-    descriptions: "Compact mirrorless camera designed for vlogging, social media content and everyday photography.",
-    information: {
-      brand: "Nikon",
-      sensor: "20.9MP APS-C",
-      lensMount: "Z Mount",
-      video: "4K UHD",
-      autofocus: "Eye Detection",
-      connectivity: "WiFi / Bluetooth",
-      warranty: "1 Year"
-    },
-    price: 85000,
-    image: "/images/products/nikon-z30.jpg",
-    rating: 4.7,
-    stock: 7,
-    size: "APS-C"
-  },
-
-  {
-    id: 89,
-    title: "GoPro HERO12 Black",
-    subtitle: "5.3K Action Camera",
-    category: "Camera",
-    subcategory: "Action Camera",
-    descriptions: "Rugged action camera designed for travel, sports, adventure recording and outdoor content.",
-    information: {
-      brand: "GoPro",
-      sensor: "1/1.9-inch",
-      video: "5.3K 60fps",
-      stabilization: "HyperSmooth 6.0",
-      waterproof: "10m",
-      connectivity: "WiFi / Bluetooth",
-      warranty: "1 Year"
-    },
-    price: 52000,
-    image: "/images/products/gopro-hero12.jpg",
-    rating: 4.8,
-    stock: 8,
-    size: "Action Camera"
-  },
-
-  {
-    id: 90,
-    title: "DJI Osmo Action 4",
-    subtitle: "4K Adventure Action Camera",
-    category: "Camera",
-    subcategory: "Action Camera",
-    descriptions: "Durable action camera with strong low-light performance and stabilization for adventure recording.",
-    information: {
-      brand: "DJI",
-      sensor: "1/1.3-inch",
-      video: "4K 120fps",
-      stabilization: "RockSteady 3.0",
-      waterproof: "18m",
-      connectivity: "WiFi / Bluetooth",
-      warranty: "1 Year"
-    },
-    price: 48000,
-    image: "/images/products/dji-osmo-action-4.jpg",
-    rating: 4.8,
-    stock: 6,
-    size: "Action Camera"
-  },
-
-  {
-    id: 91,
-    title: "PlayStation 5 Slim",
-    subtitle: "Next Generation Gaming Console",
-    category: "Gaming",
-    subcategory: "Gaming Console",
-    descriptions: "Powerful gaming console offering high-quality graphics, fast loading and a large game library.",
-    information: {
-      brand: "Sony",
-      storage: "1TB SSD",
-      resolution: "Up to 4K",
-      frameRate: "Up to 120fps",
-      connectivity: "WiFi / Bluetooth",
-      opticalDrive: "Blu-ray",
-      warranty: "1 Year"
-    },
-    price: 78000,
-    image: "/images/products/ps5-slim.jpg",
+    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=800&q=80",
     rating: 4.9,
-    stock: 7,
-    size: "Slim"
-  },
+    stock: 8,
+    type: "Full Mid Tower",
+    motherboardSupport: "ATX, Micro ATX, Mini ITX",
+    gpuLength: "435mm",
+    cpuCoolerHeight: "187mm",
+    fanSupport: "120mm / 140mm",
+    connectivity: "USB 3.0, USB-C, Audio",
+    size: "526 × 238 × 523 mm",
+    weight: "10.1 kg",
+    color: "Black",
+    warranty: "2 Years"
+  }
+];
+
+// ============================================================
+// ADDITIONAL PRODUCTS 401–660
+// ============================================================
+
+const createProducts = (startId, items) => {
+  return items.map((item, index) => ({
+    id: startId + index,
+    title: item.title,
+    subtitle: item.subtitle,
+    category: item.category,
+    subcategory: item.subcategory,
+    categoryPath: item.categoryPath,
+    description: item.description,
+    information: item.information,
+    price: item.price,
+    image: item.image,
+    rating: item.rating ?? 4.6,
+    stock: item.stock ?? 10,
+    size: item.size,
+
+    ...(item.processor && {
+      processor: item.processor,
+    }),
+
+    ...(item.generation && {
+      generation: item.generation,
+    }),
+
+    ...(item.ram && {
+      ram: item.ram,
+    }),
+
+    ...(item.ssd && {
+      ssd: item.ssd,
+    }),
+
+    ...(item.graphicsCard && {
+      graphicsCard: item.graphicsCard,
+    }),
+  }));
+};
+
+
+// ============================================================
+// LAPTOP PRODUCTS 401–440
+// ============================================================
+
+const laptopProducts = createProducts(401, [
 
   {
-    id: 92,
-    title: "Xbox Series X",
-    subtitle: "4K Gaming Console",
-    category: "Gaming",
-    subcategory: "Gaming Console",
-    descriptions: "High-performance gaming console designed for 4K gaming and fast loading experiences.",
-    information: {
-      brand: "Microsoft",
-      storage: "1TB SSD",
-      resolution: "Up to 4K",
-      frameRate: "Up to 120fps",
-      connectivity: "WiFi / Bluetooth",
-      opticalDrive: "4K UHD Blu-ray",
-      warranty: "1 Year"
-    },
+    title: "Dell Inspiron 15 Core i5 12th Gen",
+    subtitle: "Everyday Business Laptop",
+    category: "Laptop",
+    subcategory: "Business Laptop",
+    categoryPath: "laptop/business-laptop",
+    description: "Reliable laptop for business, study and everyday productivity.",
+    information: "Intel Core i5 12th Gen, 16GB RAM, 512GB SSD and 15.6-inch display.",
     price: 72000,
-    image: "/images/products/xbox-series-x.jpg",
-    rating: 4.8,
-    stock: 5,
-    size: "Standard"
-  },
-
-  {
-    id: 93,
-    title: "Nintendo Switch OLED",
-    subtitle: "Hybrid Gaming Console",
-    category: "Gaming",
-    subcategory: "Gaming Console",
-    descriptions: "Flexible hybrid console that can be used as a handheld device or connected to a television.",
-    information: {
-      brand: "Nintendo",
-      storage: "64GB",
-      display: "7-inch OLED",
-      resolution: "720p Handheld",
-      connectivity: "WiFi / Bluetooth",
-      battery: "4.5-9 Hours",
-      warranty: "1 Year"
-    },
-    price: 48000,
-    image: "/images/products/nintendo-switch-oled.jpg",
-    rating: 4.8,
-    stock: 8,
-    size: "7-inch"
-  },
-
-  {
-    id: 94,
-    title: "ASUS ROG Ally",
-    subtitle: "Portable Windows Gaming Console",
-    category: "Gaming",
-    subcategory: "Gaming Console",
-    descriptions: "Portable Windows gaming device for playing PC games on the go.",
-    information: {
-      brand: "ASUS",
-      processor: "AMD Ryzen Z1 Extreme",
-      ram: "16GB LPDDR5",
-      storage: "512GB SSD",
-      display: "7-inch 120Hz",
-      battery: "40Wh",
-      warranty: "1 Year"
-    },
-    price: 68000,
-    image: "/images/products/asus-rog-ally.jpg",
+    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
     rating: 4.7,
-    stock: 6,
-    size: "7-inch"
-  },
-
-  {
-    id: 95,
-    title: "8BitDo Ultimate Controller",
-    subtitle: "Wireless Gaming Controller",
-    category: "Gaming",
-    subcategory: "Gaming Accessory",
-    descriptions: "Wireless gaming controller designed for PC, Switch and compatible gaming platforms.",
-    information: {
-      brand: "8BitDo",
-      connection: "Bluetooth / 2.4GHz",
-      battery: "Rechargeable",
-      vibration: "Dual Vibration",
-      compatibility: "PC / Switch",
-      charging: "USB-C",
-      warranty: "1 Year"
-    },
-    price: 6200,
-    image: "/images/products/8bitdo-ultimate.jpg",
-    rating: 4.8,
     stock: 14,
-    size: "Standard"
+    size: "15.6 inch",
+    processor: "Core i5",
+    generation: "12th Gen",
+    ram: "16GB",
+    ssd: "512GB",
   },
 
   {
-    id: 96,
-    title: "JBL Flip 6",
-    subtitle: "Portable Bluetooth Speaker",
-    category: "Speaker",
-    subcategory: "Bluetooth Speaker",
-    descriptions: "Portable waterproof Bluetooth speaker with powerful sound for indoor and outdoor listening.",
-    information: {
-      brand: "JBL",
-      output: "30W",
-      connectivity: "Bluetooth 5.1",
-      battery: "Up to 12 Hours",
-      waterproof: "IP67",
-      charging: "USB-C",
-      warranty: "1 Year"
-    },
-    price: 10500,
-    image: "/images/products/jbl-flip-6.jpg",
-    rating: 4.8,
-    stock: 18,
-    size: "Portable"
-  },
-
-  {
-    id: 97,
-    title: "Anker Soundcore 3",
-    subtitle: "Portable Wireless Speaker",
-    category: "Speaker",
-    subcategory: "Bluetooth Speaker",
-    descriptions: "Compact Bluetooth speaker with strong battery life and balanced sound for everyday listening.",
-    information: {
-      brand: "Anker",
-      output: "16W",
-      connectivity: "Bluetooth 5.0",
-      battery: "Up to 24 Hours",
-      waterproof: "IPX7",
-      charging: "USB-C",
-      warranty: "18 Months"
-    },
-    price: 6200,
-    image: "/images/products/soundcore-3.jpg",
+    title: "HP Pavilion 15 Core i5 13th Gen",
+    subtitle: "Modern Student Laptop",
+    category: "Laptop",
+    subcategory: "Student Laptop",
+    categoryPath: "laptop/student-laptop",
+    description: "Modern laptop for students, office work and entertainment.",
+    information: "Intel Core i5 13th Gen, 16GB RAM, 512GB SSD and 15.6-inch display.",
+    price: 78000,
+    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
     rating: 4.7,
-    stock: 25,
-    size: "Portable"
-  },
-
-  {
-    id: 98,
-    title: "Edifier R1280DB",
-    subtitle: "Bluetooth Bookshelf Speaker",
-    category: "Speaker",
-    subcategory: "Desktop Speaker",
-    descriptions: "Powered bookshelf speaker system suitable for computers, televisions, music and home entertainment.",
-    information: {
-      brand: "Edifier",
-      output: "42W RMS",
-      connectivity: "Bluetooth / Optical / RCA",
-      drivers: "4-inch Woofer",
-      remote: "Wireless Remote",
-      enclosure: "Wood",
-      warranty: "1 Year"
-    },
-    price: 11500,
-    image: "/images/products/edifier-r1280db.jpg",
-    rating: 4.8,
-    stock: 11,
-    size: "Bookshelf"
-  },
-
-  {
-    id: 99,
-    title: "Creative Pebble V3",
-    subtitle: "Compact USB Desktop Speaker",
-    category: "Speaker",
-    subcategory: "Desktop Speaker",
-    descriptions: "Compact desktop speakers designed for computers, laptops and small workspaces.",
-    information: {
-      brand: "Creative",
-      output: "8W RMS",
-      connectivity: "USB-C / Bluetooth",
-      drivers: "2.25-inch",
-      power: "USB",
-      controls: "Front Volume",
-      warranty: "1 Year"
-    },
-    price: 4200,
-    image: "/images/products/creative-pebble-v3.jpg",
-    rating: 4.6,
-    stock: 20,
-    size: "Compact"
-  },
-
-  {
-    id: 100,
-    title: "F&D A180X",
-    subtitle: "2.1 Channel Multimedia Speaker",
-    category: "Speaker",
-    subcategory: "Desktop Speaker",
-    descriptions: "2.1 channel multimedia speaker system designed for computers, movies, music and gaming.",
-    information: {
-      brand: "F&D",
-      output: "42W RMS",
-      connectivity: "Bluetooth / USB / AUX",
-      channels: "2.1",
-      subwoofer: "4-inch",
-      remote: "Wireless Remote",
-      warranty: "1 Year"
-    },
-    price: 4800,
-    image: "/images/products/fd-a180x.jpg",
-    rating: 4.5,
-    stock: 16,
-    size: "2.1 Channel"
-  },
-  // =========================
-  // BATCH 3 — PRODUCTS 101-150
-  // =========================
-
-  {
-    id: 101,
-    title: "Samsung 870 EVO 500GB SATA SSD",
-    subtitle: "500GB 2.5-inch SATA III SSD",
-    category: "Storage",
-    subcategory: "SATA SSD",
-    descriptions: "Reliable SATA SSD designed for faster boot times, application loading and everyday computing.",
-    information: {
-      brand: "Samsung",
-      capacity: "500GB",
-      interface: "SATA III 6Gb/s",
-      formFactor: "2.5-inch",
-      readSpeed: "Up to 560MB/s",
-      writeSpeed: "Up to 530MB/s",
-      warranty: "5 Years"
-    },
-    price: 6200,
-    image: "/images/products/samsung-870-evo-500gb.jpg",
-    rating: 4.8,
-    stock: 18,
-    size: "2.5-inch"
-  },
-
-  {
-    id: 102,
-    title: "Crucial BX500 1TB SATA SSD",
-    subtitle: "1TB 2.5-inch SATA SSD",
-    category: "Storage",
-    subcategory: "SATA SSD",
-    descriptions: "Affordable 1TB SATA SSD suitable for desktop and laptop upgrades.",
-    information: {
-      brand: "Crucial",
-      capacity: "1TB",
-      interface: "SATA III",
-      formFactor: "2.5-inch",
-      readSpeed: "Up to 540MB/s",
-      writeSpeed: "Up to 500MB/s",
-      warranty: "3 Years"
-    },
-    price: 8200,
-    image: "/images/products/crucial-bx500-1tb.jpg",
-    rating: 4.6,
-    stock: 25,
-    size: "2.5-inch"
-  },
-
-  {
-    id: 103,
-    title: "WD Blue SN580 1TB NVMe SSD",
-    subtitle: "1TB PCIe Gen4 NVMe SSD",
-    category: "Storage",
-    subcategory: "NVMe SSD",
-    descriptions: "High-speed PCIe Gen4 NVMe SSD designed for gaming, productivity and content creation.",
-    information: {
-      brand: "Western Digital",
-      capacity: "1TB",
-      interface: "PCIe Gen4 x4",
-      formFactor: "M.2 2280",
-      readSpeed: "Up to 4150MB/s",
-      writeSpeed: "Up to 4150MB/s",
-      warranty: "5 Years"
-    },
-    price: 8500,
-    image: "/images/products/wd-blue-sn580-1tb.jpg",
-    rating: 4.8,
-    stock: 20,
-    size: "M.2 2280"
-  },
-
-  {
-    id: 104,
-    title: "Kingston NV2 1TB NVMe SSD",
-    subtitle: "1TB PCIe 4.0 NVMe SSD",
-    category: "Storage",
-    subcategory: "NVMe SSD",
-    descriptions: "Compact and fast NVMe storage solution for modern desktops and laptops.",
-    information: {
-      brand: "Kingston",
-      capacity: "1TB",
-      interface: "PCIe 4.0 x4",
-      formFactor: "M.2 2280",
-      readSpeed: "Up to 3500MB/s",
-      writeSpeed: "Up to 2100MB/s",
-      warranty: "3 Years"
-    },
-    price: 7800,
-    image: "/images/products/kingston-nv2-1tb.jpg",
-    rating: 4.6,
-    stock: 30,
-    size: "M.2 2280"
-  },
-
-  {
-    id: 105,
-    title: "Lexar NM790 2TB NVMe SSD",
-    subtitle: "2TB PCIe Gen4 Performance SSD",
-    category: "Storage",
-    subcategory: "NVMe SSD",
-    descriptions: "High-capacity high-performance NVMe SSD suitable for gaming and professional workloads.",
-    information: {
-      brand: "Lexar",
-      capacity: "2TB",
-      interface: "PCIe Gen4 x4",
-      formFactor: "M.2 2280",
-      readSpeed: "Up to 7400MB/s",
-      writeSpeed: "Up to 6500MB/s",
-      warranty: "5 Years"
-    },
-    price: 18500,
-    image: "/images/products/lexar-nm790-2tb.jpg",
-    rating: 4.9,
-    stock: 10,
-    size: "M.2 2280"
-  },
-
-  {
-    id: 106,
-    title: "Samsung T7 1TB Portable SSD",
-    subtitle: "USB 3.2 Gen2 Portable SSD",
-    category: "Storage",
-    subcategory: "External SSD",
-    descriptions: "Compact portable SSD with fast transfer speeds for backup and mobile storage.",
-    information: {
-      brand: "Samsung",
-      capacity: "1TB",
-      interface: "USB 3.2 Gen2",
-      readSpeed: "Up to 1050MB/s",
-      writeSpeed: "Up to 1000MB/s",
-      encryption: "AES 256-bit",
-      warranty: "3 Years"
-    },
-    price: 13500,
-    image: "/images/products/samsung-t7-1tb.jpg",
-    rating: 4.8,
-    stock: 14,
-    size: "Compact"
-  },
-
-  {
-    id: 107,
-    title: "SanDisk Extreme Portable SSD 1TB",
-    subtitle: "USB-C Rugged Portable SSD",
-    category: "Storage",
-    subcategory: "External SSD",
-    descriptions: "Durable portable SSD designed for fast file transfers and outdoor use.",
-    information: {
-      brand: "SanDisk",
-      capacity: "1TB",
-      interface: "USB-C",
-      readSpeed: "Up to 1050MB/s",
-      writeSpeed: "Up to 1000MB/s",
-      protection: "IP65",
-      warranty: "5 Years"
-    },
-    price: 14500,
-    image: "/images/products/sandisk-extreme-1tb.jpg",
-    rating: 4.8,
     stock: 12,
-    size: "Compact"
+    size: "15.6 inch",
+    processor: "Core i5",
+    generation: "13th Gen",
+    ram: "16GB",
+    ssd: "512GB",
   },
 
   {
-    id: 108,
-    title: "Seagate Expansion 2TB External HDD",
-    subtitle: "USB 3.0 Portable External Hard Drive",
-    category: "Storage",
-    subcategory: "External HDD",
-    descriptions: "Portable 2TB external hard drive for backup, media storage and everyday file management.",
-    information: {
-      brand: "Seagate",
-      capacity: "2TB",
-      interface: "USB 3.0",
-      RPM: "5400 RPM",
-      compatibility: "Windows, macOS",
-      warranty: "2 Years"
-    },
-    price: 6800,
-    image: "/images/products/seagate-expansion-2tb.jpg",
-    rating: 4.6,
-    stock: 22,
-    size: "2.5-inch"
-  },
-
-  {
-    id: 109,
-    title: "WD Purple 4TB Surveillance HDD",
-    subtitle: "4TB SATA Surveillance Hard Drive",
-    category: "Storage",
-    subcategory: "HDD",
-    descriptions: "Surveillance-grade hard drive designed for continuous video recording systems.",
-    information: {
-      brand: "Western Digital",
-      capacity: "4TB",
-      interface: "SATA III",
-      RPM: "5400 RPM",
-      cache: "256MB",
-      workload: "180TB/year",
-      warranty: "3 Years"
-    },
-    price: 10500,
-    image: "/images/products/wd-purple-4tb.jpg",
-    rating: 4.7,
-    stock: 16,
-    size: "3.5-inch"
-  },
-
-  {
-    id: 110,
-    title: "Toshiba P300 2TB HDD",
-    subtitle: "2TB 7200RPM Desktop Hard Drive",
-    category: "Storage",
-    subcategory: "HDD",
-    descriptions: "High-capacity desktop hard drive suitable for storage, media and general computing.",
-    information: {
-      brand: "Toshiba",
-      capacity: "2TB",
-      interface: "SATA III",
-      RPM: "7200 RPM",
-      cache: "64MB",
-      formFactor: "3.5-inch",
-      warranty: "2 Years"
-    },
-    price: 7200,
-    image: "/images/products/toshiba-p300-2tb.jpg",
+    title: "Lenovo IdeaPad Slim 3 Ryzen 5",
+    subtitle: "Affordable Student Laptop",
+    category: "Laptop",
+    subcategory: "Student Laptop",
+    categoryPath: "laptop/student-laptop",
+    description: "Affordable laptop for students and everyday computing.",
+    information: "AMD Ryzen 5 processor, 8GB RAM, 512GB SSD and 15.6-inch display.",
+    price: 58000,
+    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
     rating: 4.5,
-    stock: 24,
-    size: "3.5-inch"
+    stock: 18,
+    size: "15.6 inch",
+    processor: "Ryzen 5",
+    generation: "7000 Series",
+    ram: "8GB",
+    ssd: "512GB",
   },
 
   {
-    id: 111,
-    title: "ASUS PRIME B760M-A WIFI",
-    subtitle: "Intel B760 DDR5 Micro ATX Motherboard",
-    category: "Components",
-    subcategory: "Motherboard",
-    descriptions: "Feature-rich Intel motherboard with DDR5 memory and integrated wireless connectivity.",
-    information: {
-      brand: "ASUS",
-      chipset: "Intel B760",
-      socket: "LGA1700",
-      memory: "DDR5",
-      maxMemory: "128GB",
-      wireless: "Wi-Fi 6",
-      formFactor: "Micro ATX"
-    },
-    price: 18500,
-    image: "/images/products/asus-prime-b760m-a-wifi.jpg",
+    title: "ASUS TUF Gaming F15 Core i5",
+    subtitle: "Gaming Laptop",
+    category: "Laptop",
+    subcategory: "Gaming Laptop",
+    categoryPath: "laptop/gaming-laptop",
+    description: "Gaming laptop designed for high-performance gaming and multitasking.",
+    information: "Intel Core i5 processor, 16GB RAM, 512GB SSD and RTX graphics.",
+    price: 115000,
+    image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80",
     rating: 4.8,
     stock: 9,
-    size: "Micro ATX"
+    size: "15.6 inch",
+    processor: "Core i5",
+    generation: "13th Gen",
+    ram: "16GB",
+    ssd: "512GB",
+    graphicsCard: "RTX 4050",
   },
 
   {
-    id: 112,
-    title: "MSI MAG B650 Tomahawk WIFI",
-    subtitle: "AMD B650 AM5 DDR5 Motherboard",
-    category: "Components",
-    subcategory: "Motherboard",
-    descriptions: "Powerful AM5 motherboard designed for Ryzen processors and high-performance gaming systems.",
-    information: {
-      brand: "MSI",
-      chipset: "AMD B650",
-      socket: "AM5",
-      memory: "DDR5",
-      maxMemory: "128GB",
-      wireless: "Wi-Fi 6E",
-      formFactor: "ATX"
-    },
-    price: 24500,
-    image: "/images/products/msi-b650-tomahawk.jpg",
+    title: "MSI Katana Gaming Laptop Core i7",
+    subtitle: "High Performance Gaming Laptop",
+    category: "Laptop",
+    subcategory: "Gaming Laptop",
+    categoryPath: "laptop/gaming-laptop",
+    description: "High-performance gaming laptop for modern games and creative workloads.",
+    information: "Intel Core i7 processor, 16GB RAM, 1TB SSD and RTX graphics.",
+    price: 155000,
+    image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80",
     rating: 4.9,
     stock: 7,
-    size: "ATX"
+    size: "15.6 inch",
+    processor: "Core i7",
+    generation: "13th Gen",
+    ram: "16GB",
+    ssd: "1TB",
+    graphicsCard: "RTX 4060",
   },
 
   {
-    id: 113,
-    title: "Gigabyte B650M DS3H",
-    subtitle: "AMD B650 Micro ATX Motherboard",
-    category: "Components",
-    subcategory: "Motherboard",
-    descriptions: "Affordable AM5 motherboard for Ryzen processors with DDR5 memory support.",
-    information: {
-      brand: "Gigabyte",
-      chipset: "AMD B650",
-      socket: "AM5",
-      memory: "DDR5",
-      maxMemory: "128GB",
-      storage: "PCIe 4.0 M.2",
-      formFactor: "Micro ATX"
-    },
-    price: 16500,
-    image: "/images/products/gigabyte-b650m-ds3h.jpg",
-    rating: 4.7,
-    stock: 12,
-    size: "Micro ATX"
-  },
-
-  {
-    id: 114,
-    title: "ASRock B760M Pro RS",
-    subtitle: "Intel B760 DDR5 Motherboard",
-    category: "Components",
-    subcategory: "Motherboard",
-    descriptions: "Modern Intel motherboard offering DDR5 support and multiple expansion options.",
-    information: {
-      brand: "ASRock",
-      chipset: "Intel B760",
-      socket: "LGA1700",
-      memory: "DDR5",
-      maxMemory: "192GB",
-      storage: "PCIe 4.0 M.2",
-      formFactor: "Micro ATX"
-    },
-    price: 15800,
-    image: "/images/products/asrock-b760m-pro-rs.jpg",
-    rating: 4.6,
-    stock: 11,
-    size: "Micro ATX"
-  },
-
-  {
-    id: 115,
-    title: "Corsair Vengeance RGB 32GB DDR5",
-    subtitle: "32GB 6000MHz DDR5 Gaming RAM",
-    category: "Components",
-    subcategory: "RAM",
-    descriptions: "High-speed RGB DDR5 memory kit designed for gaming and performance desktops.",
-    information: {
-      brand: "Corsair",
-      capacity: "32GB",
-      kit: "2 x 16GB",
-      speed: "6000MHz",
-      type: "DDR5",
-      latency: "CL36",
-      warranty: "Lifetime"
-    },
-    price: 12500,
-    image: "/images/products/corsair-vengeance-rgb-32gb.jpg",
-    rating: 4.9,
-    stock: 15,
-    size: "2 x 16GB"
-  },
-
-  {
-    id: 116,
-    title: "G.Skill Ripjaws S5 32GB DDR5",
-    subtitle: "32GB 6000MHz DDR5 Memory Kit",
-    category: "Components",
-    subcategory: "RAM",
-    descriptions: "Low-profile DDR5 memory kit designed for high-performance desktop systems.",
-    information: {
-      brand: "G.Skill",
-      capacity: "32GB",
-      kit: "2 x 16GB",
-      speed: "6000MHz",
-      type: "DDR5",
-      latency: "CL36",
-      warranty: "Lifetime"
-    },
-    price: 11800,
-    image: "/images/products/gskill-ripjaws-s5-32gb.jpg",
-    rating: 4.8,
-    stock: 17,
-    size: "2 x 16GB"
-  },
-
-  {
-    id: 117,
-    title: "Kingston Fury Beast 16GB DDR4",
-    subtitle: "16GB 3200MHz DDR4 Desktop RAM",
-    category: "Components",
-    subcategory: "RAM",
-    descriptions: "Reliable DDR4 desktop memory suitable for gaming and everyday performance.",
-    information: {
-      brand: "Kingston",
-      capacity: "16GB",
-      kit: "1 x 16GB",
-      speed: "3200MHz",
-      type: "DDR4",
-      latency: "CL16",
-      warranty: "Lifetime"
-    },
-    price: 4200,
-    image: "/images/products/kingston-fury-beast-16gb.jpg",
-    rating: 4.7,
-    stock: 28,
-    size: "16GB"
-  },
-
-  {
-    id: 118,
-    title: "Team T-Force Vulcan Z 16GB",
-    subtitle: "16GB 3200MHz DDR4 Gaming RAM",
-    category: "Components",
-    subcategory: "RAM",
-    descriptions: "Affordable performance RAM for gaming and productivity desktops.",
-    information: {
-      brand: "TeamGroup",
-      capacity: "16GB",
-      kit: "1 x 16GB",
-      speed: "3200MHz",
-      type: "DDR4",
-      latency: "CL16",
-      warranty: "Lifetime"
-    },
-    price: 3900,
-    image: "/images/products/team-tforce-vulcan-z-16gb.jpg",
-    rating: 4.6,
-    stock: 32,
-    size: "16GB"
-  },
-
-  {
-    id: 119,
-    title: "NZXT H5 Flow",
-    subtitle: "Mid Tower ATX Gaming PC Case",
-    category: "Components",
-    subcategory: "PC Casing",
-    descriptions: "Airflow-focused gaming case with a clean modern design and flexible component support.",
-    information: {
-      brand: "NZXT",
-      motherboard: "ATX, Micro ATX, Mini ITX",
-      GPUClearance: "365mm",
-      CPULimit: "165mm",
-      fans: "2 Included",
-      frontPanel: "USB Type-C",
-      warranty: "2 Years"
-    },
-    price: 11500,
-    image: "/images/products/nzxt-h5-flow.jpg",
-    rating: 4.8,
-    stock: 10,
-    size: "Mid Tower"
-  },
-
-  {
-    id: 120,
-    title: "Montech Air 100 ARGB",
-    subtitle: "Micro ATX Gaming Case",
-    category: "Components",
-    subcategory: "PC Casing",
-    descriptions: "Compact gaming case featuring mesh airflow and pre-installed ARGB fans.",
-    information: {
-      brand: "Montech",
-      motherboard: "Micro ATX, Mini ITX",
-      GPUClearance: "330mm",
-      fans: "4 ARGB Fans",
-      frontPanel: "USB 3.0",
-      sidePanel: "Tempered Glass",
-      warranty: "1 Year"
-    },
-    price: 7800,
-    image: "/images/products/montech-air-100-argb.jpg",
-    rating: 4.7,
-    stock: 13,
-    size: "Micro ATX"
-  },
-
-  {
-    id: 121,
-    title: "Lian Li Lancool 216",
-    subtitle: "High Airflow ATX Gaming Case",
-    category: "Components",
-    subcategory: "PC Casing",
-    descriptions: "Premium airflow-focused gaming chassis with large front intake fans.",
-    information: {
-      brand: "Lian Li",
-      motherboard: "ATX, Micro ATX, Mini ITX",
-      GPUClearance: "392mm",
-      CPULimit: "180mm",
-      fans: "2 x 160mm Front",
-      sidePanel: "Tempered Glass",
-      warranty: "2 Years"
-    },
-    price: 14500,
-    image: "/images/products/lian-li-lancool-216.jpg",
+    title: "Apple MacBook Air M2 8GB",
+    subtitle: "Lightweight Apple Laptop",
+    category: "Laptop",
+    subcategory: "Apple MacBook",
+    categoryPath: "laptop/apple-macbook/macbook-air",
+    description: "Slim and lightweight Apple laptop for everyday productivity.",
+    information: "Apple M2 chip, 8GB unified memory and 256GB SSD.",
+    price: 125000,
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
     rating: 4.9,
     stock: 8,
-    size: "Mid Tower"
+    size: "13.6 inch",
+    ram: "8GB",
+    ssd: "256GB",
   },
 
   {
-    id: 122,
-    title: "Cooler Master TD500 Mesh V2",
-    subtitle: "ARGB Mid Tower Gaming Case",
-    category: "Components",
-    subcategory: "PC Casing",
-    descriptions: "Stylish mesh gaming case with excellent airflow and ARGB lighting.",
-    information: {
-      brand: "Cooler Master",
-      motherboard: "ATX, Micro ATX, Mini ITX",
-      GPUClearance: "410mm",
-      CPULimit: "165mm",
-      fans: "3 ARGB Fans",
-      sidePanel: "Tempered Glass",
-      warranty: "2 Years"
-    },
-    price: 12500,
-    image: "/images/products/cooler-master-td500.jpg",
-    rating: 4.8,
-    stock: 11,
-    size: "Mid Tower"
-  },
-
-  {
-    id: 123,
-    title: "ASUS TUF Gaming VG249Q3A",
-    subtitle: "23.8-inch 180Hz Gaming Monitor",
-    category: "Monitor",
-    subcategory: "Gaming Monitor",
-    descriptions: "Fast IPS gaming monitor with high refresh rate and smooth gaming performance.",
-    information: {
-      brand: "ASUS",
-      display: "23.8-inch",
-      resolution: "1920 x 1080",
-      panel: "Fast IPS",
-      refreshRate: "180Hz",
-      responseTime: "1ms",
-      ports: "HDMI, DisplayPort"
-    },
-    price: 21500,
-    image: "/images/products/asus-tuf-vg249q3a.jpg",
-    rating: 4.8,
-    stock: 9,
-    size: "23.8-inch"
-  },
-
-  {
-    id: 124,
-    title: "Gigabyte G24F 2",
-    subtitle: "23.8-inch 180Hz Gaming Monitor",
-    category: "Monitor",
-    subcategory: "Gaming Monitor",
-    descriptions: "Full HD gaming monitor featuring a fast IPS panel and high refresh rate.",
-    information: {
-      brand: "Gigabyte",
-      display: "23.8-inch",
-      resolution: "1920 x 1080",
-      panel: "SS IPS",
-      refreshRate: "180Hz",
-      responseTime: "1ms",
-      ports: "HDMI, DisplayPort"
-    },
-    price: 20500,
-    image: "/images/products/gigabyte-g24f-2.jpg",
-    rating: 4.7,
-    stock: 12,
-    size: "23.8-inch"
-  },
-
-  {
-    id: 125,
-    title: "Samsung Odyssey G5 32",
-    subtitle: "32-inch QHD 165Hz Curved Gaming Monitor",
-    category: "Monitor",
-    subcategory: "Gaming Monitor",
-    descriptions: "Large curved gaming display with QHD resolution and high refresh rate.",
-    information: {
-      brand: "Samsung",
-      display: "32-inch",
-      resolution: "2560 x 1440",
-      panel: "VA",
-      refreshRate: "165Hz",
-      responseTime: "1ms",
-      curvature: "1000R"
-    },
-    price: 36000,
-    image: "/images/products/samsung-odyssey-g5-32.jpg",
-    rating: 4.8,
+    title: "Apple MacBook Air M2 16GB",
+    subtitle: "Professional Apple Laptop",
+    category: "Laptop",
+    subcategory: "Apple MacBook",
+    categoryPath: "laptop/apple-macbook/macbook-air",
+    description: "Powerful and portable MacBook for professionals and developers.",
+    information: "Apple M2 chip, 16GB unified memory and 512GB SSD.",
+    price: 165000,
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
     stock: 6,
-    size: "32-inch"
+    size: "13.6 inch",
+    ram: "16GB",
+    ssd: "512GB",
   },
 
   {
-    id: 126,
-    title: "Dell P2425H",
-    subtitle: "24-inch Full HD Professional Monitor",
+    title: "Apple MacBook Pro M3 Pro",
+    subtitle: "Professional MacBook Pro",
+    category: "Laptop",
+    subcategory: "Apple MacBook",
+    categoryPath: "laptop/apple-macbook/macbook-pro",
+    description: "Professional Apple laptop for development, editing and creative work.",
+    information: "Apple M3 Pro chip, 18GB unified memory and 512GB SSD.",
+    price: 235000,
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 5,
+    size: "14.2 inch",
+    ram: "18GB",
+    ssd: "512GB",
+  },
+
+  {
+    title: "Acer Aspire 5 Core i5",
+    subtitle: "Affordable Business Laptop",
+    category: "Laptop",
+    subcategory: "Business Laptop",
+    categoryPath: "laptop/business-laptop",
+    description: "Practical laptop for office applications and daily productivity.",
+    information: "Intel Core i5 processor, 16GB RAM and 512GB SSD.",
+    price: 68000,
+    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 15,
+    size: "15.6 inch",
+    processor: "Core i5",
+    generation: "12th Gen",
+    ram: "16GB",
+    ssd: "512GB",
+  },
+
+  {
+    title: "HP Victus Ryzen 5 Gaming Laptop",
+    subtitle: "AMD Gaming Laptop",
+    category: "Laptop",
+    subcategory: "Gaming Laptop",
+    categoryPath: "laptop/gaming-laptop",
+    description: "Gaming laptop with AMD processor and dedicated graphics.",
+    information: "AMD Ryzen 5, 16GB RAM, 512GB SSD and RTX 4050 graphics.",
+    price: 108000,
+    image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 10,
+    size: "15.6 inch",
+    processor: "Ryzen 5",
+    generation: "7000 Series",
+    ram: "16GB",
+    ssd: "512GB",
+    graphicsCard: "RTX 4050",
+  },
+
+  {
+    title: "Lenovo LOQ Core i7 Gaming Laptop",
+    subtitle: "Powerful Gaming Laptop",
+    category: "Laptop",
+    subcategory: "Gaming Laptop",
+    categoryPath: "laptop/gaming-laptop",
+    description: "Powerful gaming laptop for gaming, streaming and creative work.",
+    information: "Intel Core i7, 32GB RAM, 1TB SSD and RTX 4060 graphics.",
+    price: 165000,
+    image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    size: "15.6 inch",
+    processor: "Core i7",
+    generation: "13th Gen",
+    ram: "32GB",
+    ssd: "1TB",
+    graphicsCard: "RTX 4060",
+  },
+
+  // Additional laptop variants
+  ...Array.from({ length: 30 }, (_, index) => {
+    const models = [
+      ["Dell Latitude", "Business Laptop", "business-laptop"],
+      ["HP ProBook", "Business Laptop", "business-laptop"],
+      ["Lenovo ThinkPad", "Business Laptop", "business-laptop"],
+      ["ASUS VivoBook", "Student Laptop", "student-laptop"],
+      ["Acer Aspire", "Student Laptop", "student-laptop"],
+      ["Dell G15", "Gaming Laptop", "gaming-laptop"],
+      ["ASUS ROG", "Gaming Laptop", "gaming-laptop"],
+      ["MSI Gaming", "Gaming Laptop", "gaming-laptop"],
+      ["MacBook Air", "Apple MacBook", "apple-macbook/macbook-air"],
+      ["MacBook Pro", "Apple MacBook", "apple-macbook/macbook-pro"],
+    ];
+
+    const [model, subcategory, path] = models[index % models.length];
+
+    const processors = [
+      "Core i5",
+      "Core i7",
+      "Ryzen 5",
+      "Ryzen 7",
+    ];
+
+    const rams = ["8GB", "16GB", "32GB"];
+    const ssds = ["256GB", "512GB", "1TB"];
+
+    return {
+      title: `${model} ${index + 1} Performance Laptop`,
+      subtitle: subcategory,
+      category: "Laptop",
+      subcategory,
+      categoryPath: `laptop/${path}`,
+      description: `Modern ${subcategory.toLowerCase()} designed for productivity, study and everyday computing.`,
+      information: `${processors[index % processors.length]} processor, ${rams[index % rams.length]} RAM and ${ssds[index % ssds.length]} SSD.`,
+      price: 55000 + index * 4500,
+      image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
+      rating: Number((4.4 + (index % 6) * 0.1).toFixed(1)),
+      stock: 5 + (index % 15),
+      size: index % 2 === 0 ? "15.6 inch" : "14 inch",
+      processor: processors[index % processors.length],
+      generation: index % 2 === 0 ? "12th Gen" : "13th Gen",
+      ram: rams[index % rams.length],
+      ssd: ssds[index % ssds.length],
+      ...(subcategory === "Gaming Laptop" && {
+        graphicsCard: index % 2 === 0 ? "RTX 4050" : "RTX 4060",
+      }),
+    };
+  }),
+]);
+
+
+// ============================================================
+// MONITOR PRODUCTS 441–460
+// ============================================================
+
+const monitorProducts = createProducts(441, [
+  // =========================
+  // 1
+  // =========================
+  {
+    title: "AOC 24 Inch Full HD Monitor",
+    subtitle: "Office Monitor",
     category: "Monitor",
     subcategory: "Office Monitor",
-    descriptions: "Professional productivity monitor designed for comfortable office and business use.",
-    information: {
-      brand: "Dell",
-      display: "23.8-inch",
-      resolution: "1920 x 1080",
-      panel: "IPS",
-      refreshRate: "100Hz",
-      responseTime: "5ms",
-      ports: "HDMI, DisplayPort"
-    },
-    price: 24500,
-    image: "/images/products/dell-p2425h.jpg",
-    rating: 4.8,
-    stock: 10,
-    size: "23.8-inch"
-  },
-
-  {
-    id: 127,
-    title: "TP-Link Archer AX55",
-    subtitle: "AX3000 Dual Band Wi-Fi 6 Router",
-    category: "Networking",
-    subcategory: "Wi-Fi Router",
-    descriptions: "High-speed Wi-Fi 6 router suitable for home, office and streaming environments.",
-    information: {
-      brand: "TP-Link",
-      wireless: "Wi-Fi 6",
-      speed: "AX3000",
-      bands: "Dual Band",
-      ethernet: "Gigabit",
-      antennas: "4 External",
-      security: "WPA3"
-    },
-    price: 10500,
-    image: "/images/products/tp-link-archer-ax55.jpg",
-    rating: 4.8,
-    stock: 18,
-    size: "Standard"
-  },
-
-  {
-    id: 128,
-    title: "TP-Link Deco X20",
-    subtitle: "AX1800 Whole Home Mesh Wi-Fi System",
-    category: "Networking",
-    subcategory: "Mesh Wi-Fi",
-    descriptions: "Whole-home mesh networking system designed to provide stable wireless coverage.",
-    information: {
-      brand: "TP-Link",
-      wireless: "Wi-Fi 6",
-      speed: "AX1800",
-      coverage: "Up to 5800 sq.ft",
-      units: "3 Pack",
-      ethernet: "Gigabit",
-      security: "WPA3"
-    },
-    price: 23500,
-    image: "/images/products/tp-link-deco-x20.jpg",
-    rating: 4.8,
-    stock: 7,
-    size: "3 Pack"
-  },
-
-  {
-    id: 129,
-    title: "Tenda RX9 Pro",
-    subtitle: "AX3000 Wi-Fi 6 Gigabit Router",
-    category: "Networking",
-    subcategory: "Wi-Fi Router",
-    descriptions: "Affordable Wi-Fi 6 router designed for fast wireless connectivity and gaming.",
-    information: {
-      brand: "Tenda",
-      wireless: "Wi-Fi 6",
-      speed: "AX3000",
-      bands: "Dual Band",
-      ethernet: "Gigabit",
-      antennas: "4 External",
-      security: "WPA3"
-    },
-    price: 7200,
-    image: "/images/products/tenda-rx9-pro.jpg",
+    categoryPath: "monitor/office-monitor",
+    description:
+      "Full HD monitor for office work and everyday computing.",
+    information:
+      "24-inch Full HD IPS display with 75Hz refresh rate.",
+    price: 18000,
+    image:
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80",
     rating: 4.6,
-    stock: 21,
-    size: "Standard"
-  },
-
-  {
-    id: 130,
-    title: "TP-Link TL-SG1016D",
-    subtitle: "16-Port Gigabit Desktop/Rack Switch",
-    category: "Networking",
-    subcategory: "Network Switch",
-    descriptions: "16-port unmanaged gigabit switch suitable for offices and larger networks.",
-    information: {
-      brand: "TP-Link",
-      ports: "16 x Gigabit",
-      speed: "10/100/1000Mbps",
-      switchingCapacity: "32Gbps",
-      management: "Unmanaged",
-      installation: "Desktop/Rack"
-    },
-    price: 8200,
-    image: "/images/products/tp-link-tl-sg1016d.jpg",
-    rating: 4.7,
-    stock: 14,
-    size: "16-Port"
-  },
-
-  {
-    id: 131,
-    title: "Logitech C920 HD Pro",
-    subtitle: "Full HD 1080p USB Webcam",
-    category: "Accessories",
-    subcategory: "Webcam",
-    descriptions: "Full HD webcam suitable for video meetings, online classes and streaming.",
-    information: {
-      brand: "Logitech",
-      resolution: "1080p",
-      frameRate: "30 FPS",
-      microphone: "Stereo",
-      connection: "USB-A",
-      autofocus: "Yes",
-      compatibility: "Windows, macOS"
-    },
-    price: 7800,
-    image: "/images/products/logitech-c920.jpg",
-    rating: 4.8,
-    stock: 16,
-    size: "Standard"
-  },
-
-  {
-    id: 132,
-    title: "A4Tech PK-910H",
-    subtitle: "Full HD 1080p USB Webcam",
-    category: "Accessories",
-    subcategory: "Webcam",
-    descriptions: "Affordable Full HD webcam for online meetings, classes and video calls.",
-    information: {
-      brand: "A4Tech",
-      resolution: "1080p",
-      frameRate: "30 FPS",
-      microphone: "Built-in",
-      connection: "USB",
-      focus: "Manual",
-      compatibility: "Windows"
-    },
-    price: 3200,
-    image: "/images/products/a4tech-pk-910h.jpg",
-    rating: 4.5,
-    stock: 25,
-    size: "Standard"
-  },
-
-  {
-    id: 133,
-    title: "Rapoo C260",
-    subtitle: "Full HD USB Webcam with Microphone",
-    category: "Accessories",
-    subcategory: "Webcam",
-    descriptions: "Compact Full HD webcam designed for meetings, online learning and video calls.",
-    information: {
-      brand: "Rapoo",
-      resolution: "1080p",
-      frameRate: "30 FPS",
-      microphone: "Built-in",
-      connection: "USB",
-      lens: "Wide Angle",
-      compatibility: "Windows, macOS"
-    },
-    price: 2900,
-    image: "/images/products/rapoo-c260.jpg",
-    rating: 4.5,
-    stock: 30,
-    size: "Standard"
-  },
-
-  {
-    id: 134,
-    title: "APC Easy UPS 650VA",
-    subtitle: "650VA Line Interactive UPS",
-    category: "Power",
-    subcategory: "UPS",
-    descriptions: "Compact UPS designed to provide backup power and surge protection for computers.",
-    information: {
-      brand: "APC",
-      capacity: "650VA",
-      outputPower: "360W",
-      battery: "12V 7Ah",
-      topology: "Line Interactive",
-      outlets: "4",
-      warranty: "2 Years"
-    },
-    price: 6500,
-    image: "/images/products/apc-easy-ups-650va.jpg",
-    rating: 4.7,
-    stock: 18,
-    size: "650VA"
-  },
-
-  {
-    id: 135,
-    title: "MaxGreen 1200VA UPS",
-    subtitle: "1200VA Line Interactive UPS",
-    category: "Power",
-    subcategory: "UPS",
-    descriptions: "High-capacity UPS suitable for desktop computers, networking equipment and office systems.",
-    information: {
-      brand: "MaxGreen",
-      capacity: "1200VA",
-      outputPower: "720W",
-      battery: "2 x 12V",
-      topology: "Line Interactive",
-      display: "LCD",
-      warranty: "1 Year"
-    },
-    price: 9800,
-    image: "/images/products/maxgreen-1200va-ups.jpg",
-    rating: 4.5,
-    stock: 12,
-    size: "1200VA"
-  },
-
-  {
-    id: 136,
-    title: "Power Guard 1000VA UPS",
-    subtitle: "1000VA Computer Backup UPS",
-    category: "Power",
-    subcategory: "UPS",
-    descriptions: "Reliable backup power solution for computers and small office equipment.",
-    information: {
-      brand: "Power Guard",
-      capacity: "1000VA",
-      outputPower: "600W",
-      battery: "12V",
-      protection: "Overload and Short Circuit",
-      outlets: "4",
-      warranty: "1 Year"
-    },
-    price: 8200,
-    image: "/images/products/power-guard-1000va.jpg",
-    rating: 4.4,
     stock: 15,
-    size: "1000VA"
+    size: "24 inch",
   },
 
-  {
-    id: 137,
-    title: "UGREEN 7-in-1 USB-C Hub",
-    subtitle: "USB-C Hub with HDMI and Card Reader",
-    category: "Accessories",
-    subcategory: "USB Hub",
-    descriptions: "Multi-port USB-C hub designed to expand connectivity on modern laptops.",
-    information: {
-      brand: "UGREEN",
-      ports: "7-in-1",
-      HDMI: "4K",
-      USB: "USB 3.0",
-      cardReader: "SD + MicroSD",
-      powerDelivery: "100W",
-      connection: "USB-C"
-    },
-    price: 6200,
-    image: "/images/products/ugreen-7-in-1-hub.jpg",
-    rating: 4.8,
-    stock: 14,
-    size: "Compact"
-  },
-
-  {
-    id: 138,
-    title: "Baseus Metal Gleam Series 6-in-1 Hub",
-    subtitle: "USB-C Multiport Adapter",
-    category: "Accessories",
-    subcategory: "USB Hub",
-    descriptions: "Compact aluminum USB-C adapter providing multiple connectivity options for laptops.",
-    information: {
-      brand: "Baseus",
-      ports: "6-in-1",
-      HDMI: "4K",
-      USB: "USB 3.0",
-      cardReader: "SD + TF",
-      charging: "100W PD",
-      connection: "USB-C"
-    },
-    price: 4800,
-    image: "/images/products/baseus-metal-gleam-hub.jpg",
-    rating: 4.7,
-    stock: 19,
-    size: "Compact"
-  },
-
-  {
-    id: 139,
-    title: "Anker 555 USB-C Hub",
-    subtitle: "8-in-1 USB-C Hub",
-    category: "Accessories",
-    subcategory: "USB Hub",
-    descriptions: "Premium multi-port hub for laptops requiring HDMI, Ethernet, USB and card reader connectivity.",
-    information: {
-      brand: "Anker",
-      ports: "8-in-1",
-      HDMI: "4K 60Hz",
-      Ethernet: "Gigabit",
-      USB: "USB 3.2",
-      cardReader: "SD + MicroSD",
-      powerDelivery: "100W"
-    },
-    price: 9800,
-    image: "/images/products/anker-555-hub.jpg",
-    rating: 4.9,
-    stock: 8,
-    size: "Compact"
-  },
-
-  {
-    id: 140,
-    title: "Samsung Galaxy Watch6 44mm",
-    subtitle: "AMOLED Bluetooth Smartwatch",
-    category: "Wearables",
-    subcategory: "Smartwatch",
-    descriptions: "Modern smartwatch featuring AMOLED display, health tracking and smart notifications.",
-    information: {
-      brand: "Samsung",
-      display: "1.5-inch Super AMOLED",
-      connectivity: "Bluetooth",
-      sensors: "Heart Rate, SpO2",
-      GPS: "Built-in",
-      waterResistance: "5ATM",
-      battery: "Up to 40 Hours"
-    },
-    price: 26500,
-    image: "/images/products/samsung-galaxy-watch6.jpg",
-    rating: 4.8,
-    stock: 9,
-    size: "44mm"
-  },
-
-  {
-    id: 141,
-    title: "Xiaomi Redmi Watch 4",
-    subtitle: "1.97-inch AMOLED Smartwatch",
-    category: "Wearables",
-    subcategory: "Smartwatch",
-    descriptions: "Large AMOLED smartwatch with health tracking, GPS and long battery life.",
-    information: {
-      brand: "Xiaomi",
-      display: "1.97-inch AMOLED",
-      connectivity: "Bluetooth",
-      sensors: "Heart Rate, SpO2",
-      GPS: "Built-in",
-      waterResistance: "5ATM",
-      battery: "Up to 20 Days"
-    },
-    price: 9500,
-    image: "/images/products/redmi-watch-4.jpg",
-    rating: 4.7,
-    stock: 16,
-    size: "1.97-inch"
-  },
-
-  {
-    id: 142,
-    title: "Amazfit GTR Mini",
-    subtitle: "1.28-inch AMOLED Smartwatch",
-    category: "Wearables",
-    subcategory: "Smartwatch",
-    descriptions: "Slim AMOLED smartwatch with health monitoring, sports modes and GPS.",
-    information: {
-      brand: "Amazfit",
-      display: "1.28-inch AMOLED",
-      connectivity: "Bluetooth",
-      sensors: "Heart Rate, SpO2",
-      GPS: "Built-in",
-      waterResistance: "5ATM",
-      battery: "Up to 14 Days"
-    },
-    price: 11500,
-    image: "/images/products/amazfit-gtr-mini.jpg",
-    rating: 4.6,
-    stock: 13,
-    size: "43mm"
-  },
-
-  {
-    id: 143,
-    title: "Redmi Buds 5",
-    subtitle: "Wireless ANC Earbuds",
-    category: "Audio",
-    subcategory: "Earbuds",
-    descriptions: "Wireless earbuds with active noise cancellation and long battery life.",
-    information: {
-      brand: "Xiaomi",
-      connectivity: "Bluetooth 5.3",
-      ANC: "Yes",
-      microphone: "Dual",
-      battery: "Up to 40 Hours",
-      charging: "USB-C",
-      waterResistance: "IP54"
-    },
-    price: 4200,
-    image: "/images/products/redmi-buds-5.jpg",
-    rating: 4.6,
-    stock: 24,
-    size: "In-Ear"
-  },
-
-  {
-    id: 144,
-    title: "OnePlus Buds 3",
-    subtitle: "Wireless ANC Bluetooth Earbuds",
-    category: "Audio",
-    subcategory: "Earbuds",
-    descriptions: "Premium wireless earbuds offering active noise cancellation and high-quality sound.",
-    information: {
-      brand: "OnePlus",
-      connectivity: "Bluetooth 5.3",
-      ANC: "Yes",
-      driver: "10mm + 6mm Dual Driver",
-      battery: "Up to 44 Hours",
-      charging: "USB-C",
-      waterResistance: "IP55"
-    },
-    price: 7200,
-    image: "/images/products/oneplus-buds-3.jpg",
-    rating: 4.8,
-    stock: 18,
-    size: "In-Ear"
-  },
-
-  {
-    id: 145,
-    title: "JBL Wave Beam",
-    subtitle: "True Wireless In-Ear Earbuds",
-    category: "Audio",
-    subcategory: "Earbuds",
-    descriptions: "Comfortable wireless earbuds with deep bass and long-lasting battery life.",
-    information: {
-      brand: "JBL",
-      connectivity: "Bluetooth 5.2",
-      driver: "8.0mm",
-      microphone: "Built-in",
-      battery: "Up to 32 Hours",
-      charging: "USB-C",
-      waterResistance: "IP54"
-    },
-    price: 3900,
-    image: "/images/products/jbl-wave-beam.jpg",
-    rating: 4.5,
-    stock: 26,
-    size: "In-Ear"
-  },
-
-  {
-    id: 146,
-    title: "ViewSonic PA503W Projector",
-    subtitle: "WXGA Business and Education Projector",
-    category: "Office Equipment",
-    subcategory: "Projector",
-    descriptions: "Bright projector designed for classrooms, offices and presentations.",
-    information: {
-      brand: "ViewSonic",
-      resolution: "1280 x 800",
-      brightness: "3800 ANSI Lumens",
-      contrast: "22000:1",
-      projectionSize: "30-300 inch",
-      connectivity: "HDMI, VGA",
-      lampLife: "Up to 15000 Hours"
-    },
-    price: 62000,
-    image: "/images/products/viewsonic-pa503w.jpg",
-    rating: 4.7,
-    stock: 5,
-    size: "Compact"
-  },
-
-  {
-    id: 147,
-    title: "Epson CO-W01 Projector",
-    subtitle: "WXGA 3000 Lumens Projector",
-    category: "Office Equipment",
-    subcategory: "Projector",
-    descriptions: "Compact projector suitable for presentations, education and home entertainment.",
-    information: {
-      brand: "Epson",
-      resolution: "1280 x 800",
-      brightness: "3000 Lumens",
-      contrast: "16000:1",
-      projectionSize: "33-378 inch",
-      connectivity: "HDMI, USB",
-      lampLife: "Up to 12000 Hours"
-    },
-    price: 55000,
-    image: "/images/products/epson-co-w01.jpg",
-    rating: 4.6,
-    stock: 6,
-    size: "Compact"
-  },
-
-  {
-    id: 148,
-    title: "Canon imageFORMULA R40",
-    subtitle: "High Speed Document Scanner",
-    category: "Office Equipment",
-    subcategory: "Scanner",
-    descriptions: "Desktop document scanner designed for offices and high-volume document processing.",
-    information: {
-      brand: "Canon",
-      scannerType: "Document Scanner",
-      resolution: "600 dpi",
-      speed: "40 ppm",
-      feeder: "60 Sheets",
-      duplex: "Yes",
-      connection: "USB"
-    },
-    price: 48000,
-    image: "/images/products/canon-imageformula-r40.jpg",
-    rating: 4.7,
-    stock: 4,
-    size: "Desktop"
-  },
-
-  {
-    id: 149,
-    title: "Logitech MX Keys S",
-    subtitle: "Wireless Illuminated Productivity Keyboard",
-    category: "Accessories",
-    subcategory: "Keyboard",
-    descriptions: "Premium wireless keyboard designed for comfortable typing and professional productivity.",
-    information: {
-      brand: "Logitech",
-      connection: "Bluetooth + USB Receiver",
-      layout: "Full Size",
-      backlight: "Smart Illumination",
-      battery: "Up to 5 Months",
-      compatibility: "Windows, macOS, Linux",
-      charging: "USB-C"
-    },
-    price: 12500,
-    image: "/images/products/logitech-mx-keys-s.jpg",
-    rating: 4.9,
-    stock: 10,
-    size: "Full Size"
-  },
-
-  {
-    id: 150,
-    title: "Logitech MX Master 3S",
-    subtitle: "Wireless Performance Mouse",
-    category: "Accessories",
-    subcategory: "Mouse",
-    descriptions: "Premium wireless productivity mouse with high-precision tracking and quiet clicks.",
-    information: {
-      brand: "Logitech",
-      connection: "Bluetooth + USB Receiver",
-      sensor: "8000 DPI",
-      buttons: "7",
-      battery: "Up to 70 Days",
-      charging: "USB-C",
-      compatibility: "Windows, macOS, Linux"
-    },
-    price: 11500,
-    image: "/images/products/logitech-mx-master-3s.jpg",
-    rating: 4.9,
-    stock: 12,
-    size: "Standard"
-  },
   // =========================
-  // BATCH 4 — PRODUCTS 151-200
-  // CAMERA, NETWORKING & SECURITY
+  // 2
   // =========================
-
   {
-    id: 151,
-    title: "Canon EOS R10",
-    subtitle: "24.2MP APS-C Mirrorless Camera",
-    category: "Camera",
-    subcategory: "Mirrorless Camera",
-    descriptions: "Compact mirrorless camera designed for photography, video production and content creation.",
-    information: {
-      brand: "Canon",
-      sensor: "24.2MP APS-C CMOS",
-      processor: "DIGIC X",
-      video: "4K 30fps",
-      autofocus: "Dual Pixel CMOS AF II",
-      connectivity: "Wi-Fi, Bluetooth",
-      lensMount: "RF Mount",
-      warranty: "1 Year"
-    },
-    price: 118000,
-    image: "/images/products/canon-eos-r10.jpg",
-    rating: 4.8,
-    stock: 5,
-    size: "APS-C"
-  },
-
-  {
-    id: 152,
-    title: "Sony Alpha A6400",
-    subtitle: "24.2MP APS-C Mirrorless Camera",
-    category: "Camera",
-    subcategory: "Mirrorless Camera",
-    descriptions: "Fast autofocus mirrorless camera suitable for photography, travel and video content.",
-    information: {
-      brand: "Sony",
-      sensor: "24.2MP APS-C CMOS",
-      processor: "BIONZ X",
-      video: "4K 30fps",
-      autofocus: "425-Point Phase Detection",
-      connectivity: "Wi-Fi, Bluetooth",
-      lensMount: "Sony E Mount",
-      warranty: "1 Year"
-    },
-    price: 112000,
-    image: "/images/products/sony-a6400.jpg",
-    rating: 4.8,
-    stock: 6,
-    size: "APS-C"
-  },
-
-  {
-    id: 153,
-    title: "Nikon Z50",
-    subtitle: "20.9MP DX Format Mirrorless Camera",
-    category: "Camera",
-    subcategory: "Mirrorless Camera",
-    descriptions: "Lightweight DX mirrorless camera offering excellent image quality and 4K video recording.",
-    information: {
-      brand: "Nikon",
-      sensor: "20.9MP APS-C CMOS",
-      processor: "EXPEED 6",
-      video: "4K UHD",
-      autofocus: "209-Point Hybrid AF",
-      connectivity: "Wi-Fi, Bluetooth",
-      lensMount: "Nikon Z Mount",
-      warranty: "1 Year"
-    },
-    price: 108000,
-    image: "/images/products/nikon-z50.jpg",
-    rating: 4.7,
-    stock: 4,
-    size: "APS-C"
-  },
-
-  {
-    id: 154,
-    title: "Canon EOS R50",
-    subtitle: "24.2MP Compact Mirrorless Camera",
-    category: "Camera",
-    subcategory: "Mirrorless Camera",
-    descriptions: "Compact creator-focused camera designed for photography, YouTube and social media content.",
-    information: {
-      brand: "Canon",
-      sensor: "24.2MP APS-C CMOS",
-      processor: "DIGIC X",
-      video: "4K 30fps",
-      autofocus: "Dual Pixel CMOS AF II",
-      connectivity: "Wi-Fi, Bluetooth",
-      lensMount: "RF Mount",
-      warranty: "1 Year"
-    },
-    price: 92000,
-    image: "/images/products/canon-eos-r50.jpg",
-    rating: 4.8,
-    stock: 8,
-    size: "APS-C"
-  },
-
-  {
-    id: 155,
-    title: "Sony ZV-E10",
-    subtitle: "24.2MP APS-C Vlogging Camera",
-    category: "Camera",
-    subcategory: "Vlogging Camera",
-    descriptions: "Creator-focused interchangeable lens camera designed for vlogging and online video.",
-    information: {
-      brand: "Sony",
-      sensor: "24.2MP APS-C CMOS",
-      video: "4K 30fps",
-      microphone: "3.5mm Input",
-      autofocus: "Real-time Eye AF",
-      connectivity: "Wi-Fi, Bluetooth",
-      lensMount: "Sony E Mount",
-      warranty: "1 Year"
-    },
-    price: 85000,
-    image: "/images/products/sony-zv-e10.jpg",
-    rating: 4.8,
-    stock: 9,
-    size: "APS-C"
-  },
-
-  {
-    id: 156,
-    title: "DJI Osmo Pocket 3",
-    subtitle: "4K 120fps Handheld Gimbal Camera",
-    category: "Camera",
-    subcategory: "Action Camera",
-    descriptions: "Pocket-sized stabilized camera designed for travel, vlogging and professional-looking video.",
-    information: {
-      brand: "DJI",
-      sensor: "1-inch CMOS",
-      video: "4K 120fps",
-      stabilization: "3-Axis Mechanical Gimbal",
-      display: "2-inch Rotatable Touchscreen",
-      connectivity: "Wi-Fi, Bluetooth",
-      battery: "Up to 166 Minutes",
-      warranty: "1 Year"
-    },
-    price: 72000,
-    image: "/images/products/dji-osmo-pocket-3.jpg",
-    rating: 4.9,
-    stock: 7,
-    size: "Pocket"
-  },
-
-  {
-    id: 157,
-    title: "GoPro HERO12 Black",
-    subtitle: "5.3K60 Action Camera",
-    category: "Camera",
-    subcategory: "Action Camera",
-    descriptions: "Rugged action camera designed for outdoor activities, travel and high-quality video recording.",
-    information: {
-      brand: "GoPro",
-      video: "5.3K 60fps",
-      stabilization: "HyperSmooth 6.0",
-      display: "2.27-inch Touchscreen",
-      waterproof: "10m",
-      connectivity: "Wi-Fi, Bluetooth",
-      battery: "1720mAh",
-      warranty: "1 Year"
-    },
-    price: 48000,
-    image: "/images/products/gopro-hero12-black.jpg",
-    rating: 4.8,
-    stock: 10,
-    size: "Action Camera"
-  },
-
-  {
-    id: 158,
-    title: "DJI Osmo Action 4",
-    subtitle: "4K120 HDR Action Camera",
-    category: "Camera",
-    subcategory: "Action Camera",
-    descriptions: "Durable action camera with strong low-light performance and advanced electronic stabilization.",
-    information: {
-      brand: "DJI",
-      sensor: "1/1.3-inch CMOS",
-      video: "4K 120fps",
-      stabilization: "RockSteady 3.0",
-      waterproof: "18m",
-      display: "Dual Touchscreen",
-      battery: "160 Minutes",
-      warranty: "1 Year"
-    },
-    price: 45000,
-    image: "/images/products/dji-osmo-action-4.jpg",
-    rating: 4.8,
-    stock: 8,
-    size: "Action Camera"
-  },
-
-  {
-    id: 159,
-    title: "Sigma 30mm F1.4 DC DN",
-    subtitle: "APS-C Prime Mirrorless Lens",
-    category: "Camera",
-    subcategory: "Camera Lens",
-    descriptions: "Bright prime lens designed for portraits, street photography and low-light shooting.",
-    information: {
-      brand: "Sigma",
-      focalLength: "30mm",
-      aperture: "F1.4",
-      mount: "Sony E",
-      focus: "Autofocus",
-      construction: "9 Elements in 7 Groups",
-      warranty: "1 Year"
-    },
-    price: 39000,
-    image: "/images/products/sigma-30mm-f1-4.jpg",
-    rating: 4.9,
-    stock: 6,
-    size: "30mm"
-  },
-
-  {
-    id: 160,
-    title: "Canon RF 50mm F1.8 STM",
-    subtitle: "Full Frame Standard Prime Lens",
-    category: "Camera",
-    subcategory: "Camera Lens",
-    descriptions: "Compact 50mm prime lens with a bright aperture for portraits and everyday photography.",
-    information: {
-      brand: "Canon",
-      focalLength: "50mm",
-      aperture: "F1.8",
-      mount: "Canon RF",
-      focus: "STM Autofocus",
-      filterSize: "43mm",
-      warranty: "1 Year"
-    },
-    price: 31000,
-    image: "/images/products/canon-rf-50mm.jpg",
-    rating: 4.8,
-    stock: 7,
-    size: "50mm"
-  },
-
-  {
-    id: 161,
-    title: "TP-Link Archer BE550",
-    subtitle: "BE9300 Wi-Fi 7 Tri-Band Router",
-    category: "Networking",
-    subcategory: "Wi-Fi 7 Router",
-    descriptions: "Next-generation Wi-Fi 7 router designed for high-speed home and gaming networks.",
-    information: {
-      brand: "TP-Link",
-      wireless: "Wi-Fi 7",
-      speed: "BE9300",
-      bands: "Tri-Band",
-      ethernet: "2.5Gbps",
-      antennas: "Internal",
-      security: "WPA3"
-    },
-    price: 28500,
-    image: "/images/products/tp-link-archer-be550.jpg",
-    rating: 4.8,
-    stock: 7,
-    size: "Tri-Band"
-  },
-
-  {
-    id: 162,
-    title: "ASUS RT-AX86U Pro",
-    subtitle: "AX5700 Dual Band Gaming Router",
-    category: "Networking",
-    subcategory: "Gaming Router",
-    descriptions: "High-performance gaming router with fast Wi-Fi and advanced network management features.",
-    information: {
-      brand: "ASUS",
-      wireless: "Wi-Fi 6",
-      speed: "AX5700",
-      bands: "Dual Band",
-      ethernet: "2.5Gbps",
-      gaming: "Game Acceleration",
-      security: "AiProtection Pro"
-    },
+    title: "LG 27 Inch IPS Monitor",
+    subtitle: "Professional Monitor",
+    category: "Monitor",
+    subcategory: "Professional Monitor",
+    categoryPath: "monitor/professional-monitor",
+    description:
+      "Large IPS monitor for productivity and creative work.",
+    information:
+      "27-inch QHD IPS display with accurate colors.",
     price: 32000,
-    image: "/images/products/asus-rt-ax86u-pro.jpg",
-    rating: 4.9,
-    stock: 5,
-    size: "Dual-Band"
-  },
-
-  {
-    id: 163,
-    title: "Netgear Nighthawk AX5400",
-    subtitle: "AX5400 Wi-Fi 6 Router",
-    category: "Networking",
-    subcategory: "Wi-Fi Router",
-    descriptions: "High-speed Wi-Fi 6 router designed for large homes, streaming and gaming.",
-    information: {
-      brand: "Netgear",
-      wireless: "Wi-Fi 6",
-      speed: "AX5400",
-      bands: "Dual Band",
-      ethernet: "Gigabit",
-      antennas: "4 External",
-      security: "WPA3"
-    },
-    price: 26000,
-    image: "/images/products/netgear-nighthawk-ax5400.jpg",
-    rating: 4.7,
-    stock: 6,
-    size: "Dual-Band"
-  },
-
-  {
-    id: 164,
-    title: "Ubiquiti UniFi Dream Router",
-    subtitle: "Wi-Fi 6 Security Gateway",
-    category: "Networking",
-    subcategory: "Network Gateway",
-    descriptions: "Integrated network gateway with Wi-Fi, security management and UniFi network control.",
-    information: {
-      brand: "Ubiquiti",
-      wireless: "Wi-Fi 6",
-      ports: "4 x Gigabit",
-      management: "UniFi OS",
-      security: "Firewall",
-      storage: "128GB",
-      display: "Touchscreen"
-    },
-    price: 28500,
-    image: "/images/products/ubiquiti-unifi-dream-router.jpg",
+    image:
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80",
     rating: 4.8,
-    stock: 4,
-    size: "Desktop"
-  },
-
-  {
-    id: 165,
-    title: "Ubiquiti UniFi U6 Lite",
-    subtitle: "Wi-Fi 6 Ceiling Access Point",
-    category: "Networking",
-    subcategory: "Access Point",
-    descriptions: "Compact enterprise wireless access point designed for reliable office and home network coverage.",
-    information: {
-      brand: "Ubiquiti",
-      wireless: "Wi-Fi 6",
-      speed: "AX1500",
-      bands: "Dual Band",
-      power: "PoE",
-      management: "UniFi Controller",
-      security: "WPA3"
-    },
-    price: 14500,
-    image: "/images/products/unifi-u6-lite.jpg",
-    rating: 4.8,
-    stock: 9,
-    size: "Compact"
-  },
-
-  {
-    id: 166,
-    title: "TP-Link EAP610",
-    subtitle: "AX1800 Wi-Fi 6 Ceiling Access Point",
-    category: "Networking",
-    subcategory: "Access Point",
-    descriptions: "Business-grade Wi-Fi 6 access point for offices, schools and commercial networks.",
-    information: {
-      brand: "TP-Link",
-      wireless: "Wi-Fi 6",
-      speed: "AX1800",
-      bands: "Dual Band",
-      power: "802.3at PoE",
-      management: "Omada SDN",
-      security: "WPA3"
-    },
-    price: 12500,
-    image: "/images/products/tp-link-eap610.jpg",
-    rating: 4.7,
-    stock: 11,
-    size: "Ceiling Mount"
-  },
-
-  {
-    id: 167,
-    title: "D-Link DGS-1210-28",
-    subtitle: "24-Port Gigabit Smart Managed Switch",
-    category: "Networking",
-    subcategory: "Managed Switch",
-    descriptions: "Smart managed network switch designed for business and office network environments.",
-    information: {
-      brand: "D-Link",
-      ports: "24 x Gigabit",
-      uplink: "4 x SFP",
-      switchingCapacity: "56Gbps",
-      management: "Smart Managed",
-      VLAN: "Yes",
-      installation: "Rack Mount"
-    },
-    price: 23500,
-    image: "/images/products/d-link-dgs-1210-28.jpg",
-    rating: 4.7,
-    stock: 5,
-    size: "24-Port"
-  },
-
-  {
-    id: 168,
-    title: "TP-Link TL-SG3428",
-    subtitle: "24-Port Gigabit L2 Managed Switch",
-    category: "Networking",
-    subcategory: "Managed Switch",
-    descriptions: "Business networking switch offering VLAN, management and high-speed gigabit connectivity.",
-    information: {
-      brand: "TP-Link",
-      ports: "24 x Gigabit",
-      uplink: "4 x SFP",
-      switchingCapacity: "56Gbps",
-      management: "L2 Managed",
-      VLAN: "Yes",
-      installation: "Rack Mount"
-    },
-    price: 28000,
-    image: "/images/products/tp-link-tl-sg3428.jpg",
-    rating: 4.8,
-    stock: 4,
-    size: "24-Port"
-  },
-
-  {
-    id: 169,
-    title: "Ubiquiti UniFi CloudKey Gen2 Plus",
-    subtitle: "UniFi Network Controller",
-    category: "Networking",
-    subcategory: "Network Controller",
-    descriptions: "Centralized controller designed to manage UniFi networking and security devices.",
-    information: {
-      brand: "Ubiquiti",
-      storage: "1TB HDD",
-      processor: "Octa-Core",
-      management: "UniFi OS",
-      connectivity: "Gigabit Ethernet",
-      applications: "Network, Protect",
-      power: "PoE"
-    },
-    price: 28000,
-    image: "/images/products/unifi-cloudkey-gen2-plus.jpg",
-    rating: 4.8,
-    stock: 3,
-    size: "Compact"
-  },
-
-  {
-    id: 170,
-    title: "TP-Link Omada OC200",
-    subtitle: "Cloud Controller for Business Networks",
-    category: "Networking",
-    subcategory: "Network Controller",
-    descriptions: "Dedicated controller for centralized management of Omada access points, switches and routers.",
-    information: {
-      brand: "TP-Link",
-      processor: "Quad-Core",
-      management: "Omada SDN",
-      ports: "2 x Gigabit",
-      storage: "Built-in",
-      cloudAccess: "Yes",
-      power: "Micro USB"
-    },
-    price: 9500,
-    image: "/images/products/tp-link-omada-oc200.jpg",
-    rating: 4.7,
-    stock: 8,
-    size: "Compact"
-  },
-
-  {
-    id: 171,
-    title: "Hikvision DS-2CD1023G2-LIU",
-    subtitle: "2MP ColorVu IP Security Camera",
-    category: "Security",
-    subcategory: "IP Camera",
-    descriptions: "Outdoor-ready IP security camera with color night vision and smart detection.",
-    information: {
-      brand: "Hikvision",
-      resolution: "2MP",
-      video: "1920 x 1080",
-      nightVision: "ColorVu",
-      lens: "2.8mm",
-      connection: "PoE",
-      protection: "IP67",
-      storage: "MicroSD"
-    },
-    price: 7800,
-    image: "/images/products/hikvision-ds-2cd1023g2.jpg",
-    rating: 4.8,
-    stock: 14,
-    size: "Bullet"
-  },
-
-  {
-    id: 172,
-    title: "Hikvision DS-2CD2143G2-I",
-    subtitle: "4MP AcuSense Dome IP Camera",
-    category: "Security",
-    subcategory: "IP Camera",
-    descriptions: "High-resolution dome camera with intelligent human and vehicle detection.",
-    information: {
-      brand: "Hikvision",
-      resolution: "4MP",
-      video: "2688 x 1520",
-      nightVision: "IR 30m",
-      lens: "2.8mm",
-      connection: "PoE",
-      protection: "IP67",
-      detection: "Human and Vehicle"
-    },
-    price: 12500,
-    image: "/images/products/hikvision-ds-2cd2143g2.jpg",
-    rating: 4.9,
     stock: 10,
-    size: "Dome"
+    size: "27 inch",
   },
 
+  // =========================
+  // 3
+  // =========================
   {
-    id: 173,
-    title: "Hikvision DS-2CD2386G2-I",
-    subtitle: "8MP AcuSense Turret IP Camera",
-    category: "Security",
-    subcategory: "IP Camera",
-    descriptions: "High-resolution 4K turret camera designed for advanced home and commercial surveillance.",
-    information: {
-      brand: "Hikvision",
-      resolution: "8MP",
-      video: "4K UHD",
-      nightVision: "IR 40m",
-      lens: "2.8mm",
-      connection: "PoE",
-      protection: "IP67",
-      detection: "Human and Vehicle"
-    },
-    price: 18500,
-    image: "/images/products/hikvision-ds-2cd2386g2.jpg",
-    rating: 4.9,
-    stock: 7,
-    size: "Turret"
-  },
-
-  {
-    id: 174,
-    title: "Dahua IPC-HFW1239S1-LED",
-    subtitle: "2MP Full Color IP Bullet Camera",
-    category: "Security",
-    subcategory: "IP Camera",
-    descriptions: "Full-color IP bullet camera designed for clear surveillance in low-light environments.",
-    information: {
-      brand: "Dahua",
-      resolution: "2MP",
-      video: "1080p",
-      nightVision: "Full Color",
-      lens: "2.8mm",
-      connection: "PoE",
-      protection: "IP67",
-      storage: "NVR"
-    },
-    price: 7200,
-    image: "/images/products/dahua-ipc-hfw1239s1.jpg",
-    rating: 4.7,
-    stock: 16,
-    size: "Bullet"
-  },
-
-  {
-    id: 175,
-    title: "Dahua IPC-HDW2431T-AS",
-    subtitle: "4MP IR Dome IP Camera",
-    category: "Security",
-    subcategory: "IP Camera",
-    descriptions: "Reliable 4MP dome IP camera suitable for offices, homes and commercial surveillance.",
-    information: {
-      brand: "Dahua",
-      resolution: "4MP",
-      video: "2688 x 1520",
-      nightVision: "IR 30m",
-      lens: "2.8mm",
-      connection: "PoE",
-      protection: "IP67",
-      storage: "NVR"
-    },
-    price: 10500,
-    image: "/images/products/dahua-ipc-hdw2431t.jpg",
-    rating: 4.7,
+    title: "Samsung 27 Inch Gaming Monitor",
+    subtitle: "High Refresh Rate Monitor",
+    category: "Monitor",
+    subcategory: "Gaming Monitor",
+    categoryPath: "monitor/gaming-monitor",
+    description:
+      "Gaming monitor designed for smooth high refresh rate gaming.",
+    information:
+      "27-inch Full HD display with 165Hz refresh rate.",
+    price: 35000,
+    image:
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
     stock: 12,
-    size: "Dome"
+    size: "27 inch",
   },
 
+  // =========================
+  // 4
+  // =========================
   {
-    id: 176,
-    title: "Dahua IPC-HFW3849T1-AS-PV",
-    subtitle: "8MP Full Color Active Deterrence Camera",
-    category: "Security",
-    subcategory: "IP Camera",
-    descriptions: "Advanced 4K security camera featuring full-color night vision and active deterrence features.",
-    information: {
-      brand: "Dahua",
-      resolution: "8MP",
-      video: "4K UHD",
-      nightVision: "Full Color",
-      lens: "2.8mm",
-      connection: "PoE",
-      protection: "IP67",
-      deterrence: "Light and Siren"
-    },
-    price: 19500,
-    image: "/images/products/dahua-ipc-hfw3849t1.jpg",
-    rating: 4.8,
-    stock: 6,
-    size: "Bullet"
-  },
-
-  {
-    id: 177,
-    title: "Hikvision DS-7608NI-K2",
-    subtitle: "8 Channel 4K NVR",
-    category: "Security",
-    subcategory: "NVR",
-    descriptions: "Network video recorder designed for multi-camera IP surveillance systems.",
-    information: {
-      brand: "Hikvision",
-      channels: "8 Channel",
-      resolution: "Up to 4K",
-      storage: "2 SATA Bays",
-      compression: "H.265+",
-      network: "Gigabit Ethernet",
-      HDMI: "4K Output"
-    },
-    price: 14500,
-    image: "/images/products/hikvision-ds-7608ni-k2.jpg",
-    rating: 4.8,
+    title: "ASUS TUF 27 Inch Gaming Monitor",
+    subtitle: "Fast Gaming Display",
+    category: "Monitor",
+    subcategory: "Gaming Monitor",
+    categoryPath: "monitor/gaming-monitor",
+    description:
+      "Fast gaming display with high refresh rate performance.",
+    information:
+      "27-inch QHD gaming monitor with 180Hz refresh rate.",
+    price: 48000,
+    image:
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
     stock: 8,
-    size: "8 Channel"
+    size: "27 inch",
   },
 
+  // =========================
+  // 5-20
+  // GENERATED MONITORS
+  // =========================
+  ...Array.from({ length: 16 }, (_, index) => {
+    const gaming = index % 2 === 0;
+
+    const refreshRates = [144, 165, 240];
+    const refreshRate =
+      refreshRates[index % refreshRates.length];
+
+    const size = 24 + (index % 3) * 3;
+
+    return {
+      title: `${gaming ? "Gaming" : "Professional"} Monitor ${
+        index + 1
+      }`,
+
+      subtitle: gaming
+        ? `${refreshRate}Hz Gaming Monitor`
+        : "Professional Monitor",
+
+      category: "Monitor",
+
+      subcategory: gaming
+        ? "Gaming Monitor"
+        : "Professional Monitor",
+
+      categoryPath: gaming
+        ? "monitor/gaming-monitor"
+        : "monitor/professional-monitor",
+
+      description:
+        "Modern monitor designed for productivity, entertainment and everyday computing.",
+
+      information: gaming
+        ? `${size}-inch display with ${refreshRate}Hz refresh rate and high-quality panel technology.`
+        : `${size}-inch display with accurate colors and high-quality panel technology.`,
+
+      price: 18000 + index * 2500,
+
+      image:
+        "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80",
+
+      rating: 4.5 + (index % 5) * 0.1,
+
+      stock: 8 + index,
+
+      size: `${size} inch`,
+    };
+  }),
+]);
+
+
+// ============================================================
+// POWER PRODUCTS 461–480
+// ============================================================
+
+const powerProducts = createProducts(461, [
   {
-    id: 178,
-    title: "Hikvision DS-7616NI-K2",
-    subtitle: "16 Channel 4K NVR",
-    category: "Security",
-    subcategory: "NVR",
-    descriptions: "16-channel network video recorder suitable for medium-sized CCTV installations.",
-    information: {
-      brand: "Hikvision",
-      channels: "16 Channel",
-      resolution: "Up to 4K",
-      storage: "2 SATA Bays",
-      compression: "H.265+",
-      network: "Gigabit Ethernet",
-      HDMI: "4K Output"
-    },
-    price: 21000,
-    image: "/images/products/hikvision-ds-7616ni-k2.jpg",
+    title: "APC 650VA UPS",
+    subtitle: "Home & Office UPS",
+    category: "Power",
+    subcategory: "UPS",
+    categoryPath: "power/ups",
+    description: "Reliable backup power solution for computers and office equipment.",
+    information: "650VA UPS with automatic voltage regulation.",
+    price: 6500,
+    image: "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 18,
+    size: "Standard",
+  },
+  {
+    title: "APC 1200VA UPS",
+    subtitle: "High Capacity UPS",
+    category: "Power",
+    subcategory: "UPS",
+    categoryPath: "power/ups",
+    description: "High-capacity UPS for desktop computers and office equipment.",
+    information: "1200VA backup power with voltage regulation.",
+    price: 12500,
+    image: "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=800&q=80",
     rating: 4.8,
-    stock: 6,
-    size: "16 Channel"
+    stock: 10,
+    size: "Large",
   },
-
   {
-    id: 179,
-    title: "Dahua NVR4108HS-8P",
-    subtitle: "8 Channel PoE NVR",
-    category: "Security",
-    subcategory: "NVR",
-    descriptions: "PoE network video recorder allowing direct connection and power delivery to IP cameras.",
-    information: {
-      brand: "Dahua",
-      channels: "8 Channel",
-      resolution: "Up to 4K",
-      storage: "1 SATA Bay",
-      compression: "H.265+",
-      PoE: "8 Ports",
-      HDMI: "4K Output"
-    },
-    price: 13500,
-    image: "/images/products/dahua-nvr4108hs-8p.jpg",
+    title: "Corsair 650W Power Supply",
+    subtitle: "Desktop PSU",
+    category: "Power",
+    subcategory: "Power Supply",
+    categoryPath: "power/power-supply",
+    description: "Reliable PSU for gaming and productivity desktop systems.",
+    information: "650W power supply with efficient power delivery.",
+    price: 8500,
+    image: "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=800&q=80",
     rating: 4.7,
-    stock: 9,
-    size: "8 Channel"
+    stock: 14,
+    size: "Standard",
   },
-
   {
-    id: 180,
-    title: "Dahua NVR4216-16P",
-    subtitle: "16 Channel PoE NVR",
-    category: "Security",
-    subcategory: "NVR",
-    descriptions: "Professional 16-channel PoE NVR for larger IP surveillance installations.",
-    information: {
-      brand: "Dahua",
-      channels: "16 Channel",
-      resolution: "Up to 4K",
-      storage: "2 SATA Bays",
-      compression: "H.265+",
-      PoE: "16 Ports",
-      HDMI: "4K Output"
-    },
-    price: 24500,
-    image: "/images/products/dahua-nvr4216-16p.jpg",
+    title: "Cooler Master 750W Power Supply",
+    subtitle: "Gaming PSU",
+    category: "Power",
+    subcategory: "Power Supply",
+    categoryPath: "power/power-supply",
+    description: "High-performance PSU for gaming computers.",
+    information: "750W power supply suitable for dedicated graphics cards.",
+    price: 11500,
+    image: "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=800&q=80",
     rating: 4.8,
-    stock: 5,
-    size: "16 Channel"
+    stock: 9,
+    size: "Standard",
   },
 
-  {
-    id: 181,
-    title: "Hikvision DS-2CE16D0T-IRP",
-    subtitle: "2MP Turbo HD Bullet Camera",
-    category: "Security",
-    subcategory: "Analog CCTV Camera",
-    descriptions: "Affordable 2MP analog bullet camera designed for basic CCTV surveillance systems.",
-    information: {
-      brand: "Hikvision",
-      resolution: "2MP",
-      video: "1080p",
-      nightVision: "IR 25m",
-      lens: "2.8mm",
-      technology: "Turbo HD",
-      protection: "IP67"
-    },
-    price: 3800,
-    image: "/images/products/hikvision-ds-2ce16d0t.jpg",
-    rating: 4.6,
-    stock: 25,
-    size: "Bullet"
-  },
+  ...Array.from({ length: 16 }, (_, index) => {
+    const ups = index % 2 === 0;
+
+    return {
+      title: `${ups ? "Reliable" : "Gaming"} ${ups ? "UPS" : "Power Supply"} ${index + 1}`,
+      subtitle: ups ? "Backup Power" : "Desktop Power Supply",
+      category: "Power",
+      subcategory: ups ? "UPS" : "Power Supply",
+      categoryPath: ups ? "power/ups" : "power/power-supply",
+      description: "Reliable power solution for computers and electronic equipment.",
+      information: ups
+        ? "Backup power with voltage protection."
+        : `${550 + index * 25}W desktop power supply.`,
+      price: ups ? 5000 + index * 500 : 6500 + index * 600,
+      image: "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=800&q=80",
+      rating: 4.5 + (index % 5) * 0.1,
+      stock: 7 + index,
+      size: "Standard",
+    };
+  }),
+]);
+
+
+// ============================================================
+// PHONE PRODUCTS 481–510
+// ============================================================
+
+// =========================
+// PHONE PRODUCTS 481–510
+// =========================
+
+const phoneProducts = createProducts(481, [
+  // =====================================
+  // SAMSUNG
+  // =====================================
 
   {
-    id: 182,
-    title: "Dahua HAC-HDW1200TLP",
-    subtitle: "2MP HDCVI Eyeball Camera",
-    category: "Security",
-    subcategory: "Analog CCTV Camera",
-    descriptions: "2MP HDCVI eyeball camera for reliable indoor and outdoor CCTV installations.",
-    information: {
-      brand: "Dahua",
-      resolution: "2MP",
-      video: "1080p",
-      nightVision: "IR 30m",
-      lens: "2.8mm",
-      technology: "HDCVI",
-      protection: "IP67"
-    },
-    price: 3500,
-    image: "/images/products/dahua-hac-hdw1200tlp.jpg",
-    rating: 4.6,
-    stock: 28,
-    size: "Eyeball"
-  },
-
-  {
-    id: 183,
-    title: "Hikvision DS-3E0109P-E",
-    subtitle: "8-Port PoE Switch",
-    category: "Security",
-    subcategory: "CCTV PoE Switch",
-    descriptions: "Compact PoE switch designed to provide both power and network connectivity to IP cameras.",
-    information: {
-      brand: "Hikvision",
-      ports: "8 PoE + 1 Uplink",
-      speed: "10/100Mbps",
-      PoEStandard: "802.3af/at",
-      powerBudget: "60W",
-      switchingCapacity: "1.8Gbps",
-      installation: "Desktop"
-    },
-    price: 5500,
-    image: "/images/products/hikvision-ds-3e0109p.jpg",
+    title: "Samsung Galaxy A55 5G",
+    subtitle: "Mid Range Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/samsung",
+    brand: "Samsung",
+    description: "Modern Samsung smartphone with AMOLED display and powerful performance.",
+    information: "8GB RAM, 128GB storage and 5G connectivity.",
+    price: 48000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
     rating: 4.7,
     stock: 15,
-    size: "8-Port"
+    size: "6.6 inch",
+    ram: "8GB",
+    ssd: "128GB",
   },
 
   {
-    id: 184,
-    title: "Dahua PFS3009-8ET-65",
-    subtitle: "8-Port PoE Ethernet Switch",
-    category: "Security",
-    subcategory: "CCTV PoE Switch",
-    descriptions: "PoE network switch designed for powering and connecting IP surveillance cameras.",
-    information: {
-      brand: "Dahua",
-      ports: "8 PoE + 1 Uplink",
-      speed: "10/100Mbps",
-      PoEStandard: "802.3af/at",
-      powerBudget: "65W",
-      switchingCapacity: "1.8Gbps",
-      installation: "Desktop"
-    },
-    price: 5200,
-    image: "/images/products/dahua-pfs3009-8et-65.jpg",
-    rating: 4.6,
-    stock: 17,
-    size: "8-Port"
+    title: "Samsung Galaxy S24",
+    subtitle: "Flagship Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/samsung",
+    brand: "Samsung",
+    description: "Premium Samsung Android smartphone with flagship performance and advanced cameras.",
+    information: "8GB RAM, 256GB storage and 5G connectivity.",
+    price: 85000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 10,
+    size: "6.2 inch",
+    ram: "8GB",
+    ssd: "256GB",
   },
 
   {
-    id: 185,
-    title: "Hikvision DS-K1T341CMF",
-    subtitle: "Face Recognition Access Control Terminal",
-    category: "Security",
-    subcategory: "Access Control",
-    descriptions: "Smart access control terminal supporting face recognition and secure entry management.",
-    information: {
-      brand: "Hikvision",
-      display: "4.3-inch Touchscreen",
-      recognition: "Face Recognition",
-      fingerprint: "Supported",
-      capacity: "1500 Faces",
-      connectivity: "TCP/IP",
-      power: "12V DC"
-    },
-    price: 26500,
-    image: "/images/products/hikvision-ds-k1t341cmf.jpg",
-    rating: 4.7,
-    stock: 4,
-    size: "4.3-inch"
-  },
-
-  {
-    id: 186,
-    title: "ZKTeco MB20-VL",
-    subtitle: "Face and Fingerprint Attendance Machine",
-    category: "Security",
-    subcategory: "Attendance System",
-    descriptions: "Biometric attendance terminal suitable for offices, schools and businesses.",
-    information: {
-      brand: "ZKTeco",
-      display: "2.8-inch TFT",
-      recognition: "Face Recognition",
-      fingerprint: "Yes",
-      capacity: "500 Faces",
-      connectivity: "TCP/IP, USB",
-      battery: "Backup Battery"
-    },
-    price: 14500,
-    image: "/images/products/zkteco-mb20-vl.jpg",
-    rating: 4.7,
+    title: "Samsung Galaxy S24 Ultra",
+    subtitle: "Premium Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/samsung",
+    brand: "Samsung",
+    description: "High-end Samsung smartphone designed for photography, productivity and performance.",
+    information: "12GB RAM, 256GB storage and advanced camera system.",
+    price: 125000,
+    image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
     stock: 7,
-    size: "2.8-inch"
+    size: "6.8 inch",
+    ram: "12GB",
+    ssd: "256GB",
   },
 
   {
-    id: 187,
-    title: "ZKTeco K40",
-    subtitle: "Fingerprint Time Attendance Machine",
-    category: "Security",
-    subcategory: "Attendance System",
-    descriptions: "Affordable fingerprint attendance device designed for offices and small businesses.",
-    information: {
-      brand: "ZKTeco",
-      display: "2.8-inch TFT",
-      fingerprint: "Yes",
-      capacity: "1000 Fingerprints",
-      users: "800 Users",
-      connectivity: "TCP/IP, USB",
-      battery: "Optional"
-    },
-    price: 7800,
-    image: "/images/products/zkteco-k40.jpg",
-    rating: 4.5,
-    stock: 12,
-    size: "2.8-inch"
-  },
-
-  {
-    id: 188,
-    title: "Hikvision DS-KH6320-WTE1",
-    subtitle: "7-inch IP Video Intercom Indoor Station",
-    category: "Security",
-    subcategory: "Video Intercom",
-    descriptions: "IP video intercom indoor station for secure communication and door access management.",
-    information: {
-      brand: "Hikvision",
-      display: "7-inch Touchscreen",
-      resolution: "1024 x 600",
-      connectivity: "Ethernet, Wi-Fi",
-      audio: "Two-Way Audio",
-      integration: "Door Station",
-      power: "PoE"
-    },
-    price: 22000,
-    image: "/images/products/hikvision-ds-kh6320.jpg",
-    rating: 4.7,
-    stock: 4,
-    size: "7-inch"
-  },
-
-  {
-    id: 189,
-    title: "TP-Link Tapo C220",
-    subtitle: "4MP Pan/Tilt Home Security Camera",
-    category: "Security",
-    subcategory: "Smart Camera",
-    descriptions: "Smart indoor camera with pan and tilt control, motion detection and mobile monitoring.",
-    information: {
-      brand: "TP-Link",
-      resolution: "4MP",
-      video: "2K QHD",
-      movement: "Pan/Tilt",
-      nightVision: "IR",
-      storage: "MicroSD",
-      connectivity: "Wi-Fi",
-      audio: "Two-Way Audio"
-    },
-    price: 4200,
-    image: "/images/products/tapo-c220.jpg",
-    rating: 4.8,
-    stock: 22,
-    size: "Indoor"
-  },
-
-  {
-    id: 190,
-    title: "TP-Link Tapo C520WS",
-    subtitle: "3MP Outdoor Pan/Tilt Security Camera",
-    category: "Security",
-    subcategory: "Smart Camera",
-    descriptions: "Outdoor smart security camera with pan and tilt control, full-color night vision and smart detection.",
-    information: {
-      brand: "TP-Link",
-      resolution: "3MP",
-      video: "2K QHD",
-      movement: "Pan/Tilt",
-      nightVision: "Full Color",
-      storage: "MicroSD",
-      connectivity: "Wi-Fi",
-      protection: "IP66"
-    },
-    price: 6500,
-    image: "/images/products/tapo-c520ws.jpg",
-    rating: 4.8,
-    stock: 13,
-    size: "Outdoor"
-  },
-
-  {
-    id: 191,
-    title: "Ezviz C6N",
-    subtitle: "2MP Smart Indoor Wi-Fi Camera",
-    category: "Security",
-    subcategory: "Smart Camera",
-    descriptions: "Affordable indoor Wi-Fi security camera with smart tracking and two-way communication.",
-    information: {
-      brand: "Ezviz",
-      resolution: "2MP",
-      video: "1080p",
-      movement: "Pan/Tilt",
-      nightVision: "IR 10m",
-      storage: "MicroSD",
-      connectivity: "Wi-Fi",
-      audio: "Two-Way Audio"
-    },
-    price: 3500,
-    image: "/images/products/ezviz-c6n.jpg",
+    title: "Samsung Galaxy A35 5G",
+    subtitle: "Affordable Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/samsung",
+    brand: "Samsung",
+    description: "Affordable Samsung smartphone with modern display and reliable performance.",
+    information: "8GB RAM, 128GB storage and 5G connectivity.",
+    price: 38000,
+    image: "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=800&q=80",
     rating: 4.6,
     stock: 20,
-    size: "Indoor"
+    size: "6.6 inch",
+    ram: "8GB",
+    ssd: "128GB",
   },
 
   {
-    id: 192,
-    title: "Ezviz H8C",
-    subtitle: "3MP Outdoor Pan/Tilt Smart Camera",
-    category: "Security",
-    subcategory: "Smart Camera",
-    descriptions: "Outdoor smart surveillance camera with pan and tilt control and intelligent tracking.",
-    information: {
-      brand: "Ezviz",
-      resolution: "3MP",
-      video: "2K",
-      movement: "Pan/Tilt",
-      nightVision: "Color Night Vision",
-      storage: "MicroSD",
-      connectivity: "Wi-Fi",
-      protection: "IP65"
-    },
-    price: 6200,
-    image: "/images/products/ezviz-h8c.jpg",
+    title: "Samsung Galaxy A25 5G",
+    subtitle: "Budget Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/samsung",
+    brand: "Samsung",
+    description: "Budget-friendly Samsung smartphone for everyday communication and entertainment.",
+    information: "6GB RAM, 128GB storage and 5G connectivity.",
+    price: 28000,
+    image: "https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 25,
+    size: "6.5 inch",
+    ram: "6GB",
+    ssd: "128GB",
+  },
+
+  // =====================================
+  // XIAOMI
+  // =====================================
+
+  {
+    title: "Xiaomi Redmi Note 13 Pro",
+    subtitle: "Android Performance Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/xiaomi",
+    brand: "Xiaomi",
+    description: "Feature-rich Xiaomi smartphone for entertainment, photography and daily use.",
+    information: "8GB RAM, 256GB storage and AMOLED display.",
+    price: 36000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 18,
+    size: "6.67 inch",
+    ram: "8GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Xiaomi Redmi Note 14 Pro",
+    subtitle: "Android Mid Range Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/xiaomi",
+    brand: "Xiaomi",
+    description: "Modern Xiaomi smartphone with AMOLED display and powerful performance.",
+    information: "8GB RAM, 256GB storage and fast charging.",
+    price: 42000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 16,
+    size: "6.67 inch",
+    ram: "8GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Xiaomi 14",
+    subtitle: "Xiaomi Flagship Android Phone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/xiaomi",
+    brand: "Xiaomi",
+    description: "Premium Xiaomi smartphone with flagship hardware and advanced cameras.",
+    information: "12GB RAM, 512GB storage and 5G connectivity.",
+    price: 78000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 9,
+    size: "6.36 inch",
+    ram: "12GB",
+    ssd: "512GB",
+  },
+
+  {
+    title: "Xiaomi Poco X6 Pro",
+    subtitle: "Android Performance Phone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/xiaomi",
+    brand: "Xiaomi",
+    description: "Performance-focused Xiaomi smartphone for gaming and entertainment.",
+    information: "8GB RAM, 256GB storage and high refresh rate display.",
+    price: 34000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 14,
+    size: "6.67 inch",
+    ram: "8GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Xiaomi Redmi 13C",
+    subtitle: "Budget Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/xiaomi",
+    brand: "Xiaomi",
+    description: "Affordable Xiaomi smartphone for everyday communication and entertainment.",
+    information: "6GB RAM, 128GB storage and large display.",
+    price: 18000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.4,
+    stock: 25,
+    size: "6.74 inch",
+    ram: "6GB",
+    ssd: "128GB",
+  },
+
+  // =====================================
+  // ONEPLUS
+  // =====================================
+
+  {
+    title: "OnePlus 12 5G",
+    subtitle: "Flagship Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/oneplus",
+    brand: "OnePlus",
+    description: "High-performance OnePlus flagship smartphone with premium hardware.",
+    information: "12GB RAM, 256GB storage and 5G connectivity.",
+    price: 85000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 7,
+    size: "6.82 inch",
+    ram: "12GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "OnePlus 12R",
+    subtitle: "Performance Android Phone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/oneplus",
+    brand: "OnePlus",
+    description: "Powerful OnePlus smartphone designed for performance and gaming.",
+    information: "8GB RAM, 256GB storage and high refresh rate display.",
+    price: 62000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 12,
+    size: "6.78 inch",
+    ram: "8GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "OnePlus Nord 4",
+    subtitle: "Mid Range Android Phone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/oneplus",
+    brand: "OnePlus",
+    description: "Modern OnePlus 5G smartphone with strong performance and premium design.",
+    information: "8GB RAM, 128GB storage and 5G connectivity.",
+    price: 48000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 15,
+    size: "6.74 inch",
+    ram: "8GB",
+    ssd: "128GB",
+  },
+
+  {
+    title: "OnePlus Nord CE 4",
+    subtitle: "Affordable Android Phone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/oneplus",
+    brand: "OnePlus",
+    description: "Affordable OnePlus smartphone with reliable performance and fast charging.",
+    information: "8GB RAM, 128GB storage and 5G connectivity.",
+    price: 35000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 18,
+    size: "6.7 inch",
+    ram: "8GB",
+    ssd: "128GB",
+  },
+
+  {
+    title: "OnePlus 11 5G",
+    subtitle: "Premium Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/oneplus",
+    brand: "OnePlus",
+    description: "Premium OnePlus smartphone with flagship performance and camera system.",
+    information: "12GB RAM, 256GB storage and 5G connectivity.",
+    price: 72000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 8,
+    size: "6.7 inch",
+    ram: "12GB",
+    ssd: "256GB",
+  },
+
+  // =====================================
+  // REALME
+  // =====================================
+
+  {
+    title: "Realme GT 6",
+    subtitle: "Performance Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/realme",
+    brand: "Realme",
+    description: "High-performance Realme smartphone designed for gaming and entertainment.",
+    information: "12GB RAM, 256GB storage and high refresh rate display.",
+    price: 58000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 10,
+    size: "6.78 inch",
+    ram: "12GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Realme 12 Pro+",
+    subtitle: "Camera Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/realme",
+    brand: "Realme",
+    description: "Feature-rich Realme smartphone with advanced camera capabilities.",
+    information: "8GB RAM, 256GB storage and AMOLED display.",
+    price: 42000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 13,
+    size: "6.7 inch",
+    ram: "8GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Realme 13 Pro",
+    subtitle: "Mid Range Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/realme",
+    brand: "Realme",
+    description: "Modern Realme smartphone for photography, entertainment and everyday use.",
+    information: "8GB RAM, 128GB storage and AMOLED display.",
+    price: 36000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 17,
+    size: "6.7 inch",
+    ram: "8GB",
+    ssd: "128GB",
+  },
+
+  {
+    title: "Realme Narzo 70 Pro",
+    subtitle: "Affordable Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/realme",
+    brand: "Realme",
+    description: "Affordable 5G smartphone with modern design and strong daily performance.",
+    information: "8GB RAM, 128GB storage and 5G connectivity.",
+    price: 32000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 20,
+    size: "6.7 inch",
+    ram: "8GB",
+    ssd: "128GB",
+  },
+
+  {
+    title: "Realme C67",
+    subtitle: "Budget Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/realme",
+    brand: "Realme",
+    description: "Budget-friendly Realme smartphone designed for everyday communication and entertainment.",
+    information: "8GB RAM, 128GB storage and large display.",
+    price: 22000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.4,
+    stock: 24,
+    size: "6.72 inch",
+    ram: "8GB",
+    ssd: "128GB",
+  },
+
+  // =====================================
+  // GOOGLE PIXEL
+  // =====================================
+
+  {
+    title: "Google Pixel 9",
+    subtitle: "AI Powered Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/google-pixel",
+    brand: "Google Pixel",
+    description: "Modern Google Pixel smartphone with advanced AI and camera features.",
+    information: "12GB RAM, 128GB storage and advanced AI features.",
+    price: 85000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 9,
+    size: "6.3 inch",
+    ram: "12GB",
+    ssd: "128GB",
+  },
+
+  {
+    title: "Google Pixel 9 Pro",
+    subtitle: "Professional Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/google-pixel",
+    brand: "Google Pixel",
+    description: "Premium Google smartphone with advanced camera and AI capabilities.",
+    information: "16GB RAM, 256GB storage and advanced AI technology.",
+    price: 115000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    size: "6.3 inch",
+    ram: "16GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Google Pixel 8",
+    subtitle: "Premium Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/google-pixel",
+    brand: "Google Pixel",
+    description: "Premium Android smartphone with excellent camera performance and clean software.",
+    information: "8GB RAM, 128GB storage and Google Tensor processor.",
+    price: 68000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
     rating: 4.7,
     stock: 11,
-    size: "Outdoor"
+    size: "6.2 inch",
+    ram: "8GB",
+    ssd: "128GB",
   },
 
   {
-    id: 193,
-    title: "Hikvision DS-2CD2387G2-LU",
-    subtitle: "8MP ColorVu Turret IP Camera",
-    category: "Security",
-    subcategory: "IP Camera",
-    descriptions: "Premium 4K ColorVu turret camera for high-detail surveillance in low-light environments.",
-    information: {
-      brand: "Hikvision",
-      resolution: "8MP",
-      video: "4K UHD",
-      nightVision: "ColorVu",
-      lens: "2.8mm",
-      connection: "PoE",
-      protection: "IP67",
-      audio: "Built-in Microphone"
-    },
-    price: 22500,
-    image: "/images/products/hikvision-ds-2cd2387g2.jpg",
-    rating: 4.9,
-    stock: 5,
-    size: "Turret"
-  },
-
-  {
-    id: 194,
-    title: "Dahua IPC-HDW3549H-AS-PV",
-    subtitle: "5MP Full Color Active Deterrence Camera",
-    category: "Security",
-    subcategory: "IP Camera",
-    descriptions: "Advanced 5MP surveillance camera with full-color night vision, audio and active deterrence.",
-    information: {
-      brand: "Dahua",
-      resolution: "5MP",
-      video: "2880 x 1620",
-      nightVision: "Full Color",
-      lens: "2.8mm",
-      connection: "PoE",
-      protection: "IP67",
-      deterrence: "Light and Siren"
-    },
-    price: 15500,
-    image: "/images/products/dahua-ipc-hdw3549h.jpg",
+    title: "Google Pixel 8 Pro",
+    subtitle: "Professional Camera Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/google-pixel",
+    brand: "Google Pixel",
+    description: "Professional Pixel smartphone focused on photography, AI and performance.",
+    information: "12GB RAM, 256GB storage and advanced camera system.",
+    price: 90000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
     rating: 4.8,
     stock: 7,
-    size: "Dome"
+    size: "6.7 inch",
+    ram: "12GB",
+    ssd: "256GB",
   },
 
   {
-    id: 195,
-    title: "Western Digital Purple 6TB",
-    subtitle: "6TB Surveillance Hard Drive",
-    category: "Security",
-    subcategory: "CCTV Storage",
-    descriptions: "Surveillance-optimized hard drive designed for continuous recording and CCTV systems.",
-    information: {
-      brand: "Western Digital",
-      capacity: "6TB",
-      interface: "SATA III",
-      RPM: "5400 RPM",
-      cache: "256MB",
-      workload: "180TB/year",
-      warranty: "3 Years"
-    },
-    price: 14500,
-    image: "/images/products/wd-purple-6tb.jpg",
-    rating: 4.8,
+    title: "Google Pixel 7",
+    subtitle: "Affordable Android Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Android Phone",
+    categoryPath: "phone/smartphone/android-phone/google-pixel",
+    brand: "Google Pixel",
+    description: "Reliable Google Pixel smartphone with clean Android software and strong camera performance.",
+    information: "8GB RAM, 128GB storage and Google Tensor processor.",
+    price: 52000,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 14,
+    size: "6.3 inch",
+    ram: "8GB",
+    ssd: "128GB",
+  },
+
+  // =====================================
+  // IPHONE
+  // =====================================
+
+  {
+    title: "iPhone 15 128GB",
+    subtitle: "Apple Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "iPhone",
+    categoryPath: "phone/smartphone/iphone/apple",
+    brand: "Apple",
+    description: "Premium Apple smartphone with modern performance and camera system.",
+    information: "128GB storage with advanced Apple processor.",
+    price: 105000,
+    image: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
     stock: 10,
-    size: "3.5-inch"
+    size: "6.1 inch",
+    ssd: "128GB",
   },
 
   {
-    id: 196,
-    title: "Seagate SkyHawk 4TB",
-    subtitle: "4TB Surveillance HDD",
-    category: "Security",
-    subcategory: "CCTV Storage",
-    descriptions: "Surveillance-grade hard drive designed for DVR and NVR recording systems.",
-    information: {
-      brand: "Seagate",
-      capacity: "4TB",
-      interface: "SATA III",
-      RPM: "5400 RPM",
-      cache: "256MB",
-      workload: "180TB/year",
-      warranty: "3 Years"
-    },
-    price: 11000,
-    image: "/images/products/seagate-skyhawk-4tb.jpg",
+    title: "iPhone 15 Pro",
+    subtitle: "Professional Apple Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "iPhone",
+    categoryPath: "phone/smartphone/iphone/apple",
+    brand: "Apple",
+    description: "Professional Apple smartphone with premium performance and advanced cameras.",
+    information: "256GB storage with Pro performance.",
+    price: 135000,
+    image: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 8,
+    size: "6.1 inch",
+    ssd: "256GB",
+  },
+
+  {
+    title: "iPhone 15 Pro Max",
+    subtitle: "Premium Apple Flagship",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "iPhone",
+    categoryPath: "phone/smartphone/iphone/apple",
+    brand: "Apple",
+    description: "Large premium Apple smartphone designed for demanding users.",
+    information: "256GB storage with Pro camera system.",
+    price: 155000,
+    image: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 6,
+    size: "6.7 inch",
+    ssd: "256GB",
+  },
+
+  {
+    title: "iPhone 14",
+    subtitle: "Apple Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "iPhone",
+    categoryPath: "phone/smartphone/iphone/apple",
+    brand: "Apple",
+    description: "Reliable Apple smartphone with strong performance and modern camera features.",
+    information: "128GB storage with Apple performance.",
+    price: 85000,
+    image: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 12,
+    size: "6.1 inch",
+    ssd: "128GB",
+  },
+
+  {
+    title: "iPhone 13",
+    subtitle: "Popular Apple Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "iPhone",
+    categoryPath: "phone/smartphone/iphone/apple",
+    brand: "Apple",
+    description: "Popular Apple smartphone suitable for everyday use, photography and entertainment.",
+    information: "128GB storage with powerful Apple processor.",
+    price: 72000,
+    image: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 18,
+    size: "6.1 inch",
+    ssd: "128GB",
+  },
+
+  // =====================================
+  // GAMING PHONE
+  // =====================================
+
+  {
+    title: "ASUS ROG Phone 9",
+    subtitle: "Ultimate Gaming Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Gaming Phone",
+    categoryPath: "phone/smartphone/gaming-phone/asus",
+    brand: "ASUS",
+    description: "High-performance gaming smartphone designed for demanding mobile games.",
+    information: "12GB RAM, 256GB storage and high refresh rate gaming display.",
+    price: 105000,
+    image: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 7,
+    size: "6.78 inch",
+    ram: "12GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "RedMagic 10 Pro",
+    subtitle: "Professional Gaming Phone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Gaming Phone",
+    categoryPath: "phone/smartphone/gaming-phone/redmagic",
+    brand: "RedMagic",
+    description: "Gaming-focused smartphone built for high-performance mobile gaming.",
+    information: "16GB RAM, 512GB storage and dedicated cooling system.",
+    price: 92000,
+    image: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 8,
+    size: "6.85 inch",
+    ram: "16GB",
+    ssd: "512GB",
+  },
+
+  {
+    title: "Black Shark 6 Pro",
+    subtitle: "High Performance Gaming Phone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Gaming Phone",
+    categoryPath: "phone/smartphone/gaming-phone/black-shark",
+    brand: "Black Shark",
+    description: "Gaming smartphone designed for competitive gaming and heavy applications.",
+    information: "12GB RAM, 256GB storage and advanced cooling technology.",
+    price: 82000,
+    image: "https://images.unsplash.com/photo-1585060544812-6b45742d762f?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 6,
+    size: "6.8 inch",
+    ram: "12GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Lenovo Legion Phone",
+    subtitle: "Gaming Performance Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Gaming Phone",
+    categoryPath: "phone/smartphone/gaming-phone/lenovo",
+    brand: "Lenovo",
+    description: "Powerful gaming smartphone designed for long gaming sessions.",
+    information: "12GB RAM, 256GB storage and high-capacity battery.",
+    price: 76000,
+    image: "https://images.unsplash.com/photo-1607936854279-55e8f4bc5b4d?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 11,
+    size: "6.92 inch",
+    ram: "12GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "iQOO 13 Gaming Phone",
+    subtitle: "Flagship Gaming Smartphone",
+    category: "Phone",
+    subcategory: "Smartphone",
+    type: "Gaming Phone",
+    categoryPath: "phone/smartphone/gaming-phone/iqoo",
+    brand: "iQOO",
+    description: "Flagship gaming smartphone offering fast performance and smooth gameplay.",
+    information: "12GB RAM, 256GB storage and fast charging technology.",
+    price: 72000,
+    image: "https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 13,
+    size: "6.78 inch",
+    ram: "12GB",
+    ssd: "256GB",
+  },
+]);
+
+
+// ============================================================
+// TABLET PRODUCTS 511–530
+// ============================================================
+
+const tabletProducts = createProducts(511, [
+  // =========================================================
+  // ANDROID TABLET — 5
+  // =========================================================
+
+  {
+    title: "Samsung Galaxy Tab S9",
+    subtitle: "Premium Android Tablet",
+    category: "Tablet",
+    subcategory: "Android Tablet",
+    categoryPath: "tablet/android/samsung",
+    type: "Android Tablet",
+    brand: "Samsung",
+    series: "Galaxy Tab S",
+    description:
+      "Premium Samsung Android tablet for productivity, entertainment and everyday use.",
+    information:
+      "11-inch AMOLED display, 12GB RAM and 256GB storage.",
+    price: 85000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 8,
+    size: "11 inch",
+    ram: "12GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Samsung Galaxy Tab A9+",
+    subtitle: "Samsung Android Tablet",
+    category: "Tablet",
+    subcategory: "Android Tablet",
+    categoryPath: "tablet/android/samsung",
+    type: "Android Tablet",
+    brand: "Samsung",
+    series: "Galaxy Tab A",
+    description:
+      "Affordable Samsung tablet for study, browsing and entertainment.",
+    information:
+      "11-inch display with 8GB RAM and 128GB storage.",
+    price: 32000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 15,
+    size: "11 inch",
+    ram: "8GB",
+    ssd: "128GB",
+  },
+
+  {
+    title: "Xiaomi Pad 6",
+    subtitle: "Xiaomi Android Tablet",
+    category: "Tablet",
+    subcategory: "Android Tablet",
+    categoryPath: "tablet/android/xiaomi",
+    type: "Android Tablet",
+    brand: "Xiaomi",
+    series: "Xiaomi Pad",
+    description:
+      "Powerful Xiaomi Android tablet for productivity and entertainment.",
+    information:
+      "11-inch high-resolution display with 8GB RAM and 256GB storage.",
+    price: 42000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 11,
+    size: "11 inch",
+    ram: "8GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Lenovo Tab P12",
+    subtitle: "Lenovo Android Tablet",
+    category: "Tablet",
+    subcategory: "Android Tablet",
+    categoryPath: "tablet/android/lenovo",
+    type: "Android Tablet",
+    brand: "Lenovo",
+    series: "Tab P",
+    description:
+      "Large-screen Lenovo tablet suitable for work, study and entertainment.",
+    information:
+      "12.7-inch display with 8GB RAM and 256GB storage.",
+    price: 48000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 9,
+    size: "12.7 inch",
+    ram: "8GB",
+    ssd: "256GB",
+  },
+
+  {
+    title: "OnePlus Pad",
+    subtitle: "OnePlus Android Tablet",
+    category: "Tablet",
+    subcategory: "Android Tablet",
+    categoryPath: "tablet/android/oneplus",
+    type: "Android Tablet",
+    brand: "OnePlus",
+    series: "OnePlus Pad",
+    description:
+      "High-performance Android tablet designed for productivity and multimedia.",
+    information:
+      "11.61-inch display with 8GB RAM and 128GB storage.",
+    price: 55000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 7,
+    size: "11.61 inch",
+    ram: "8GB",
+    ssd: "128GB",
+  },
+
+  // =========================================================
+  // IPAD MINI — 8
+  // =========================================================
+
+  {
+    title: "Apple iPad Mini 6 64GB",
+    subtitle: "Compact Apple Tablet",
+    category: "Tablet",
+    subcategory: "iPad Mini",
+    categoryPath: "tablet/ipad/mini",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Mini",
+    description:
+      "Compact iPad Mini designed for portability, entertainment and everyday productivity.",
+    information:
+      "8.3-inch Liquid Retina display with 64GB storage.",
+    price: 65000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 12,
+    size: "8.3 inch",
+    ssd: "64GB",
+  },
+
+  {
+    title: "Apple iPad Mini 6 256GB",
+    subtitle: "Compact Apple Tablet",
+    category: "Tablet",
+    subcategory: "iPad Mini",
+    categoryPath: "tablet/ipad/mini",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Mini",
+    description:
+      "Compact premium iPad with larger storage for users who need portability.",
+    information:
+      "8.3-inch Liquid Retina display with 256GB storage.",
+    price: 82000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 9,
+    size: "8.3 inch",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Apple iPad Mini Wi-Fi 64GB",
+    subtitle: "Apple Mini Tablet",
+    category: "Tablet",
+    subcategory: "iPad Mini",
+    categoryPath: "tablet/ipad/mini",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Mini",
+    description:
+      "Portable iPad Mini for reading, browsing and entertainment.",
+    information:
+      "Compact 8.3-inch display and 64GB internal storage.",
+    price: 68000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
     rating: 4.7,
     stock: 14,
-    size: "3.5-inch"
+    size: "8.3 inch",
+    ssd: "64GB",
   },
 
   {
-    id: 197,
-    title: "Hikvision DS-3E0505-E",
-    subtitle: "5-Port Gigabit Unmanaged Switch",
-    category: "Networking",
-    subcategory: "Network Switch",
-    descriptions: "Compact gigabit switch suitable for connecting computers, cameras and network devices.",
-    information: {
-      brand: "Hikvision",
-      ports: "5 x Gigabit",
-      speed: "10/100/1000Mbps",
-      management: "Unmanaged",
-      switchingCapacity: "10Gbps",
-      installation: "Desktop",
-      power: "External Adapter"
-    },
-    price: 2200,
-    image: "/images/products/hikvision-ds-3e0505-e.jpg",
-    rating: 4.6,
-    stock: 30,
-    size: "5-Port"
+    title: "Apple iPad Mini Wi-Fi 256GB",
+    subtitle: "Apple Mini Tablet",
+    category: "Tablet",
+    subcategory: "iPad Mini",
+    categoryPath: "tablet/ipad/mini",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Mini",
+    description:
+      "Portable premium Apple tablet with expanded storage.",
+    information:
+      "8.3-inch Liquid Retina display with 256GB storage.",
+    price: 85000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 8,
+    size: "8.3 inch",
+    ssd: "256GB",
   },
 
   {
-    id: 198,
-    title: "TP-Link TL-SG105",
-    subtitle: "5-Port Gigabit Desktop Switch",
-    category: "Networking",
-    subcategory: "Network Switch",
-    descriptions: "Small plug-and-play gigabit switch for home and small office networks.",
-    information: {
-      brand: "TP-Link",
-      ports: "5 x Gigabit",
-      speed: "10/100/1000Mbps",
-      management: "Unmanaged",
-      switchingCapacity: "10Gbps",
-      installation: "Desktop",
-      housing: "Metal"
-    },
-    price: 2100,
-    image: "/images/products/tp-link-tl-sg105.jpg",
+    title: "Apple iPad Mini Cellular 64GB",
+    subtitle: "Apple Cellular Tablet",
+    category: "Tablet",
+    subcategory: "iPad Mini",
+    categoryPath: "tablet/ipad/mini",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Mini",
+    description:
+      "Compact cellular iPad Mini for mobile productivity and entertainment.",
+    information:
+      "8.3-inch display with 64GB storage and cellular connectivity.",
+    price: 78000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
     rating: 4.8,
-    stock: 35,
-    size: "5-Port"
+    stock: 6,
+    size: "8.3 inch",
+    ssd: "64GB",
   },
 
   {
-    id: 199,
-    title: "Mercusys MS108G",
-    subtitle: "8-Port Gigabit Desktop Switch",
-    category: "Networking",
-    subcategory: "Network Switch",
-    descriptions: "Affordable 8-port gigabit switch for expanding wired network connections.",
-    information: {
-      brand: "Mercusys",
-      ports: "8 x Gigabit",
-      speed: "10/100/1000Mbps",
-      management: "Unmanaged",
-      switchingCapacity: "16Gbps",
-      installation: "Desktop",
-      power: "External Adapter"
-    },
-    price: 2400,
-    image: "/images/products/mercusys-ms108g.jpg",
+    title: "Apple iPad Mini Cellular 256GB",
+    subtitle: "Apple Cellular Tablet",
+    category: "Tablet",
+    subcategory: "iPad Mini",
+    categoryPath: "tablet/ipad/mini",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Mini",
+    description:
+      "Premium cellular iPad Mini with expanded storage.",
+    information:
+      "8.3-inch display with 256GB storage and cellular connectivity.",
+    price: 96000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 5,
+    size: "8.3 inch",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Apple iPad Mini Starlight 64GB",
+    subtitle: "Apple Mini Tablet",
+    category: "Tablet",
+    subcategory: "iPad Mini",
+    categoryPath: "tablet/ipad/mini",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Mini",
+    description:
+      "Compact Apple tablet with a lightweight design for everyday use.",
+    information:
+      "8.3-inch Liquid Retina display and 64GB storage.",
+    price: 67000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 10,
+    size: "8.3 inch",
+    ssd: "64GB",
+  },
+
+  {
+    title: "Apple iPad Mini Purple 256GB",
+    subtitle: "Apple Mini Tablet",
+    category: "Tablet",
+    subcategory: "iPad Mini",
+    categoryPath: "tablet/ipad/mini",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Mini",
+    description:
+      "Premium compact iPad Mini with large storage capacity.",
+    information:
+      "8.3-inch Liquid Retina display with 256GB storage.",
+    price: 84000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 7,
+    size: "8.3 inch",
+    ssd: "256GB",
+  },
+
+  // =========================================================
+  // IPAD PRO — 8
+  // =========================================================
+
+  {
+    title: "Apple iPad Pro 11 M4 256GB",
+    subtitle: "Professional Apple Tablet",
+    category: "Tablet",
+    subcategory: "iPad Pro",
+    categoryPath: "tablet/ipad/pro",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Pro",
+    description:
+      "Professional iPad Pro designed for creative work, productivity and performance.",
+    information:
+      "11-inch display with M4 chip and 256GB storage.",
+    price: 115000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    size: "11 inch",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Apple iPad Pro 11 M4 512GB",
+    subtitle: "Professional Apple Tablet",
+    category: "Tablet",
+    subcategory: "iPad Pro",
+    categoryPath: "tablet/ipad/pro",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Pro",
+    description:
+      "High-performance iPad Pro with expanded storage for professional users.",
+    information:
+      "11-inch display with M4 chip and 512GB storage.",
+    price: 140000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 5,
+    size: "11 inch",
+    ssd: "512GB",
+  },
+
+  {
+    title: "Apple iPad Pro 11 M4 1TB",
+    subtitle: "Professional Apple Tablet",
+    category: "Tablet",
+    subcategory: "iPad Pro",
+    categoryPath: "tablet/ipad/pro",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Pro",
+    description:
+      "Premium professional tablet for demanding creative workflows.",
+    information:
+      "11-inch display with M4 chip and 1TB storage.",
+    price: 175000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 4,
+    size: "11 inch",
+    ssd: "1TB",
+  },
+
+  {
+    title: "Apple iPad Pro 13 M4 256GB",
+    subtitle: "Large Professional Apple Tablet",
+    category: "Tablet",
+    subcategory: "iPad Pro",
+    categoryPath: "tablet/ipad/pro",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Pro",
+    description:
+      "Large-screen iPad Pro for professional productivity and creative work.",
+    information:
+      "13-inch display with M4 chip and 256GB storage.",
+    price: 145000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    size: "13 inch",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Apple iPad Pro 13 M4 512GB",
+    subtitle: "Large Professional Apple Tablet",
+    category: "Tablet",
+    subcategory: "iPad Pro",
+    categoryPath: "tablet/ipad/pro",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Pro",
+    description:
+      "Large premium iPad Pro with high-capacity storage.",
+    information:
+      "13-inch display with M4 chip and 512GB storage.",
+    price: 170000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 5,
+    size: "13 inch",
+    ssd: "512GB",
+  },
+
+  {
+    title: "Apple iPad Pro 13 M4 1TB",
+    subtitle: "Professional Apple Tablet",
+    category: "Tablet",
+    subcategory: "iPad Pro",
+    categoryPath: "tablet/ipad/pro",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Pro",
+    description:
+      "High-end iPad Pro designed for professional creative workloads.",
+    information:
+      "13-inch display with M4 chip and 1TB storage.",
+    price: 205000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 5.0,
+    stock: 3,
+    size: "13 inch",
+    ssd: "1TB",
+  },
+
+  {
+    title: "Apple iPad Pro 11 M2 128GB",
+    subtitle: "Previous Generation iPad Pro",
+    category: "Tablet",
+    subcategory: "iPad Pro",
+    categoryPath: "tablet/ipad/pro",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Pro",
+    description:
+      "Powerful previous-generation iPad Pro for productivity and entertainment.",
+    information:
+      "11-inch display with M2 chip and 128GB storage.",
+    price: 95000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 8,
+    size: "11 inch",
+    ssd: "128GB",
+  },
+
+  {
+    title: "Apple iPad Pro 12.9 M2 256GB",
+    subtitle: "Large iPad Pro",
+    category: "Tablet",
+    subcategory: "iPad Pro",
+    categoryPath: "tablet/ipad/pro",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Pro",
+    description:
+      "Large professional iPad for design, productivity and multimedia.",
+    information:
+      "12.9-inch display with M2 chip and 256GB storage.",
+    price: 125000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    size: "12.9 inch",
+    ssd: "256GB",
+  },
+
+  // =========================================================
+  // IPAD AIR — 5
+  // =========================================================
+
+  {
+    title: "Apple iPad Air M2 11 128GB",
+    subtitle: "Apple iPad Air",
+    category: "Tablet",
+    subcategory: "iPad Air",
+    categoryPath: "tablet/ipad/air",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Air",
+    description:
+      "Balanced iPad Air for productivity, study and entertainment.",
+    information:
+      "11-inch display with M2 chip and 128GB storage.",
+    price: 85000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 12,
+    size: "11 inch",
+    ssd: "128GB",
+  },
+
+  {
+    title: "Apple iPad Air M2 11 256GB",
+    subtitle: "Apple iPad Air",
+    category: "Tablet",
+    subcategory: "iPad Air",
+    categoryPath: "tablet/ipad/air",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Air",
+    description:
+      "Powerful iPad Air with expanded storage for work and entertainment.",
+    information:
+      "11-inch display with M2 chip and 256GB storage.",
+    price: 98000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 10,
+    size: "11 inch",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Apple iPad Air M2 13 128GB",
+    subtitle: "Large iPad Air",
+    category: "Tablet",
+    subcategory: "iPad Air",
+    categoryPath: "tablet/ipad/air",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Air",
+    description:
+      "Large-screen iPad Air for productivity, study and creative work.",
+    information:
+      "13-inch display with M2 chip and 128GB storage.",
+    price: 105000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 8,
+    size: "13 inch",
+    ssd: "128GB",
+  },
+
+  {
+    title: "Apple iPad Air M2 13 256GB",
+    subtitle: "Large iPad Air",
+    category: "Tablet",
+    subcategory: "iPad Air",
+    categoryPath: "tablet/ipad/air",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Air",
+    description:
+      "Large premium iPad Air with increased storage capacity.",
+    information:
+      "13-inch display with M2 chip and 256GB storage.",
+    price: 118000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 7,
+    size: "13 inch",
+    ssd: "256GB",
+  },
+
+  {
+    title: "Apple iPad Air 5th Gen 64GB",
+    subtitle: "Apple iPad Air",
+    category: "Tablet",
+    subcategory: "iPad Air",
+    categoryPath: "tablet/ipad/air",
+    type: "iPad",
+    brand: "Apple",
+    series: "iPad Air",
+    description:
+      "Versatile iPad Air for education, entertainment and everyday productivity.",
+    information:
+      "10.9-inch display with M1 chip and 64GB storage.",
+    price: 72000,
+    image:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 10,
+    size: "10.9 inch",
+    ssd: "64GB",
+  },
+
+  // =========================================================
+  // TABLET ACCESSORIES — 6
+  // =========================================================
+
+  {
+    title: "Apple Magic Keyboard for iPad",
+    subtitle: "Tablet Keyboard",
+    category: "Tablet",
+    subcategory: "Tablet Accessories",
+    categoryPath: "tablet/accessories/keyboard",
+    type: "Tablet Accessories",
+    brand: "Apple",
+    series: "Magic Keyboard",
+    description:
+      "Premium keyboard accessory designed for compatible iPad models.",
+    information:
+      "Magnetic keyboard with integrated trackpad and protective design.",
+    price: 28000,
+    image:
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 15,
+    size: "Standard",
+  },
+
+  {
+    title: "Apple Pencil 2nd Generation",
+    subtitle: "iPad Stylus",
+    category: "Tablet",
+    subcategory: "Tablet Accessories",
+    categoryPath: "tablet/accessories/stylus",
+    type: "Tablet Accessories",
+    brand: "Apple",
+    series: "Apple Pencil",
+    description:
+      "Precision stylus for compatible iPad models.",
+    information:
+      "Low-latency stylus designed for drawing, note-taking and creative work.",
+    price: 16000,
+    image:
+      "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 20,
+    size: "Standard",
+  },
+
+  {
+    title: "Samsung S Pen",
+    subtitle: "Samsung Tablet Stylus",
+    category: "Tablet",
+    subcategory: "Tablet Accessories",
+    categoryPath: "tablet/accessories/stylus",
+    type: "Tablet Accessories",
+    brand: "Samsung",
+    series: "S Pen",
+    description:
+      "Stylus accessory for compatible Samsung Galaxy tablets.",
+    information:
+      "Precision pen for writing, drawing and navigation.",
+    price: 7500,
+    image:
+      "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=800&q=80",
     rating: 4.6,
-    stock: 28,
-    size: "8-Port"
+    stock: 18,
+    size: "Standard",
   },
 
   {
-    id: 200,
-    title: "TP-Link Archer MR600",
-    subtitle: "4G+ Cat6 AC1200 LTE Router",
-    category: "Networking",
-    subcategory: "4G Router",
-    descriptions: "4G LTE router providing high-speed internet connectivity with SIM card support.",
-    information: {
-      brand: "TP-Link",
-      network: "4G+ Cat6",
-      WiFi: "AC1200",
-      bands: "Dual Band",
-      downloadSpeed: "Up to 300Mbps",
-      ports: "4 x Gigabit",
-      SIM: "Nano SIM"
-    },
-    price: 18500,
-    image: "/images/products/tp-link-archer-mr600.jpg",
+    title: "Universal Tablet Stand",
+    subtitle: "Adjustable Tablet Stand",
+    category: "Tablet",
+    subcategory: "Tablet Accessories",
+    categoryPath: "tablet/accessories/stand",
+    type: "Tablet Accessories",
+    brand: "Universal",
+    series: "Tablet Stand",
+    description:
+      "Adjustable stand for smartphones and tablets.",
+    information:
+      "Foldable design with multiple viewing angles.",
+    price: 1800,
+    image:
+      "https://images.unsplash.com/photo-1587033411391-5d9e51cce126?auto=format&fit=crop&w=800&q=80",
+    rating: 4.4,
+    stock: 30,
+    size: "Standard",
+  },
+
+  {
+    title: "Universal Tablet Protective Case",
+    subtitle: "Tablet Cover",
+    category: "Tablet",
+    subcategory: "Tablet Accessories",
+    categoryPath: "tablet/accessories/case",
+    type: "Tablet Accessories",
+    brand: "Universal",
+    series: "Protective Case",
+    description:
+      "Protective tablet case designed for everyday use.",
+    information:
+      "Lightweight protective cover with adjustable viewing position.",
+    price: 2200,
+    image:
+      "https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 25,
+    size: "Standard",
+  },
+
+  {
+    title: "USB-C Tablet Hub",
+    subtitle: "Multi-Port Tablet Adapter",
+    category: "Tablet",
+    subcategory: "Tablet Accessories",
+    categoryPath: "tablet/accessories/hub",
+    type: "Tablet Accessories",
+    brand: "Universal",
+    series: "USB-C Hub",
+    description:
+      "Multi-port USB-C hub for compatible tablets and laptops.",
+    information:
+      "Provides additional USB, HDMI and card-reader connectivity.",
+    price: 3500,
+    image:
+      "https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 16,
+    size: "Standard",
+  },
+]);
+
+
+// ============================================================
+// CAMERA PRODUCTS 531–550
+// ============================================================
+
+const cameraProducts = createProducts(531, [
+  {
+    title: "Canon EOS R50 Mirrorless Camera",
+    subtitle: "Entry Mirrorless Camera",
+    category: "Camera",
+    subcategory: "Mirrorless Camera",
+    categoryPath: "camera/mirrorless",
+    description: "Compact mirrorless camera for photography and content creation.",
+    information: "24MP sensor with interchangeable lens support.",
+    price: 95000,
+    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 6,
+    size: "Compact",
+  },
+  {
+    title: "Sony Alpha A7 IV",
+    subtitle: "Professional Mirrorless Camera",
+    category: "Camera",
+    subcategory: "Mirrorless Camera",
+    categoryPath: "camera/mirrorless",
+    description: "Professional full-frame mirrorless camera for photography and video.",
+    information: "33MP full-frame sensor with advanced autofocus.",
+    price: 245000,
+    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 4,
+    size: "Standard",
+  },
+
+  ...Array.from({ length: 18 }, (_, index) => {
+    const types = [
+      ["Canon", "DSLR", "dslr"],
+      ["Sony", "Mirrorless Camera", "mirrorless"],
+      ["Nikon", "DSLR", "dslr"],
+      ["Fujifilm", "Mirrorless Camera", "mirrorless"],
+      ["GoPro", "Action Camera", "action-camera"],
+    ];
+
+    const [brand, type, path] = types[index % types.length];
+
+    return {
+      title: `${brand} Camera ${index + 1}`,
+      subtitle: type,
+      category: "Camera",
+      subcategory: type,
+      categoryPath: `camera/${path}`,
+      description: `High-quality ${type.toLowerCase()} for photography and video creation.`,
+      information: "High-resolution sensor with advanced image processing.",
+      price: 35000 + index * 9000,
+      image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80",
+      rating: 4.5 + (index % 5) * 0.1,
+      stock: 4 + index,
+      size: "Standard",
+    };
+  }),
+]);
+
+
+// ============================================================
+// APPLIANCE PRODUCTS 551–580
+// ============================================================
+
+const applianceProducts = createProducts(551, [
+  {
+    title: "Samsung 260L Refrigerator",
+    subtitle: "Frost Free Refrigerator",
+    category: "Appliance",
+    subcategory: "Refrigerator",
+    categoryPath: "appliance/refrigerator",
+    description: "Energy-efficient refrigerator for modern homes.",
+    information: "260-liter capacity with frost-free cooling.",
+    price: 58000,
+    image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
     rating: 4.7,
     stock: 8,
-    size: "Desktop"
+    size: "260L",
   },
-// =========================
-// BATCH 5 — PRODUCTS 201-250
-// SOFTWARE, GADGETS, OFFICE EQUIPMENT,
-// APPLIANCES, GAMING & TV
-// =========================
-
-{
-  id: 201,
-  title: "Microsoft Windows 11 Home",
-  subtitle: "64-bit Operating System License",
-  category: "Software",
-  subcategory: "Operating System",
-  description: "Modern Windows operating system designed for home users with improved security, productivity features and a redesigned interface.",
-  information: {
-    brand: "Microsoft",
-    edition: "Windows 11 Home",
-    architecture: "64-bit",
-    license: "1 PC",
-    activation: "Digital License",
-    language: "English",
-    support: "Microsoft Support"
+  {
+    title: "LG 1.5 Ton Inverter AC",
+    subtitle: "Energy Efficient Air Conditioner",
+    category: "Appliance",
+    subcategory: "Air Conditioner",
+    categoryPath: "appliance/air-conditioner",
+    description: "Energy-efficient inverter air conditioner for comfortable home cooling.",
+    information: "1.5 ton inverter AC with efficient cooling.",
+    price: 65000,
+    image: "https://images.unsplash.com/photo-1631545806609-2e8f6f7e6a9c?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 7,
+    size: "1.5 Ton",
   },
-  price: 14500,
-  image: "/images/products/windows-11-home.jpg",
-  rating: 4.7,
-  stock: 15,
-  size: "1 PC"
-},
-
-{
-  id: 202,
-  title: "Microsoft Windows 11 Pro",
-  subtitle: "Professional 64-bit Operating System",
-  category: "Software",
-  subcategory: "Operating System",
-  description: "Professional Windows operating system with advanced security, device management and business networking features.",
-  information: {
-    brand: "Microsoft",
-    edition: "Windows 11 Pro",
-    architecture: "64-bit",
-    license: "1 PC",
-    activation: "Digital License",
-    security: "BitLocker",
-    remoteDesktop: "Supported"
+  {
+    title: "Samsung 8KG Washing Machine",
+    subtitle: "Automatic Washing Machine",
+    category: "Appliance",
+    subcategory: "Washing Machine",
+    categoryPath: "appliance/washing-machine",
+    description: "Automatic washing machine for convenient home laundry.",
+    information: "8KG capacity with multiple washing programs.",
+    price: 52000,
+    image: "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 9,
+    size: "8KG",
   },
-  price: 18500,
-  image: "/images/products/windows-11-pro.jpg",
-  rating: 4.8,
-  stock: 12,
-  size: "1 PC"
-},
 
-{
-  id: 203,
-  title: "Microsoft Office Home 2024",
-  subtitle: "Word, Excel and PowerPoint Productivity Suite",
-  category: "Software",
-  subcategory: "Office Software",
-  description: "Productivity software package for creating documents, spreadsheets and presentations for home and educational use.",
-  information: {
-    brand: "Microsoft",
-    edition: "Office Home 2024",
-    applications: "Word, Excel, PowerPoint",
-    license: "1 PC",
-    operatingSystem: "Windows",
-    activation: "Digital",
-    support: "Microsoft Support"
+  ...Array.from({ length: 27 }, (_, index) => {
+    const types = [
+      ["Refrigerator", "refrigerator"],
+      ["Air Conditioner", "air-conditioner"],
+      ["Washing Machine", "washing-machine"],
+      ["Microwave Oven", "microwave-oven"],
+      ["Rice Cooker", "rice-cooker"],
+      ["Electric Oven", "electric-oven"],
+      ["Blender", "blender"],
+      ["Vacuum Cleaner", "vacuum-cleaner"],
+      ["Electric Kettle", "electric-kettle"],
+    ];
+
+    const [type, path] = types[index % types.length];
+
+    return {
+      title: `${type} Home Appliance ${index + 1}`,
+      subtitle: "Home Appliance",
+      category: "Appliance",
+      subcategory: type,
+      categoryPath: `appliance/${path}`,
+      description: `Modern ${type.toLowerCase()} designed for convenient home use.`,
+      information: "Energy-efficient appliance with practical modern features.",
+      price: 3500 + index * 3500,
+      image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
+      rating: 4.4 + (index % 6) * 0.1,
+      stock: 5 + index,
+      size: "Standard",
+    };
+  }),
+]);
+
+
+// ============================================================
+// GADGET PRODUCTS 581–600
+// ============================================================
+
+const gadgetProducts = createProducts(581, [
+  {
+    title: "Apple AirPods Pro",
+    subtitle: "Premium Wireless Earbuds",
+    category: "Gadget",
+    subcategory: "Earbuds",
+    categoryPath: "gadget/earbuds",
+    description: "Premium wireless earbuds with active noise cancellation.",
+    information: "Wireless earbuds with charging case and noise cancellation.",
+    price: 28000,
+    image: "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 12,
+    size: "Compact",
   },
-  price: 16500,
-  image: "/images/products/microsoft-office-home-2024.jpg",
-  rating: 4.8,
-  stock: 14,
-  size: "1 PC"
-},
-
-{
-  id: 204,
-  title: "Microsoft Office Home & Business 2024",
-  subtitle: "Professional Productivity Software Suite",
-  category: "Software",
-  subcategory: "Office Software",
-  description: "Business productivity suite designed for professional document creation, spreadsheets, presentations and email management.",
-  information: {
-    brand: "Microsoft",
-    edition: "Office Home & Business 2024",
-    applications: "Word, Excel, PowerPoint, Outlook",
-    license: "1 PC or Mac",
-    operatingSystem: "Windows, macOS",
-    activation: "Digital",
-    support: "Microsoft Support"
+  {
+    title: "Apple Watch Series 9",
+    subtitle: "Smart Watch",
+    category: "Gadget",
+    subcategory: "Smart Watch",
+    categoryPath: "gadget/smart-watch",
+    description: "Smart watch for fitness, notifications and everyday use.",
+    information: "Advanced smartwatch with health and activity features.",
+    price: 42000,
+    image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 9,
+    size: "45mm",
   },
-  price: 32000,
-  image: "/images/products/office-home-business-2024.jpg",
-  rating: 4.8,
-  stock: 8,
-  size: "1 Device"
-},
 
-{
-  id: 205,
-  title: "ESET Internet Security",
-  subtitle: "Multi-Layer Internet Security Software",
-  category: "Software",
-  subcategory: "Antivirus",
-  description: "Security software designed to protect computers against malware, phishing, ransomware and online threats.",
-  information: {
-    brand: "ESET",
-    protection: "Internet Security",
-    devices: "1 Device",
-    validity: "1 Year",
-    platform: "Windows",
-    features: "Anti-Phishing, Anti-Ransomware",
-    updates: "Automatic"
+  ...Array.from({ length: 18 }, (_, index) => {
+    const types = [
+      ["Wireless Earbuds", "earbuds"],
+      ["Smart Watch", "smart-watch"],
+      ["Bluetooth Speaker", "bluetooth-speaker"],
+      ["Power Bank", "power-bank"],
+      ["Gaming Controller", "gaming-controller"],
+      ["Smart Device", "smart-device"],
+    ];
+
+    const [type, path] = types[index % types.length];
+
+    return {
+      title: `${type} Gadget ${index + 1}`,
+      subtitle: type,
+      category: "Gadget",
+      subcategory: type,
+      categoryPath: `gadget/${path}`,
+      description: `Modern ${type.toLowerCase()} for everyday convenience and entertainment.`,
+      information: "Modern wireless connectivity and practical features.",
+      price: 1800 + index * 1800,
+      image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80",
+      rating: 4.4 + (index % 6) * 0.1,
+      stock: 8 + index,
+      size: "Standard",
+    };
+  }),
+]);
+
+
+// ============================================================
+// SOFTWARE PRODUCTS 601–620
+// ============================================================
+
+const softwareProducts = createProducts(601, [
+  {
+    title: "Microsoft Windows 11 Home",
+    subtitle: "Operating System",
+    category: "Software",
+    subcategory: "Operating System",
+    categoryPath: "software/operating-system",
+    description: "Modern Windows operating system for personal computers.",
+    information: "Windows 11 Home digital software license.",
+    price: 14500,
+    image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 20,
+    size: "Digital",
   },
-  price: 3200,
-  image: "/images/products/eset-internet-security.jpg",
-  rating: 4.7,
-  stock: 20,
-  size: "1 Device"
-},
-
-{
-  id: 206,
-  title: "Kaspersky Standard",
-  subtitle: "Essential Antivirus and Security Software",
-  category: "Software",
-  subcategory: "Antivirus",
-  description: "Security solution offering protection against viruses, malware, phishing and unsafe websites.",
-  information: {
-    brand: "Kaspersky",
-    protection: "Standard",
-    devices: "1 Device",
-    validity: "1 Year",
-    platform: "Windows, macOS",
-    features: "Anti-Malware, Anti-Phishing",
-    updates: "Automatic"
+  {
+    title: "Microsoft Office Home",
+    subtitle: "Productivity Software",
+    category: "Software",
+    subcategory: "Office Software",
+    categoryPath: "software/office-software",
+    description: "Productivity software package for home and office users.",
+    information: "Word, Excel, PowerPoint and other productivity tools.",
+    price: 12500,
+    image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 20,
+    size: "Digital",
   },
-  price: 3500,
-  image: "/images/products/kaspersky-standard.jpg",
-  rating: 4.6,
-  stock: 18,
-  size: "1 Device"
-},
 
-{
-  id: 207,
-  title: "Adobe Acrobat Pro",
-  subtitle: "Professional PDF Management Software",
-  category: "Software",
-  subcategory: "Productivity Software",
-  description: "Professional PDF software for creating, editing, converting, signing and managing business documents.",
-  information: {
-    brand: "Adobe",
-    software: "Acrobat Pro",
-    platform: "Windows, macOS",
-    features: "PDF Editing, Signing, Conversion",
-    license: "Subscription",
-    cloudStorage: "Included",
-    updates: "Automatic"
+  ...Array.from({ length: 18 }, (_, index) => {
+    const types = [
+      ["Operating System", "operating-system"],
+      ["Office Software", "office-software"],
+      ["Antivirus", "antivirus"],
+      ["Design Software", "design-software"],
+      ["Security Software", "security-software"],
+      ["Development Software", "development-software"],
+    ];
+
+    const [type, path] = types[index % types.length];
+
+    return {
+      title: `${type} License ${index + 1}`,
+      subtitle: type,
+      category: "Software",
+      subcategory: type,
+      categoryPath: `software/${path}`,
+      description: `Software license for personal, business and professional use.`,
+      information: "Digital license with software activation support.",
+      price: 3000 + index * 1400,
+      image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80",
+      rating: 4.5 + (index % 5) * 0.1,
+      stock: 20,
+      size: "Digital",
+    };
+  }),
+]);
+
+
+// ============================================================
+// SECURITY PRODUCTS 621–640
+// ============================================================
+
+const securityProducts = createProducts(621, [
+  {
+    title: "Hikvision 2MP Security Camera",
+    subtitle: "Indoor Security Camera",
+    category: "Security",
+    subcategory: "IP Camera",
+    categoryPath: "security/ip-camera",
+    description: "Reliable security camera for home and office monitoring.",
+    information: "2MP camera with night vision and network connectivity.",
+    price: 4500,
+    image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 15,
+    size: "Standard",
   },
-  price: 12500,
-  image: "/images/products/adobe-acrobat-pro.jpg",
-  rating: 4.7,
-  stock: 10,
-  size: "1 User"
-},
-
-{
-  id: 208,
-  title: "JetBrains All Products Pack",
-  subtitle: "Professional Developer Software Suite",
-  category: "Software",
-  subcategory: "Developer Software",
-  description: "Complete developer software package providing access to professional IDEs and development tools.",
-  information: {
-    brand: "JetBrains",
-    products: "IntelliJ IDEA, WebStorm, PyCharm and More",
-    license: "Subscription",
-    platform: "Windows, macOS, Linux",
-    users: "1 User",
-    updates: "Included",
-    support: "JetBrains Support"
+  {
+    title: "Hikvision 4MP IP Camera",
+    subtitle: "High Resolution Security Camera",
+    category: "Security",
+    subcategory: "IP Camera",
+    categoryPath: "security/ip-camera",
+    description: "High-resolution IP camera for professional security monitoring.",
+    information: "4MP camera with night vision and network connectivity.",
+    price: 7500,
+    image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 10,
+    size: "Standard",
   },
-  price: 28000,
-  image: "/images/products/jetbrains-all-products.jpg",
-  rating: 4.9,
-  stock: 7,
-  size: "1 User"
-},
 
-{
-  id: 209,
-  title: "Norton 360 Deluxe",
-  subtitle: "Multi-Device Internet Security Suite",
-  category: "Software",
-  subcategory: "Antivirus",
-  description: "Comprehensive security suite with malware protection, online privacy features and secure browsing tools.",
-  information: {
-    brand: "Norton",
-    devices: "5 Devices",
-    validity: "1 Year",
-    platform: "Windows, macOS, Android, iOS",
-    features: "Antivirus, VPN, Password Manager",
-    cloudBackup: "Included",
-    updates: "Automatic"
+  ...Array.from({ length: 18 }, (_, index) => {
+    const types = [
+      ["IP Camera", "ip-camera"],
+      ["CCTV Camera", "cctv-camera"],
+      ["DVR", "dvr"],
+      ["NVR", "nvr"],
+      ["Access Control", "access-control"],
+      ["Smart Door Lock", "smart-door-lock"],
+    ];
+
+    const [type, path] = types[index % types.length];
+
+    return {
+      title: `${type} Security Device ${index + 1}`,
+      subtitle: type,
+      category: "Security",
+      subcategory: type,
+      categoryPath: `security/${path}`,
+      description: `Reliable ${type.toLowerCase()} for home and business security.`,
+      information: "Modern security solution with reliable monitoring features.",
+      price: 3500 + index * 2500,
+      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80",
+      rating: 4.4 + (index % 6) * 0.1,
+      stock: 5 + index,
+      size: "Standard",
+    };
+  }),
+]);
+
+
+// ============================================================
+// NETWORKING PRODUCTS 641–660
+// ============================================================
+
+const networkingProducts = createProducts(641, [
+  {
+    title: "TP-Link AC1200 WiFi Router",
+    subtitle: "Dual Band WiFi Router",
+    category: "Networking",
+    subcategory: "Router",
+    categoryPath: "networking/router",
+    description: "Reliable dual-band router for home and small office networks.",
+    information: "AC1200 dual-band WiFi router with multiple LAN ports.",
+    price: 4500,
+    image: "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 18,
+    size: "Standard",
   },
-  price: 6200,
-  image: "/images/products/norton-360-deluxe.jpg",
-  rating: 4.6,
-  stock: 12,
-  size: "5 Devices"
-},
-
-{
-  id: 210,
-  title: "Microsoft Visual Studio Professional",
-  subtitle: "Professional Integrated Development Environment",
-  category: "Software",
-  subcategory: "Developer Software",
-  description: "Professional development environment for building web, desktop, cloud and enterprise applications.",
-  information: {
-    brand: "Microsoft",
-    edition: "Professional",
-    platform: "Windows",
-    languages: "C#, C++, JavaScript and More",
-    tools: "Debugger, Git, Testing",
-    license: "Subscription",
-    support: "Microsoft Support"
+  {
+    title: "TP-Link AX3000 WiFi 6 Router",
+    subtitle: "High Speed WiFi Router",
+    category: "Networking",
+    subcategory: "Router",
+    categoryPath: "networking/router",
+    description: "High-speed WiFi 6 router for modern homes and offices.",
+    information: "AX3000 WiFi 6 router with high-speed wireless connectivity.",
+    price: 8500,
+    image: "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 12,
+    size: "Standard",
   },
-  price: 24000,
-  image: "/images/products/visual-studio-professional.jpg",
-  rating: 4.8,
-  stock: 8,
-  size: "1 User"
-},
 
-// =========================
-// GADGETS
-// =========================
+  ...Array.from({ length: 18 }, (_, index) => {
+    const types = [
+      ["Router", "router"],
+      ["WiFi Adapter", "wifi-adapter"],
+      ["Network Switch", "network-switch"],
+      ["Access Point", "access-point"],
+      ["Network Cable", "network-cable"],
+      ["Network Card", "network-card"],
+    ];
 
-{
-  id: 211,
-  title: "Anker 737 Power Bank",
-  subtitle: "24000mAh 140W Portable Power Bank",
-  category: "Gadgets",
-  subcategory: "Power Bank",
-  description: "High-capacity power bank with high-wattage USB-C output for laptops, smartphones and other mobile devices.",
-  information: {
-    brand: "Anker",
-    capacity: "24000mAh",
-    output: "140W",
-    ports: "2 x USB-C, 1 x USB-A",
-    display: "Digital Display",
-    charging: "USB-C PD",
-    protection: "MultiProtect"
+    const [type, path] = types[index % types.length];
+
+    return {
+      title: `${type} Networking Device ${index + 1}`,
+      subtitle: type,
+      category: "Networking",
+      subcategory: type,
+      categoryPath: `networking/${path}`,
+      description: `Reliable ${type.toLowerCase()} for home, office and professional networks.`,
+      information: "High-speed networking hardware with reliable connectivity.",
+      price: 1200 + index * 900,
+      image: "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=800&q=80",
+      rating: 4.4 + (index % 6) * 0.1,
+      stock: 8 + index,
+      size: "Standard",
+    };
+  }),
+]);
+
+
+// ============================================================
+// COMBINE ALL NEW PRODUCTS
+// ============================================================
+
+productsData.push(
+  ...laptopProducts,
+  ...monitorProducts,
+  ...powerProducts,
+  ...phoneProducts,
+  ...tabletProducts,
+  ...cameraProducts,
+  ...applianceProducts,
+  ...gadgetProducts,
+  ...softwareProducts,
+  ...securityProducts,
+  ...networkingProducts,
+  ...componentsData,
+);
+
+// ============================================================
+// LAPTOP ACCESSORIES + APPLE MACBOOK PRODUCTS
+// IDs: 441–460
+// ============================================================
+
+const laptopExtraProducts = [
+  // ==========================================================
+  // APPLE MACBOOK AIR
+  // ==========================================================
+
+  {
+    id: 441,
+    title: "Apple MacBook Air M3 13-inch",
+    subtitle: "13.6-inch Liquid Retina Display Laptop",
+    category: "Laptop",
+    subcategory: "MacBook Air",
+    categoryPath: "laptop/apple-macbook/macbook-air",
+    description:
+      "Slim and lightweight MacBook Air powered by the Apple M3 chip.",
+    information:
+      "Ideal for programming, business, study, browsing and creative work.",
+    price: 142000,
+    image:
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 8,
+    size: "13.6 inch",
+    processor: "Apple M3",
+    generation: "M3",
+    ram: "8GB Unified Memory",
+    ssd: "256GB SSD",
+    graphicsCard: "Apple 8-Core GPU",
   },
-  price: 18500,
-  image: "/images/products/anker-737-power-bank.jpg",
-  rating: 4.9,
-  stock: 9,
-  size: "24000mAh"
-},
 
-{
-  id: 212,
-  title: "Baseus Blade 100W Power Bank",
-  subtitle: "20000mAh Laptop Power Bank",
-  category: "Gadgets",
-  subcategory: "Power Bank",
-  description: "Slim high-output power bank designed for charging laptops, smartphones, tablets and other USB-C devices.",
-  information: {
-    brand: "Baseus",
-    capacity: "20000mAh",
-    output: "100W",
-    ports: "2 x USB-C, 1 x USB-A",
-    display: "Digital",
-    charging: "USB-C PD",
-    protection: "Overcharge Protection"
+  {
+    id: 442,
+    title: "Apple MacBook Air M3 15-inch",
+    subtitle: "15.3-inch Liquid Retina Display Laptop",
+    category: "Laptop",
+    subcategory: "MacBook Air",
+    categoryPath: "laptop/apple-macbook/macbook-air",
+    description:
+      "Large-screen MacBook Air with Apple M3 performance.",
+    information:
+      "Designed for multitasking, programming, productivity and creative work.",
+    price: 168000,
+    image:
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 6,
+    size: "15.3 inch",
+    processor: "Apple M3",
+    generation: "M3",
+    ram: "16GB Unified Memory",
+    ssd: "512GB SSD",
+    graphicsCard: "Apple 10-Core GPU",
   },
-  price: 9800,
-  image: "/images/products/baseus-blade-100w.jpg",
-  rating: 4.8,
-  stock: 14,
-  size: "20000mAh"
-},
 
-{
-  id: 213,
-  title: "UGREEN Nexode 100W GaN Charger",
-  subtitle: "100W 4-Port GaN Fast Charger",
-  category: "Gadgets",
-  subcategory: "Charger",
-  description: "Compact GaN charger capable of powering laptops, tablets and smartphones from multiple ports.",
-  information: {
-    brand: "UGREEN",
-    output: "100W",
-    technology: "GaN",
-    ports: "3 x USB-C, 1 x USB-A",
-    input: "100-240V",
-    protection: "Over Voltage, Over Current",
-    compatibility: "USB-C PD"
+  {
+    id: 443,
+    title: "Apple MacBook Air M2",
+    subtitle: "13.6-inch Retina Display Laptop",
+    category: "Laptop",
+    subcategory: "MacBook Air",
+    categoryPath: "laptop/apple-macbook/macbook-air",
+    description:
+      "Lightweight MacBook Air powered by the Apple M2 chip.",
+    information:
+      "Suitable for students, developers and professional users.",
+    price: 118000,
+    image:
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 10,
+    size: "13.6 inch",
+    processor: "Apple M2",
+    generation: "M2",
+    ram: "8GB Unified Memory",
+    ssd: "256GB SSD",
+    graphicsCard: "Apple 8-Core GPU",
   },
-  price: 7200,
-  image: "/images/products/ugreen-nexode-100w.jpg",
-  rating: 4.8,
-  stock: 16,
-  size: "100W"
-},
 
-{
-  id: 214,
-  title: "Anker 735 Charger",
-  subtitle: "65W GaNPrime 3-Port Charger",
-  category: "Gadgets",
-  subcategory: "Charger",
-  description: "Compact multi-port GaN charger for simultaneously charging laptops, phones and tablets.",
-  information: {
-    brand: "Anker",
-    output: "65W",
-    technology: "GaNPrime",
-    ports: "2 x USB-C, 1 x USB-A",
-    charging: "Power Delivery",
-    input: "100-240V",
-    protection: "ActiveShield"
+  {
+    id: 444,
+    title: "Apple MacBook Air M2 15",
+    subtitle: "15.3-inch Large Screen MacBook",
+    category: "Laptop",
+    subcategory: "MacBook Air",
+    categoryPath: "laptop/apple-macbook/macbook-air",
+    description:
+      "Large display MacBook Air for productivity and entertainment.",
+    information:
+      "Powerful and portable laptop with excellent battery efficiency.",
+    price: 139000,
+    image:
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 7,
+    size: "15.3 inch",
+    processor: "Apple M2",
+    generation: "M2",
+    ram: "16GB Unified Memory",
+    ssd: "512GB SSD",
+    graphicsCard: "Apple 10-Core GPU",
   },
-  price: 6200,
-  image: "/images/products/anker-735-charger.jpg",
-  rating: 4.8,
-  stock: 18,
-  size: "65W"
-},
 
-{
-  id: 215,
-  title: "UGREEN USB-C to HDMI Adapter",
-  subtitle: "4K HDMI Display Adapter",
-  category: "Gadgets",
-  subcategory: "Adapter",
-  description: "Compact USB-C display adapter for connecting compatible laptops and mobile devices to HDMI displays.",
-  information: {
-    brand: "UGREEN",
-    input: "USB-C",
-    output: "HDMI",
-    resolution: "Up to 4K",
-    refreshRate: "60Hz",
-    compatibility: "Windows, macOS, Android",
-    connection: "USB-C"
+  // ==========================================================
+  // APPLE MACBOOK PRO
+  // ==========================================================
+
+  {
+    id: 445,
+    title: "Apple MacBook Pro M3 14-inch",
+    subtitle: "14.2-inch Professional MacBook",
+    category: "Laptop",
+    subcategory: "MacBook Pro",
+    categoryPath: "laptop/apple-macbook/macbook-pro",
+    description:
+      "Professional MacBook Pro powered by the Apple M3 chip.",
+    information:
+      "Excellent for software development, design and content creation.",
+    price: 185000,
+    image:
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 5,
+    size: "14.2 inch",
+    processor: "Apple M3",
+    generation: "M3",
+    ram: "16GB Unified Memory",
+    ssd: "512GB SSD",
+    graphicsCard: "Apple 10-Core GPU",
   },
-  price: 2200,
-  image: "/images/products/ugreen-usb-c-hdmi-adapter.jpg",
-  rating: 4.7,
-  stock: 30,
-  size: "Compact"
-},
 
-{
-  id: 216,
-  title: "Anker Soundcore Motion X600",
-  subtitle: "Portable High-Resolution Bluetooth Speaker",
-  category: "Gadgets",
-  subcategory: "Bluetooth Speaker",
-  description: "Premium portable speaker delivering immersive wireless audio with long battery life.",
-  information: {
-    brand: "Anker",
-    output: "50W",
-    connectivity: "Bluetooth 5.3",
-    audio: "Spatial Audio",
-    battery: "Up to 12 Hours",
-    charging: "USB-C",
-    waterResistance: "IPX7"
+  {
+    id: 446,
+    title: "Apple MacBook Pro M3 Pro",
+    subtitle: "14.2-inch Professional Laptop",
+    category: "Laptop",
+    subcategory: "MacBook Pro",
+    categoryPath: "laptop/apple-macbook/macbook-pro",
+    description:
+      "High-performance MacBook Pro with Apple M3 Pro processor.",
+    information:
+      "Built for developers, designers and professional creators.",
+    price: 225000,
+    image:
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 5,
+    size: "14.2 inch",
+    processor: "Apple M3 Pro",
+    generation: "M3 Pro",
+    ram: "18GB Unified Memory",
+    ssd: "512GB SSD",
+    graphicsCard: "Apple 18-Core GPU",
   },
-  price: 18500,
-  image: "/images/products/soundcore-motion-x600.jpg",
-  rating: 4.8,
-  stock: 8,
-  size: "Portable"
-},
 
-{
-  id: 217,
-  title: "JBL Charge 5",
-  subtitle: "Portable Waterproof Bluetooth Speaker",
-  category: "Gadgets",
-  subcategory: "Bluetooth Speaker",
-  description: "Portable wireless speaker with powerful sound, long battery life and waterproof construction.",
-  information: {
-    brand: "JBL",
-    output: "40W",
-    connectivity: "Bluetooth 5.1",
-    battery: "Up to 20 Hours",
-    charging: "USB-C",
-    waterResistance: "IP67",
-    powerBank: "Yes"
+  {
+    id: 447,
+    title: "Apple MacBook Pro M3 Pro 16-inch",
+    subtitle: "16.2-inch Professional MacBook",
+    category: "Laptop",
+    subcategory: "MacBook Pro",
+    categoryPath: "laptop/apple-macbook/macbook-pro",
+    description:
+      "Large-screen professional MacBook powered by M3 Pro.",
+    information:
+      "Designed for software development, video editing and demanding workloads.",
+    price: 265000,
+    image:
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 4,
+    size: "16.2 inch",
+    processor: "Apple M3 Pro",
+    generation: "M3 Pro",
+    ram: "36GB Unified Memory",
+    ssd: "1TB SSD",
+    graphicsCard: "Apple 18-Core GPU",
   },
-  price: 14500,
-  image: "/images/products/jbl-charge-5.jpg",
-  rating: 4.8,
-  stock: 12,
-  size: "Portable"
-},
 
-{
-  id: 218,
-  title: "Xiaomi Smart Band 9",
-  subtitle: "AMOLED Fitness Smart Band",
-  category: "Gadgets",
-  subcategory: "Fitness Band",
-  description: "Lightweight smart band with fitness tracking, health monitoring and long battery life.",
-  information: {
-    brand: "Xiaomi",
-    display: "1.62-inch AMOLED",
-    connectivity: "Bluetooth 5.4",
-    sensors: "Heart Rate, SpO2",
-    waterResistance: "5ATM",
-    battery: "Up to 21 Days",
-    compatibility: "Android, iOS"
+  {
+    id: 448,
+    title: "Apple MacBook Pro M3 Max",
+    subtitle: "16.2-inch High Performance Laptop",
+    category: "Laptop",
+    subcategory: "MacBook Pro",
+    categoryPath: "laptop/apple-macbook/macbook-pro",
+    description:
+      "High-end MacBook Pro designed for demanding professional workflows.",
+    information:
+      "Suitable for advanced development, 3D work, video production and creative applications.",
+    price: 350000,
+    image:
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=800&q=80",
+    rating: 5,
+    stock: 2,
+    size: "16.2 inch",
+    processor: "Apple M3 Max",
+    generation: "M3 Max",
+    ram: "36GB Unified Memory",
+    ssd: "1TB SSD",
+    graphicsCard: "Apple 40-Core GPU",
   },
-  price: 5200,
-  image: "/images/products/xiaomi-smart-band-9.jpg",
-  rating: 4.7,
-  stock: 20,
-  size: "1.62-inch"
-},
 
-{
-  id: 219,
-  title: "Amazon Echo Dot 5th Gen",
-  subtitle: "Smart Speaker with Alexa",
-  category: "Gadgets",
-  subcategory: "Smart Speaker",
-  description: "Compact smart speaker designed for voice commands, music playback, smart home control and information.",
-  information: {
-    brand: "Amazon",
-    assistant: "Alexa",
-    connectivity: "Wi-Fi, Bluetooth",
-    speaker: "1.73-inch",
-    microphone: "Built-in",
-    smartHome: "Supported",
-    power: "AC Adapter"
+  // ==========================================================
+  // LAPTOP BAGS
+  // ==========================================================
+
+  {
+    id: 449,
+    title: "Lenovo Laptop Backpack 15.6-inch",
+    subtitle: "Professional Laptop Backpack",
+    category: "Laptop",
+    subcategory: "Laptop Bag",
+    categoryPath: "laptop/accessories/laptop-bag",
+    description:
+      "Durable laptop backpack with a dedicated padded laptop compartment.",
+    information:
+      "Suitable for students, office users and daily travel.",
+    price: 2800,
+    image:
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 25,
+    size: "15.6 inch",
   },
-  price: 6500,
-  image: "/images/products/amazon-echo-dot-5.jpg",
-  rating: 4.6,
-  stock: 10,
-  size: "Compact"
-},
 
-{
-  id: 220,
-  title: "Google Chromecast with Google TV",
-  subtitle: "4K HDR Streaming Media Player",
-  category: "Gadgets",
-  subcategory: "Streaming Device",
-  description: "Compact streaming device for accessing entertainment apps and 4K HDR content on compatible televisions.",
-  information: {
-    brand: "Google",
-    resolution: "4K HDR",
-    operatingSystem: "Google TV",
-    connectivity: "Wi-Fi, Bluetooth",
-    ports: "HDMI",
-    remote: "Voice Remote",
-    storage: "8GB"
+  {
+    id: 450,
+    title: "HP Travel Laptop Backpack",
+    subtitle: "Water Resistant Laptop Bag",
+    category: "Laptop",
+    subcategory: "Laptop Bag",
+    categoryPath: "laptop/accessories/laptop-bag",
+    description:
+      "Water-resistant backpack designed to safely carry laptops and accessories.",
+    information:
+      "Multiple compartments for laptop, charger, documents and accessories.",
+    price: 3200,
+    image:
+      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 20,
+    size: "15.6 inch",
   },
-  price: 7200,
-  image: "/images/products/chromecast-google-tv.jpg",
-  rating: 4.7,
-  stock: 13,
-  size: "Compact"
-},
 
-// =========================
-// OFFICE EQUIPMENT
-// =========================
-
-{
-  id: 221,
-  title: "Epson EcoTank L3250",
-  subtitle: "Wireless All-in-One Ink Tank Printer",
-  category: "Office Equipment",
-  subcategory: "Printer",
-  description: "Cost-efficient all-in-one ink tank printer for printing, scanning and copying documents at home or office.",
-  information: {
-    brand: "Epson",
-    printerType: "Ink Tank",
-    functions: "Print, Scan, Copy",
-    resolution: "5760 x 1440 dpi",
-    connectivity: "Wi-Fi, USB",
-    printSpeed: "Up to 10 ipm",
-    warranty: "1 Year"
+  {
+    id: 451,
+    title: "ASUS ROG Gaming Laptop Backpack",
+    subtitle: "17-inch Gaming Laptop Bag",
+    category: "Laptop",
+    subcategory: "Laptop Bag",
+    categoryPath: "laptop/accessories/laptop-bag",
+    description:
+      "Large gaming backpack designed for gaming laptops and accessories.",
+    information:
+      "Padded laptop section with additional storage for gaming accessories.",
+    price: 4500,
+    image:
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 14,
+    size: "17 inch",
   },
-  price: 21500,
-  image: "/images/products/epson-l3250.jpg",
-  rating: 4.8,
-  stock: 12,
-  size: "All-in-One"
-},
 
-{
-  id: 222,
-  title: "Canon PIXMA G3010",
-  subtitle: "Wireless All-in-One Ink Tank Printer",
-  category: "Office Equipment",
-  subcategory: "Printer",
-  description: "Wireless ink tank printer designed for affordable printing, scanning and copying in home and office environments.",
-  information: {
-    brand: "Canon",
-    printerType: "Ink Tank",
-    functions: "Print, Scan, Copy",
-    resolution: "4800 x 1200 dpi",
-    connectivity: "Wi-Fi, USB",
-    printSpeed: "Up to 8.8 ipm",
-    inkSystem: "Refillable Tank",
-    warranty: "1 Year"
+  {
+    id: 452,
+    title: "Dell Essential Laptop Backpack",
+    subtitle: "15.6-inch Everyday Laptop Bag",
+    category: "Laptop",
+    subcategory: "Laptop Bag",
+    categoryPath: "laptop/accessories/laptop-bag",
+    description:
+      "Simple and comfortable laptop backpack for everyday use.",
+    information:
+      "Dedicated laptop compartment with practical storage space.",
+    price: 2200,
+    image:
+      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+    rating: 4.4,
+    stock: 30,
+    size: "15.6 inch",
   },
-  price: 18500,
-  image: "/images/products/canon-pixma-g3010.jpg",
-  rating: 4.7,
-  stock: 15,
-  size: "All-in-One"
-},
 
-{
-  id: 223,
-  title: "HP LaserJet M111w",
-  subtitle: "Wireless Monochrome Laser Printer",
-  category: "Office Equipment",
-  subcategory: "Laser Printer",
-  description: "Compact monochrome laser printer designed for fast and reliable document printing in small offices.",
-  information: {
-    brand: "HP",
-    printerType: "Monochrome Laser",
-    printSpeed: "Up to 20 ppm",
-    resolution: "600 x 600 dpi",
-    connectivity: "Wi-Fi, USB",
-    duplex: "Manual",
-    monthlyDuty: "Up to 8000 Pages",
-    warranty: "1 Year"
+  {
+    id: 453,
+    title: "Targus CitySmart Laptop Bag",
+    subtitle: "Professional Laptop Carry Bag",
+    category: "Laptop",
+    subcategory: "Laptop Bag",
+    categoryPath: "laptop/accessories/laptop-bag",
+    description:
+      "Professional laptop bag designed for business travel.",
+    information:
+      "Protective laptop compartment with additional document storage.",
+    price: 5500,
+    image:
+      "https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 12,
+    size: "15.6 inch",
   },
-  price: 14500,
-  image: "/images/products/hp-laserjet-m111w.jpg",
-  rating: 4.6,
-  stock: 11,
-  size: "Compact"
-},
 
-{
-  id: 224,
-  title: "Brother DCP-T720DW",
-  subtitle: "Wireless Duplex Ink Tank Printer",
-  category: "Office Equipment",
-  subcategory: "Printer",
-  description: "All-in-one ink tank printer with wireless connectivity and automatic duplex printing for home and office use.",
-  information: {
-    brand: "Brother",
-    printerType: "Ink Tank",
-    functions: "Print, Scan, Copy",
-    duplex: "Automatic",
-    connectivity: "Wi-Fi, USB",
-    resolution: "1200 x 6000 dpi",
-    warranty: "1 Year"
+  // ==========================================================
+  // LAPTOP STANDS
+  // ==========================================================
+
+  {
+    id: 454,
+    title: "UGREEN Adjustable Laptop Stand",
+    subtitle: "Aluminum Ergonomic Laptop Stand",
+    category: "Laptop",
+    subcategory: "Laptop Stand",
+    categoryPath: "laptop/accessories/laptop-stand",
+    description:
+      "Premium adjustable aluminum laptop stand for comfortable working.",
+    information:
+      "Adjustable height and viewing angle with a foldable design.",
+    price: 3500,
+    image:
+      "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 20,
+    size: "Universal",
   },
-  price: 23500,
-  image: "/images/products/brother-dcp-t720dw.jpg",
-  rating: 4.8,
-  stock: 9,
-  size: "All-in-One"
-},
 
-{
-  id: 225,
-  title: "Fellowes Powershred 8MC",
-  subtitle: "Personal Cross-Cut Paper Shredder",
-  category: "Office Equipment",
-  subcategory: "Paper Shredder",
-  description: "Compact cross-cut paper shredder designed to securely dispose of sensitive office documents.",
-  information: {
-    brand: "Fellowes",
-    shredType: "Cross-Cut",
-    securityLevel: "P-4",
-    sheetCapacity: "8 Sheets",
-    binCapacity: "14 Liters",
-    safety: "Overheat Protection",
-    operation: "Manual Feed"
+  {
+    id: 455,
+    title: "Baseus Foldable Laptop Stand",
+    subtitle: "Portable Aluminum Laptop Stand",
+    category: "Laptop",
+    subcategory: "Laptop Stand",
+    categoryPath: "laptop/accessories/laptop-stand",
+    description:
+      "Portable foldable laptop stand with adjustable viewing angles.",
+    information:
+      "Compact design suitable for home, office and travel.",
+    price: 2800,
+    image:
+      "https://images.unsplash.com/photo-1593642702749-b7d2a804fbcf?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 24,
+    size: "Universal",
   },
-  price: 10500,
-  image: "/images/products/fellowes-powershred-8mc.jpg",
-  rating: 4.6,
-  stock: 7,
-  size: "14L"
-},
 
-{
-  id: 226,
-  title: "Epson WorkForce ES-580W",
-  subtitle: "Wireless Duplex Document Scanner",
-  category: "Office Equipment",
-  subcategory: "Scanner",
-  description: "High-speed document scanner with automatic duplex scanning and wireless connectivity for office workflows.",
-  information: {
-    brand: "Epson",
-    scannerType: "Document Scanner",
-    resolution: "600 dpi",
-    speed: "35 ppm",
-    feeder: "100 Sheets",
-    duplex: "Automatic",
-    connectivity: "Wi-Fi, USB"
+  {
+    id: 456,
+    title: "HAVIT Laptop Cooling Stand",
+    subtitle: "Laptop Cooling Pad with Stand",
+    category: "Laptop",
+    subcategory: "Laptop Stand",
+    categoryPath: "laptop/accessories/laptop-stand",
+    description:
+      "Cooling laptop stand designed to improve airflow during extended use.",
+    information:
+      "Suitable for gaming and high-performance laptops.",
+    price: 3200,
+    image:
+      "https://images.unsplash.com/photo-1593642532400-2682810df593?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 18,
+    size: "15.6 inch",
   },
-  price: 58000,
-  image: "/images/products/epson-es-580w.jpg",
-  rating: 4.8,
-  stock: 5,
-  size: "Desktop"
-},
 
-{
-  id: 227,
-  title: "ViewSonic PA503S",
-  subtitle: "SVGA Business Projector",
-  category: "Office Equipment",
-  subcategory: "Projector",
-  description: "Bright business projector suitable for classrooms, meetings and presentations.",
-  information: {
-    brand: "ViewSonic",
-    resolution: "800 x 600",
-    brightness: "3800 ANSI Lumens",
-    contrast: "22000:1",
-    projectionSize: "30-300 inch",
-    connectivity: "HDMI, VGA",
-    lampLife: "Up to 15000 Hours"
+  {
+    id: 457,
+    title: "Orico Vertical Laptop Stand",
+    subtitle: "Adjustable Desktop Laptop Holder",
+    category: "Laptop",
+    subcategory: "Laptop Stand",
+    categoryPath: "laptop/accessories/laptop-stand",
+    description:
+      "Space-saving vertical laptop stand for desktop setups.",
+    information:
+      "Adjustable holder suitable for different laptop thicknesses.",
+    price: 1800,
+    image:
+      "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 22,
+    size: "Universal",
   },
-  price: 52000,
-  image: "/images/products/viewsonic-pa503s.jpg",
-  rating: 4.6,
-  stock: 5,
-  size: "Compact"
-},
 
-{
-  id: 228,
-  title: "Deli E3894 Paper Cutter",
-  subtitle: "Heavy Duty Office Paper Trimmer",
-  category: "Office Equipment",
-  subcategory: "Paper Cutter",
-  description: "Heavy-duty paper cutting machine designed for offices, schools and professional document work.",
-  information: {
-    brand: "Deli",
-    cuttingType: "Manual",
-    capacity: "Up to 15 Sheets",
-    paperSize: "A4",
-    safetyGuard: "Yes",
-    base: "Metal",
-    usage: "Office, School"
+  {
+    id: 458,
+    title: "Nillkin Adjustable Laptop Stand",
+    subtitle: "Premium Foldable Laptop Stand",
+    category: "Laptop",
+    subcategory: "Laptop Stand",
+    categoryPath: "laptop/accessories/laptop-stand",
+    description:
+      "Premium foldable stand designed for ergonomic laptop positioning.",
+    information:
+      "Strong aluminum construction with adjustable height.",
+    price: 4200,
+    image:
+      "https://images.unsplash.com/photo-1593642702749-b7d2a804fbcf?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 15,
+    size: "Universal",
   },
-  price: 4200,
-  image: "/images/products/deli-e3894-paper-cutter.jpg",
-  rating: 4.5,
-  stock: 14,
-  size: "A4"
-},
 
-{
-  id: 229,
-  title: "APC Back-UPS 1100VA",
-  subtitle: "1100VA Line Interactive UPS",
-  category: "Office Equipment",
-  subcategory: "UPS",
-  description: "Reliable backup power solution designed to protect office computers, networking equipment and electronics.",
-  information: {
-    brand: "APC",
-    capacity: "1100VA",
-    outputPower: "660W",
-    topology: "Line Interactive",
-    outlets: "4",
-    protection: "Surge Protection",
-    battery: "12V"
+  // ==========================================================
+  // MORE MACBOOK ACCESSORIES / PRODUCTS
+  // ==========================================================
+
+  {
+    id: 459,
+    title: "Apple MacBook Air M1",
+    subtitle: "13.3-inch Retina Display MacBook",
+    category: "Laptop",
+    subcategory: "MacBook Air",
+    categoryPath: "laptop/apple-macbook/macbook-air",
+    description:
+      "Compact MacBook Air powered by Apple's M1 chip.",
+    information:
+      "Suitable for study, programming, office work and everyday productivity.",
+    price: 92000,
+    image:
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 9,
+    size: "13.3 inch",
+    processor: "Apple M1",
+    generation: "M1",
+    ram: "8GB Unified Memory",
+    ssd: "256GB SSD",
+    graphicsCard: "Apple 7-Core GPU",
   },
-  price: 12500,
-  image: "/images/products/apc-back-ups-1100va.jpg",
-  rating: 4.7,
-  stock: 10,
-  size: "1100VA"
-},
 
-{
-  id: 230,
-  title: "Logitech Spotlight Presentation Remote",
-  subtitle: "Wireless Presentation Clicker",
-  category: "Office Equipment",
-  subcategory: "Presentation Remote",
-  description: "Professional wireless presentation remote with digital highlighting and long wireless range.",
-  information: {
-    brand: "Logitech",
-    connection: "USB Receiver, Bluetooth",
-    range: "30 Meters",
-    battery: "Rechargeable",
-    controls: "Presentation Controls",
-    compatibility: "Windows, macOS",
-    charging: "USB"
+  {
+    id: 460,
+    title: "Apple MacBook Pro M2 Pro",
+    subtitle: "14.2-inch Professional MacBook",
+    category: "Laptop",
+    subcategory: "MacBook Pro",
+    categoryPath: "laptop/apple-macbook/macbook-pro",
+    description:
+      "Professional MacBook Pro powered by the Apple M2 Pro chip.",
+    information:
+      "Designed for developers, designers and professional content creators.",
+    price: 205000,
+    image:
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 4,
+    size: "14.2 inch",
+    processor: "Apple M2 Pro",
+    generation: "M2 Pro",
+    ram: "16GB Unified Memory",
+    ssd: "512GB SSD",
+    graphicsCard: "Apple 19-Core GPU",
   },
-  price: 8500,
-  image: "/images/products/logitech-spotlight.jpg",
-  rating: 4.8,
-  stock: 8,
-  size: "Compact"
-},
-
-// =========================
-// APPLIANCES
-// =========================
-
-{
-  id: 231,
-  title: "Philips Air Fryer HD9200",
-  subtitle: "4.1L Digital Air Fryer",
-  category: "Appliance",
-  subcategory: "Air Fryer",
-  description: "Compact air fryer designed for preparing crispy meals with significantly less oil.",
-  information: {
-    brand: "Philips",
-    capacity: "4.1 Liters",
-    power: "1400W",
-    temperature: "Up to 200°C",
-    timer: "60 Minutes",
-    technology: "Rapid Air",
-    control: "Analog"
-  },
-  price: 12500,
-  image: "/images/products/philips-air-fryer-hd9200.jpg",
-  rating: 4.7,
-  stock: 10,
-  size: "4.1L"
-},
-
-{
-  id: 232,
-  title: "Miyako Electric Oven",
-  subtitle: "Electric Oven with Grill Function",
-  category: "Appliance",
-  subcategory: "Electric Oven",
-  description: "Compact electric oven suitable for baking, grilling and everyday home cooking.",
-  information: {
-    brand: "Miyako",
-    capacity: "35 Liters",
-    power: "1600W",
-    temperature: "100-250°C",
-    timer: "60 Minutes",
-    functions: "Bake, Grill",
-    control: "Mechanical"
-  },
-  price: 10500,
-  image: "/images/products/miyako-electric-oven.jpg",
-  rating: 4.5,
-  stock: 12,
-  size: "35L"
-},
-
-{
-  id: 233,
-  title: "Samsung MS23K3513AK Microwave Oven",
-  subtitle: "23L Solo Microwave Oven",
-  category: "Appliance",
-  subcategory: "Microwave Oven",
-  description: "Compact microwave oven designed for reheating, defrosting and everyday cooking.",
-  information: {
-    brand: "Samsung",
-    capacity: "23 Liters",
-    power: "800W",
-    cookingModes: "6",
-    control: "Digital",
-    interior: "Ceramic Enamel",
-    timer: "99 Minutes"
-  },
-  price: 14500,
-  image: "/images/products/samsung-ms23k3513ak.jpg",
-  rating: 4.7,
-  stock: 9,
-  size: "23L"
-},
-
-{
-  id: 234,
-  title: "Walton WFD-1A5-GDEL Refrigerator",
-  subtitle: "Top Mount Frost-Free Refrigerator",
-  category: "Appliance",
-  subcategory: "Refrigerator",
-  description: "Energy-efficient refrigerator designed for everyday household food and beverage storage.",
-  information: {
-    brand: "Walton",
-    capacity: "238 Liters",
-    cooling: "Frost Free",
-    compressor: "Inverter",
-    refrigeratorType: "Top Mount",
-    energyRating: "Energy Efficient",
-    warranty: "10 Years Compressor"
-  },
-  price: 42000,
-  image: "/images/products/walton-refrigerator.jpg",
-  rating: 4.6,
-  stock: 6,
-  size: "238L"
-},
-
-{
-  id: 235,
-  title: "Xiaomi Robot Vacuum S10",
-  subtitle: "Smart Robot Vacuum Cleaner",
-  category: "Appliance",
-  subcategory: "Robot Vacuum",
-  description: "Smart robotic vacuum cleaner with automated navigation, powerful suction and app-based control.",
-  information: {
-    brand: "Xiaomi",
-    suction: "4000Pa",
-    battery: "3200mAh",
-    navigation: "LDS Laser Navigation",
-    control: "Mi Home App",
-    mopping: "Supported",
-    charging: "Automatic"
-  },
-  price: 28500,
-  image: "/images/products/xiaomi-robot-vacuum-s10.jpg",
-  rating: 4.7,
-  stock: 7,
-  size: "Robot"
-},
-
-{
-  id: 236,
-  title: "Philips PowerPro Compact Vacuum",
-  subtitle: "Compact Bagless Vacuum Cleaner",
-  category: "Appliance",
-  subcategory: "Vacuum Cleaner",
-  description: "Compact bagless vacuum cleaner designed for efficient household floor and surface cleaning.",
-  information: {
-    brand: "Philips",
-    power: "1800W",
-    dustCapacity: "1.5 Liters",
-    filtration: "Allergy Filter",
-    technology: "PowerCyclone",
-    cordLength: "6 Meters",
-    control: "Mechanical"
-  },
-  price: 14500,
-  image: "/images/products/philips-powerpro-compact.jpg",
-  rating: 4.6,
-  stock: 9,
-  size: "Compact"
-},
-
-{
-  id: 237,
-  title: "Xiaomi Smart Air Purifier 4",
-  subtitle: "Smart HEPA Air Purifier",
-  category: "Appliance",
-  subcategory: "Air Purifier",
-  description: "Smart air purifier designed to reduce airborne particles and provide cleaner indoor air.",
-  information: {
-    brand: "Xiaomi",
-    coverage: "516 sq.ft",
-    filtration: "True HEPA",
-    CADR: "400 m³/h",
-    connectivity: "Wi-Fi",
-    control: "Mi Home App",
-    display: "OLED"
-  },
-  price: 18500,
-  image: "/images/products/xiaomi-air-purifier-4.jpg",
-  rating: 4.7,
-  stock: 8,
-  size: "Medium"
-},
-
-{
-  id: 238,
-  title: "Panasonic MX-AC400 Blender",
-  subtitle: "4-Speed Kitchen Blender",
-  category: "Appliance",
-  subcategory: "Blender",
-  description: "Powerful kitchen blender designed for preparing smoothies, sauces and everyday food ingredients.",
-  information: {
-    brand: "Panasonic",
-    power: "400W",
-    jarCapacity: "1.5 Liters",
-    speeds: "4",
-    blades: "Stainless Steel",
-    safety: "Safety Lock",
-    control: "Rotary"
-  },
-  price: 6500,
-  image: "/images/products/panasonic-mx-ac400.jpg",
-  rating: 4.5,
-  stock: 15,
-  size: "1.5L"
-},
-
-{
-  id: 239,
-  title: "Philips HD9252 Air Fryer",
-  subtitle: "4.1L Rapid Air Fryer",
-  category: "Appliance",
-  subcategory: "Air Fryer",
-  description: "Digital air fryer with rapid air circulation technology for healthier everyday cooking.",
-  information: {
-    brand: "Philips",
-    capacity: "4.1 Liters",
-    power: "1400W",
-    temperature: "80-200°C",
-    timer: "60 Minutes",
-    display: "Digital",
-    technology: "Rapid Air"
-  },
-  price: 14500,
-  image: "/images/products/philips-hd9252-air-fryer.jpg",
-  rating: 4.8,
-  stock: 11,
-  size: "4.1L"
-},
-
-{
-  id: 240,
-  title: "Midea 1.5 Ton Inverter AC",
-  subtitle: "Energy Efficient Split Air Conditioner",
-  category: "Appliance",
-  subcategory: "Air Conditioner",
-  description: "Inverter split air conditioner designed for efficient cooling and comfortable indoor temperature control.",
-  information: {
-    brand: "Midea",
-    capacity: "1.5 Ton",
-    compressor: "Inverter",
-    refrigerant: "R32",
-    energyRating: "Energy Efficient",
-    cooling: "Fast Cooling",
-    control: "Remote Control",
-    warranty: "5 Years Compressor"
-  },
-  price: 58000,
-  image: "/images/products/midea-1-5-ton-ac.jpg",
-  rating: 4.6,
-  stock: 5,
-  size: "1.5 Ton"
-},
-
-// =========================
-// GAMING & TV
-// =========================
-
-{
-  id: 241,
-  title: "Sony BRAVIA 43-inch 4K Google TV",
-  subtitle: "4K UHD Smart LED Television",
-  category: "TV",
-  subcategory: "Smart TV",
-  description: "4K smart television with Google TV, HDR support and built-in streaming applications.",
-  information: {
-    brand: "Sony",
-    display: "43-inch",
-    resolution: "3840 x 2160",
-    panel: "LED",
-    operatingSystem: "Google TV",
-    HDR: "HDR10",
-    connectivity: "Wi-Fi, Bluetooth, HDMI"
-  },
-  price: 72000,
-  image: "/images/products/sony-bravia-43-4k.jpg",
-  rating: 4.8,
-  stock: 5,
-  size: "43-inch"
-},
-
-{
-  id: 242,
-  title: "Samsung 50-inch Crystal UHD 4K TV",
-  subtitle: "4K Smart Crystal UHD Television",
-  category: "TV",
-  subcategory: "Smart TV",
-  description: "Large 4K smart television with vibrant picture quality, smart applications and modern connectivity.",
-  information: {
-    brand: "Samsung",
-    display: "50-inch",
-    resolution: "3840 x 2160",
-    panel: "Crystal UHD",
-    operatingSystem: "Tizen",
-    HDR: "HDR10+",
-    connectivity: "Wi-Fi, Bluetooth, HDMI"
-  },
-  price: 68000,
-  image: "/images/products/samsung-50-crystal-uhd.jpg",
-  rating: 4.7,
-  stock: 7,
-  size: "50-inch"
-},
-
-{
-  id: 243,
-  title: "Xiaomi TV A Pro 55",
-  subtitle: "55-inch 4K QLED Google TV",
-  category: "TV",
-  subcategory: "Smart TV",
-  description: "Large QLED smart television offering 4K resolution, Google TV and immersive entertainment features.",
-  information: {
-    brand: "Xiaomi",
-    display: "55-inch",
-    resolution: "3840 x 2160",
-    panel: "QLED",
-    operatingSystem: "Google TV",
-    HDR: "Dolby Vision",
-    connectivity: "Wi-Fi, Bluetooth, HDMI"
-  },
-  price: 62000,
-  image: "/images/products/xiaomi-tv-a-pro-55.jpg",
-  rating: 4.7,
-  stock: 8,
-  size: "55-inch"
-},
-
-{
-  id: 244,
-  title: "LG 55-inch 4K UHD Smart TV",
-  subtitle: "55-inch 4K webOS Smart Television",
-  category: "TV",
-  subcategory: "Smart TV",
-  description: "Modern 4K smart television with LG webOS, HDR support and multiple streaming applications.",
-  information: {
-    brand: "LG",
-    display: "55-inch",
-    resolution: "3840 x 2160",
-    panel: "UHD",
-    operatingSystem: "webOS",
-    HDR: "HDR10",
-    connectivity: "Wi-Fi, Bluetooth, HDMI"
-  },
-  price: 65000,
-  image: "/images/products/lg-55-4k-smart-tv.jpg",
-  rating: 4.7,
-  stock: 6,
-  size: "55-inch"
-},
-
-{
-  id: 245,
-  title: "Sony HT-S40R Soundbar",
-  subtitle: "5.1 Channel Home Theater Sound System",
-  category: "Gaming",
-  subcategory: "Sound System",
-  description: "5.1-channel surround sound system designed for immersive gaming, movies and television entertainment.",
-  information: {
-    brand: "Sony",
-    channels: "5.1",
-    output: "600W",
-    connectivity: "Bluetooth, HDMI ARC, Optical",
-    speakers: "Rear Wireless Speakers",
-    subwoofer: "Wireless",
-    soundModes: "Cinema, Music, Standard"
-  },
-  price: 42000,
-  image: "/images/products/sony-ht-s40r.jpg",
-  rating: 4.8,
-  stock: 5,
-  size: "5.1 Channel"
-},
-
-{
-  id: 246,
-  title: "Logitech G Pro X Gaming Headset",
-  subtitle: "Professional Wired Gaming Headset",
-  category: "Gaming",
-  subcategory: "Gaming Headset",
-  description: "Professional gaming headset designed for competitive gaming with clear audio and detachable microphone.",
-  information: {
-    brand: "Logitech",
-    connection: "USB, 3.5mm",
-    driver: "50mm PRO-G",
-    microphone: "Detachable",
-    surroundSound: "DTS Headphone:X 2.0",
-    compatibility: "PC, Console",
-    controls: "Inline Controls"
-  },
-  price: 13500,
-  image: "/images/products/logitech-g-pro-x-headset.jpg",
-  rating: 4.8,
-  stock: 10,
-  size: "Over Ear"
-},
-
-{
-  id: 247,
-  title: "Razer BlackWidow V3",
-  subtitle: "Mechanical RGB Gaming Keyboard",
-  category: "Gaming",
-  subcategory: "Gaming Keyboard",
-  description: "Mechanical gaming keyboard featuring RGB lighting, dedicated media controls and responsive switches.",
-  information: {
-    brand: "Razer",
-    switches: "Mechanical",
-    layout: "Full Size",
-    lighting: "Razer Chroma RGB",
-    connection: "USB",
-    controls: "Dedicated Media Keys",
-    compatibility: "Windows"
-  },
-  price: 11500,
-  image: "/images/products/razer-blackwidow-v3.jpg",
-  rating: 4.7,
-  stock: 12,
-  size: "Full Size"
-},
-
-{
-  id: 248,
-  title: "Logitech G502 HERO",
-  subtitle: "High Performance RGB Gaming Mouse",
-  category: "Gaming",
-  subcategory: "Gaming Mouse",
-  description: "High-precision gaming mouse with customizable buttons, RGB lighting and adjustable sensitivity.",
-  information: {
-    brand: "Logitech",
-    sensor: "HERO 25K",
-    DPI: "100-25600 DPI",
-    buttons: "11 Programmable",
-    lighting: "RGB",
-    connection: "USB",
-    weight: "121g"
-  },
-  price: 6500,
-  image: "/images/products/logitech-g502-hero.jpg",
-  rating: 4.8,
-  stock: 15,
-  size: "Standard"
-},
-
-{
-  id: 249,
-  title: "Secretlab TITAN Evo Gaming Chair",
-  subtitle: "Ergonomic Premium Gaming Chair",
-  category: "Gaming",
-  subcategory: "Gaming Chair",
-  description: "Premium ergonomic gaming chair designed for long gaming and workstation sessions with adjustable support.",
-  information: {
-    brand: "Secretlab",
-    material: "Hybrid Leatherette",
-    recline: "165 Degrees",
-    armrest: "4D Adjustable",
-    lumbarSupport: "Adjustable",
-    base: "Aluminum",
-    weightCapacity: "Up to 180kg"
-  },
-  price: 52000,
-  image: "/images/products/secretlab-titan-evo.jpg",
-  rating: 4.9,
-  stock: 4,
-  size: "Large"
-},
-
-{
-  id: 250,
-  title: "ASUS ROG Swift PG27AQDM",
-  subtitle: "27-inch QHD 240Hz OLED Gaming Monitor",
-  category: "Gaming",
-  subcategory: "Gaming Monitor",
-  description: "Premium OLED gaming monitor delivering QHD resolution, ultra-fast refresh rate and deep contrast for competitive gaming.",
-  information: {
-    brand: "ASUS",
-    display: "27-inch",
-    resolution: "2560 x 1440",
-    panel: "OLED",
-    refreshRate: "240Hz",
-    responseTime: "0.03ms",
-    HDR: "DisplayHDR True Black 400",
-    ports: "HDMI, DisplayPort"
-  },
-  price: 95000,
-  image: "/images/products/asus-rog-swift-pg27aqdm.jpg",
-  rating: 4.9,
-  stock: 4,
-  size: "27-inch"
-}
-
 ];
 
 
