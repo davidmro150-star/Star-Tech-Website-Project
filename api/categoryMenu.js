@@ -531,314 +531,351 @@ const categoryMenu = [
   // =========================================================
   // 8. OFFICE EQUIPMENT
   // =========================================================
-  {
-    name: "Office Equipment",
-    href: "/category/office-equipment",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=500",
-    children: [
-      {
-        name: "Printer",
-        href: "/category/office-equipment/printer",
-        children: [
-          {
-            name: "Laser Printer",
-            href: "/category/office-equipment/printer/laser",
-          },
-          {
-            name: "Inkjet Printer",
-            href: "/category/office-equipment/printer/inkjet",
-          },
-          {
-            name: "Multifunction Printer",
-            href: "/category/office-equipment/printer/multifunction",
-          },
-        ],
-      },
-      {
-        name: "Scanner",
-        href: "/category/office-equipment/scanner",
-      },
-      {
-        name: "Projector",
-        href: "/category/office-equipment/projector",
-      },
-      {
-        name: "Photocopier",
-        href: "/category/office-equipment/photocopier",
-      },
-      {
-        name: "POS Equipment",
-        href: "/category/office-equipment/pos",
-      },
-    ],
-  },
+{
+  name: "Office Equipment",
+  href: "/category/office-equipment",
+  image:
+    "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=500",
+
+  children: [
+    {
+      name: "Printer",
+      href: "/category/office-equipment/printer",
+
+      children: [
+        {
+          name: "Laser Printer",
+          href: "/category/office-equipment/printer/laser",
+        },
+        {
+          name: "Inkjet Printer",
+          href: "/category/office-equipment/printer/inkjet",
+        },
+        {
+          name: "Multifunction Printer",
+          href: "/category/office-equipment/printer/multifunction",
+        },
+      ],
+    },
+
+    {
+      name: "Scanner",
+      href: "/category/office-equipment/scanner",
+    },
+
+    {
+      name: "Projector",
+      href: "/category/office-equipment/projector",
+    },
+
+    {
+      name: "Photocopier",
+      href: "/category/office-equipment/photocopier",
+    },
+
+    {
+      name: "POS Equipment",
+      href: "/category/office-equipment/pos",
+    },
+  ],
+},
 
   // =========================================================
   // 9. CAMERA
   // =========================================================
-  {
-    name: "Camera",
-    href: "/category/camera",
-    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500",
-    children: [
-      {
-        name: "DSLR Camera",
-        href: "/category/camera/dslr",
-        children: [
-          {
-            name: "Canon DSLR",
-            href: "/category/camera/dslr/canon",
-          },
-          {
-            name: "Nikon DSLR",
-            href: "/category/camera/dslr/nikon",
-          },
-        ],
-      },
-      {
-        name: "Mirrorless Camera",
-        href: "/category/camera/mirrorless",
-        children: [
-          {
-            name: "Sony",
-            href: "/category/camera/mirrorless/sony",
-          },
-          {
-            name: "Canon",
-            href: "/category/camera/mirrorless/canon",
-          },
-          {
-            name: "Fujifilm",
-            href: "/category/camera/mirrorless/fujifilm",
-          },
-        ],
-      },
-      {
-        name: "Action Camera",
-        href: "/category/camera/action",
-      },
-      {
-        name: "Camera Lens",
-        href: "/category/camera/lens",
-      },
-      {
-        name: "Camera Accessories",
-        href: "/category/camera/accessories",
-      },
-    ],
-  },
+{
+  name: "Camera",
+  href: "/category/camera",
+  image:
+    "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500",
+
+  children: [
+    {
+      name: "DSLR Camera",
+      href: "/category/camera?subcategory=dslr",
+
+      children: [
+        {
+          name: "Canon DSLR",
+          href: "/category/camera?subcategory=dslr/canon",
+        },
+        {
+          name: "Nikon DSLR",
+          href: "/category/camera?subcategory=dslr/nikon",
+        },
+      ],
+    },
+
+    {
+      name: "Mirrorless Camera",
+      href: "/category/camera?subcategory=mirrorless",
+
+      children: [
+        {
+          name: "Sony",
+          href: "/category/camera?subcategory=mirrorless/sony",
+        },
+        {
+          name: "Canon",
+          href: "/category/camera?subcategory=mirrorless/canon",
+        },
+        {
+          name: "Fujifilm",
+          href: "/category/camera?subcategory=mirrorless/fujifilm",
+        },
+      ],
+    },
+
+    {
+      name: "Action Camera",
+      href: "/category/camera?subcategory=action",
+    },
+
+    {
+      name: "Camera Lens",
+      href: "/category/camera?subcategory=lens",
+    },
+
+    {
+      name: "Camera Accessories",
+      href: "/category/camera?subcategory=accessories",
+    },
+  ],
+},
 
   // =========================================================
   // 10. SECURITY
   // =========================================================
-  {
-    name: "Security",
-    href: "/category/security",
-    image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=500",
-    children: [
-      {
-        name: "CCTV Camera",
-        href: "/category/security/cctv",
-        children: [
-          {
-            name: "Dome Camera",
-            href: "/category/security/cctv/dome",
-          },
-          {
-            name: "Bullet Camera",
-            href: "/category/security/cctv/bullet",
-          },
-          {
-            name: "IP Camera",
-            href: "/category/security/cctv/ip",
-          },
-        ],
-      },
-      {
-        name: "DVR",
-        href: "/category/security/dvr",
-      },
-      {
-        name: "NVR",
-        href: "/category/security/nvr",
-      },
-      {
-        name: "Access Control",
-        href: "/category/security/access-control",
-      },
-      {
-        name: "Smart Door Lock",
-        href: "/category/security/smart-door-lock",
-      },
-    ],
-  },
+{
+  name: "Security",
+  href: "/category/security",
+  image:
+    "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=500",
 
+  children: [
+    {
+      name: "CCTV Camera",
+      href: "/category/security?subcategory=CCTV%20Camera",
+
+      children: [
+        {
+          name: "Dome Camera",
+          href: "/category/security?subcategory=Dome%20Camera",
+        },
+        {
+          name: "Bullet Camera",
+          href: "/category/security?subcategory=Bullet%20Camera",
+        },
+        {
+          name: "IP Camera",
+          href: "/category/security?subcategory=IP%20Camera",
+        },
+      ],
+    },
+
+    {
+      name: "DVR",
+      href: "/category/security?subcategory=DVR",
+    },
+
+    {
+      name: "NVR",
+      href: "/category/security?subcategory=NVR",
+    },
+
+    {
+      name: "Access Control",
+      href: "/category/security?subcategory=Access%20Control",
+    },
+
+    {
+      name: "Smart Door Lock",
+      href: "/category/security?subcategory=Smart%20Door%20Lock",
+    },
+  ],
+},
   // =========================================================
   // 11. NETWORKING
-  // =========================================================
-  {
-    name: "Networking",
-    href: "/category/networking",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500",
-    children: [
-      {
-        name: "Router",
-        href: "/category/networking/router",
-        children: [
-          {
-            name: "WiFi Router",
-            href: "/category/networking/router/wifi",
-          },
-          {
-            name: "4G Router",
-            href: "/category/networking/router/4g",
-          },
-          {
-            name: "5G Router",
-            href: "/category/networking/router/5g",
-          },
-        ],
-      },
-      {
-        name: "Switch",
-        href: "/category/networking/switch",
-        children: [
-          {
-            name: "8 Port Switch",
-            href: "/category/networking/switch/8-port",
-          },
-          {
-            name: "16 Port Switch",
-            href: "/category/networking/switch/16-port",
-          },
-          {
-            name: "24 Port Switch",
-            href: "/category/networking/switch/24-port",
-          },
-        ],
-      },
-      {
-        name: "Network Adapter",
-        href: "/category/networking/network-adapter",
-      },
-      {
-        name: "Access Point",
-        href: "/category/networking/access-point",
-      },
-      {
-        name: "Network Cable",
-        href: "/category/networking/cable",
-      },
-    ],
-  },
+ {
+  name: "Networking",
+  href: "/category/networking",
+  image:
+    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500",
+
+  children: [
+    {
+      name: "Router",
+      href: "/category/networking?path=networking/router",
+      
+      children: [
+        {
+          name: "WiFi Router",
+          href: "/category/networking?path=networking/router/wifi",
+        },
+        {
+          name: "4G Router",
+          href: "/category/networking?path=networking/router/4g",
+        },
+        {
+          name: "5G Router",
+          href: "/category/networking?path=networking/router/5g",
+        },
+      ],
+    },
+
+    {
+      name: "Switch",
+      href: "/category/networking?path=networking/switch",
+
+      children: [
+        {
+          name: "8 Port Switch",
+          href: "/category/networking?path=networking/switch/8-port",
+        },
+        {
+          name: "16 Port Switch",
+          href: "/category/networking?path=networking/switch/16-port",
+        },
+        {
+          name: "24 Port Switch",
+          href: "/category/networking?path=networking/switch/24-port",
+        },
+      ],
+    },
+
+    {
+      name: "Network Adapter",
+      href:
+        "/category/networking?path=networking/network-adapter",
+    },
+
+    {
+      name: "Access Point",
+      href:
+        "/category/networking?path=networking/access-point",
+    },
+
+    {
+      name: "Network Cable",
+      href:
+        "/category/networking?path=networking/cable",
+    },
+  ],
+},
 
   // =========================================================
   // 12. SOFTWARE
   // =========================================================
-  {
-    name: "Software",
-    href: "/category/software",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500",
-    children: [
-      {
-        name: "Operating System",
-        href: "/category/software/operating-system",
-        children: [
-          {
-            name: "Windows",
-            href: "/category/software/operating-system/windows",
-          },
-          {
-            name: "Windows Server",
-            href: "/category/software/operating-system/windows-server",
-          },
-        ],
-      },
-      {
-        name: "Office Software",
-        href: "/category/software/office",
-        children: [
-          {
-            name: "Microsoft Office",
-            href: "/category/software/office/microsoft-office",
-          },
-          {
-            name: "Microsoft 365",
-            href: "/category/software/office/microsoft-365",
-          },
-        ],
-      },
-      {
-        name: "Antivirus",
-        href: "/category/software/antivirus",
-      },
-      {
-        name: "Design Software",
-        href: "/category/software/design",
-      },
-    ],
-  },
+{
+  name: "Software",
+  href: "/category/software",
+  image:
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500",
 
+  children: [
+    {
+      name: "Operating System",
+      href: "/category/software?subcategory=Operating%20System",
+
+      children: [
+        {
+          name: "Windows",
+          href: "/category/software?subcategory=Windows",
+        },
+        {
+          name: "Windows Server",
+          href: "/category/software?subcategory=Windows%20Server",
+        },
+      ],
+    },
+
+    {
+      name: "Office Software",
+      href: "/category/software?subcategory=Office%20Software",
+
+      children: [
+        {
+          name: "Microsoft Office",
+          href: "/category/software?subcategory=Microsoft%20Office",
+        },
+        {
+          name: "Microsoft 365",
+          href: "/category/software?subcategory=Microsoft%20365",
+        },
+      ],
+    },
+
+    {
+      name: "Antivirus",
+      href: "/category/software?subcategory=Antivirus",
+    },
+
+    {
+      name: "Design Software",
+      href: "/category/software?subcategory=Design%20Software",
+    },
+  ],
+},
   // =========================================================
   // 13. ACCESSORIES
   // =========================================================
-  {
-    name: "Accessories",
-    href: "/category/accessories",
-    image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500",
-    children: [
-      {
-        name: "Keyboard",
-        href: "/category/accessories/keyboard",
-        children: [
-          {
-            name: "Mechanical Keyboard",
-            href: "/category/accessories/keyboard/mechanical",
-          },
-          {
-            name: "Wireless Keyboard",
-            href: "/category/accessories/keyboard/wireless",
-          },
-        ],
-      },
-      {
-        name: "Mouse",
-        href: "/category/accessories/mouse",
-        children: [
-          {
-            name: "Gaming Mouse",
-            href: "/category/accessories/mouse/gaming",
-          },
-          {
-            name: "Wireless Mouse",
-            href: "/category/accessories/mouse/wireless",
-          },
-        ],
-      },
-      {
-        name: "Headphone",
-        href: "/category/accessories/headphone",
-        children: [
-          {
-            name: "Gaming Headset",
-            href: "/category/accessories/headphone/gaming",
-          },
-          {
-            name: "Wireless Headphone",
-            href: "/category/accessories/headphone/wireless",
-          },
-        ],
-      },
-      {
-        name: "Webcam",
-        href: "/category/accessories/webcam",
-      },
-      {
-        name: "Speaker",
-        href: "/category/accessories/speaker",
-      },
-    ],
-  },
+ {
+  name: "Accessories",
+  href: "/category/accessories",
+  image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500",
+  children: [
+    {
+      name: "Keyboard",
+      href: "/category/accessories?subcategory=Keyboard",
+      children: [
+        {
+          name: "Mechanical Keyboard",
+          href: "/category/accessories?subcategory=Mechanical%20Keyboard",
+        },
+        {
+          name: "Wireless Keyboard",
+          href: "/category/accessories?subcategory=Wireless%20Keyboard",
+        },
+      ],
+    },
+    {
+      name: "Mouse",
+      href: "/category/accessories?subcategory=Mouse",
+      children: [
+        {
+          name: "Gaming Mouse",
+          href: "/category/accessories?subcategory=Gaming%20Mouse",
+        },
+        {
+          name: "Wireless Mouse",
+          href: "/category/accessories?subcategory=Wireless%20Mouse",
+        },
+      ],
+    },
+    {
+      name: "Headphone",
+      href: "/category/accessories?subcategory=Headphone",
+      children: [
+        {
+          name: "Gaming Headset",
+          href: "/category/accessories?subcategory=Gaming%20Headset",
+        },
+        {
+          name: "Wireless Headphone",
+          href: "/category/accessories?subcategory=Wireless%20Headphone",
+        },
+      ],
+    },
+    {
+      name: "Webcam",
+      href: "/category/accessories?subcategory=Webcam",
+    },
+    {
+      name: "Speaker",
+      href: "/category/accessories?subcategory=Speaker",
+    },
+  ],
+},
 
   // =========================================================
   // 14. GADGET
