@@ -13,14 +13,14 @@ export default function DesktopProducts({ products = [] }) {
             Desktop Products
           </h2>
 
-          <p className="mt-1 text-sm text-gray-500">
+          <p className="mt-1 text-sm text-gray-500 ">
             {products.length} products available
           </p>
         </div>
 
         {/* PRODUCTS */}
         {products.length > 0 ? (
-          <div className="grid grid-cols-1 gap-5 min-[480px]:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
+          <div className="grid grid-cols-1  gap-5 min-[480px]:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
 
             {products.map((product) => (
               <Link

@@ -879,7 +879,7 @@ const categoryMenu = [
 
   // =========================================================
   // 14. GADGET
-  // =========================================================
+ 
   {
     name: "Gadget",
     href: "/category/gadget",
@@ -928,121 +928,185 @@ const categoryMenu = [
     ],
   },
 
-  // =========================================================
+ 
   // 15. GAMING TV
-  // =========================================================
-  {
-    name: "Gaming TV",
-    href: "/category/gaming-tv",
-    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500",
-    children: [
-      {
-        name: "Smart TV",
-        href: "/category/gaming-tv/smart-tv",
-        children: [
-          {
-            name: "4K Smart TV",
-            href: "/category/gaming-tv/smart-tv/4k",
-          },
-          {
-            name: "OLED TV",
-            href: "/category/gaming-tv/smart-tv/oled",
-          },
-          {
-            name: "QLED TV",
-            href: "/category/gaming-tv/smart-tv/qled",
-          },
-        ],
-      },
-      {
-        name: "Gaming TV",
-        href: "/category/gaming-tv/gaming",
-        children: [
-          {
-            name: "120Hz Gaming TV",
-            href: "/category/gaming-tv/gaming/120hz",
-          },
-          {
-            name: "144Hz Gaming TV",
-            href: "/category/gaming-tv/gaming/144hz",
-          },
-        ],
-      },
-      {
-        name: "TV Accessories",
-        href: "/category/gaming-tv/accessories",
-      },
-    ],
-  },
+{
+  name: "Gaming TV",
+  href: "/category/gaming-tv",
+  image:
+    "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500",
+
+  children: [
+    {
+      name: "Smart TV",
+      href: "/category/gaming-tv?subcategory=Smart%20TV",
+
+      children: [
+        {
+          name: "4K Smart TV",
+          href: "/category/gaming-tv?subcategory=4K%20Smart%20TV",
+        },
+        {
+          name: "OLED TV",
+          href: "/category/gaming-tv?subcategory=OLED%20TV",
+        },
+        {
+          name: "QLED TV",
+          href: "/category/gaming-tv?subcategory=QLED%20TV",
+        },
+      ],
+    },
+
+    {
+      name: "Gaming TV",
+      href: "/category/gaming-tv?subcategory=Gaming%20TV",
+
+      children: [
+        {
+          name: "120Hz Gaming TV",
+          href: "/category/gaming-tv?subcategory=120Hz%20Gaming%20TV",
+        },
+        {
+          name: "144Hz Gaming TV",
+          href: "/category/gaming-tv?subcategory=144Hz%20Gaming%20TV",
+        },
+      ],
+    },
+
+    {
+      name: "TV Accessories",
+      href: "/category/gaming-tv?subcategory=TV%20Accessories",
+    },
+  ],
+},
 
   // =========================================================
   // 16. APPLIANCE
   // =========================================================
-  {
-    name: "Appliance",
-    href: "/category/appliance",
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=500",
-    children: [
-      {
-        name: "Refrigerator",
-        href: "/category/appliance/refrigerator",
-        children: [
-          {
-            name: "Single Door",
-            href: "/category/appliance/refrigerator/single-door",
-          },
-          {
-            name: "Double Door",
-            href: "/category/appliance/refrigerator/double-door",
-          },
-          {
-            name: "Side By Side",
-            href: "/category/appliance/refrigerator/side-by-side",
-          },
-        ],
-      },
-      {
-        name: "Air Conditioner",
-        href: "/category/appliance/air-conditioner",
-        children: [
-          {
-            name: "1 Ton AC",
-            href: "/category/appliance/air-conditioner/1-ton",
-          },
-          {
-            name: "1.5 Ton AC",
-            href: "/category/appliance/air-conditioner/1-5-ton",
-          },
-          {
-            name: "2 Ton AC",
-            href: "/category/appliance/air-conditioner/2-ton",
-          },
-        ],
-      },
-      {
-        name: "Washing Machine",
-        href: "/category/appliance/washing-machine",
-        children: [
-          {
-            name: "Front Load",
-            href: "/category/appliance/washing-machine/front-load",
-          },
-          {
-            name: "Top Load",
-            href: "/category/appliance/washing-machine/top-load",
-          },
-        ],
-      },
-      {
-        name: "Microwave Oven",
-        href: "/category/appliance/microwave",
-      },
-      {
-        name: "Rice Cooker",
-        href: "/category/appliance/rice-cooker",
-      },
-    ],
-  },
+
+{
+  name: "Appliance",
+  href: "/category/appliance",
+  image:
+    "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=500",
+
+  children: [
+    // =========================================================
+    // REFRIGERATOR
+    // =========================================================
+    {
+      name: "Refrigerator",
+      href: "/category/appliance?subcategory=Refrigerator",
+
+      children: [
+        {
+          name: "Single Door",
+          href: "/category/appliance?subcategory=Single%20Door",
+        },
+        {
+          name: "Double Door",
+          href: "/category/appliance?subcategory=Double%20Door",
+        },
+        {
+          name: "Side By Side",
+          href: "/category/appliance?subcategory=Side%20By%20Side",
+        },
+      ],
+    },
+
+    // =========================================================
+    // AIR CONDITIONER
+    // =========================================================
+    {
+      name: "Air Conditioner",
+      href: "/category/appliance?subcategory=Air%20Conditioner",
+
+      children: [
+        {
+          name: "1 Ton AC",
+          href: "/category/appliance?subcategory=1%20Ton%20AC",
+        },
+        {
+          name: "1.5 Ton AC",
+          href: "/category/appliance?subcategory=1.5%20Ton%20AC",
+        },
+        {
+          name: "2 Ton AC",
+          href: "/category/appliance?subcategory=2%20Ton%20AC",
+        },
+      ],
+    },
+
+    // =========================================================
+    // WASHING MACHINE
+    // =========================================================
+    {
+      name: "Washing Machine",
+      href: "/category/appliance?subcategory=Washing%20Machine",
+
+      children: [
+        {
+          name: "Front Load",
+          href: "/category/appliance?subcategory=Front%20Load",
+        },
+        {
+          name: "Top Load",
+          href: "/category/appliance?subcategory=Top%20Load",
+        },
+      ],
+    },
+
+    // =========================================================
+    // MICROWAVE
+    // =========================================================
+    {
+      name: "Microwave Oven",
+      href: "/category/appliance?subcategory=Microwave%20Oven",
+    },
+
+    // =========================================================
+    // RICE COOKER
+    // =========================================================
+    {
+      name: "Rice Cooker",
+      href: "/category/appliance?subcategory=Rice%20Cooker",
+    },
+
+    // =========================================================
+    // BLENDER
+    // =========================================================
+    {
+      name: "Blender",
+      href: "/category/appliance?subcategory=Blender",
+    },
+
+    // =========================================================
+    // ELECTRIC OVEN
+    // =========================================================
+    {
+      name: "Electric Oven",
+      href: "/category/appliance?subcategory=Electric%20Oven",
+    },
+
+    // =========================================================
+    // VACUUM CLEANER
+    // =========================================================
+    {
+      name: "Vacuum Cleaner",
+      href: "/category/appliance?subcategory=Vacuum%20Cleaner",
+    },
+
+    // =========================================================
+    // ELECTRIC KETTLE
+    // =========================================================
+    {
+      name: "Electric Kettle",
+      href: "/category/appliance?subcategory=Electric%20Kettle",
+    },
+  ],
+},
+
+
 ];
 
 export default categoryMenu;

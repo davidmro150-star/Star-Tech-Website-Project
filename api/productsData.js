@@ -2444,7 +2444,834 @@ const createProducts = (startId, items) => {
   }));
 };
 
+// =========================================================
+// GAMING TV — 50 PRODUCTS
+// =========================================================
 
+const gamingTvProducts = createProducts(701, [
+  // =========================================================
+  // SMART TV → 4K SMART TV
+  // =========================================================
+
+  {
+    title: "Samsung 55 Inch 4K Smart TV",
+    subtitle: "Crystal UHD 4K Smart Television",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "Samsung",
+    description: "55-inch 4K Smart TV with vibrant colors and smart streaming features.",
+    information: "4K UHD, Smart TV, WiFi, HDR, HDMI",
+    price: 72000,
+    rating: 4.7,
+    stock: 18,
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=600",
+  },
+
+  {
+    title: "LG 50 Inch 4K Smart TV",
+    subtitle: "4K UHD AI Smart TV",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "LG",
+    description: "50-inch 4K Smart TV designed for movies, gaming and streaming.",
+    information: "4K UHD, HDR, WebOS, WiFi, HDMI",
+    price: 65000,
+    rating: 4.6,
+    stock: 15,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=601",
+  },
+
+  {
+    title: "Sony Bravia 55 Inch 4K TV",
+    subtitle: "4K HDR Google Smart TV",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "Sony",
+    description: "Premium Sony 4K Smart TV with HDR and Google TV.",
+    information: "4K HDR, Google TV, Dolby Audio, HDMI",
+    price: 88000,
+    rating: 4.8,
+    stock: 10,
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=602",
+  },
+
+  {
+    title: "TCL 55 Inch 4K Smart TV",
+    subtitle: "Google TV 4K UHD",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "TCL",
+    description: "Affordable 55-inch 4K Smart TV with Google TV experience.",
+    information: "4K UHD, Google TV, HDR, WiFi",
+    price: 59000,
+    rating: 4.5,
+    stock: 22,
+    image: "https://images.unsplash.com/photo-1601944177325-f8867652837f?w=603",
+  },
+
+  {
+    title: "Hisense 50 Inch 4K Smart TV",
+    subtitle: "4K UHD Smart Television",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "Hisense",
+    description: "50-inch 4K UHD Smart TV with HDR picture quality.",
+    information: "4K UHD, HDR, WiFi, HDMI, USB",
+    price: 54000,
+    rating: 4.4,
+    stock: 19,
+    image: "https://images.unsplash.com/photo-1461151304267-38535e780c79?w=604",
+  },
+
+  {
+    title: "Xiaomi 55 Inch 4K Smart TV",
+    subtitle: "4K Android Smart TV",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "Xiaomi",
+    description: "55-inch Xiaomi 4K Smart TV with Android TV and streaming support.",
+    information: "4K UHD, Android TV, WiFi, Bluetooth",
+    price: 57000,
+    rating: 4.5,
+    stock: 17,
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=605",
+  },
+
+  {
+    title: "Walton 43 Inch 4K Smart TV",
+    subtitle: "4K UHD Android Smart TV",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "Walton",
+    description: "43-inch 4K Smart TV suitable for home entertainment and gaming.",
+    information: "4K UHD, Android TV, HDMI, USB",
+    price: 42000,
+    rating: 4.3,
+    stock: 25,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=606",
+  },
+
+  {
+    title: "Philips 50 Inch 4K Smart TV",
+    subtitle: "4K UHD Smart LED TV",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "Philips",
+    description: "50-inch Philips 4K Smart LED TV with excellent picture quality.",
+    information: "4K UHD, HDR, WiFi, HDMI",
+    price: 61000,
+    rating: 4.4,
+    stock: 12,
+    image: "https://images.unsplash.com/photo-1577979749830-f1d742b96791?w=607",
+  },
+
+  // =========================================================
+  // OLED TV
+  // =========================================================
+
+  {
+    title: "LG 55 Inch OLED Smart TV",
+    subtitle: "4K OLED AI Smart Television",
+    category: "Gaming TV",
+    subcategory: "OLED TV",
+    categoryPath: "gaming-tv/smart-tv/oled",
+    brand: "LG",
+    description: "Premium OLED Smart TV with deep blacks and stunning contrast.",
+    information: "4K OLED, HDR, Dolby Vision, WebOS",
+    price: 145000,
+    rating: 4.9,
+    stock: 8,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=608",
+  },
+
+  {
+    title: "Sony 55 Inch Bravia OLED TV",
+    subtitle: "4K OLED Google TV",
+    category: "Gaming TV",
+    subcategory: "OLED TV",
+    categoryPath: "gaming-tv/smart-tv/oled",
+    brand: "Sony",
+    description: "Sony OLED TV with cinematic colors and premium contrast.",
+    information: "4K OLED, HDR, Google TV, Dolby Vision",
+    price: 168000,
+    rating: 4.9,
+    stock: 6,
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=609",
+  },
+
+  {
+    title: "LG 65 Inch OLED EVO TV",
+    subtitle: "4K OLED EVO Smart TV",
+    category: "Gaming TV",
+    subcategory: "OLED TV",
+    categoryPath: "gaming-tv/smart-tv/oled",
+    brand: "LG",
+    description: "65-inch OLED EVO TV designed for premium entertainment and gaming.",
+    information: "4K OLED EVO, HDR, HDMI 2.1, 120Hz",
+    price: 210000,
+    rating: 4.9,
+    stock: 5,
+    image: "https://images.unsplash.com/photo-1601944177325-f8867652837f?w=610",
+  },
+
+  {
+    title: "Sony 65 Inch OLED Bravia",
+    subtitle: "Premium 4K OLED Google TV",
+    category: "Gaming TV",
+    subcategory: "OLED TV",
+    categoryPath: "gaming-tv/smart-tv/oled",
+    brand: "Sony",
+    description: "Premium 65-inch OLED TV for cinematic home entertainment.",
+    information: "4K OLED, Google TV, Dolby Vision, HDMI 2.1",
+    price: 225000,
+    rating: 4.8,
+    stock: 4,
+    image: "https://images.unsplash.com/photo-1577979749830-f1d742b96791?w=611",
+  },
+
+  {
+    title: "LG 48 Inch OLED Gaming TV",
+    subtitle: "4K OLED Gaming Television",
+    category: "Gaming TV",
+    subcategory: "OLED TV",
+    categoryPath: "gaming-tv/smart-tv/oled",
+    brand: "LG",
+    description: "48-inch OLED gaming TV with fast response and excellent contrast.",
+    information: "4K OLED, 120Hz, HDMI 2.1, VRR",
+    price: 125000,
+    rating: 4.8,
+    stock: 9,
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=612",
+  },
+
+  // =========================================================
+  // QLED TV
+  // =========================================================
+
+  {
+    title: "Samsung 55 Inch QLED Smart TV",
+    subtitle: "4K QLED Smart Television",
+    category: "Gaming TV",
+    subcategory: "QLED TV",
+    categoryPath: "gaming-tv/smart-tv/qled",
+    brand: "Samsung",
+    description: "55-inch QLED TV with vibrant colors and smart features.",
+    information: "4K QLED, HDR, Tizen, HDMI",
+    price: 105000,
+    rating: 4.8,
+    stock: 11,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=613",
+  },
+
+  {
+    title: "Samsung 65 Inch QLED TV",
+    subtitle: "4K QLED Premium Smart TV",
+    category: "Gaming TV",
+    subcategory: "QLED TV",
+    categoryPath: "gaming-tv/smart-tv/qled",
+    brand: "Samsung",
+    description: "Large 65-inch QLED TV for immersive home entertainment.",
+    information: "4K QLED, HDR, Tizen, 120Hz",
+    price: 155000,
+    rating: 4.9,
+    stock: 7,
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=614",
+  },
+
+  {
+    title: "TCL 65 Inch QLED TV",
+    subtitle: "4K QLED Google Smart TV",
+    category: "Gaming TV",
+    subcategory: "QLED TV",
+    categoryPath: "gaming-tv/smart-tv/qled",
+    brand: "TCL",
+    description: "65-inch QLED TV with Google TV and HDR support.",
+    information: "4K QLED, Google TV, HDR, HDMI",
+    price: 112000,
+    rating: 4.6,
+    stock: 13,
+    image: "https://images.unsplash.com/photo-1601944177325-f8867652837f?w=615",
+  },
+
+  {
+    title: "Hisense 55 Inch QLED TV",
+    subtitle: "4K QLED Smart Television",
+    category: "Gaming TV",
+    subcategory: "QLED TV",
+    categoryPath: "gaming-tv/smart-tv/qled",
+    brand: "Hisense",
+    description: "55-inch QLED Smart TV with excellent color reproduction.",
+    information: "4K QLED, HDR, WiFi, HDMI",
+    price: 92000,
+    rating: 4.5,
+    stock: 14,
+    image: "https://images.unsplash.com/photo-1577979749830-f1d742b96791?w=616",
+  },
+
+  {
+    title: "Samsung 75 Inch QLED TV",
+    subtitle: "Premium 4K QLED Smart TV",
+    category: "Gaming TV",
+    subcategory: "QLED TV",
+    categoryPath: "gaming-tv/smart-tv/qled",
+    brand: "Samsung",
+    description: "75-inch premium QLED TV for large entertainment spaces.",
+    information: "4K QLED, HDR, 120Hz, Tizen",
+    price: 195000,
+    rating: 4.9,
+    stock: 4,
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=617",
+  },
+
+  // =========================================================
+  // 120Hz GAMING TV
+  // =========================================================
+
+  {
+    title: "LG 55 Inch 120Hz Gaming TV",
+    subtitle: "4K 120Hz HDMI 2.1 Gaming TV",
+    category: "Gaming TV",
+    subcategory: "120Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/120hz",
+    brand: "LG",
+    description: "Gaming-focused 55-inch TV with 120Hz refresh rate.",
+    information: "4K, 120Hz, HDMI 2.1, VRR, ALLM",
+    price: 135000,
+    rating: 4.9,
+    stock: 10,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=618",
+  },
+
+  {
+    title: "Samsung 55 Inch 120Hz Gaming TV",
+    subtitle: "4K 120Hz Gaming Smart TV",
+    category: "Gaming TV",
+    subcategory: "120Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/120hz",
+    brand: "Samsung",
+    description: "4K gaming TV with 120Hz refresh rate.",
+    information: "4K, 120Hz, HDR, HDMI 2.1, VRR",
+    price: 128000,
+    rating: 4.8,
+    stock: 12,
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=619",
+  },
+
+  {
+    title: "Sony 55 Inch 120Hz Gaming TV",
+    subtitle: "Bravia 4K 120Hz Gaming TV",
+    category: "Gaming TV",
+    subcategory: "120Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/120hz",
+    brand: "Sony",
+    description: "Sony gaming TV with 120Hz refresh rate.",
+    information: "4K, 120Hz, HDMI 2.1, VRR, ALLM",
+    price: 142000,
+    rating: 4.8,
+    stock: 8,
+    image: "https://images.unsplash.com/photo-1601944177325-f8867652837f?w=620",
+  },
+
+  {
+    title: "TCL 55 Inch 120Hz Gaming TV",
+    subtitle: "4K QLED 120Hz Gaming TV",
+    category: "Gaming TV",
+    subcategory: "120Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/120hz",
+    brand: "TCL",
+    description: "QLED gaming TV with 120Hz refresh rate.",
+    information: "4K QLED, 120Hz, HDMI 2.1, VRR",
+    price: 99000,
+    rating: 4.6,
+    stock: 16,
+    image: "https://images.unsplash.com/photo-1577979749830-f1d742b96791?w=621",
+  },
+
+  {
+    title: "Hisense 55 Inch 120Hz Gaming TV",
+    subtitle: "4K 120Hz Smart Gaming TV",
+    category: "Gaming TV",
+    subcategory: "120Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/120hz",
+    brand: "Hisense",
+    description: "Affordable 120Hz gaming TV with 4K resolution.",
+    information: "4K, 120Hz, HDR, HDMI 2.1",
+    price: 88000,
+    rating: 4.5,
+    stock: 18,
+    image: "https://images.unsplash.com/photo-1461151304267-38535e780c79?w=622",
+  },
+
+  // =========================================================
+  // 144Hz GAMING TV
+  // =========================================================
+
+  {
+    title: "Samsung 55 Inch 144Hz Gaming TV",
+    subtitle: "4K 144Hz Gaming Smart TV",
+    category: "Gaming TV",
+    subcategory: "144Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/144hz",
+    brand: "Samsung",
+    description: "High refresh rate 4K gaming TV.",
+    information: "4K, 144Hz, HDMI 2.1, VRR, HDR",
+    price: 148000,
+    rating: 4.9,
+    stock: 9,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=623",
+  },
+
+  {
+    title: "LG 48 Inch 144Hz Gaming OLED",
+    subtitle: "4K OLED 144Hz Gaming TV",
+    category: "Gaming TV",
+    subcategory: "144Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/144hz",
+    brand: "LG",
+    description: "OLED gaming TV with 144Hz refresh rate.",
+    information: "4K OLED, 144Hz, HDMI 2.1, VRR",
+    price: 165000,
+    rating: 4.9,
+    stock: 7,
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=624",
+  },
+
+  {
+    title: "Sony 55 Inch 144Hz Gaming TV",
+    subtitle: "4K 144Hz Bravia Gaming TV",
+    category: "Gaming TV",
+    subcategory: "144Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/144hz",
+    brand: "Sony",
+    description: "Premium Sony gaming TV with high refresh rate support.",
+    information: "4K, 144Hz, HDMI 2.1, VRR, HDR",
+    price: 172000,
+    rating: 4.8,
+    stock: 6,
+    image: "https://images.unsplash.com/photo-1601944177325-f8867652837f?w=625",
+  },
+
+  {
+    title: "TCL 55 Inch 144Hz QLED Gaming TV",
+    subtitle: "4K QLED 144Hz Gaming TV",
+    category: "Gaming TV",
+    subcategory: "144Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/144hz",
+    brand: "TCL",
+    description: "QLED gaming television with 144Hz refresh rate.",
+    information: "4K QLED, 144Hz, HDMI 2.1, VRR",
+    price: 118000,
+    rating: 4.7,
+    stock: 12,
+    image: "https://images.unsplash.com/photo-1577979749830-f1d742b96791?w=626",
+  },
+
+  {
+    title: "Hisense 55 Inch 144Hz Gaming TV",
+    subtitle: "4K 144Hz Gaming Television",
+    category: "Gaming TV",
+    subcategory: "144Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/144hz",
+    brand: "Hisense",
+    description: "144Hz 4K gaming TV with low latency support.",
+    information: "4K, 144Hz, HDR, HDMI 2.1",
+    price: 105000,
+    rating: 4.6,
+    stock: 14,
+    image: "https://images.unsplash.com/photo-1461151304267-38535e780c79?w=627",
+  },
+
+  // =========================================================
+  // TV ACCESSORIES
+  // =========================================================
+
+  {
+    title: "Universal TV Wall Mount",
+    subtitle: "Heavy Duty Adjustable TV Mount",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Samsung",
+    description: "Adjustable wall mount suitable for modern TVs.",
+    information: "Universal, Adjustable, Heavy Duty",
+    price: 3500,
+    rating: 4.5,
+    stock: 30,
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=628",
+  },
+
+  {
+    title: "HDMI 2.1 Ultra High Speed Cable",
+    subtitle: "8K HDMI 2.1 Gaming Cable",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Anker",
+    description: "High-speed HDMI 2.1 cable for gaming consoles and TVs.",
+    information: "HDMI 2.1, 8K, 48Gbps, eARC",
+    price: 4500,
+    rating: 4.8,
+    stock: 45,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=629",
+  },
+
+  {
+    title: "Samsung TV Remote Control",
+    subtitle: "Universal Smart TV Remote",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Samsung",
+    description: "Replacement smart TV remote control.",
+    information: "Bluetooth, Smart TV, Voice Control",
+    price: 2800,
+    rating: 4.4,
+    stock: 35,
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=630",
+  },
+
+  {
+    title: "Sony TV Remote Control",
+    subtitle: "Smart TV Replacement Remote",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Sony",
+    description: "Replacement remote compatible with Sony Smart TVs.",
+    information: "Bluetooth, Voice Control, Smart TV",
+    price: 3200,
+    rating: 4.5,
+    stock: 28,
+    image: "https://images.unsplash.com/photo-1601944177325-f8867652837f?w=631",
+  },
+
+  {
+    title: "LED TV Backlight Kit",
+    subtitle: "USB RGB TV Backlight",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Philips",
+    description: "RGB LED backlight kit for TVs and gaming setups.",
+    information: "RGB, USB Powered, Remote Control",
+    price: 3800,
+    rating: 4.6,
+    stock: 32,
+    image: "https://images.unsplash.com/photo-1577979749830-f1d742b96791?w=632",
+  },
+
+  {
+    title: "JBL TV Soundbar",
+    subtitle: "Compact TV Soundbar",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "JBL",
+    description: "Compact soundbar designed to improve TV audio.",
+    information: "HDMI ARC, Bluetooth, Dolby Audio",
+    price: 18000,
+    rating: 4.7,
+    stock: 16,
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=633",
+  },
+
+  {
+    title: "Gaming TV Stand",
+    subtitle: "Modern Adjustable TV Stand",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Baseus",
+    description: "Modern TV stand for gaming and entertainment setups.",
+    information: "Adjustable, Strong Frame, Cable Management",
+    price: 6500,
+    rating: 4.4,
+    stock: 20,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=634",
+  },
+
+  {
+    title: "Universal TV Cleaning Kit",
+    subtitle: "Screen Cleaning Solution Kit",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Philips",
+    description: "Cleaning kit designed for TV and monitor screens.",
+    information: "Screen Safe, Microfiber Cloth, Cleaning Solution",
+    price: 1200,
+    rating: 4.3,
+    stock: 50,
+    image: "https://images.unsplash.com/photo-1461151304267-38535e780c79?w=635",
+  },
+
+  {
+    title: "Optical Audio Cable for TV",
+    subtitle: "Digital Optical Toslink Cable",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Anker",
+    description: "Digital optical cable for connecting TVs with sound systems.",
+    information: "Toslink, Optical Audio, Gold Plated",
+    price: 2200,
+    rating: 4.5,
+    stock: 40,
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=636",
+  },
+
+  {
+    title: "Universal Smart TV Remote",
+    subtitle: "Multi Brand Smart TV Remote",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Sony",
+    description: "Universal replacement remote for multiple Smart TV brands.",
+    information: "Universal, Bluetooth, Voice Support",
+    price: 2500,
+    rating: 4.4,
+    stock: 33,
+    image: "https://images.unsplash.com/photo-1601944177325-f8867652837f?w=637",
+  },
+
+  // =========================================================
+  // EXTRA PRODUCTS
+  // =========================================================
+
+  {
+    title: "Samsung 43 Inch 4K Smart TV",
+    subtitle: "Crystal UHD 4K Smart TV",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "Samsung",
+    description: "Compact 43-inch 4K Smart TV.",
+    information: "4K UHD, HDR, Tizen, WiFi",
+    price: 48000,
+    rating: 4.5,
+    stock: 20,
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=638",
+  },
+
+  {
+    title: "LG 43 Inch 4K Smart TV",
+    subtitle: "4K UHD WebOS Smart TV",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "LG",
+    description: "43-inch 4K Smart TV with WebOS.",
+    information: "4K UHD, WebOS, HDR, WiFi",
+    price: 46000,
+    rating: 4.4,
+    stock: 18,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=639",
+  },
+
+  {
+    title: "TCL 43 Inch 4K Smart TV",
+    subtitle: "Google TV 4K UHD",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "TCL",
+    description: "43-inch TCL 4K Smart TV with Google TV.",
+    information: "4K UHD, Google TV, HDR, WiFi",
+    price: 43000,
+    rating: 4.3,
+    stock: 23,
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=640",
+  },
+
+  {
+    title: "Hisense 43 Inch 4K Smart TV",
+    subtitle: "4K UHD Smart LED TV",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "Hisense",
+    description: "Affordable 43-inch 4K Smart TV.",
+    information: "4K UHD, HDR, WiFi, HDMI",
+    price: 39000,
+    rating: 4.2,
+    stock: 21,
+    image: "https://images.unsplash.com/photo-1601944177325-f8867652837f?w=641",
+  },
+
+  {
+    title: "Samsung 50 Inch QLED Gaming TV",
+    subtitle: "4K QLED Smart Gaming TV",
+    category: "Gaming TV",
+    subcategory: "QLED TV",
+    categoryPath: "gaming-tv/smart-tv/qled",
+    brand: "Samsung",
+    description: "50-inch QLED TV suitable for gaming.",
+    information: "4K QLED, HDR, HDMI 2.1, Tizen",
+    price: 98000,
+    rating: 4.7,
+    stock: 10,
+    image: "https://images.unsplash.com/photo-1577979749830-f1d742b96791?w=642",
+  },
+
+  {
+    title: "LG 55 Inch QLED Gaming TV",
+    subtitle: "4K QLED Smart Television",
+    category: "Gaming TV",
+    subcategory: "QLED TV",
+    categoryPath: "gaming-tv/smart-tv/qled",
+    brand: "LG",
+    description: "55-inch premium display for gaming and movies.",
+    information: "4K QLED, HDR, HDMI 2.1",
+    price: 108000,
+    rating: 4.6,
+    stock: 11,
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=643",
+  },
+
+  {
+    title: "Sony 50 Inch 4K Smart TV",
+    subtitle: "Bravia 4K Google Smart TV",
+    category: "Gaming TV",
+    subcategory: "4K Smart TV",
+    categoryPath: "gaming-tv/smart-tv/4k",
+    brand: "Sony",
+    description: "Sony Bravia 50-inch 4K Smart TV.",
+    information: "4K HDR, Google TV, HDMI, WiFi",
+    price: 76000,
+    rating: 4.7,
+    stock: 13,
+    image: "https://images.unsplash.com/photo-1461151304267-38535e780c79?w=644",
+  },
+
+  {
+    title: "LG 55 Inch 144Hz OLED Gaming TV",
+    subtitle: "4K OLED High Refresh Gaming TV",
+    category: "Gaming TV",
+    subcategory: "144Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/144hz",
+    brand: "LG",
+    description: "Premium OLED gaming TV with 144Hz refresh rate.",
+    information: "4K OLED, 144Hz, HDMI 2.1, VRR",
+    price: 185000,
+    rating: 4.9,
+    stock: 5,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=645",
+  },
+
+  {
+    title: "Samsung 65 Inch 120Hz Gaming TV",
+    subtitle: "4K QLED 120Hz Gaming TV",
+    category: "Gaming TV",
+    subcategory: "120Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/120hz",
+    brand: "Samsung",
+    description: "65-inch gaming TV with 120Hz refresh rate.",
+    information: "4K QLED, 120Hz, HDMI 2.1, VRR",
+    price: 165000,
+    rating: 4.9,
+    stock: 6,
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=646",
+  },
+
+  {
+    title: "TCL 65 Inch 144Hz Gaming TV",
+    subtitle: "4K QLED High Refresh TV",
+    category: "Gaming TV",
+    subcategory: "144Hz Gaming TV",
+    categoryPath: "gaming-tv/gaming/144hz",
+    brand: "TCL",
+    description: "65-inch QLED gaming TV with 144Hz refresh rate.",
+    information: "4K QLED, 144Hz, HDMI 2.1, VRR",
+    price: 135000,
+    rating: 4.7,
+    stock: 8,
+    image: "https://images.unsplash.com/photo-1601944177325-f8867652837f?w=647",
+  },
+
+  {
+    title: "Premium HDMI 2.1 Gaming Cable",
+    subtitle: "8K 48Gbps HDMI Cable",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Baseus",
+    description: "High bandwidth HDMI cable for 4K high refresh gaming.",
+    information: "HDMI 2.1, 48Gbps, 8K, eARC",
+    price: 3200,
+    rating: 4.7,
+    stock: 42,
+    image: "https://images.unsplash.com/photo-1577979749830-f1d742b96791?w=648",
+  },
+
+  {
+    title: "Gaming TV RGB Light Strip",
+    subtitle: "Smart RGB Backlight for TV",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Philips",
+    description: "RGB ambient lighting designed for gaming TV setups.",
+    information: "RGB, USB, Remote Control, Smart Lighting",
+    price: 4200,
+    rating: 4.5,
+    stock: 26,
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=649",
+  },
+
+  {
+    title: "Universal TV Wall Mount Bracket",
+    subtitle: "Full Motion TV Wall Mount",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Baseus",
+    description: "Full motion wall mount for TVs and gaming displays.",
+    information: "Full Motion, Adjustable, Heavy Duty",
+    price: 5200,
+    rating: 4.6,
+    stock: 22,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=650",
+  },
+
+  {
+    title: "JBL Gaming TV Soundbar",
+    subtitle: "Dolby Audio Bluetooth Soundbar",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "JBL",
+    description: "Powerful soundbar for gaming and home entertainment.",
+    information: "Bluetooth, HDMI ARC, Dolby Audio",
+    price: 22000,
+    rating: 4.8,
+    stock: 13,
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=651",
+  },
+
+  {
+    title: "Sony 4K Gaming TV Stand",
+    subtitle: "Adjustable TV Table Stand",
+    category: "Gaming TV",
+    subcategory: "TV Accessories",
+    categoryPath: "gaming-tv/accessories",
+    brand: "Sony",
+    description: "Strong adjustable TV stand for gaming setups.",
+    information: "Adjustable Height, Cable Management",
+    price: 7200,
+    rating: 4.4,
+    stock: 15,
+    image: "https://images.unsplash.com/photo-1601944177325-f8867652837f?w=652",
+  },
+]);
 // ============================================================
 // LAPTOP PRODUCTS 401–440
 // ============================================================
@@ -4435,75 +5262,523 @@ const cameraProductsApi = createProducts(531, [
 // ============================================================
 
 const applianceProducts = createProducts(551, [
+  // =========================================================
+  // REFRIGERATOR
+  // =========================================================
+
   {
-    title: "Samsung 260L Refrigerator",
+    title: "Samsung 260L Single Door Refrigerator",
     subtitle: "Frost Free Refrigerator",
     category: "Appliance",
     subcategory: "Refrigerator",
-    categoryPath: "appliance/refrigerator",
-    description: "Energy-efficient refrigerator for modern homes.",
-    information: "260-liter capacity with frost-free cooling.",
+    childCategory: "Single Door",
+    categoryPath: "appliance/refrigerator/single-door",
+    brand: "Samsung",
+    description:
+      "Energy-efficient single door refrigerator for modern homes.",
+    information:
+      "260-liter capacity with frost-free cooling and modern design.",
     price: 58000,
-    image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
     rating: 4.7,
     stock: 8,
     size: "260L",
   },
+
+  {
+    title: "LG 190L Single Door Refrigerator",
+    subtitle: "Direct Cool Refrigerator",
+    category: "Appliance",
+    subcategory: "Refrigerator",
+    childCategory: "Single Door",
+    categoryPath: "appliance/refrigerator/single-door",
+    brand: "LG",
+    description:
+      "Compact refrigerator suitable for small families and apartments.",
+    information:
+      "190-liter capacity with efficient direct cooling.",
+    price: 42000,
+    image:
+      "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 12,
+    size: "190L",
+  },
+
+  {
+    title: "Walton 220L Single Door Refrigerator",
+    subtitle: "Energy Saving Refrigerator",
+    category: "Appliance",
+    subcategory: "Refrigerator",
+    childCategory: "Single Door",
+    categoryPath: "appliance/refrigerator/single-door",
+    brand: "Walton",
+    description:
+      "Energy-saving refrigerator designed for everyday household use.",
+    information:
+      "220-liter capacity with spacious storage compartments.",
+    price: 38000,
+    image:
+      "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
+    rating: 4.4,
+    stock: 15,
+    size: "220L",
+  },
+
+  {
+    title: "Samsung 340L Double Door Refrigerator",
+    subtitle: "Digital Inverter Refrigerator",
+    category: "Appliance",
+    subcategory: "Refrigerator",
+    childCategory: "Double Door",
+    categoryPath: "appliance/refrigerator/double-door",
+    brand: "Samsung",
+    description:
+      "Large double door refrigerator with digital inverter technology.",
+    information:
+      "340-liter capacity with frost-free cooling.",
+    price: 78000,
+    image:
+      "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 6,
+    size: "340L",
+  },
+
+  {
+    title: "LG 375L Double Door Refrigerator",
+    subtitle: "Smart Inverter Refrigerator",
+    category: "Appliance",
+    subcategory: "Refrigerator",
+    childCategory: "Double Door",
+    categoryPath: "appliance/refrigerator/double-door",
+    brand: "LG",
+    description:
+      "Premium double door refrigerator for large families.",
+    information:
+      "375-liter capacity with smart inverter cooling.",
+    price: 85000,
+    image:
+      "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 7,
+    size: "375L",
+  },
+
+  {
+    title: "Samsung 650L Side By Side Refrigerator",
+    subtitle: "Premium Side By Side Refrigerator",
+    category: "Appliance",
+    subcategory: "Refrigerator",
+    childCategory: "Side By Side",
+    categoryPath: "appliance/refrigerator/side-by-side",
+    brand: "Samsung",
+    description:
+      "Large premium side-by-side refrigerator with spacious storage.",
+    information:
+      "650-liter capacity with multi-airflow cooling.",
+    price: 145000,
+    image:
+      "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
+    rating: 4.9,
+    stock: 4,
+    size: "650L",
+  },
+
+  // =========================================================
+  // AIR CONDITIONER
+  // =========================================================
+
+  {
+    title: "Gree 1 Ton Inverter AC",
+    subtitle: "Energy Efficient Air Conditioner",
+    category: "Appliance",
+    subcategory: "Air Conditioner",
+    childCategory: "1 Ton AC",
+    categoryPath: "appliance/air-conditioner/1-ton",
+    brand: "Gree",
+    description:
+      "Compact inverter air conditioner for bedrooms and small rooms.",
+    information:
+      "1 ton inverter AC with fast and efficient cooling.",
+    price: 48000,
+    image:
+      "https://images.unsplash.com/photo-1631545806609-2e8f6f7e6a9c?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 9,
+    size: "1 Ton",
+  },
+
+  {
+    title: "General 1 Ton Inverter AC",
+    subtitle: "Compact Inverter Air Conditioner",
+    category: "Appliance",
+    subcategory: "Air Conditioner",
+    childCategory: "1 Ton AC",
+    categoryPath: "appliance/air-conditioner/1-ton",
+    brand: "General",
+    description:
+      "Reliable 1 ton inverter AC for efficient room cooling.",
+    information:
+      "High-efficiency cooling with inverter compressor.",
+    price: 52000,
+    image:
+      "https://images.unsplash.com/photo-1631545806609-2e8f6f7e6a9c?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 8,
+    size: "1 Ton",
+  },
+
   {
     title: "LG 1.5 Ton Inverter AC",
     subtitle: "Energy Efficient Air Conditioner",
     category: "Appliance",
     subcategory: "Air Conditioner",
-    categoryPath: "appliance/air-conditioner",
-    description: "Energy-efficient inverter air conditioner for comfortable home cooling.",
-    information: "1.5 ton inverter AC with efficient cooling.",
+    categoryPath: "appliance/air-conditioner/1-5-ton",
+    brand: "LG",
+    description:
+      "Energy-efficient inverter air conditioner for comfortable home cooling.",
+    information:
+      "1.5 ton inverter AC with efficient cooling.",
     price: 65000,
-    image: "https://images.unsplash.com/photo-1631545806609-2e8f6f7e6a9c?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1631545806609-2e8f6f7e6a9c?auto=format&fit=crop&w=800&q=80",
     rating: 4.7,
     stock: 7,
     size: "1.5 Ton",
   },
+
   {
-    title: "Samsung 8KG Washing Machine",
-    subtitle: "Automatic Washing Machine",
+    title: "Gree 1.5 Ton Inverter AC",
+    subtitle: "Powerful Home Cooling",
+    category: "Appliance",
+    subcategory: "Air Conditioner",
+    categoryPath: "appliance/air-conditioner/1-5-ton",
+    brand: "Gree",
+    description:
+      "Powerful inverter AC designed for medium-sized rooms.",
+    information:
+      "1.5 ton cooling capacity with energy-saving operation.",
+    price: 62000,
+    image:
+      "https://images.unsplash.com/photo-1631545806609-2e8f6f7e6a9c?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 10,
+    size: "1.5 Ton",
+  },
+
+  {
+    title: "Daikin 2 Ton Inverter AC",
+    subtitle: "Premium Inverter Air Conditioner",
+    category: "Appliance",
+    subcategory: "Air Conditioner",
+    categoryPath: "appliance/air-conditioner/2-ton",
+    brand: "Daikin",
+    description:
+      "High-performance inverter AC for large rooms and living spaces.",
+    information:
+      "2 ton capacity with powerful and efficient cooling.",
+    price: 95000,
+    image:
+      "https://images.unsplash.com/photo-1631545806609-2e8f6f7e6a9c?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 5,
+    size: "2 Ton",
+  },
+
+  // =========================================================
+  // WASHING MACHINE
+  // =========================================================
+
+  {
+    title: "Samsung 8KG Front Load Washing Machine",
+    subtitle: "Automatic Front Load Washer",
     category: "Appliance",
     subcategory: "Washing Machine",
-    categoryPath: "appliance/washing-machine",
-    description: "Automatic washing machine for convenient home laundry.",
-    information: "8KG capacity with multiple washing programs.",
+    childCategory: "Front Load",
+    categoryPath: "appliance/washing-machine/front-load",
+    brand: "Samsung",
+    description:
+      "Modern front-load washing machine for convenient laundry.",
+    information:
+      "8KG capacity with multiple washing programs.",
     price: 52000,
-    image: "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80",
     rating: 4.6,
     stock: 9,
     size: "8KG",
   },
 
-  ...Array.from({ length: 27 }, (_, index) => {
+  {
+    title: "LG 9KG Front Load Washing Machine",
+    subtitle: "Smart Inverter Washer",
+    category: "Appliance",
+    subcategory: "Washing Machine",
+    childCategory: "Front Load",
+    categoryPath: "appliance/washing-machine/front-load",
+    brand: "LG",
+    description:
+      "Smart front-load washing machine with efficient washing performance.",
+    information:
+      "9KG capacity with inverter motor and smart washing programs.",
+    price: 68000,
+    image:
+      "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 6,
+    size: "9KG",
+  },
+
+  {
+    title: "Walton 7KG Top Load Washing Machine",
+    subtitle: "Automatic Top Load Washer",
+    category: "Appliance",
+    subcategory: "Washing Machine",
+    childCategory: "Top Load",
+    categoryPath: "appliance/washing-machine/top-load",
+    brand: "Walton",
+    description:
+      "Affordable automatic washing machine for everyday laundry.",
+    information:
+      "7KG capacity with multiple washing modes.",
+    price: 32000,
+    image:
+      "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80",
+    rating: 4.4,
+    stock: 12,
+    size: "7KG",
+  },
+
+  {
+    title: "Samsung 10KG Top Load Washing Machine",
+    subtitle: "Large Capacity Washing Machine",
+    category: "Appliance",
+    subcategory: "Washing Machine",
+    childCategory: "Top Load",
+    categoryPath: "appliance/washing-machine/top-load",
+    brand: "Samsung",
+    description:
+      "Large-capacity top-load washing machine for family laundry.",
+    information:
+      "10KG capacity with powerful washing programs.",
+    price: 57000,
+    image:
+      "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 8,
+    size: "10KG",
+  },
+
+  // =========================================================
+  // MICROWAVE OVEN
+  // =========================================================
+
+  {
+    title: "Samsung 28L Microwave Oven",
+    subtitle: "Digital Microwave Oven",
+    category: "Appliance",
+    subcategory: "Microwave Oven",
+    categoryPath: "appliance/microwave",
+    brand: "Samsung",
+    description:
+      "Compact digital microwave oven for everyday cooking.",
+    information:
+      "28-liter capacity with multiple cooking modes.",
+    price: 18000,
+    image:
+      "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 15,
+    size: "28L",
+  },
+
+  {
+    title: "LG 32L Microwave Oven",
+    subtitle: "Grill Microwave Oven",
+    category: "Appliance",
+    subcategory: "Microwave Oven",
+    categoryPath: "appliance/microwave",
+    brand: "LG",
+    description:
+      "Versatile microwave oven with grill cooking functionality.",
+    information:
+      "32-liter capacity with grill and microwave modes.",
+    price: 25000,
+    image:
+      "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 11,
+    size: "32L",
+  },
+
+  // =========================================================
+  // RICE COOKER
+  // =========================================================
+
+  {
+    title: "Panasonic 1.8L Rice Cooker",
+    subtitle: "Automatic Rice Cooker",
+    category: "Appliance",
+    subcategory: "Rice Cooker",
+    categoryPath: "appliance/rice-cooker",
+    brand: "Panasonic",
+    description:
+      "Automatic rice cooker for convenient everyday cooking.",
+    information:
+      "1.8-liter capacity with automatic cooking function.",
+    price: 6500,
+    image:
+      "https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 20,
+    size: "1.8L",
+  },
+
+  {
+    title: "Walton 2.2L Rice Cooker",
+    subtitle: "Multi Function Rice Cooker",
+    category: "Appliance",
+    subcategory: "Rice Cooker",
+    categoryPath: "appliance/rice-cooker",
+    brand: "Walton",
+    description:
+      "Affordable multi-function rice cooker for family cooking.",
+    information:
+      "2.2-liter capacity with automatic keep-warm function.",
+    price: 4800,
+    image:
+      "https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=800&q=80",
+    rating: 4.4,
+    stock: 25,
+    size: "2.2L",
+  },
+
+  // =========================================================
+  // OTHER APPLIANCES
+  // =========================================================
+
+  {
+    title: "Philips 1.5L Blender",
+    subtitle: "High Speed Kitchen Blender",
+    category: "Appliance",
+    subcategory: "Blender",
+    categoryPath: "appliance/blender",
+    brand: "Philips",
+    description:
+      "Powerful kitchen blender for smoothies, juices and food preparation.",
+    information:
+      "1.5-liter jar with high-speed motor.",
+    price: 7500,
+    image:
+      "https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 18,
+    size: "1.5L",
+  },
+
+  {
+    title: "Philips Electric Kettle 1.7L",
+    subtitle: "Fast Boiling Electric Kettle",
+    category: "Appliance",
+    subcategory: "Electric Kettle",
+    categoryPath: "appliance/electric-kettle",
+    brand: "Philips",
+    description:
+      "Fast-boiling electric kettle for tea, coffee and hot water.",
+    information:
+      "1.7-liter capacity with automatic shut-off.",
+    price: 4200,
+    image:
+      "https://images.unsplash.com/photo-1594213114663-d94db9b171e0?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 30,
+    size: "1.7L",
+  },
+
+  {
+    title: "Panasonic 25L Electric Oven",
+    subtitle: "Multi Function Electric Oven",
+    category: "Appliance",
+    subcategory: "Electric Oven",
+    categoryPath: "appliance/electric-oven",
+    brand: "Panasonic",
+    description:
+      "Multi-function electric oven for baking and cooking.",
+    information:
+      "25-liter capacity with adjustable temperature control.",
+    price: 14000,
+    image:
+      "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 13,
+    size: "25L",
+  },
+
+  {
+    title: "Philips PowerPro Vacuum Cleaner",
+    subtitle: "Bagless Vacuum Cleaner",
+    category: "Appliance",
+    subcategory: "Vacuum Cleaner",
+    categoryPath: "appliance/vacuum-cleaner",
+    brand: "Philips",
+    description:
+      "Powerful vacuum cleaner for efficient home cleaning.",
+    information:
+      "High suction power with easy-to-clean dust container.",
+    price: 12000,
+    image:
+      "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 14,
+    size: "Standard",
+  },
+
+  // =========================================================
+  // EXTRA GENERATED APPLIANCES
+  // =========================================================
+
+  ...Array.from({ length: 12 }, (_, index) => {
     const types = [
       ["Refrigerator", "refrigerator"],
       ["Air Conditioner", "air-conditioner"],
       ["Washing Machine", "washing-machine"],
-      ["Microwave Oven", "microwave-oven"],
+      ["Microwave Oven", "microwave"],
       ["Rice Cooker", "rice-cooker"],
-      ["Electric Oven", "electric-oven"],
       ["Blender", "blender"],
+      ["Electric Oven", "electric-oven"],
       ["Vacuum Cleaner", "vacuum-cleaner"],
       ["Electric Kettle", "electric-kettle"],
     ];
 
+    const brands = [
+      "Samsung",
+      "LG",
+      "Walton",
+      "Philips",
+      "Panasonic",
+      "Gree",
+    ];
+
     const [type, path] = types[index % types.length];
+    const brand = brands[index % brands.length];
 
     return {
-      title: `${type} Home Appliance ${index + 1}`,
-      subtitle: "Home Appliance",
+      title: `${brand} ${type} Home Appliance ${index + 1}`,
+      subtitle: `Modern ${type}`,
       category: "Appliance",
       subcategory: type,
       categoryPath: `appliance/${path}`,
-      description: `Modern ${type.toLowerCase()} designed for convenient home use.`,
-      information: "Energy-efficient appliance with practical modern features.",
-      price: 3500 + index * 3500,
-      image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
-      rating: 4.4 + (index % 6) * 0.1,
+      brand,
+      description:
+        `Modern ${type.toLowerCase()} designed for convenient home use.`,
+      information:
+        "Energy-efficient appliance with practical modern features.",
+      price: 3500 + index * 4500,
+      image:
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80",
+      rating: Number((4.2 + (index % 7) * 0.1).toFixed(1)),
       stock: 5 + index,
       size: "Standard",
     };
@@ -4515,64 +5790,309 @@ const applianceProducts = createProducts(551, [
 // GADGET PRODUCTS 581–600
 // ============================================================
 
+// =========================================================
+// GADGET PRODUCTS
+// =========================================================
+
 const gadgetProducts = createProducts(581, [
+  // =========================================================
+  // SMART WATCH
+  // =========================================================
+
+  {
+    title: "Apple Watch Series 9",
+    subtitle: "Advanced Smart Watch",
+    category: "Gadget",
+    subcategory: "Apple Watch",
+    categoryPath: "gadget/smart-watch/apple",
+    description:
+      "Advanced Apple smartwatch for fitness, notifications and everyday use.",
+    information:
+      "Premium smartwatch with health tracking, activity monitoring and notifications.",
+    price: 42000,
+    image:
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 9,
+    size: "45mm",
+  },
+
+  {
+    title: "Samsung Galaxy Watch 6",
+    subtitle: "Premium Samsung Smart Watch",
+    category: "Gadget",
+    subcategory: "Samsung Watch",
+    categoryPath: "gadget/smart-watch/samsung",
+    description:
+      "Samsung smartwatch with fitness tracking and smart notifications.",
+    information:
+      "AMOLED display, fitness tracking, heart-rate monitoring and smart notifications.",
+    price: 32000,
+    image:
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 11,
+    size: "44mm",
+  },
+
+  {
+    title: "Fitbit Versa 4",
+    subtitle: "Fitness Smart Watch",
+    category: "Gadget",
+    subcategory: "Fitness Watch",
+    categoryPath: "gadget/smart-watch/fitness",
+    description:
+      "Fitness-focused smartwatch for tracking daily activities and workouts.",
+    information:
+      "Activity tracking, heart-rate monitoring, sleep tracking and workout modes.",
+    price: 18500,
+    image:
+      "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 15,
+    size: "Standard",
+  },
+
+  // =========================================================
+  // EARBUDS
+  // =========================================================
+
   {
     title: "Apple AirPods Pro",
     subtitle: "Premium Wireless Earbuds",
     category: "Gadget",
     subcategory: "Earbuds",
     categoryPath: "gadget/earbuds",
-    description: "Premium wireless earbuds with active noise cancellation.",
-    information: "Wireless earbuds with charging case and noise cancellation.",
+    description:
+      "Premium wireless earbuds with active noise cancellation.",
+    information:
+      "Wireless earbuds with charging case and advanced noise cancellation.",
     price: 28000,
-    image: "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=800&q=80",
     rating: 4.8,
     stock: 12,
     size: "Compact",
   },
+
   {
-    title: "Apple Watch Series 9",
-    subtitle: "Smart Watch",
+    title: "Samsung Galaxy Buds 2 Pro",
+    subtitle: "Wireless Noise Cancelling Earbuds",
     category: "Gadget",
-    subcategory: "Smart Watch",
-    categoryPath: "gadget/smart-watch",
-    description: "Smart watch for fitness, notifications and everyday use.",
-    information: "Advanced smartwatch with health and activity features.",
-    price: 42000,
-    image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80",
-    rating: 4.8,
-    stock: 9,
-    size: "45mm",
+    subcategory: "Earbuds",
+    categoryPath: "gadget/earbuds",
+    description:
+      "Premium Samsung wireless earbuds with active noise cancellation.",
+    information:
+      "High-quality wireless audio with ANC and compact charging case.",
+    price: 18500,
+    image:
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+    rating: 4.6,
+    stock: 18,
+    size: "Compact",
   },
 
-  ...Array.from({ length: 18 }, (_, index) => {
+  // =========================================================
+  // POWER BANK
+  // =========================================================
+
+  {
+    title: "Anker PowerCore 20000",
+    subtitle: "20000mAh Power Bank",
+    category: "Gadget",
+    subcategory: "Power Bank",
+    categoryPath: "gadget/power-bank",
+    description:
+      "High-capacity portable power bank for smartphones and other devices.",
+    information:
+      "20000mAh battery capacity with fast charging support.",
+    price: 4200,
+    image:
+      "https://images.unsplash.com/photo-1609592424708-f1e7d0c6a4c9?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 25,
+    size: "20000mAh",
+  },
+
+  {
+    title: "Baseus 30000mAh Power Bank",
+    subtitle: "High Capacity Fast Charging Power Bank",
+    category: "Gadget",
+    subcategory: "Power Bank",
+    categoryPath: "gadget/power-bank",
+    description:
+      "Large-capacity power bank designed for phones, tablets and portable devices.",
+    information:
+      "30000mAh capacity with multiple charging ports.",
+    price: 5200,
+    image:
+      "https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 20,
+    size: "30000mAh",
+  },
+
+  // =========================================================
+  // SMART HOME
+  // =========================================================
+
+  {
+    title: "Philips Smart LED Bulb",
+    subtitle: "WiFi Smart Bulb",
+    category: "Gadget",
+    subcategory: "Smart Bulb",
+    categoryPath: "gadget/smart-home/smart-bulb",
+    description:
+      "Smart WiFi LED bulb controllable through your smartphone.",
+    information:
+      "Smart lighting with wireless control and adjustable brightness.",
+    price: 1800,
+    image:
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
+    rating: 4.4,
+    stock: 30,
+    size: "Standard",
+  },
+
+  {
+    title: "TP-Link Tapo Smart Plug",
+    subtitle: "WiFi Smart Plug",
+    category: "Gadget",
+    subcategory: "Smart Plug",
+    categoryPath: "gadget/smart-home/smart-plug",
+    description:
+      "Smart WiFi plug for controlling electronic devices remotely.",
+    information:
+      "Remote control, scheduling and smart home compatibility.",
+    price: 2200,
+    image:
+      "https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 24,
+    size: "Standard",
+  },
+
+  // =========================================================
+  // BLUETOOTH SPEAKER
+  // =========================================================
+
+  {
+    title: "JBL Flip 6",
+    subtitle: "Portable Bluetooth Speaker",
+    category: "Gadget",
+    subcategory: "Bluetooth Speaker",
+    categoryPath: "gadget/bluetooth-speaker",
+    description:
+      "Portable Bluetooth speaker with powerful sound and long battery life.",
+    information:
+      "Wireless speaker with waterproof design and extended battery life.",
+    price: 12500,
+    image:
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 14,
+    size: "Portable",
+  },
+
+  {
+    title: "Sony SRS-XB23",
+    subtitle: "Portable Wireless Speaker",
+    category: "Gadget",
+    subcategory: "Bluetooth Speaker",
+    categoryPath: "gadget/bluetooth-speaker",
+    description:
+      "Compact Sony Bluetooth speaker with powerful bass.",
+    information:
+      "Portable wireless speaker with extra bass and waterproof construction.",
+    price: 9800,
+    image:
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?auto=format&fit=crop&w=800&q=80",
+    rating: 4.5,
+    stock: 17,
+    size: "Portable",
+  },
+
+  // =========================================================
+  // GAMING CONTROLLER
+  // =========================================================
+
+  {
+    title: "Sony PlayStation DualSense",
+    subtitle: "Wireless Gaming Controller",
+    category: "Gadget",
+    subcategory: "Gaming Controller",
+    categoryPath: "gadget/gaming-controller",
+    description:
+      "Wireless controller designed for immersive PlayStation gaming.",
+    information:
+      "Adaptive triggers, haptic feedback and wireless connectivity.",
+    price: 8500,
+    image:
+      "https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?auto=format&fit=crop&w=800&q=80",
+    rating: 4.8,
+    stock: 13,
+    size: "Standard",
+  },
+
+  {
+    title: "Xbox Wireless Controller",
+    subtitle: "Wireless Gaming Controller",
+    category: "Gadget",
+    subcategory: "Gaming Controller",
+    categoryPath: "gadget/gaming-controller",
+    description:
+      "Comfortable wireless controller for Xbox and PC gaming.",
+    information:
+      "Wireless connectivity, ergonomic design and PC compatibility.",
+    price: 7200,
+    image:
+      "https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=800&q=80",
+    rating: 4.7,
+    stock: 16,
+    size: "Standard",
+  },
+
+  // =========================================================
+  // EXTRA GENERATED PRODUCTS
+  // =========================================================
+
+  ...Array.from({ length: 12 }, (_, index) => {
     const types = [
-      ["Wireless Earbuds", "earbuds"],
-      ["Smart Watch", "smart-watch"],
-      ["Bluetooth Speaker", "bluetooth-speaker"],
-      ["Power Bank", "power-bank"],
-      ["Gaming Controller", "gaming-controller"],
-      ["Smart Device", "smart-device"],
+      ["Wireless Earbuds", "Earbuds", "gadget/earbuds"],
+      ["Smart Watch", "Apple Watch", "gadget/smart-watch/apple"],
+      ["Smart Watch", "Samsung Watch", "gadget/smart-watch/samsung"],
+      ["Fitness Watch", "Fitness Watch", "gadget/smart-watch/fitness"],
+      ["Bluetooth Speaker", "Bluetooth Speaker", "gadget/bluetooth-speaker"],
+      ["Power Bank", "Power Bank", "gadget/power-bank"],
+      ["Smart Bulb", "Smart Bulb", "gadget/smart-home/smart-bulb"],
+      ["Smart Plug", "Smart Plug", "gadget/smart-home/smart-plug"],
+      ["Gaming Controller", "Gaming Controller", "gadget/gaming-controller"],
     ];
 
-    const [type, path] = types[index % types.length];
+    const [type, subcategory, path] = types[index % types.length];
 
     return {
       title: `${type} Gadget ${index + 1}`,
-      subtitle: type,
+      subtitle: `Modern ${type}`,
       category: "Gadget",
-      subcategory: type,
-      categoryPath: `gadget/${path}`,
-      description: `Modern ${type.toLowerCase()} for everyday convenience and entertainment.`,
-      information: "Modern wireless connectivity and practical features.",
-      price: 1800 + index * 1800,
-      image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80",
-      rating: 4.4 + (index % 6) * 0.1,
+      subcategory,
+      categoryPath: path,
+      description:
+        `Modern ${type.toLowerCase()} designed for everyday use and entertainment.`,
+      information:
+        "Reliable performance with modern connectivity and practical features.",
+      price: 2500 + index * 1500,
+      image:
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80",
+      rating: Number((4.2 + (index % 7) * 0.1).toFixed(1)),
       stock: 8 + index,
       size: "Standard",
     };
   }),
 ]);
+
+
 
 
 // ============================================================
@@ -9608,6 +11128,7 @@ productsData.push(
   ...componentsData,
   ...officeEquipmentData,
   ...accessoriesProducts,
+  ...gamingTvProducts,
 );
 
 // ============================================================

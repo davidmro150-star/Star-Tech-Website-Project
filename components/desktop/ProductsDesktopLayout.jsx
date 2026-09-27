@@ -96,7 +96,7 @@ export default function DesktopProductsLayout({ products = [] }) {
       </aside>
 
       {/* PRODUCTS */}
-      <div className="min-w-0">
+      <div className="min-w-0 ">
         <DesktopProducts products={filteredProducts} />
       </div>
 
