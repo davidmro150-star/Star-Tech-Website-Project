@@ -34,3 +34,18 @@
 .animate-happy-hour {
   animation: happyHourIcon 1.5s ease-in-out infinite;
 }
+
+@keyframes announcement-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.announcement-track {
+  display: inline-block;
+  animation: announcement-scroll 18s linear infinite;
+}
