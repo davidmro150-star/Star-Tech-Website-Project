@@ -8,11 +8,11 @@ export default function Support() {
       className="relative block min-h-0 rounded-md"
     >
       <Image
-        src="/images/banners/banner4.webp"
+        src="/images/banners/banner4.png"
         alt="Customer Support"
         fill
-        sizes="(max-width: 1024px) 100vw, 33vw"
-        className="rounded-md object-cover"
+      
+        className="rounded-md"
       />
     </Link>
   );

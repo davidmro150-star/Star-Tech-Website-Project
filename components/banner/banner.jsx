@@ -79,7 +79,7 @@ export default function HomeBanner() {
               className="relative min-h-0 rounded-md"
             >
               <Image
-                src="/images/banners/banner5.webp"
+                src="/images/banners/banner5.png"
                 alt="Career"
                 fill
       

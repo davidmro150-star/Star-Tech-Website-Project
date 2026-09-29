@@ -6,12 +6,7 @@ export default function Announcement() {
       <div className="mx-auto w-full max-w-[1400px] px-3">
         <div className="flex items-center overflow-hidden py-2.5">
 
-          {/* ICON */}
-          <div className="mr-3 flex shrink-0 items-center">
-            <span className="text-sm font-bold text-red-600">
-              🔔
-            </span>
-          </div>
+    
 
           {/* MOVING TEXT */}
           <div className="relative flex-1 overflow-hidden">
