@@ -2,212 +2,166 @@
 "use client";
 
 import Link from "next/link";
-import { useParams } from "next/navigation";
-import { useMemo } from "react";
-import productsData from "../../../../api/productsData";
 
+const featuredCategories = [
+  {
+    name: "Desktop",
+    slug: "desktop",
+    href: "/category/desktop",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/desktop-48x48.png",
+  },
+  {
+    name: "Laptop",
+    slug: "laptop",
+    href: "/category/laptop",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/laptop-48x48.png",
+  },
+  {
+    name: "Component",
+    slug: "component",
+    href: "/category/component",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/component-48x48.png",
+  },
+  {
+    name: "Monitor",
+    slug: "monitor",
+    href: "/category/monitor",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/monitor-48x48.png",
+  },
+  {
+    name: "Power",
+    slug: "power",
+    href: "/category/power",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/power-48x48.png",
+  },
+  {
+    name: "Phone",
+    slug: "phone",
+    href: "/category/phone",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/mobile-phone-48x48.png",
+  },
+  {
+    name: "Tablet",
+    slug: "tablet",
+    href: "/category/tablet",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/tablet-48x48.png",
+  },
+  {
+    name: "Office Equipment",
+    slug: "office-equipment",
+    href: "/category/office-equipment",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/office-equipment-48x48.png",
+  },
+  {
+    name: "Camera",
+    slug: "camera",
+    href: "/category/camera",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/camera-48x48.png",
+  },
+  {
+    name: "Security",
+    slug: "security",
+    href: "/category/security",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/security-48x48.png",
+  },
+  {
+    name: "Networking",
+    slug: "networking",
+    href: "/category/networking",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/networking-48x48.png",
+  },
+  {
+    name: "Software",
+    slug: "software",
+    href: "/category/software",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/software-48x48.png",
+  },
+  {
+    name: "Accessories",
+    slug: "accessories",
+    href: "/category/accessories",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/accessories-48x48.png",
+  },
+  {
+    name: "Gadget",
+    slug: "gadget",
+    href: "/category/gadget",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/gadget-48x48.png",
+  },
+  {
+    name: "Gaming TV",
+    slug: "gaming-tv",
+    href: "/category/gaming-tv",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/tv-48x48.png",
+  },
+  {
+    name: "Appliance",
+    slug: "appliance",
+    href: "/category/appliance",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/category-thumb/appliance-48x48.png",
+  },
+];
 
-
-export default function CategoryPage() {
-  const params = useParams();
-
-  const categorySlug = params?.category;
-
-  // Convert URL slug into category name
-  const categoryName = useMemo(() => {
-    if (!categorySlug) return "";
-
-    return categorySlug
-      .split("-")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
-  }, [categorySlug]);
-
-  // Get products for this category
-  const categoryProducts = useMemo(() => {
-    if (!categoryName) return [];
-
-    return productsData.filter(
-      (product) =>
-        product.category?.toLowerCase() === categoryName.toLowerCase()
-    );
-  }, [categoryName]);
-
+export default function FeaturedCategories() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <section className="bg-white py-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-      {/* Breadcrumb */}
-      <div className="border-b bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2 text-sm text-gray-500">
-            <Link
-              href="/"
-              className="hover:text-red-600"
-            >
-              Home
-            </Link>
-
-            <span>/</span>
-
-            <span className="font-medium text-gray-900">
-              {categoryName}
-            </span>
-          </div>
-        </div>
-      </div>
-
-      {/* Category Header */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-
-          <h1 className="text-2xl font-semibold text-gray-900">
-            {categoryName}
-          </h1>
-
-          <p className="mt-2 text-sm text-gray-500">
-            Find the best {categoryName.toLowerCase()} products at the best
-            price.
-          </p>
-
-        </div>
-      </section>
-
-      {/* Brand Navigation */}
-      <section className="border-y bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-          <div className="flex items-center gap-6 overflow-x-auto py-4">
-
-            <Link
-              href={`/category/${categorySlug}`}
-              className="whitespace-nowrap border-b-2 border-red-600 pb-2 text-sm font-medium text-red-600"
-            >
-              All
-            </Link>
-
-            {/* Temporary brand links */}
-            <Link
-              href={`/category/${categorySlug}/hp`}
-              className="whitespace-nowrap text-sm font-medium text-gray-600 hover:text-red-600"
-            >
-              HP
-            </Link>
-
-            <Link
-              href={`/category/${categorySlug}/dell`}
-              className="whitespace-nowrap text-sm font-medium text-gray-600 hover:text-red-600"
-            >
-              Dell
-            </Link>
-
-            <Link
-              href={`/category/${categorySlug}/lenovo`}
-              className="whitespace-nowrap text-sm font-medium text-gray-600 hover:text-red-600"
-            >
-              Lenovo
-            </Link>
-
-            <Link
-              href={`/category/${categorySlug}/asus`}
-              className="whitespace-nowrap text-sm font-medium text-gray-600 hover:text-red-600"
-            >
-              ASUS
-            </Link>
-
-            <Link
-              href={`/category/${categorySlug}/acer`}
-              className="whitespace-nowrap text-sm font-medium text-gray-600 hover:text-red-600"
-            >
-              Acer
-            </Link>
-
-            <Link
-              href={`/category/${categorySlug}/msi`}
-              className="whitespace-nowrap text-sm font-medium text-gray-600 hover:text-red-600"
-            >
-              MSI
-            </Link>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* Products */}
-      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-
-        <div className="mb-5 flex items-center justify-between">
-
-          <h2 className="text-lg font-semibold text-gray-900">
-            {categoryName} Products
+        {/* Heading */}
+        <div className="mb-6">
+          <h2 className="text-2xl font-semibold  text-center text-gray-900">
+            Featured Category
           </h2>
 
-          <span className="text-sm text-gray-500">
-            {categoryProducts.length} Products
-          </span>
-
+          <p className="mt-1 text-sm text-center text-gray-500">
+            Get Your Desired Product from Featured Category!
+          </p>
         </div>
 
-        {categoryProducts.length === 0 ? (
-          <div className="rounded-lg bg-white p-10 text-center">
-            <p className="text-gray-500">
-              No products found in this category.
-            </p>
-          </div>
-        ) : (
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        {/* Category Grid */}
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
 
-            {categoryProducts.map((product) => (
-              <div
-                key={product.id}
-                className="rounded-lg border border-gray-200 bg-white p-4 transition hover:shadow-md"
-              >
-
-                {/* Product Image */}
-                <div className="flex h-48 items-center justify-center">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-
-                {/* Product Information */}
-                <div className="mt-4">
-
-                  <h3 className="line-clamp-2 text-sm font-medium text-gray-800">
-                    {product.title}
-                  </h3>
-
-                  {product.subtitle && (
-                    <p className="mt-1 line-clamp-1 text-xs text-gray-500">
-                      {product.subtitle}
-                    </p>
-                  )}
-
-                  <div className="mt-3">
-                    <span className="text-lg font-semibold text-red-600">
-                      ৳ {product.price}
-                    </span>
-                  </div>
-
-                  {product.rating && (
-                    <div className="mt-2 text-xs text-gray-500">
-                      ★ {product.rating}
-                    </div>
-                  )}
-
-                </div>
-
+          {featuredCategories.map((category) => (
+            <Link
+              key={category.slug}
+              href={category.href}
+              className="group flex min-h-[120px] flex-col items-center justify-center rounded-md border border-gray-200 bg-white px-3 py-4 transition-all duration-200 hover:border-red-500 hover:shadow-sm"
+            >
+              {/* Category Icon */}
+              <div className="flex h-12 w-12 items-center justify-center">
+                <img
+                  src={category.image}
+                  alt={`${category.name} Icon`}
+                  className="h-12 w-12 object-contain transition-transform duration-200 group-hover:scale-110"
+                />
               </div>
-            ))}
 
-          </div>
-        )}
+              {/* Category Name */}
+              <h3 className="mt-3 text-center text-sm font-medium text-gray-700 transition-colors group-hover:text-red-600">
+                {category.name}
+              </h3>
+            </Link>
+          ))}
 
-      </section>
-
-    </main>
+        </div>
+      </div>
+    </section>
   );
 }
 
