@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Support() {
   return (
     <Link
-      href="/bannercontact"
+      href="/bannersupport"
       className="relative block min-h-0 rounded-md"
     >
       <Image

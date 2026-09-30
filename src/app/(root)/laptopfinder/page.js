@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useMemo, useState } from "react";
@@ -813,7 +812,7 @@ export default function LaptopFinderPage() {
 
         {/* FINDER CARD */}
 
-        <div className="mx-auto max-w-6xl rounded-xl border border-gray-200 bg-white p-5 shadow-sm sm:p-8">
+        <div className="mx-auto max-w-2xl rounded-xl border border-gray-200 bg-white p-5 shadow-sm sm:p-8">
 
           {/* STEP */}
 
@@ -859,31 +858,11 @@ export default function LaptopFinderPage() {
 
           </div>
 
-          {/* MAIN OPTIONS + SIDE BUTTONS */}
+          {/* OPTIONS */}
 
-          <div className="mt-8 flex items-center justify-center gap-3 sm:gap-5 lg:gap-8">
+          <div className="mt-8">
 
-            {/* PREVIOUS */}
-
-            <button
-              type="button"
-              onClick={handlePrev}
-              disabled={currentStep === 0}
-              className={`flex shrink-0 items-center gap-2 rounded-lg px-3 py-3 text-sm font-semibold transition sm:px-5 ${
-                currentStep === 0
-                  ? "cursor-not-allowed bg-gray-100 text-gray-400"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              }`}
-            >
-              <ChevronLeft size={18} />
-              <span className="hidden sm:inline">
-                Previous
-              </span>
-            </button>
-
-            {/* OPTIONS */}
-
-            <div className="w-full max-w-2xl">
+            <div className="mx-auto w-full max-w-2xl">
 
               <div className="max-h-[430px] overflow-y-auto pr-1">
 
@@ -966,44 +945,68 @@ export default function LaptopFinderPage() {
 
             </div>
 
-            {/* NEXT */}
-
-            {currentStep !==
-              questions.length - 1 && (
-              <button
-                type="button"
-                onClick={handleNext}
-                className="flex shrink-0 items-center gap-2 rounded-lg bg-[#e21b23] px-3 py-3 text-sm font-semibold text-white transition hover:bg-[#c9181f] sm:px-5"
-              >
-                <span className="hidden sm:inline">
-                  Next
-                </span>
-                <ChevronRight size={18} />
-              </button>
-            )}
-
           </div>
+          
 
-          {/* SHOW MATCHED LAPTOPS */}
+        </div>
 
-          <div className="mt-8 flex justify-center">
+       <div className="mx-auto mt-4 flex w-full max-w-4xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
-            <button
-              type="button"
-              onClick={goToResults}
-              className="flex items-center justify-center gap-2 rounded-lg bg-[#e21b23] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#c9181f]"
-            >
-              <span>
-                Show Matched Laptops
-                {hasSelection &&
-                  ` (${matchedLaptopCount})`}
-              </span>
+  {/* PREVIOUS */}
 
-              <ChevronRight size={18} />
+  <button
+    type="button"
+    onClick={handlePrev}
+    disabled={currentStep === 0}
+    className={` absolute flex top-[90%]  left-70 translate-y-1/2 shrink-0 items-center gap-2 rounded-lg px-3 py-3 text-sm font-semibold transition sm:px-5 ${
+      currentStep === 0
+        ? "cursor-not-allowed bg-[#e21b23] hover:bg-[#c9181f] text-white"
+        : " bg-[#e21b23] hover:bg-[#c9181f] text-white"
+    }`}
+  >
+    <ChevronLeft size={18} />
 
-            </button>
+    <span className="hidden sm:inline">
+      Previous
+    </span>
+  </button>
 
-          </div>
+  {/* NEXT */}
+
+  {currentStep !== questions.length - 1 && (
+    <button
+      type="button"
+      onClick={handleNext}
+      className=" absolute right-75 top-[90%] translate-y-1/2 flex shrink-0 items-center gap-2 rounded-lg bg-[#e21b23] px-3 py-3 text-sm font-semibold text-white transition hover:bg-[#c9181f] sm:px-5"
+    >
+      <span className="hidden sm:inline">
+        Next
+      </span>
+
+      <ChevronRight size={18} />
+    </button>
+  )}
+
+</div>
+
+        {/* SHOW MATCHED LAPTOPS */}
+
+        <div className="mt-8 flex justify-center">
+
+          <button
+            type="button"
+            onClick={goToResults}
+            className="flex items-center justify-center gap-2 rounded-lg bg-[#e21b23] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#c9181f]"
+          >
+            <span>
+              Show Matched Laptops
+              {hasSelection &&
+                ` (${matchedLaptopCount})`}
+            </span>
+
+            <ChevronRight size={18} />
+
+          </button>
 
         </div>
 
@@ -1011,4 +1014,3 @@ export default function LaptopFinderPage() {
     </main>
   );
 }
-

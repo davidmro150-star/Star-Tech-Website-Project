@@ -13,19 +13,19 @@ const tools = [
   {
     title: "Raise a Complaint",
     description: "Share your experience",
-    href: "/tool/complaint",
+    href: "bannersupport",
     icon: MessageSquareWarning,
   },
   {
     title: "AC Ton Calculator",
     description: "Find Perfect AC.",
-    href: "/tool/btu-calculator",
+    href: "Acton",
     icon: Calculator,
   },
   {
     title: "Servicing Center",
     description: "Repair Your Device",
-    href: "/tool/servicing-center",
+    href: "servicescenter",
     icon: Settings,
   },
 ];
