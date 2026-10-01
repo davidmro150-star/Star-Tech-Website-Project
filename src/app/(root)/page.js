@@ -1,6 +1,8 @@
 import Announcement from "../../../components/banner/announcement";
 import HomeBanner from "../../../components/banner/banner";
+import CustomerServices from "../../../components/customers-services/CustomerServices";
 import ToolsSection from "../../../components/toolssection/ToolsSection";
+import CustomerServicesPage from "./customer-services/page";
 import CategoryPage from "./featurescategories/page";
 
 
@@ -10,7 +12,8 @@ export default function Home() {
       <HomeBanner />
       <Announcement />
       <ToolsSection />
-      <CategoryPage/>
+      <CategoryPage />
+      < CustomerServices/>
     </main>
   );
 }
