@@ -38,7 +38,7 @@ const purchaseHistory = [
   },
 ];
 
-export default function WarrantyReminderPage() {
+export default function WarrantyReminder() {
 
   // =========================================================
   // WARRANTY CALCULATION

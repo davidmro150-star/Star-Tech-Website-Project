@@ -47,7 +47,7 @@ const purchaseHistory = [
   },
 ];
 
-export default function ShoppingHistoryPage() {
+export default function ShoppingHistory() {
 
   // =========================================================
   // CONNECT PURCHASE HISTORY WITH PRODUCTS DATA

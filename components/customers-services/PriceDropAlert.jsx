@@ -10,10 +10,23 @@ import {
 import productsData from "../../api/productsData";
 
 
+// =========================================================
+// REMOVE DUPLICATE PRODUCTS FOR THIS PAGE ONLY
+// IMPORTANT: Original productsData IDs are NOT changed.
+// =========================================================
 
-// =========================================================
+const uniqueProducts = Array.from(
+  new Map(
+    productsData.map((product) => [
+      String(product.id),
+      product,
+    ])
+  ).values()
+);
+
+
 // DEMO ALERTS
-// =========================================================
+
 
 const defaultAlerts = [
   {
@@ -29,10 +42,8 @@ const defaultAlerts = [
   },
 ];
 
-export default function PriceDropAlertPage() {
-
-  const [alerts, setAlerts] =
-    useState(defaultAlerts);
+export default function PriceDropAlert() {
+  const [alerts, setAlerts] = useState(defaultAlerts);
 
   const [selectedProduct, setSelectedProduct] =
     useState("");
@@ -45,18 +56,12 @@ export default function PriceDropAlertPage() {
   // =========================================================
 
   useEffect(() => {
-
     const savedAlerts =
-      localStorage.getItem(
-        "priceDropAlerts"
-      );
+      localStorage.getItem("priceDropAlerts");
 
     if (savedAlerts) {
-      setAlerts(
-        JSON.parse(savedAlerts)
-      );
+      setAlerts(JSON.parse(savedAlerts));
     }
-
   }, []);
 
   // =========================================================
@@ -64,12 +69,10 @@ export default function PriceDropAlertPage() {
   // =========================================================
 
   useEffect(() => {
-
     localStorage.setItem(
       "priceDropAlerts",
       JSON.stringify(alerts)
     );
-
   }, [alerts]);
 
   // =========================================================
@@ -77,9 +80,7 @@ export default function PriceDropAlertPage() {
   // =========================================================
 
   const formatPrice = (price) => {
-    return new Intl.NumberFormat("en-BD").format(
-      price
-    );
+    return new Intl.NumberFormat("en-BD").format(price);
   };
 
   // =========================================================
@@ -87,7 +88,6 @@ export default function PriceDropAlertPage() {
   // =========================================================
 
   const handleAddAlert = () => {
-
     if (
       !selectedProduct ||
       !targetPrice ||
@@ -98,8 +98,8 @@ export default function PriceDropAlertPage() {
 
     const alreadyExists = alerts.some(
       (alert) =>
-        alert.productId ===
-        Number(selectedProduct)
+        String(alert.productId) ===
+        String(selectedProduct)
     );
 
     if (alreadyExists) {
@@ -108,7 +108,7 @@ export default function PriceDropAlertPage() {
 
     const newAlert = {
       id: Date.now(),
-      productId: Number(selectedProduct),
+      productId: selectedProduct,
       targetPrice: Number(targetPrice),
     };
 
@@ -126,13 +126,11 @@ export default function PriceDropAlertPage() {
   // =========================================================
 
   const removeAlert = (id) => {
-
     setAlerts((previous) =>
       previous.filter(
         (alert) => alert.id !== id
       )
     );
-
   };
 
   return (
@@ -218,19 +216,15 @@ export default function PriceDropAlertPage() {
                     Select a product
                   </option>
 
-                  {productsData.map(
-                    (product) => (
-                      <option
-                        key={product.id}
-                        value={product.id}
-                      >
-                        {product.title} — ৳
-                        {formatPrice(
-                          product.price
-                        )}
-                      </option>
-                    )
-                  )}
+                  {uniqueProducts.map((product) => (
+                    <option
+                      key={product.id}
+                      value={product.id}
+                    >
+                      {product.title} — ৳
+                      {formatPrice(product.price)}
+                    </option>
+                  ))}
 
                 </select>
 
@@ -298,12 +292,11 @@ export default function PriceDropAlertPage() {
 
             {alerts.map((alert) => {
 
-              const product =
-                productsData.find(
-                  (item) =>
-                    item.id ===
-                    alert.productId
-                );
+              const product = uniqueProducts.find(
+                (item) =>
+                  String(item.id) ===
+                  String(alert.productId)
+              );
 
               if (!product) return null;
 
@@ -342,20 +335,20 @@ export default function PriceDropAlertPage() {
                       <div className="mt-2 flex flex-wrap gap-5 text-sm">
 
                         <span className="text-gray-500">
-                          Current:
-                          {" "}
+                          Current:{" "}
                           <strong className="text-gray-900">
-                            ৳{formatPrice(
+                            ৳
+                            {formatPrice(
                               product.price
                             )}
                           </strong>
                         </span>
 
                         <span className="text-gray-500">
-                          Target:
-                          {" "}
+                          Target:{" "}
                           <strong className="text-gray-900">
-                            ৳{formatPrice(
+                            ৳
+                            {formatPrice(
                               alert.targetPrice
                             )}
                           </strong>
@@ -421,8 +414,10 @@ export default function PriceDropAlertPage() {
                       }
                       className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 px-4 py-2 text-sm font-medium text-gray-600 transition hover:border-red-200 hover:text-red-600"
                     >
+
                       <Trash2 size={16} />
                       Remove
+
                     </button>
 
                   </div>
