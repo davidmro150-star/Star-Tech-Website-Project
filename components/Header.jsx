@@ -35,7 +35,6 @@ const Header = () => {
       <Container>
         <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
           <div className="flex min-h-[78px] items-center gap-3 sm:gap-4">
-
             {/* ================= MOBILE MENU BUTTON ================= */}
             <button
               type="button"
@@ -66,7 +65,6 @@ const Header = () => {
               className="mx-auto hidden min-w-0 flex-1 md:block"
             >
               <div className="mx-auto flex w-full max-w-[650px]">
-
                 {/* Search Input */}
                 <div className="relative min-w-0 flex-1">
                   <Search
@@ -99,15 +97,10 @@ const Header = () => {
               href="/offers"
               className="hidden shrink-0 items-center gap-2 text-gray-300 transition text-star-red lg:flex"
             >
-              <Gift
-                size={23}
-                strokeWidth={1.8}
-              />
+              <Gift size={23} strokeWidth={1.8} />
 
               <div className="text-left leading-tight">
-                <p className="text-[14px] font-medium text-white">
-                  Offers
-                </p>
+                <p className="text-[15px] font-medium text-white">Offers</p>
 
                 <p className="whitespace-nowrap text-[12px] font-medium text-gray-400">
                   Latest Offers
@@ -127,7 +120,7 @@ const Header = () => {
               />
 
               <div className="text-left leading-tight">
-                <p className="text-[14px] font-medium text-white">
+                <p className="text-[15px] font-medium text-white">
                   Happy Hours
                 </p>
 
@@ -142,15 +135,10 @@ const Header = () => {
               href="/account"
               className="hidden shrink-0 items-center gap-2 text-gray-300 transition text-star-red sm:flex"
             >
-              <User
-                size={24}
-                strokeWidth={1.8}
-              />
+              <User size={24} strokeWidth={1.8} />
 
               <div className="hidden leading-tight xl:block">
-                <p className="text-[14px] font-medium text-white">
-                  Account
-                </p>
+                <p className="text-[15px] font-medium text-white">Account</p>
 
                 <p className="whitespace-nowrap text-[12px] font-medium text-gray-400">
                   Register or Login
@@ -169,12 +157,8 @@ const Header = () => {
                 animation: "gradientMove 8s ease infinite",
               }}
             >
-            
-
               <div className="text-left leading-tight">
-                <p className="text-[11px] text-white/80">
-                  Build Your
-                </p>
+                <p className="text-[11px] text-white/80">Build Your</p>
 
                 <p className="whitespace-nowrap text-sm font-semibold text-white">
                   PC Builder
@@ -184,12 +168,8 @@ const Header = () => {
           </div>
 
           {/* ================= MOBILE SEARCH ================= */}
-          <form
-            onSubmit={handleSearch}
-            className="pb-4 md:hidden"
-          >
+          <form onSubmit={handleSearch} className="pb-4 md:hidden">
             <div className="flex w-full">
-
               {/* Input */}
               <div className="relative min-w-0 flex-1">
                 <Search
@@ -224,24 +204,17 @@ const Header = () => {
         <div className="border-t border-gray-200 bg-white md:hidden">
           <Container>
             <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6">
-
               <nav className="py-3">
-
                 {/* ACCOUNT */}
                 <Link
                   href="/account"
                   onClick={() => setMobileMenu(false)}
                   className="flex items-center gap-3 rounded-lg bg-gray-50 p-3 transition hover:bg-gray-100"
                 >
-                  <User
-                    size={22}
-                    className="text-gray-700"
-                  />
+                  <User size={22} className="text-gray-700" />
 
                   <div>
-                    <p className="text-xs text-gray-500">
-                      Account
-                    </p>
+                    <p className="text-xs text-gray-500">Account</p>
 
                     <p className="text-sm font-semibold text-gray-800">
                       Register or Login
@@ -265,10 +238,7 @@ const Header = () => {
                   onClick={() => setMobileMenu(false)}
                   className="flex items-center gap-3 border-b border-gray-100 py-4 text-sm font-medium text-gray-700 transition hover:text-[#e21b23]"
                 >
-                  <Clock3
-                    size={20}
-                    className="animate-happy-hour"
-                  />
+                  <Clock3 size={20} className="animate-happy-hour" />
 
                   <span>Happy Hours</span>
                 </Link>
@@ -294,7 +264,6 @@ const Header = () => {
 
                   <span>Service Center</span>
                 </Link>
-
               </nav>
             </div>
           </Container>
