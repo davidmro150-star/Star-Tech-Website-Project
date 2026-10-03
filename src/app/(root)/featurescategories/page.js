@@ -2,6 +2,7 @@
 "use client";
 
 import Link from "next/link";
+import Container from "../../../../components/Container";
 
 const featuredCategories = [
   {
@@ -120,8 +121,9 @@ const featuredCategories = [
 
 export default function FeaturedCategories() {
   return (
-    <section className="bg-white py-8">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#f2f4f8] py-8">
+      <Container>
+          <div className="mx-auto  px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
         <div className="mb-6">
@@ -141,7 +143,7 @@ export default function FeaturedCategories() {
             <Link
               key={category.slug}
               href={category.href}
-              className="group flex min-h-[120px] flex-col items-center justify-center rounded-md border border-gray-200 bg-white px-3 py-4 transition-all duration-200 hover:border-red-500 hover:shadow-sm"
+              className="group flex min-h-[120px] flex-col items-center justify-center rounded-md border border-gray-200 bg-white px-2 py-4 transition-all duration-200 hover:border-red-500 hover:shadow-sm"
             >
               {/* Category Icon */}
               <div className="flex h-12 w-12 items-center justify-center">
@@ -161,6 +163,7 @@ export default function FeaturedCategories() {
 
         </div>
       </div>
+    </Container>
     </section>
   );
 }

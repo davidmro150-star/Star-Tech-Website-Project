@@ -1,9 +1,10 @@
 
 
-import DesktopLayout from "../../../components/desktop/DesktopLayout";
+
+import "./globals.css";
+
 import Header from "../../../components/Header";
 import Navbar from "../../../components/Navbar";
-import "./globals.css";
 
 export const metadata = {
   title: "Star Tech",
@@ -15,12 +16,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <Navbar/>
+        <Navbar />
 
-        <DesktopLayout>
+
           {children}
-        </DesktopLayout>
+  
       </body>
     </html>
   );
 }
+

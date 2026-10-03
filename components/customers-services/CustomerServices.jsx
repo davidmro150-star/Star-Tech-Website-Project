@@ -40,20 +40,20 @@ const customerServices = [
 
 export default function CustomerServices() {
   return (
-    <section className="bg-white py-16 sm:py-20">
+    <section className="bg-[#f2f4f8] py-16 sm:py-20">
       <Container>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto  px-4 sm:px-6 lg:px-8">
 
           {/* =====================================================
             SECTION HEADER
         ====================================================== */}
 
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="mx-auto  text-center">
 
           
 
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Manage Your Shopping Experience
+               Shopping Experience
             </h2>
 
 
