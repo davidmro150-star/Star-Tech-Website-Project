@@ -1,0 +1,47 @@
+import { Mail, Facebook, Youtube, Instagram } from "lucide-react";
+
+export default function StayConnected() {
+  return (
+    <div className="footer-column">
+
+      <h3>Stay Connected</h3>
+
+      <h4>Your Company Ltd</h4>
+
+      <p>
+        Head Office:
+        <br />
+        28 Kazi Nazrul Islam Ave,
+        <br />
+        Dhaka 1000, Bangladesh
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <br />
+
+        <a href="mailto:info@example.com">
+          <Mail size={15} />
+          info@example.com
+        </a>
+      </p>
+
+      <div className="social-links">
+
+        <a href="#">
+          <Facebook size={18} />
+        </a>
+
+        <a href="#">
+          <Youtube size={18} />
+        </a>
+
+        <a href="#">
+          <Instagram size={18} />
+        </a>
+
+      </div>
+
+    </div>
+  );
+}
