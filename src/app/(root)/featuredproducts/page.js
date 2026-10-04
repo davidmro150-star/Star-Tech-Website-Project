@@ -1,6 +1,9 @@
 import Link from "next/link";
-import productsData from "../../api/productsData";
-import Image from "../../components/Image";
+
+
+import productsData from "../../../../api/productsData";
+import Image from "../../../../components/Image";
+import Container from "../../../../components/Container";
 
 export default function FeaturedProductsPage() {
   const products = Array.isArray(productsData)
@@ -40,9 +43,10 @@ export default function FeaturedProductsPage() {
     String(product.slug || product.id);
 
   return (
-    <main className="min-h-screen bg-[#f5f6f8] py-10">
+    <main className="min-h-screen bg-[#f2f4f8] py-10">
 
-      <div className="mx-auto w-[92%] max-w-[1400px]">
+      <Container>
+           <div className="mx-auto w-[92%] bg-[#fff]">
 
         {/* Header */}
         <div className="mb-8">
@@ -120,6 +124,7 @@ export default function FeaturedProductsPage() {
         </div>
 
       </div>
+   </Container>
 
     </main>
   );

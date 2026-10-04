@@ -8,6 +8,7 @@ import ApplianceHero from "../../../../../components/appliance/applianceHero";
 import ApplianceNavbar from "../../../../../components/appliance/ApplianceNavbar";
 import ApplianceFilter from "../../../../../components/appliance/ApplianceFilter";
 import ApplianceProducts from "../../../../../components/appliance/ApplianceProducts";
+import Container from "../../../../../components/Container";
 
 
 
@@ -117,8 +118,9 @@ export default function AppliancePage() {
       {/* =====================================================
           PRODUCTS SECTION
       ===================================================== */}
-      <section className="w-full bg-white">
-        <div className="mx-auto w-full max-w-[1400px] px-4 py-8 md:px-6 lg:px-8">
+      <section className="w-full bg-[#f2f4f8]">
+        <Container>
+             <div className="mx-auto bg-[#fff] px-4 py-8 md:px-6 lg:px-8">
 
           {/* =================================================
               TITLE
@@ -158,6 +160,7 @@ export default function AppliancePage() {
 
           </div>
         </div>
+     </Container>
       </section>
     </main>
   );

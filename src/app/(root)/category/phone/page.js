@@ -7,6 +7,7 @@ import PhoneHero from "../../../../../components/phone/PhoneHero";
 import PhoneNavbar from "../../../../../components/phone/PhoneNavbar";
 import ProductFilter from "../../../../../components/desktop/ProductFilter";
 import PhoneProducts from "../../../../../components/phone/PhoneProducts";
+import Container from "../../../../../components/Container";
 
 
 
@@ -189,8 +190,9 @@ function PhonePageContent() {
     filteredProducts.slice(0, 24);
 
   return (
-    <main className="bg-gray-50">
-      <div className="mx-auto max-w-7xl px-4 py-6">
+    <main className="bg-[#f2f4f8]">
+      <Container>
+        <div className="mx-auto bg-[#fff] px-4 py-6">
         <PhoneHero/>
 
         <PhoneNavbar />
@@ -226,6 +228,7 @@ function PhonePageContent() {
           </div>
         </div>
       </div>
+      </Container>
     </main>
   );
 }

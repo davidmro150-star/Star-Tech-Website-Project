@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaPhone, FaArrowRight, FaTruck, FaStore, FaBolt } from "react-icons/fa";
+import Container from "../../../../../components/Container";
 
 const deliveryTerms = [
   "বর্তমানে বাংলাদেশের যেকোনো প্রান্তে নির্দিষ্ট পণ্যে ক্যাশ অন ডেলিভারি সুবিধা রয়েছে।",
@@ -253,9 +254,10 @@ function SectionTitle({ icon: Icon, title }) {
 
 export default function OnlineDeliveryPage() {
   return (
-    <main className="bg-white">
-      {/* Hero */}
-      <section className="border-b border-gray-100 bg-gray-50">
+    <main className="bg-[#f2f4f8]">
+      <Container>
+            {/* Hero */}
+      <section className="border-b border-gray-100 bg-[#fff]">
         <div className="mx-auto max-w-7xl px-4 py-14 md:px-6 lg:px-8 lg:py-20">
           <div className="max-w-4xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-red-50 px-4 py-2 text-sm font-semibold text-[#e21b23]">
@@ -276,7 +278,7 @@ export default function OnlineDeliveryPage() {
       </section>
 
       {/* Main Content */}
-      <section className="mx-auto max-w-7xl px-4 py-12 md:px-6 lg:px-8 lg:py-16">
+      <section className="mx-auto bg-[#fff] px-4 py-12 md:px-6 lg:px-8 lg:py-16">
         {/* General Delivery */}
         <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm md:p-8 lg:p-10">
           <SectionTitle
@@ -437,6 +439,7 @@ export default function OnlineDeliveryPage() {
           </div>
         </div>
       </section>
+  </Container>
     </main>
   );
 }

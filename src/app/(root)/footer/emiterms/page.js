@@ -456,12 +456,12 @@ function BankCard({ bank }) {
 
 export default function EmiTerms() {
   return (
-    <main className="bg-[#f7f8fa]">
+    <main className="bg-[#f2f4f8]">
       {/* =====================================================
           HERO
       ===================================================== */}
 
-      <section className="border-b border-gray-200 bg-white">
+      <section className="border-b border-gray-200 bg-[#fff]">
         <div className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-red-50 px-4 py-2 text-sm font-semibold text-[#e21b23]">
@@ -485,7 +485,7 @@ export default function EmiTerms() {
           QUICK SUMMARY
       ===================================================== */}
 
-      <section className="mx-auto max-w-[1400px] px-4 py-10 sm:px-6 lg:px-8">
+      <section className="mx-auto bg-[#fff] px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
           <div className="rounded-2xl border border-gray-200 bg-white p-6">
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-red-50 text-xl text-[#e21b23]">
@@ -536,7 +536,7 @@ export default function EmiTerms() {
           BANK LIST
       ===================================================== */}
 
-      <section className="mx-auto max-w-[1400px] px-4 pb-14 sm:px-6 lg:px-8">
+      <section className="mx-auto bg-[#fff] px-4 pb-14 sm:px-6 lg:px-8">
         <div className="mb-8">
           <h2 className="text-2xl font-bold text-[#17212b] sm:text-3xl">
             Participating Banks
@@ -562,7 +562,7 @@ export default function EmiTerms() {
           BANGLA TERMS
       ===================================================== */}
 
-      <section className="bg-white py-14">
+      <section className="bg-[#fff] py-14">
         <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-red-50 text-xl text-[#e21b23]">
@@ -632,7 +632,7 @@ export default function EmiTerms() {
           SAADIQ BANNER
       ===================================================== */}
 
-      <section className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6 lg:px-8">
+      <section className="mx-auto bg-[#fff] px-4 py-12 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white">
           <img
             src="https://www.startech.com.bd/image/catalog/logo-brand/bank/saadiq-pf-banner.webp"
@@ -690,7 +690,7 @@ export default function EmiTerms() {
           SAADIQ PURCHASE RULES
       ===================================================== */}
 
-      <section className="mx-auto max-w-[1200px] px-4 py-14 sm:px-6 lg:px-8">
+      <section className="mx-auto bg-[#fff] px-4 py-14 sm:px-6 lg:px-8">
         <div className="mb-8">
           <h2 className="text-2xl font-bold text-[#17212b] sm:text-3xl">
             Saadiq Personal Finance -এ পণ্য ক্রয়ের নিয়মাবলি
@@ -749,7 +749,7 @@ export default function EmiTerms() {
           SAADIQ CONTACT
       ===================================================== */}
 
-      <section className="bg-[#17212b] py-12">
+      <section className="bg-[#fff] py-12">
         <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
           <div className="rounded-2xl border border-gray-700 bg-[#202d38] p-6 sm:p-8">
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
@@ -790,7 +790,7 @@ export default function EmiTerms() {
           BACK TO HOME
       ===================================================== */}
 
-      <div className="bg-white py-8">
+      <div className="bg-[#fff] py-8">
         <div className="flex justify-center px-4">
           <Link
             href="/"

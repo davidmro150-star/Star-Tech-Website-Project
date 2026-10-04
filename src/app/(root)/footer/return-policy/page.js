@@ -8,6 +8,7 @@ import {
   FaMoneyBillWave,
   FaCircleCheck,
 } from "react-icons/fa6";
+import Container from "../../../../../components/Container";
 
 const banglaPolicy = [
   {
@@ -291,8 +292,9 @@ function SectionHeader({ icon, title, subtitle }) {
 export default function RefundReturnPolicyPage() {
   return (
     <main className="bg-[#f7f8fa]">
-      {/* Hero */}
-      <section className="border-b border-gray-200 bg-white">
+      <Container>
+           {/* Hero */}
+      <section className="border-b border-gray-200 bg-[#fff">
         <div className="mx-auto max-w-[1400px] px-4 py-10 sm:px-6 lg:px-8">
           <Link
             href="/"
@@ -321,7 +323,7 @@ export default function RefundReturnPolicyPage() {
       </section>
 
       {/* Important Notice */}
-      <section className="mx-auto max-w-[1400px] px-4 pt-8 sm:px-6 lg:px-8">
+      <section className="mx-auto bg-[#fff] px-4 pt-8 sm:px-6 lg:px-8">
         <div className="rounded-2xl border border-red-100 bg-red-50 p-5 sm:p-6">
           <div className="flex gap-4">
             <div className="mt-1 shrink-0 text-[#e21b23]">
@@ -345,7 +347,7 @@ export default function RefundReturnPolicyPage() {
       </section>
 
       {/* Bangla Policy */}
-      <section className="mx-auto max-w-[1400px] px-4 py-10 sm:px-6 lg:px-8">
+      <section className="mx-auto bg-[#fff] px-4 py-10 sm:px-6 lg:px-8">
         <div className="rounded-2xl bg-white p-5 shadow-sm sm:p-8">
           <SectionHeader
             icon={<FaStore />}
@@ -368,7 +370,7 @@ export default function RefundReturnPolicyPage() {
       </section>
 
       {/* English Policy */}
-      <section className="mx-auto max-w-[1400px] px-4 pb-10 sm:px-6 lg:px-8">
+      <section className="mx-auto bg-[#fff] px-4 pb-10 sm:px-6 lg:px-8">
         <div className="rounded-2xl bg-white p-5 shadow-sm sm:p-8">
           <SectionHeader
             icon={<FaTruck />}
@@ -391,7 +393,7 @@ export default function RefundReturnPolicyPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="mx-auto max-w-[1400px] px-4 pb-12 sm:px-6 lg:px-8">
+      <section className="mx-auto bg-[#fff] px-4 pb-12 sm:px-6 lg:px-8">
         <div className="rounded-2xl bg-[#17212b] px-5 py-8 text-white sm:px-8 sm:py-10">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <div>
@@ -431,7 +433,7 @@ export default function RefundReturnPolicyPage() {
       </section>
 
       {/* Quick Links */}
-      <section className="mx-auto max-w-[1400px] px-4 pb-12 sm:px-6 lg:px-8">
+      <section className="mx-auto bg-[#fff] px-4 pb-12 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4 rounded-2xl border border-gray-200 bg-white p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
           <div>
             <h3 className="font-bold text-[#17212b]">
@@ -452,6 +454,7 @@ export default function RefundReturnPolicyPage() {
           </Link>
         </div>
       </section>
+   </Container>
     </main>
   );
 }

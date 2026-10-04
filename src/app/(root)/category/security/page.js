@@ -9,6 +9,7 @@ import SecurityHero from "../../../../../components/security/SecurityHero";
 import SecurityNavbar from "../../../../../components/security/SecurityNavbar";
 import SecurityProductFilter from "../../../../../components/security/SecurityProductFilter";
 import SecurityProducts from "../../../../../components/security/SecurityPeoducts";
+import Container from "../../../../../components/Container";
 
 export default function SecurityPage() {
   // =========================
@@ -156,8 +157,9 @@ export default function SecurityPage() {
       {/* =========================
           FILTER + PRODUCTS
       ========================= */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1440px] px-4 py-6">
+      <section className="bg-[#f2f4f8]">
+        <Container>
+          <div className="mx-auto bg-[#fff] px-4 py-6">
 
           <div className="flex items-start gap-6">
 
@@ -187,6 +189,7 @@ export default function SecurityPage() {
           </div>
 
         </div>
+        </Container>
       </section>
     </>
   );

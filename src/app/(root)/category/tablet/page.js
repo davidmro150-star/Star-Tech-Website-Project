@@ -9,6 +9,7 @@ import TabletHero from "../../../../../components/tablet/TabletHero";
 import TabletNavbar from "../../../../../components/tablet/TabletNavbar";
 import ProductFilter from "../../../../../components/desktop/ProductFilter";
 import TabletProducts from "../../../../../components/tablet/TabletProducts";
+import Container from "../../../../../components/Container";
 
 function TabletPageContent() {
   const searchParams = useSearchParams();
@@ -336,12 +337,14 @@ function TabletPageContent() {
     filteredProducts.slice(0, 24);
 
   return (
-    <div className="w-full">
+    <section className="bg-[#f2f4f8]">
+      <Container>
+        <div className="bg-[#fff]">
 
       {/* =========================
           SAME WIDTH AS MAIN NAVBAR
           ========================= */}
-      <div className="mx-auto w-full max-w-[1400px] px-3">
+      <div className="mx-auto  px-3">
 
         {/* =========================
             HERO
@@ -381,6 +384,8 @@ function TabletPageContent() {
         </div>
       </div>
     </div>
+      </Container>
+    </section>
   );
 }
 

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Suspense, useEffect, useState } from "react";
@@ -5,12 +6,10 @@ import { useSearchParams } from "next/navigation";
 
 import ProductFilter from "@/components/desktop/ProductFilter";
 import productsData from "../../../../../api/productsData";
+
 import OfficeEquipmentProducts from "../../../../../components/officeequipment/OfficeEquipmentProducts";
 import OfficeEquipmentHero from "../../../../../components/officeequipment/OfficeEquipmentHero";
 import OfficeEquipmentNavbar from "../../../../../components/officeequipment/OfficeEquipmentNavbar";
-
-
-
 
 // =============================================================
 // PAGE CONTENT
@@ -64,52 +63,25 @@ function OfficeEquipmentPageContent() {
     searchParams.get("subcategory");
 
   // =========================================================
-  // COMBINE BOTH DATA SOURCES
-  // =========================================================
-  //
-  // 1. Get Office Equipment from productsData
-  // 2. Add dedicated officeEquipmentData
-  //
+  // OFFICE EQUIPMENT PRODUCTS
   // =========================================================
 
-  const officeProductsFromMainAPI = productsData.filter(
-    (product) =>
-      String(product.category || "")
-        .trim()
-        .toLowerCase() === "office equipment"
-  );
-
-  const officeProductsFromDedicatedAPI =
-    Array.isArray(officeEquipmentData)
-      ? officeEquipmentData
-      : [];
-
-  const officeEquipmentProducts = [
-    ...officeProductsFromMainAPI,
-    ...officeProductsFromDedicatedAPI,
-  ];
-
-  // =========================================================
-  // REMOVE DUPLICATE PRODUCTS
-  // =========================================================
-
-  const uniqueOfficeEquipmentProducts =
-    OfficeEquipmentProducts.filter(
-      (product, index, self) =>
-        index ===
-        self.findIndex(
-          (item) =>
-            String(item.id) === String(product.id)
-        )
-    );
+  const officeEquipmentProducts = Array.isArray(productsData)
+    ? productsData.filter((product) => {
+        return (
+          String(product.category || "")
+            .trim()
+            .toLowerCase() === "office equipment"
+        );
+      })
+    : [];
 
   // =========================================================
   // FILTER PRODUCTS
   // =========================================================
 
-  const filteredProducts =
-    uniqueOfficeEquipmentProducts.filter((product) => {
-
+  const filteredProducts = officeEquipmentProducts.filter(
+    (product) => {
       const subcategory = String(
         product.subcategory || ""
       )
@@ -145,7 +117,6 @@ function OfficeEquipmentPageContent() {
       // =======================================================
 
       if (selectedSubcategory) {
-
         const wanted =
           selectedSubcategory
             .trim()
@@ -166,7 +137,6 @@ function OfficeEquipmentPageContent() {
         // -----------------------------------------------------
 
         if (wanted === "printer") {
-
           matched =
             subcategory === "laser printer" ||
             subcategory === "inkjet printer" ||
@@ -177,10 +147,7 @@ function OfficeEquipmentPageContent() {
         // LASER PRINTER
         // -----------------------------------------------------
 
-        else if (
-          wanted === "laser printer"
-        ) {
-
+        else if (wanted === "laser printer") {
           matched =
             subcategory === "laser printer";
         }
@@ -189,10 +156,7 @@ function OfficeEquipmentPageContent() {
         // INKJET PRINTER
         // -----------------------------------------------------
 
-        else if (
-          wanted === "inkjet printer"
-        ) {
-
+        else if (wanted === "inkjet printer") {
           matched =
             subcategory === "inkjet printer";
         }
@@ -204,7 +168,6 @@ function OfficeEquipmentPageContent() {
         else if (
           wanted === "multifunction printer"
         ) {
-
           matched =
             subcategory ===
             "multifunction printer";
@@ -214,10 +177,7 @@ function OfficeEquipmentPageContent() {
         // SCANNER
         // -----------------------------------------------------
 
-        else if (
-          wanted === "scanner"
-        ) {
-
+        else if (wanted === "scanner") {
           matched =
             subcategory === "scanner";
         }
@@ -226,10 +186,7 @@ function OfficeEquipmentPageContent() {
         // PROJECTOR
         // -----------------------------------------------------
 
-        else if (
-          wanted === "projector"
-        ) {
-
+        else if (wanted === "projector") {
           matched =
             subcategory === "projector";
         }
@@ -238,10 +195,7 @@ function OfficeEquipmentPageContent() {
         // PHOTOCOPIER
         // -----------------------------------------------------
 
-        else if (
-          wanted === "photocopier"
-        ) {
-
+        else if (wanted === "photocopier") {
           matched =
             subcategory === "photocopier";
         }
@@ -254,7 +208,6 @@ function OfficeEquipmentPageContent() {
           wanted === "pos" ||
           wanted === "pos equipment"
         ) {
-
           matched =
             subcategory === "pos equipment";
         }
@@ -264,7 +217,6 @@ function OfficeEquipmentPageContent() {
         // -----------------------------------------------------
 
         else {
-
           matched =
             subcategory === wanted ||
             searchableText.includes(wanted);
@@ -292,7 +244,6 @@ function OfficeEquipmentPageContent() {
       // =======================================================
 
       if (selected.stock.length > 0) {
-
         const wantedStock =
           selected.stock
             .join(" ")
@@ -318,7 +269,6 @@ function OfficeEquipmentPageContent() {
       // =======================================================
 
       if (selected.size.length > 0) {
-
         const matchedSize =
           selected.size.some(
             (item) =>
@@ -333,7 +283,8 @@ function OfficeEquipmentPageContent() {
       }
 
       return true;
-    });
+    }
+  );
 
   // =========================================================
   // SHOW MAX 24 PRODUCTS
@@ -347,7 +298,7 @@ function OfficeEquipmentPageContent() {
   // =========================================================
 
   return (
-    <main className="bg-gray-50 min-h-screen">
+    <main className="min-h-screen bg-gray-50">
 
       {/* =====================================================
           HERO
@@ -355,9 +306,8 @@ function OfficeEquipmentPageContent() {
 
       <OfficeEquipmentHero
         title={
-          selectedSubcategory
-            ? selectedSubcategory
-            : "Office Equipment"
+          selectedSubcategory ||
+          "Office Equipment"
         }
       />
 
@@ -405,20 +355,16 @@ function OfficeEquipmentPageContent() {
             <div className="mb-5">
 
               <h1 className="text-center text-2xl font-bold text-gray-900">
-
                 {selectedSubcategory ||
                   "Office Equipment"}
-
               </h1>
 
               <p className="mt-1 text-center text-sm text-gray-500">
-
                 Showing{" "}
                 {productsToShow.length}{" "}
                 of{" "}
                 {filteredProducts.length}{" "}
                 products
-
               </p>
 
             </div>
@@ -442,13 +388,11 @@ function OfficeEquipmentPageContent() {
   );
 }
 
-
 // =============================================================
 // PAGE EXPORT
 // =============================================================
 
 export default function OfficeEquipmentPage() {
-
   return (
     <Suspense
       fallback={
@@ -469,3 +413,4 @@ export default function OfficeEquipmentPage() {
     </Suspense>
   );
 }
+

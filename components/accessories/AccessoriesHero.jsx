@@ -3,9 +3,9 @@ import Container from "../Container";
 
 export default function AccessoriesHero() {
   return (
-    <section className="bg-[#f7f5ee]">
+    <section className="bg-[#f2f4f8]">
       <Container>
-        <div className="grid min-h-[280px] grid-cols-1 items-center gap-6 py-8 md:grid-cols-2 lg:min-h-[340px]">
+        <div className="grid bg-[#fff] min-h-[280px] grid-cols-1 items-center gap-6 py-8 md:grid-cols-2 lg:min-h-[340px]">
 
           {/* LEFT */}
           <div>

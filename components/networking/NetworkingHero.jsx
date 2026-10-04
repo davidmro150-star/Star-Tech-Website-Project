@@ -3,9 +3,9 @@ import Container from "../Container";
 
 export default function NetworkingHero() {
   return (
-    <section className="bg-[#f7f5ee]">
+    <section className="bg-[#f2f4f8]">
       <Container>
-        <div className="grid min-h-[260px] grid-cols-1 items-center gap-8 py-10 lg:grid-cols-2">
+        <div className="grid bg-[#fff] min-h-[260px] grid-cols-1 items-center gap-8 py-10 lg:grid-cols-2">
 
           <div>
             <p className="mb-3 text-sm font-medium uppercase tracking-wider text-[#86bc42]">

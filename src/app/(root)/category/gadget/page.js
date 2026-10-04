@@ -13,6 +13,7 @@ import GadgetHero from "../../../../../components/gadget/GadgetHero";
 import GadgetNavbar from "../../../../../components/gadget/GadgetNavbar";
 import GadgetFilter from "../../../../../components/gadget/GadgetFilter";
 import GadgetProducts from "../../../../../components/gadget/GadgetProducts";
+import Container from "../../../../../components/Container";
 
 export default function GadgetPage() {
   const searchParams = useSearchParams();
@@ -254,8 +255,9 @@ export default function GadgetPage() {
           MAIN GADGET SECTION
       ===================================================== */}
 
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-[1400px] px-4">
+      <section className="bg-[#f2f4f8]">
+        <Container>
+             <div className="mx-auto bg-[#fff] px-4">
 
           {/* =================================================
               TITLE
@@ -303,6 +305,7 @@ export default function GadgetPage() {
 
           </div>
         </div>
+     </Container>
       </section>
     </>
   );

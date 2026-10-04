@@ -8,7 +8,7 @@ const powerCategories = [
     name: "UPS",
     href: "/category/power?subcategory=UPS",
 
-    children: [
+  },
       {
         name: "650VA UPS",
         href: "/category/power?subcategory=650VA%20UPS",
@@ -21,8 +21,8 @@ const powerCategories = [
         name: "1200VA UPS",
         href: "/category/power?subcategory=1200VA%20UPS",
       },
-    ],
-  },
+    
+  
 
   {
     name: "IPS",
@@ -32,8 +32,8 @@ const powerCategories = [
   {
     name: "Power Supply",
     href: "/category/power?subcategory=Power%20Supply",
-
-    children: [
+  },
+    
       {
         name: "550W",
         href: "/category/power?subcategory=550W",
@@ -46,9 +46,7 @@ const powerCategories = [
         name: "850W",
         href: "/category/power?subcategory=850W",
       },
-    ],
-  },
-
+  
   {
     name: "Power Strip",
     href: "/category/power?subcategory=Power%20Strip",

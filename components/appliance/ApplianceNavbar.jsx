@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
+import Container from "../Container";
 
 export default function ApplianceNavbar() {
   const pathname = usePathname();
@@ -97,26 +98,27 @@ export default function ApplianceNavbar() {
   };
 
   return (
-    <nav className=" bg-white">
-      <div className="mx-auto flex max-w-[1400px] flex-wrap gap-3 px-4 py-2">
-        {items.map((item) => {
-          const active = isActive(item.href);
+    <nav className=" bg-[#f2f4f8]">
+      <Container>
+        <div className="mx-auto flex bg-[#fff] flex-wrap gap-3 px-4 py-2">
+          {items.map((item) => {
+            const active = isActive(item.href);
 
-          return (
-            <Link
-              key={item.name + item.href}
-              href={item.href}
-              className={`whitespace - nowrap rounded - md px - 6 py - 3 text - sm font - medium transition px-2 py-2 text-bold ${
-  active
-    ? "bg-[#074e37] text-white"
-    : "text-gray-600 hover:bg-[#074e37] hover:text-white"
-} `}
-            >
-              {item.name}
-            </Link>
-          );
-        })}
-      </div>
+            return (
+              <Link
+                key={item.name + item.href}
+                href={item.href}
+                className={`whitespace - nowrap rounded - md px - 6 py - 3 text - sm font - medium transition px-2 py-2 text-bold ${active
+                    ? "bg-[#074e37] text-white"
+                    : "text-gray-600 hover:bg-[#074e37] hover:text-white"
+                  } `}
+              >
+                {item.name}
+              </Link>
+            );
+          })}
+        </div>
+      </Container>
     </nav>
   );
 }

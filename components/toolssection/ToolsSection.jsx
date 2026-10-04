@@ -39,10 +39,10 @@ const tools = [
 
 export default function ToolsSection() {
   return (
-    <section className="bg-white py-6 min-[320px]:py-8">
+    <section className="bg-[#f2f4f8]py-6 min-[320px]:py-8">
       <Container>
         <div className="mx-auto">
-          <div className="grid grid-cols-2 gap-2 min-[320px]:gap-3 sm:gap-4 lg:grid-cols-4">
+          <div className="grid grid-cols-2 bg-[#fff] gap-2 min-[320px]:gap-3 sm:gap-4 lg:grid-cols-4">
             {tools.map((tool) => {
               const Icon = tool.icon;
 

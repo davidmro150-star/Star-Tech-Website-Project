@@ -7,7 +7,7 @@ const page = () => {
     <>
       <section className="bg-[#f2f4f8] min-h-screen pt-3.75 pb-3.75">
         <Container>
-          <div className=" max-w-330 mx-auto">
+          <div className=" mx-auto">
             <div className="bg-white rounded-b-sm shadow-sm p-7.5 rounded-[5px]">
               <h1 className="text-center text-[22px] font-normal leading-7">
                 Star Tech Ltd. - Affiliate Marketing Program

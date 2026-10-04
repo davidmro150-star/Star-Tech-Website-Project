@@ -84,7 +84,7 @@ export default function FeaturedProducts() {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-4">
+        <div className="grid grid-cols-4 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-4">
 
           {products.map((product) => {
             const name = getName(product);
@@ -111,13 +111,13 @@ export default function FeaturedProducts() {
                 )}
 
                 {/* Image */}
-                <div className="flex h-[175px] items-center justify-center bg-white p-4 sm:h-[200px] lg:h-[220px]">
+         <div className="flex h-[10px] items-center justify-center bg-white p-4 sm:h-[200px] lg:h-[220px]">
                   <Image
                     src={image}
                     alt={name}
                     width={220}
                     height={220}
-                    className="h-full w-full object-contain transition duration-300 group-hover:scale-105"
+                    className="md:h-full md:w-full object-contain transition duration-300 group-hover:scale-105"
                   />
                 </div>
 

@@ -7,7 +7,8 @@ const componentCategories = [
   {
     name: "Processor",
     href: "/component?subcategory=Processor",
-    children: [
+  },
+   
       {
         name: "Intel",
         href: "/component?subcategory=Intel",
@@ -16,13 +17,12 @@ const componentCategories = [
         name: "AMD Ryzen",
         href: "/component?subcategory=AMD%20Ryzen",
       },
-    ],
-  },
-
+ 
   {
     name: "Motherboard",
     href: "/component?subcategory=Motherboard",
-    children: [
+  },
+    
       {
         name: "Intel Motherboard",
         href: "/component?subcategory=Intel%20Motherboard",
@@ -31,13 +31,12 @@ const componentCategories = [
         name: "AMD Motherboard",
         href: "/component?subcategory=AMD%20Motherboard",
       },
-    ],
-  },
 
   {
     name: "RAM",
     href: "/component?subcategory=RAM",
-    children: [
+  },
+  
       {
         name: "DDR4 RAM",
         href: "/component?subcategory=DDR4%20RAM",
@@ -46,8 +45,7 @@ const componentCategories = [
         name: "DDR5 RAM",
         href: "/component?subcategory=DDR5%20RAM",
       },
-    ],
-  },
+
 
   {
     name: "Graphics Card",

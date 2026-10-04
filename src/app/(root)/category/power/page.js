@@ -11,6 +11,7 @@ import ProductFilter from "../../../../../components/desktop/ProductFilter";
 import PowerHero from "../../../../../components/power/PowerHero";
 import PowerNavbar from "../../../../../components/power/PowerNavbar";
 import PowerProducts from "../../../../../components/power/PowerProducts";
+import Container from "../../../../../components/Container";
 
 
 
@@ -270,8 +271,9 @@ function PowerPageContent() {
   const productsToShow = filteredProducts.slice(0, 24);
 
   return (
-    <main className="bg-gray-50">
-      <div className="mx-auto max-w-7xl px-4 py-6">
+    <main className="bg-[#f2f4f8]">
+      <Container>
+          <div className="mx-auto bg-[#fff] px-4 py-6">
         {/* HERO */}
         <PowerHero />
 
@@ -309,6 +311,7 @@ function PowerPageContent() {
           </div>
         </div>
       </div>
+    </Container>
     </main>
   );
 }

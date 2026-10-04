@@ -3,9 +3,9 @@ import Container from "../Container";
 
 export default function GadgetHero() {
   return (
-    <section className="bg-gray-100">
+    <section className="bg-[#f2f4f8]">
       <Container>
-        <div className="grid min-h-[280px] grid-cols-1 items-center gap-6 py-8 md:grid-cols-2">
+        <div className="grid min-h-[280px] grid-cols-1 items-center gap-6 py-8 md:grid-cols-2 bg-[#fff]">
 
           {/* LEFT */}
           <div>

@@ -9,6 +9,7 @@ import DesktopProducts from "../../../../components/desktop/DesktoProducts";
 import ProductFilter from "../../../../components/desktop/ProductFilter";
 
 import productsData from "../../../../api/productsData";
+import Container from "../../../../components/Container";
 
 export default function DesktopPage() {
   const searchParams = useSearchParams();
@@ -53,8 +54,9 @@ export default function DesktopPage() {
   const productsToShow = filteredProducts.slice(0, 24);
 
   return (
-    <main className="bg-gray-50">
-      <div className="mx-auto max-w-7xl px-4 py-6">
+    <main className="bg-[#f2f4f8]">
+      <Container>
+        <div className="mx-auto px-4 py-6 bg-[#fff]">
 
         <DesktopHero />
 
@@ -96,6 +98,7 @@ export default function DesktopPage() {
       
 
       </div>
+      </Container>
     </main>
   );
 }

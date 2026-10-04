@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import categoryMenu from "../../api/categoryMenu";
+import Container from "../Container";
 
 
 export default function DesktopNavbar() {
@@ -56,22 +57,24 @@ export default function DesktopNavbar() {
     : desktopMenu.children || [];
 
   return (
-    <nav className="border-b border-gray-200 bg-white ">
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="flex min-h-12 items-center gap-1 overflow-x-auto">
+    <nav className="border-b border-gray-200 bg-[#f2f4f8] ">
+      <Container>
+        <div className="mx-auto  px-4">
+          <div className="flex min-h-12 items-center gap-1 overflow-x-auto">
 
-          {navbarItems.map((item) => (
-            <Link
-              key={item.href || item.name}
-              href={item.href}
-              className="flex shrink-0 items-center px-4 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-50 hover:text-[#0b5d3b]"
-            >
-              {item.name}
-            </Link>
-          ))}
+            {navbarItems.map((item) => (
+              <Link
+                key={item.href || item.name}
+                href={item.href}
+                className="flex shrink-0 items-center px-4 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-50 hover:text-[#0b5d3b]"
+              >
+                {item.name}
+              </Link>
+            ))}
 
+          </div>
         </div>
-      </div>
+     </Container>
     </nav>
   );
 }

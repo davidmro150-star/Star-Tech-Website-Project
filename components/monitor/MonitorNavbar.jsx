@@ -7,7 +7,8 @@ const monitorCategories = [
   {
     name: "Gaming Monitor",
     href: "/category/monitor?subcategory=Gaming%20Monitor",
-    children: [
+  },
+  
       {
         name: "144Hz Monitor",
         href: "/category/monitor?subcategory=144Hz%20Monitor",
@@ -20,13 +21,13 @@ const monitorCategories = [
         name: "240Hz Monitor",
         href: "/category/monitor?subcategory=240Hz%20Monitor",
       },
-    ],
-  },
+  
 
   {
     name: "Professional Monitor",
     href: "/category/monitor?subcategory=Professional%20Monitor",
-    children: [
+  },
+   
       {
         name: "4K Monitor",
         href: "/category/monitor?subcategory=4K%20Monitor",
@@ -35,9 +36,7 @@ const monitorCategories = [
         name: "Color Accurate",
         href: "/category/monitor?subcategory=Color%20Accurate",
       },
-    ],
-  },
-
+  
   {
     name: "Curved Monitor",
     href: "/category/monitor?subcategory=Curved%20Monitor",

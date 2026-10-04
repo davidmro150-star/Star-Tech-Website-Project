@@ -2,9 +2,9 @@ import Container from "../Container";
 
 export default function SecurityHero() {
   return (
-    <section className="bg-gray-100">
+    <section className="bg-[#f2f4f8]">
       <Container>
-        <div className="py-8">
+        <div className="bg-[#fff] py-8">
           <h1 className="text-2xl font-semibold text-gray-900 md:text-3xl">
             Security
           </h1>

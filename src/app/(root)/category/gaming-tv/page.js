@@ -7,6 +7,7 @@ import GamingTVHero from "../../../../../components/gamingtv/GamingTvHero";
 import GamingTVNavbar from "../../../../../components/gamingtv/GamingTvNavbar";
 import GamingTVFilter from "../../../../../components/gamingtv/GamingTvFilter";
 import GamingTVProducts from "../../../../../components/gamingtv/GamingTVProducts";
+import Container from "../../../../../components/Container";
 
 
 export default function GamingTVPage() {
@@ -147,8 +148,9 @@ export default function GamingTVPage() {
 
       <GamingTVNavbar />
 
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-[1400px] px-4">
+      <section className="bg-[#f2f4f8]">
+        <Container>
+            <div className="mx-auto bg-[#fff] px-4">
 
           <div className="py-6">
             <h1 className="text-center text-2xl font-bold text-gray-900">
@@ -180,6 +182,7 @@ export default function GamingTVPage() {
   </div>
 </div>
         </div>
+      </Container>
       </section>
     </>
   );

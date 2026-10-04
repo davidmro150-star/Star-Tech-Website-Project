@@ -18,6 +18,7 @@ import NetworkingNavbar from "../../../../../components/networking/NetworkingNav
 import ProductFilter from "../../../../../components/desktop/ProductFilter";
 import NetworkingProducts from "../../../../../components/networking/NetworkingProducts";
 import NetworkingProductFilter from "../../../../../components/networking/NetworkingProductFilter";
+import Container from "../../../../../components/Container";
 
 // ==========================================
 // NETWORKING CONTENT
@@ -167,8 +168,9 @@ function NetworkingContent() {
           MAIN CONTENT
       ======================================= */}
 
-      <section className="bg-white">
-        <div className="mx-auto flex max-w-[1440px] gap-6 px-4 py-6">
+      <section className="bg-[#f2f4f8]">
+        <Container>
+            <div className="mx-auto flex bg-[#fff] gap-6 px-4 py-6">
 
           {/* ==================================
               FILTER
@@ -190,6 +192,7 @@ function NetworkingContent() {
           </div>
 
         </div>
+      </Container>
       </section>
     </>
   );

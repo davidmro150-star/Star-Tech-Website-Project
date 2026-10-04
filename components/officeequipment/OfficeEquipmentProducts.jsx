@@ -1,105 +1,458 @@
-import Link from "next/link";
-import Image from "../Image";
-import Container from "../Container";
 
-export default function OfficeEquipmentProducts({
-  products = [],
-  title = "Office Equipment",
-}) {
+"use client";
+
+import { Suspense, useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
+
+import ProductFilter from "@/components/desktop/ProductFilter";
+import productsData from "../../../../../api/productsData";
+import OfficeEquipmentData from "../../../../../api/OfficeEquipmentData";
+
+import OfficeEquipmentProducts from "../../../../../components/officeequipment/OfficeEquipmentProducts";
+import OfficeEquipmentHero from "../../../../../components/officeequipment/OfficeEquipmentHero";
+import OfficeEquipmentNavbar from "../../../../../components/officeequipment/OfficeEquipmentNavbar";
+
+// =============================================================
+// PAGE CONTENT
+// =============================================================
+
+function OfficeEquipmentPageContent() {
+  const searchParams = useSearchParams();
+
+  // =========================================================
+  // FILTER STATE
+  // =========================================================
+
+  const [price, setPrice] = useState(null);
+
+  const [openSections, setOpenSections] = useState({
+    stock: true,
+    size: true,
+  });
+
+  const [selected, setSelected] = useState({
+    stock: [],
+    size: [],
+  });
+
+  // =========================================================
+  // URL FILTERS
+  // =========================================================
+
+  useEffect(() => {
+    const stock = searchParams.get("stock");
+    const size = searchParams.get("size");
+    const urlPrice = searchParams.get("price");
+
+    setSelected({
+      stock: stock ? [stock] : [],
+      size: size ? [size] : [],
+    });
+
+    setPrice(
+      urlPrice !== null && urlPrice !== ""
+        ? Number(urlPrice)
+        : null
+    );
+  }, [searchParams]);
+
+  // =========================================================
+  // SUBCATEGORY
+  // =========================================================
+
+  const selectedSubcategory =
+    searchParams.get("subcategory");
+
+  // =========================================================
+  // NORMALIZE OFFICE EQUIPMENT DATA
+  // =========================================================
+
+  const mainProducts = Array.isArray(productsData)
+    ? productsData
+    : [];
+
+  const dedicatedProducts = Array.isArray(
+    OfficeEquipmentData
+  )
+    ? OfficeEquipmentData
+    : Array.isArray(OfficeEquipmentData?.products)
+    ? OfficeEquipmentData.products
+    : [];
+
+  // =========================================================
+  // PRODUCTS FROM productsData
+  // =========================================================
+
+  const officeProductsFromMainAPI =
+    mainProducts.filter((product) => {
+      const category = String(
+        product.category || ""
+      )
+        .trim()
+        .toLowerCase();
+
+      return category === "office equipment";
+    });
+
+  // =========================================================
+  // COMBINE BOTH DATA SOURCES
+  // =========================================================
+
+  const allOfficeEquipmentProducts = [
+    ...officeProductsFromMainAPI,
+    ...dedicatedProducts,
+  ];
+
+  // =========================================================
+  // REMOVE DUPLICATES
+  // =========================================================
+
+  const uniqueOfficeEquipmentProducts =
+    allOfficeEquipmentProducts.filter(
+      (product, index, self) =>
+        index ===
+        self.findIndex(
+          (item) =>
+            String(item.id) ===
+            String(product.id)
+        )
+    );
+
+  // =========================================================
+  // FILTER PRODUCTS
+  // =========================================================
+
+  const filteredProducts =
+    uniqueOfficeEquipmentProducts.filter(
+      (product) => {
+
+        const subcategory = String(
+          product.subcategory || ""
+        )
+          .trim()
+          .toLowerCase();
+
+        const title = String(
+          product.title || ""
+        ).toLowerCase();
+
+        const subtitle = String(
+          product.subtitle || ""
+        ).toLowerCase();
+
+        const description = String(
+          product.description || ""
+        ).toLowerCase();
+
+        const information = String(
+          product.information || ""
+        ).toLowerCase();
+
+        const size = String(
+          product.size || ""
+        ).toLowerCase();
+
+        const stock = Number(
+          product.stock || 0
+        );
+
+        // =====================================================
+        // SUBCATEGORY
+        // =====================================================
+
+        if (selectedSubcategory) {
+
+          const wanted =
+            selectedSubcategory
+              .trim()
+              .toLowerCase();
+
+          const searchableText = `
+            ${ subcategory }
+            ${ title }
+            ${ subtitle }
+            ${ description }
+            ${ information }
+`.toLowerCase();
+
+          let matched = false;
+
+          // Printer
+          if (wanted === "printer") {
+            matched =
+              subcategory === "laser printer" ||
+              subcategory === "inkjet printer" ||
+              subcategory ===
+                "multifunction printer";
+          }
+
+          // Laser Printer
+          else if (
+            wanted === "laser printer"
+          ) {
+            matched =
+              subcategory ===
+              "laser printer";
+          }
+
+          // Inkjet Printer
+          else if (
+            wanted === "inkjet printer"
+          ) {
+            matched =
+              subcategory ===
+              "inkjet printer";
+          }
+
+          // Multifunction Printer
+          else if (
+            wanted ===
+            "multifunction printer"
+          ) {
+            matched =
+              subcategory ===
+              "multifunction printer";
+          }
+
+          // Scanner
+          else if (
+            wanted === "scanner"
+          ) {
+            matched =
+              subcategory === "scanner";
+          }
+
+          // Projector
+          else if (
+            wanted === "projector"
+          ) {
+            matched =
+              subcategory === "projector";
+          }
+
+          // Photocopier
+          else if (
+            wanted === "photocopier"
+          ) {
+            matched =
+              subcategory ===
+              "photocopier";
+          }
+
+          // POS
+          else if (
+            wanted === "pos" ||
+            wanted === "pos equipment"
+          ) {
+            matched =
+              subcategory ===
+              "pos equipment";
+          }
+
+          // Everything else
+          else {
+            matched =
+              subcategory === wanted ||
+              searchableText.includes(wanted);
+          }
+
+          if (!matched) {
+            return false;
+          }
+        }
+
+        // =====================================================
+        // PRICE
+        // =====================================================
+
+        if (
+          price !== null &&
+          Number(product.price || 0) >
+            Number(price)
+        ) {
+          return false;
+        }
+
+        // =====================================================
+        // STOCK
+        // =====================================================
+
+        if (selected.stock.length > 0) {
+
+          const wantedStock =
+            selected.stock
+              .join(" ")
+              .toLowerCase();
+
+          if (
+            wantedStock.includes(
+              "in stock"
+            ) &&
+            stock <= 0
+          ) {
+            return false;
+          }
+
+          if (
+            wantedStock.includes(
+              "out of stock"
+            ) &&
+            stock > 0
+          ) {
+            return false;
+          }
+        }
+
+        // =====================================================
+        // SIZE
+        // =====================================================
+
+        if (selected.size.length > 0) {
+
+          const matchedSize =
+            selected.size.some(
+              (item) =>
+                size.includes(
+                  String(item).toLowerCase()
+                )
+            );
+
+          if (!matchedSize) {
+            return false;
+          }
+        }
+
+        return true;
+      }
+    );
+
+  // =========================================================
+  // SHOW MAX 24
+  // =========================================================
+
+  const productsToShow =
+    filteredProducts.slice(0, 24);
+
+  // =========================================================
+  // DEBUG
+  // =========================================================
+
+  console.log(
+    "productsData:",
+    mainProducts.length
+  );
+
+  console.log(
+    "OfficeEquipmentData:",
+    dedicatedProducts.length
+  );
+
+  console.log(
+    "Office products from productsData:",
+    officeProductsFromMainAPI.length
+  );
+
+  console.log(
+    "Total Office Equipment:",
+    uniqueOfficeEquipmentProducts.length
+  );
+
+  console.log(
+    "Filtered products:",
+    filteredProducts.length
+  );
+
+  // =========================================================
+  // PAGE
+  // =========================================================
+
   return (
-    <section className="bg-white">
-      <Container>
-        <div className="py-6">
+    <main className="min-h-screen bg-gray-50">
 
-          {/* TITLE */}
-          <div className="mb-5 flex items-center justify-between">
-            <div>
-              <h1 className="text-xl font-semibold text-gray-900 md:text-2xl">
-                {title}
-              </h1>
+      <OfficeEquipmentHero
+        title={
+          selectedSubcategory ||
+          "Office Equipment"
+        }
+      />
 
-              <p className="mt-1 text-sm text-gray-500">
-                {products.length} Products
-              </p>
-            </div>
-          </div>
+      <OfficeEquipmentNavbar />
+
+      <div className="mx-auto max-w-7xl px-4 py-6">
+
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[260px_1fr]">
+
+          {/* FILTER */}
+
+          <aside className="lg:sticky lg:top-4 lg:self-start">
+
+            <ProductFilter
+              price={price}
+              setPrice={setPrice}
+              openSections={openSections}
+              setOpenSections={setOpenSections}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+          </aside>
 
           {/* PRODUCTS */}
-          {products.length > 0 ? (
-            <div className="grid grid-cols-1 gap-4 min-[480px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
 
-              {products.map((product) => (
-                <Link
-                  key={product.id}
-                  href={`/product/${product.id}`}
-                  className="group border border-gray-200 bg-white p-3 hover:shadow-md"
-                >
-                  {/* IMAGE */}
-                  <div className="flex h-52 items-center justify-center bg-gray-50">
-                    {product.image ? (
-                      <Image
-                        src={product.image}
-                        alt={product.title}
-                        className="h-full w-full object-contain"
-                      />
-                    ) : (
-                      <div className="text-sm text-gray-400">
-                        No Image
-                      </div>
-                    )}
-                  </div>
+          <div className="min-w-0">
 
-                  {/* BRAND */}
-                  <p className="mt-3 text-xs text-gray-500">
-                    {product.brand}
-                  </p>
+            <div className="mb-5">
 
-                  {/* TITLE */}
-                  <h2 className="mt-1 line-clamp-2 text-sm font-medium text-gray-800 group-hover:text-blue-600">
-                    {product.title}
-                  </h2>
+              <h1 className="text-center text-2xl font-bold text-gray-900">
+                {selectedSubcategory ||
+                  "Office Equipment"}
+              </h1>
 
-                  {/* PRICE */}
-                  <div className="mt-2 flex items-center gap-2">
-                    <span className="font-semibold text-gray-900">
-                      ৳{Number(product.price).toLocaleString()}
-                    </span>
-
-                    {product.discount > 0 && (
-                      <span className="text-xs text-green-600">
-                        -{product.discount}%
-                      </span>
-                    )}
-                  </div>
-
-                  {/* SIZE */}
-                  <p className="mt-1 text-xs text-gray-500">
-                    {product.size}
-                  </p>
-
-                  {/* WARRANTY */}
-                  <p className="mt-1 text-xs text-gray-500">
-                    Warranty: {product.warranty}
-                  </p>
-
-                  {/* STOCK */}
-                  <p className="mt-1 text-xs text-gray-500">
-                    Stock: {product.stock}
-                  </p>
-                </Link>
-              ))}
-
-            </div>
-          ) : (
-            <div className="py-16 text-center">
-              <p className="text-gray-500">
-                No products found.
+              <p className="mt-1 text-center text-sm text-gray-500">
+                Showing{" "}
+                {productsToShow.length}{" "}
+                of{" "}
+                {filteredProducts.length}{" "}
+                products
               </p>
+
             </div>
-          )}
+
+            <OfficeEquipmentProducts
+              products={productsToShow}
+              title=""
+            />
+
+          </div>
 
         </div>
-      </Container>
-    </section>
+
+      </div>
+
+    </main>
   );
 }
+
+// =============================================================
+// PAGE EXPORT
+// =============================================================
+
+export default function OfficeEquipmentPage() {
+
+  return (
+    <Suspense
+      fallback={
+        <main className="min-h-screen bg-gray-50">
+          <div className="mx-auto max-w-7xl px-4 py-10">
+            <p className="text-center text-gray-500">
+              Loading office equipment products...
+            </p>
+          </div>
+        </main>
+      }
+    >
+      <OfficeEquipmentPageContent />
+    </Suspense>
+  );
+}
+

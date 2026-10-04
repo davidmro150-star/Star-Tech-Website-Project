@@ -121,13 +121,13 @@ const featuredCategories = [
 
 export default function FeaturedCategories() {
   return (
-    <section className="bg-[#f2f4f8] py-8">
+    <section className="bg-[#f2f4f8] ">
       <Container>
-          <div className="mx-auto  px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto bg-[#fff] px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
         <div className="mb-6">
-          <h2 className="text-2xl font-semibold  text-center text-gray-900">
+          <h2 className="text-2xl font-semibold pt-4 text-center text-gray-900">
             Featured Category
           </h2>
 
@@ -137,25 +137,25 @@ export default function FeaturedCategories() {
         </div>
 
         {/* Category Grid */}
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
+  <div className="grid grid-cols-4 min-[480px]:grid-cols-6 lg:grid-cols-8 gap-3">
 
           {featuredCategories.map((category) => (
             <Link
               key={category.slug}
               href={category.href}
-              className="group flex min-h-[120px] flex-col items-center justify-center rounded-md border border-gray-200 bg-white px-2 py-4 transition-all duration-200 hover:border-red-500 hover:shadow-sm"
+              className="group flex min-h-[120px] flex-col items-center justify-center rounded-md border border-gray-200 bg-white shadow-[0_2px_10px_rgba(0,0,0,0.08)] px-2 py-4 transition-all duration-200 hover:border-red-500 hover:shadow-sm "
             >
               {/* Category Icon */}
-              <div className="flex h-12 w-12 items-center justify-center">
+              <div className="flex h-8 md:h-12 w-8 md:w-12 items-center justify-center">
                 <img
                   src={category.image}
                   alt={`${category.name} Icon`}
-                  className="h-12 w-12 object-contain transition-transform duration-200 group-hover:scale-110"
+                  className="h-8 md:h-12 w-8 md:w-12 object-contain transition-transform duration-200 group-hover:scale-110"
                 />
               </div>
 
               {/* Category Name */}
-              <h3 className="mt-3 text-center text-sm font-medium text-gray-700 transition-colors group-hover:text-red-600">
+              <h3 className="mt-3 text-center text-10 md:text-sm font-medium text-gray-700 transition-colors group-hover:text-red-600">
                 {category.name}
               </h3>
             </Link>

@@ -40,9 +40,9 @@ const customerServices = [
 
 export default function CustomerServices() {
   return (
-    <section className="bg-[#f2f4f8] py-16 sm:py-20">
+    <section className="bg-[#f2f4f8] py-6 sm:py-20">
       <Container>
-        <div className="mx-auto  px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto bg[#fff] px-4 sm:px-6 lg:px-8">
 
           {/* =====================================================
             SECTION HEADER
@@ -63,7 +63,7 @@ export default function CustomerServices() {
             SERVICE CARDS
         ====================================================== */}
 
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
 
             {customerServices.map((service) => {
 

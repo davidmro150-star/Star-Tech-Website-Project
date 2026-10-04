@@ -9,6 +9,7 @@ import ProductFilter from "../../../../components/desktop/ProductFilter";
 import productsData from "../../../../api/productsData";
 import ComponentHero from "../../../../components/component/componentHero";
 import ComponentNavbar from "../../../../components/component/Navbar";
+import Container from "../../../../components/Container";
 
 
 
@@ -472,8 +473,9 @@ export default function ComponentPage() {
     filteredProducts.slice(0, 24);
 
   return (
-    <main className="bg-gray-50">
-      <div className="mx-auto max-w-7xl px-4 py-6">
+    <main className="bg-[#f2f4f8]">
+      <Container>
+         <div className="mx-auto bg-[#fff] px-4 py-6">
 
         {/* HERO */}
         <ComponentHero />
@@ -519,6 +521,7 @@ export default function ComponentPage() {
           </div>
         </div>
       </div>
+     </Container>
     </main>
   );
 }

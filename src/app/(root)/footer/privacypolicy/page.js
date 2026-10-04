@@ -1,10 +1,12 @@
+import Container from "../../../../../components/Container";
 
 export default function PrivacyPolicy() {
   return (
-    <main className="bg-white">
-      <div className="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 md:py-14 lg:px-8">
+    <main className="bg-[#f2f4f8]">
+      <Container>
+           <div className="mx-auto bg-[#fff]  px-4 py-10 sm:px-6 md:py-14 lg:px-8">
         {/* Header */}
-        <div className="mb-10 border-b border-gray-200 pb-6">
+        <div className="mb-10  pb-6">
           <h1 className="text-3xl font-bold text-gray-900 md:text-4xl">
             Privacy Policy
           </h1>
@@ -366,6 +368,7 @@ export default function PrivacyPolicy() {
           </section>
         </div>
       </div>
+     </Container>
     </main>
   );
 }

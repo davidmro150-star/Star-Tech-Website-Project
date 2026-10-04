@@ -354,7 +354,7 @@ export default function StoresPage() {
     <main className="min-h-screen bg-[#f5f5f5]">
       <Container>
         {/* Header */}
-        <section className="border-b border-[#eeeeee] bg-white">
+        <section className="border-b border-[#eeeeee] bg-[#fff">
           <div className="py-8 sm:py-10">
             <div className="mb-2 flex items-center gap-2">
               <MapPin
@@ -376,7 +376,7 @@ export default function StoresPage() {
         </section>
 
         {/* Search */}
-        <section className="bg-white">
+        <section className="bg-[#fff">
           <div className="pb-7">
             <div className="relative max-w-[600px]">
               <Search
@@ -396,7 +396,7 @@ export default function StoresPage() {
         </section>
 
         {/* Store List */}
-        <section className="bg-[#f5f5f5]">
+        <section className="bg-[#fff]">
           <div className="py-7 sm:py-10">
             <div className="mb-5 flex items-center justify-between">
               <h2 className="m-0 text-[18px] font-semibold text-[#222]">

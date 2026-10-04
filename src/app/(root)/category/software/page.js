@@ -9,6 +9,7 @@ import SoftwareHero from "../../../../../components/software/SoftwareHero";
 import SoftwareNavbar from "../../../../../components/software/SoftwareNavbar";
 import SoftwareProductFilter from "../../../../../components/software/SoftwareProductFilter";
 import SoftwareProducts from "../../../../../components/software/SoftwareProducts";
+import Container from "../../../../../components/Container";
 
 function SoftwareContent() {
   const searchParams = useSearchParams();
@@ -234,9 +235,10 @@ function SoftwareContent() {
 
       {/* CONTENT */}
 
-      <section className="bg-white">
+      <section className="bg-[#f2f4f8]">
 
-        <div className="mx-auto max-w-[1400px] px-4">
+        <Container>
+           <div className="mx-auto bg-[#fff] px-4">
 
           <div className="grid grid-cols-1 gap-6 py-6 lg:grid-cols-[250px_1fr]">
 
@@ -260,6 +262,7 @@ function SoftwareContent() {
           </div>
 
         </div>
+       </Container>
 
       </section>
     </>

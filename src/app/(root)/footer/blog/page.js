@@ -11,6 +11,7 @@ import {
   FaMicrochip,
   FaTrophy,
 } from "react-icons/fa6";
+import Container from "../../../../../components/Container";
 
 /* =========================================================
    IMAGE
@@ -350,8 +351,9 @@ function ArticleCard({ article }) {
 export default function BlogPage() {
   return (
     <main className="bg-[#f7f8fa]">
-      {/* HERO */}
-      <section className="border-b border-gray-200 bg-white">
+      <Container>
+             {/* HERO */}
+      <section className="border-b border-gray-200 bg-[#fff">
         <div className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-red-50 px-4 py-2 text-sm font-semibold text-[#e21b23]">
@@ -373,7 +375,7 @@ export default function BlogPage() {
       </section>
 
       {/* CATEGORIES */}
-      <section className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6 lg:px-8">
+      <section className="mx-auto bg-[#fff] px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-7">
           <h2 className="text-2xl font-bold text-[#17212b] sm:text-3xl">
             Featured Categories
@@ -395,7 +397,7 @@ export default function BlogPage() {
       </section>
 
       {/* FEATURE ARTICLES */}
-      <section className="mx-auto max-w-[1400px] px-4 pb-14 sm:px-6 lg:px-8">
+      <section className="mx-auto bg-[#fff] px-4 pb-14 sm:px-6 lg:px-8">
         <div className="mb-7">
           <h2 className="text-2xl font-bold text-[#17212b] sm:text-3xl">
             Feature Articles
@@ -417,7 +419,7 @@ export default function BlogPage() {
       </section>
 
       {/* LATEST ARTICLES */}
-      <section className="bg-white py-14">
+      <section className="bg-[#fff] py-14">
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
           <div className="mb-7">
             <h2 className="text-2xl font-bold text-[#17212b] sm:text-3xl">
@@ -439,6 +441,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+   </Container>
     </main>
   );
 }

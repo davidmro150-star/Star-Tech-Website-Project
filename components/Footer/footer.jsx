@@ -55,19 +55,19 @@ const middleLinks = [
 const rightLinks = [
   {
     title: "About Us",
-    href: "/about-us",
+    href: "/footer/aboutus",
   },
   {
     title: "Terms and Conditions",
-    href: "/terms-and-conditions",
+    href: "/footer/termscondition",
   },
   {
     title: "Career",
-    href: "/career",
+    href: "/bannercareer",
   },
   {
     title: "Brands",
-    href: "/brands",
+    href: "/footer/brands",
   },
 ];
 
@@ -323,8 +323,8 @@ export default function Footer() {
         {/* =========================================
             COPYRIGHT
         ========================================== */}
-        <div className="flex flex-col gap-3 pt-5 text-[14px] text-[#8e9ca5] md:flex-row md:items-center md:justify-between">
-          <p>
+        <div className="flex flex-col gap-3 pt-5 text-[14px] text-[#8e9ca5] md:flex-row md:items-center md:justify-between ">
+          <p className="">
             © 2026 Star Tech Ltd | All rights reserved
           </p>
 

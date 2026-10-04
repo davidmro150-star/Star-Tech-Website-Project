@@ -9,6 +9,7 @@ import AccessoriesHero from "../../../../../components/accessories/AccessoriesHe
 import AccessoriesNavbar from "../../../../../components/accessories/AccessoriesNavbar";
 import AccessoriesProducts from "../../../../../components/accessories/AccessoriesProducts";
 import AccessoriesFilter from "../../../../../components/accessories/AccessoriesFilter";
+import Container from "../../../../../components/Container";
 
 export default function AccessoriesPage() {
   const searchParams = useSearchParams();
@@ -101,8 +102,9 @@ export default function AccessoriesPage() {
       <AccessoriesNavbar />
 
       {/* Main Content */}
-      <section className="bg-white">
-        <div className="mx-auto w-full max-w-[1400px] px-4 py-6">
+      <section className="bg-[#f2f4f8]">
+        <Container>
+          <div className="mx-auto bg-[#fff] px-4 py-6">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-[250px_1fr]">
 
 
@@ -129,6 +131,7 @@ export default function AccessoriesPage() {
 
           </div>
         </div>
+        </Container>
       </section>
     </>
   );

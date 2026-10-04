@@ -533,23 +533,20 @@ export default function ACTonCalculatore(){
   // =========================================================
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-[#f2f4f8]">
 
       {/* =====================================================
           HEADER
       ===================================================== */}
 
-      <section className="border-b border-gray-200 bg-white">
+      <section className="border-b border-gray-200 bg-[#fff]">
 
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
 
           <div className="text-center">
 
             <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50">
-              <AirVent
-                size={30}
-                className="text-[#e21b23]"
-              />
+         
             </div>
 
             <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">
@@ -571,7 +568,7 @@ export default function ACTonCalculatore(){
           CALCULATOR
       ===================================================== */}
 
-      <section className="px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+      <section className="px-4 py-8 bg-[#fff] sm:px-6 sm:py-10 lg:px-8">
 
         <div className="mx-auto max-w-4xl">
 
