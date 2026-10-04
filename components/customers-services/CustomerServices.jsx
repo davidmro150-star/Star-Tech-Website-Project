@@ -63,7 +63,7 @@ export default function CustomerServices() {
             SERVICE CARDS
         ====================================================== */}
 
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
+          <div className="mt-8 grid gap-6 grid-cols-2 sm:grid-cols-3">
 
             {customerServices.map((service) => {
 
@@ -78,18 +78,18 @@ export default function CustomerServices() {
 
                   {/* ICON */}
                   
-                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-red-50 text-red-600 transition group-hover:bg-red-600 group-hover:text-white">
+                  <div className="flex h-8 sm:h-14 w-8 sm:w-14 items-center justify-center rounded-xl bg-red-50 text-red-600 transition group-hover:bg-red-600 group-hover:text-white">
                     <Icon size={28} />
                   </div>
 
                   {/* CONTENT */}
 
                   <div className="mt-5">
-                    <h3 className="text-xl font-bold text-gray-900">
+                    <h3 className=" text-sx sm:text-xl font-bold text-gray-900">
                       {service.title}
                     </h3>
 
-                    <p className="mt-3 min-h-[72px] text-sm leading-6 text-gray-600">
+                    <p className="mt-3 min-h-[72px] text-xs sm:text-sm leading-6 text-gray-600">
                       {service.description}
                     </p>
                   </div>

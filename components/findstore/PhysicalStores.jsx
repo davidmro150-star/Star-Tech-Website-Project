@@ -21,32 +21,32 @@ export default function PhysicalStores() {
               />
 
               <div className="min-w-0">
-      <h2 className="m-0 text-[16px] font-semibold leading-[1.4] text-white min-[320px]:text-[10px] sm:text-[16px]">
+      <h2 className="m-0 text-[16px] font-semibold leading-[1.4] text-white min-[320px]:text-[10px] sm:text-[16px] lg:text-[40px]">
                   20+ Physical Stores
                 </h2>
 
-                <p className="m-0 mt-1 text-[11px] leading-[1.5] text-white/80 min-[320px]:text-[8px] sm:text-[14px]">
+                <p className="m-0 mt-1 text-[11px] leading-[1.5] text-white/80 min-[320px]:text-[8px] sm:text-[14px] lg:text-[20px]">
                   Visit Our Store &amp; Get Your Desired IT Product!
                 </p>
               </div>
             </div>
 
             {/* Find Store + Search */}
-            <div className="flex w-auto min-w-0 shrink-0 items-stretch">
+            <div className="flex w-auto min-w-0 shrink-0 items-stretch mr-[40px]  rounded-[50px]  ">
 
               {/* Find Store Button */}
               <Link
                 href="/store/locationaddress"
-                className="group flex min-w-0 flex-1 items-center justify-center gap-1 rounded-l-[4px] border border-[#ef4a23] bg-[#ef4a23] px-2 text-[10px] font-medium leading-none text-white no-underline transition-colors duration-200 hover:border-[#d93f1c] hover:bg-[#d93f1c] min-[320px]:gap-1.5 min-[320px]:px-2.5 min-[320px]:text-[8px] sm:gap-2 sm:px-4 sm:text-[13px] md:flex-none md:px-[18px] md:text-[14px]"
+                className="group flex min-w-0 flex-1 items-center justify-center gap-1 rounded-l-[4px]  bg-[#EF9919] px-2 text-[10px] font-medium leading-none text-white no-underline transition-colors duration-200 hover:border-[#d93f1c] hover:bg-[#43A047] min-[320px]:gap-1.5 min-[320px]:px-2.5 min-[320px]:text-[8px] sm:gap-2 sm:px-4 sm:text-[13px] md:flex-none md:px-[18px] md:text-[14px]"
               >
-                <span className="truncate">
+                <span className="truncate lg:text-[25px]">
                   Find Our Store
                 </span>
 
                 <ArrowRight
                   size={14}
                   strokeWidth={2}
-                  className="shrink-0 transition-transform duration-200 group-hover:translate-x-[3px] min-[320px]:h-[15px] min-[320px]:w-[15px] sm:h-[17px] sm:w-[17px]"
+                  className="shrink-0 transition-transform duration-200 group-hover:translate-x-[3px] min-[320px]:h-[15px] min-[320px]:w-[15px] sm:h-[17px] sm:w-[17px] "
                 />
               </Link>
 
@@ -54,7 +54,7 @@ export default function PhysicalStores() {
               <button
                 type="button"
                 aria-label="Search stores"
-                className="flex h-[36px] w-[36px] shrink-0 items-center justify-center rounded-r-[4px] border border-l-0 border-[#ef4a23] bg-[#ef4a23] p-0 text-white transition-colors duration-200 hover:bg-[#d93f1c] min-[320px]:h-[38px] min-[320px]:w-[38px] sm:h-[42px] sm:w-[44px]"
+                className="flex h-[36px] w-[36px] shrink-0 items-center justify-center rounded-r-[4px] bg-[#EF9919] p-0 text-white transition-colors duration-200 hover:bg-[#43A047] min-[320px]:h-[38px] min-[320px]:w-[38px] sm:h-[42px] sm:w-[44px]   "
               >
                 <Search
                   size={16}
