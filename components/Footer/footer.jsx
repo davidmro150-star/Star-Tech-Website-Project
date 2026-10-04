@@ -1,301 +1,385 @@
+"use client";
 
+import Link from "next/link";
 import {
-  Phone,
-  MapPin,
-  Mail,
-  Facebook,
-  Youtube,
-  Instagram,
-} from "lucide-react";
+  FaPhone,
+  FaLocationDot,
+  FaWhatsapp,
+  FaFacebookF,
+  FaYoutube,
+  FaInstagram,
+  FaGooglePlay,
+  FaApple,
+  FaPlus,
+  FaCartShopping,
+} from "react-icons/fa6";
 
 const aboutLinks = [
   {
-    name: "Affiliate Program",
-    href: "https://www.startech.com.bd/affiliate-program",
+    title: "Affiliate Program",
+    href: "/affiliate-program",
   },
   {
-    name: "EMI Terms",
-    href: "https://www.startech.com.bd/emi-terms",
+    title: "Online Delivery",
+    href: "/footer/online-delivery",
   },
   {
-    name: "About Us",
-    href: "https://www.startech.com.bd/about_us",
+    title: "Refund and Return Policy",
+    href: "/footer/return-policy",
   },
   {
-    name: "Online Delivery",
-    href: "https://www.startech.com.bd/online-delivery",
+    title: "Blog",
+    href: "/footer/blog",
+  },
+];
+
+const middleLinks = [
+  {
+    title: "EMI Terms",
+    href: "/footer/emiterms",
   },
   {
-    name: "Privacy Policy",
-    href: "https://www.startech.com.bd/privacy",
+    title: "Privacy Policy",
+    href: "/privacy-policy",
   },
   {
-    name: "Terms and Conditions",
-    href: "https://www.startech.com.bd/warranty-policy",
+    title: "Star Point Policy",
+    href: "/star-point-policy",
   },
   {
-    name: "Refund and Return Policy",
-    href: "https://www.startech.com.bd/refund-policy",
+    title: "Contact Us",
+    href: "/store/locationaddress",
+  },
+];
+
+const rightLinks = [
+  {
+    title: "About Us",
+    href: "/about-us",
   },
   {
-    name: "Star Point Policy",
-    href: "https://www.startech.com.bd/star-point-policy",
+    title: "Terms and Conditions",
+    href: "/terms-and-conditions",
   },
   {
-    name: "Career",
-    href: "https://www.startech.com.bd/career",
+    title: "Career",
+    href: "/career",
   },
   {
-    name: "Blog",
-    href: "https://www.startech.com.bd/blog",
-  },
-  {
-    name: "Contact Us",
-    href: "https://www.startech.com.bd/information/contact",
-  },
-  {
-    name: "Brands",
-    href: "https://www.startech.com.bd/product/manufacturer",
+    title: "Brands",
+    href: "/brands",
   },
 ];
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-white text-[#666]">
+    <footer className="bg-[#061621] text-white">
+      {/* =========================================
+          MAIN FOOTER
+      ========================================== */}
+      <div className="mx-auto max-w-[1690px] px-6 py-11 lg:px-8">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[340px_1fr_355px] lg:gap-16">
 
-      {/* Main Footer */}
-      <div className="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-
-          {/* ================= SUPPORT ================= */}
+          {/* =====================================
+              SUPPORT
+          ====================================== */}
           <div>
-            <h3 className="mb-5 text-[16px] font-semibold text-[#333]">
+            <h3 className="mb-10 text-[16px] font-semibold uppercase tracking-[5px] text-white">
               Support
             </h3>
 
-            <div className="space-y-5">
+            {/* Phone */}
+            <a
+              href="tel:16793"
+              className="group mb-6 flex h-[87px] w-full max-w-[353px] items-center rounded-full border border-[#253642] transition-colors duration-200 hover:border-[#e94b2e]"
+            >
+              <div className="flex w-[68px] items-center justify-center border-r border-[#253642]">
+                <FaPhone className="text-[21px] text-white" />
+              </div>
 
-              {/* Phone */}
-              <a
-                href="tel:16793"
-                className="group flex items-start gap-3"
-              >
-                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f5f5f5] text-[#e53e3e] transition-colors group-hover:bg-[#e53e3e] group-hover:text-white">
-                  <Phone size={17} strokeWidth={1.8} />
-                </div>
+              <div className="pl-6">
+                <p className="text-[13px] text-[#8d9ba4]">
+                  9 AM - 8 PM
+                </p>
 
-                <div>
-                  <p className="mb-1 text-[13px] text-[#888]">
-                    9 AM - 8 PM
-                  </p>
+                <p className="mt-1 text-[25px] font-medium leading-none text-[#ff4b2b]">
+                  16793
+                </p>
+              </div>
+            </a>
 
-                  <p className="text-[20px] font-semibold leading-none text-[#333] group-hover:text-[#e53e3e]">
-                    16793
-                  </p>
-                </div>
-              </a>
+            {/* Store Locator */}
+            <Link
+              href="/store/locationaddress"
+              className="group flex h-[87px] w-full max-w-[353px] items-center rounded-full border border-[#253642] transition-colors duration-200 hover:border-[#e94b2e]"
+            >
+              <div className="flex w-[68px] items-center justify-center border-r border-[#253642]">
+                <FaLocationDot className="text-[22px] text-white" />
+              </div>
 
-              {/* Store */}
-              <a
-                href="https://www.startech.com.bd/information/contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-start gap-3"
-              >
-                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f5f5f5] text-[#e53e3e] transition-colors group-hover:bg-[#e53e3e] group-hover:text-white">
-                  <MapPin size={17} strokeWidth={1.8} />
-                </div>
+              <div className="pl-6">
+                <p className="text-[13px] text-[#8d9ba4]">
+                  Store Locator
+                </p>
 
-                <div>
-                  <p className="mb-1 text-[13px] text-[#888]">
-                    Store Locator
-                  </p>
-
-                  <p className="text-[14px] font-medium text-[#333] group-hover:text-[#e53e3e]">
-                    Find Our Stores
-                  </p>
-                </div>
-              </a>
-
-            </div>
+                <p className="mt-1 text-[25px] font-medium leading-none text-[#ff4b2b]">
+                  Find Our Stores
+                </p>
+              </div>
+            </Link>
           </div>
 
-          {/* ================= ABOUT US ================= */}
+          {/* =====================================
+              ABOUT US
+          ====================================== */}
           <div>
-            <h3 className="mb-5 text-[16px] font-semibold text-[#333]">
+            <h3 className="mb-10 text-[16px] font-semibold uppercase tracking-[5px] text-white">
               About Us
             </h3>
 
-            <ul className="space-y-[9px]">
-              {aboutLinks.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-[13px] leading-5 text-[#666] transition-colors hover:text-[#e53e3e]"
+            <div className="grid grid-cols-1 gap-x-10 gap-y-7 sm:grid-cols-3">
+              
+              {/* Column 1 */}
+              <div className="flex flex-col gap-7">
+                {aboutLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-[16px] text-[#8e9ca5] transition-colors duration-200 hover:text-[#ff4b2b]"
                   >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+                    {item.title}
+                  </Link>
+                  
+                ))}
+              </div>
+
+              {/* Column 2 */}
+              <div className="flex flex-col gap-7">
+                {middleLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-[16px] text-[#8e9ca5] transition-colors duration-200 hover:text-[#ff4b2b]"
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Column 3 */}
+              <div className="flex flex-col gap-7">
+                {rightLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-[16px] text-[#8e9ca5] transition-colors duration-200 hover:text-[#ff4b2b]"
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
 
-          {/* ================= STAY CONNECTED ================= */}
+          {/* =====================================
+              STAY CONNECTED
+          ====================================== */}
           <div>
-            <h3 className="mb-5 text-[16px] font-semibold text-[#333]">
+            <h3 className="mb-10 text-[16px] font-semibold uppercase tracking-[5px] text-white">
               Stay Connected
             </h3>
 
-            <div className="space-y-5">
+            <div className="text-[16px] leading-8 text-[#8e9ca5]">
+              <p className="font-semibold text-white">
+                Star Tech Ltd
+              </p>
 
-              <div>
-                <p className="mb-2 text-[14px] font-semibold text-[#333]">
-                  Star Tech Ltd
-                </p>
+              <p className="mt-2">
+                Head Office: 28 Kazi Nazrul Islam
+                <br />
+                Ave, Navana Zohura Square, Dhaka 1000
+              </p>
 
-                <p className="max-w-[250px] text-[13px] leading-6 text-[#666]">
-                  Head Office: 28 Kazi Nazrul Islam Ave,
-                  Navana Zohura Square, Dhaka 1000
-                </p>
-              </div>
+              <p className="mt-4">
+                Email:
+              </p>
 
-              <div>
-                <div className="mb-2 flex items-center gap-2">
-                  <Mail
-                    size={15}
-                    className="text-[#e53e3e]"
-                    strokeWidth={1.8}
-                  />
-
-                  <span className="text-[13px] font-medium text-[#333]">
-                    Email:
-                  </span>
-                </div>
-
-                <a
-                  href="mailto:webteam@startechbd.com"
-                  className="text-[13px] text-[#666] transition-colors hover:text-[#e53e3e]"
-                >
-                  webteam@startechbd.com
-                </a>
-              </div>
-
-              {/* Social Icons */}
-              <div className="flex items-center gap-2.5">
-                <a
-                  href="#"
-                  aria-label="Facebook"
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 text-[#777] transition-all hover:border-[#1877f2] hover:bg-[#1877f2] hover:text-white"
-                >
-                  <Facebook size={15} />
-                </a>
-
-                <a
-                  href="#"
-                  aria-label="Instagram"
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 text-[#777] transition-all hover:border-[#e4405f] hover:bg-[#e4405f] hover:text-white"
-                >
-                  <Instagram size={15} />
-                </a>
-
-                <a
-                  href="#"
-                  aria-label="YouTube"
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 text-[#777] transition-all hover:border-[#ff0000] hover:bg-[#ff0000] hover:text-white"
-                >
-                  <Youtube size={15} />
-                </a>
-              </div>
-
+              <a
+                href="mailto:webteam@startechbd.com"
+                className="text-[#ff4b2b] transition-colors hover:text-white"
+              >
+                webteam@startechbd.com
+              </a>
             </div>
           </div>
+        </div>
 
-          {/* ================= APP ================= */}
-          <div>
-            <h3 className="mb-5 text-[16px] font-semibold text-[#333]">
-              Experience Star Tech App
-            </h3>
+        {/* =========================================
+            DIVIDER
+        ========================================== */}
+        <div className="mt-14 border-t border-[#25333d]" />
 
-            <p className="mb-4 text-[13px] leading-6 text-[#666]">
-              Experience Star Tech App on your mobile
+        {/* =========================================
+            APP + SOCIAL
+        ========================================== */}
+        <div className="flex flex-col gap-6 py-5 md:flex-row md:items-center md:justify-between">
+
+          {/* App Download */}
+          <div className="flex flex-wrap items-center gap-5">
+            <p className="text-[15px] text-[#8e9ca5]">
+              Experience Star Tech App on your mobile:
             </p>
 
-            <div className="flex flex-col gap-3">
+            {/* Google Play */}
+            <a
+              href="https://play.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-[51px] items-center gap-2 rounded-lg border border-[#53616a] px-3 transition-colors hover:border-white"
+            >
+              <FaGooglePlay className="text-[23px]" />
 
-              {/* Google Play */}
-              <a
-                href="https://play.google.com/store/apps/details?id=com.startech.shop"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-fit overflow-hidden rounded-md transition-transform hover:scale-[1.02]"
-              >
-                <div className="flex h-[46px] min-w-[150px] items-center gap-2 bg-[#111] px-3 text-white">
-                  <div className="text-[20px]">▶</div>
+              <div className="leading-none">
+                <span className="block text-[10px] text-[#9da8ae]">
+                  Download on
+                </span>
 
-                  <div className="leading-none">
-                    <span className="block text-[8px] uppercase tracking-wide text-gray-300">
-                      Get it on
-                    </span>
+                <span className="text-[16px] font-semibold">
+                  Google Play
+                </span>
+              </div>
+            </a>
 
-                    <span className="block mt-1 text-[14px] font-medium">
-                      Google Play
-                    </span>
-                  </div>
-                </div>
-              </a>
+            {/* App Store */}
+            <a
+              href="https://www.apple.com/app-store/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-[51px] items-center gap-2 rounded-lg border border-[#53616a] px-3 transition-colors hover:border-white"
+            >
+              <FaApple className="text-[23px]" />
 
-              {/* App Store */}
-              <a
-                href="https://apps.apple.com/app/id6443544088"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-fit overflow-hidden rounded-md transition-transform hover:scale-[1.02]"
-              >
-                <div className="flex h-[46px] min-w-[150px] items-center gap-2 bg-[#111] px-3 text-white">
-                  <div className="text-[21px]">●</div>
+              <div className="leading-none">
+                <span className="block text-[10px] text-[#9da8ae]">
+                  Download on
+                </span>
 
-                  <div className="leading-none">
-                    <span className="block text-[8px] uppercase tracking-wide text-gray-300">
-                      Download on the
-                    </span>
-
-                    <span className="block mt-1 text-[14px] font-medium">
-                      App Store
-                    </span>
-                  </div>
-                </div>
-              </a>
-
-            </div>
+                <span className="text-[16px] font-semibold">
+                  App Store
+                </span>
+              </div>
+            </a>
           </div>
 
+          {/* Social Media */}
+          <div className="flex items-center gap-3">
+            <a
+              href="https://wa.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#24323c] text-white transition-all hover:bg-[#ff4b2b]"
+            >
+              <FaWhatsapp size={21} />
+            </a>
+
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#24323c] text-white transition-all hover:bg-[#ff4b2b]"
+            >
+              <FaFacebookF size={19} />
+            </a>
+
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#24323c] text-white transition-all hover:bg-[#ff4b2b]"
+            >
+              <FaYoutube size={21} />
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#24323c] text-white transition-all hover:bg-[#ff4b2b]"
+            >
+              <FaInstagram size={21} />
+            </a>
+          </div>
         </div>
-      </div>
 
-      {/* ================= BOTTOM BAR ================= */}
-      <div className="border-t border-gray-200 bg-[#fafafa]">
-        <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-2 px-4 py-4 text-center sm:flex-row sm:px-6 lg:px-8 sm:text-left">
+        {/* =========================================
+            BOTTOM DIVIDER
+        ========================================== */}
+        <div className="border-t border-[#25333d]" />
 
-          <p className="text-[12px] text-[#777]">
+        {/* =========================================
+            COPYRIGHT
+        ========================================== */}
+        <div className="flex flex-col gap-3 pt-5 text-[14px] text-[#8e9ca5] md:flex-row md:items-center md:justify-between">
+          <p>
             © 2026 Star Tech Ltd | All rights reserved
           </p>
 
-          <p className="text-[12px] text-[#777]">
+          <p>
             Powered By:{" "}
-            <a
-              href="https://www.startech.com.bd"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-[#555] hover:text-[#e53e3e]"
+            <Link
+              href="/"
+              className="transition-colors hover:text-white"
             >
               Star Tech
-            </a>
+            </Link>
           </p>
-
         </div>
       </div>
 
+      {/* ===========================================
+          FIXED COMPARE + CART
+      ============================================ */}
+      <div className="fixed right-0 top-[65%] z-50 hidden flex-col gap-3 md:flex">
+
+        {/* Compare */}
+        <Link
+          href="/compare"
+          className="relative flex h-[74px] w-[74px] flex-col items-center justify-center rounded-l-md border border-[#33434d] bg-[#071923] text-white transition-colors hover:bg-[#e94b2b]"
+        >
+          <span className="absolute -right-1 -top-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#ff4b2b] text-[12px] font-semibold">
+            0
+          </span>
+
+          <div className="flex items-center gap-1">
+            <FaPlus size={14} />
+            <FaPlus size={14} />
+          </div>
+
+          <span className="mt-1 text-[11px] font-semibold">
+            COMPARE
+          </span>
+        </Link>
+
+        {/* Cart */}
+        <Link
+          href="/cart"
+          className="relative flex h-[74px] w-[74px] flex-col items-center justify-center rounded-l-md border border-[#33434d] bg-[#071923] text-white transition-colors hover:bg-[#e94b2b]"
+        >
+          <span className="absolute -right-1 -top-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#ff4b2b] text-[12px] font-semibold">
+            0
+          </span>
+
+          <FaCartShopping size={21} />
+
+          <span className="mt-1 text-[11px] font-semibold">
+            CART
+          </span>
+        </Link>
+      </div>
     </footer>
   );
 }
-
