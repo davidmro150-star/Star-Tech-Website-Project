@@ -40,11 +40,11 @@ const middleLinks = [
   },
   {
     title: "Privacy Policy",
-    href: "/privacy-policy",
+    href: "/footer/privacypolicy",
   },
   {
     title: "Star Point Policy",
-    href: "/star-point-policy",
+    href: "/footer/starpoint",
   },
   {
     title: "Contact Us",
