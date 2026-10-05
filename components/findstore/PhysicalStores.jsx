@@ -32,12 +32,12 @@ export default function PhysicalStores() {
             </div>
 
             {/* Find Store + Search */}
-            <div className="flex w-auto min-w-0 shrink-0 items-stretch mr-[40px]  rounded-[50px]  ">
+            <div className="flex p-5 w-auto min-w-0 shrink-0 items-stretch mr-[40px]  rounded-[50px]  ">
 
               {/* Find Store Button */}
               <Link
                 href="/store/locationaddress"
-                className="group flex min-w-0 flex-1 items-center justify-center gap-1 rounded-l-[4px]  bg-[#EF9919] px-2 text-[10px] font-medium leading-none text-white no-underline transition-colors duration-200 hover:border-[#d93f1c] hover:bg-[#43A047] min-[320px]:gap-1.5 min-[320px]:px-2.5 min-[320px]:text-[8px] sm:gap-2 sm:px-4 sm:text-[13px] md:flex-none md:px-[18px] md:text-[14px]"
+                className="group flex min-w-0 flex-1 items-center justify-center gap-1 rounded-l-[4px]  bg-[#EF9919] px-2  text-[10px] font-medium leading-none text-white no-underline transition-colors duration-200 hover:border-[#d93f1c] hover:bg-[#43A047] min-[320px]:gap-1.5 min-[320px]:px-2.5 min-[320px]:text-[8px] sm:gap-2 sm:px-4 sm:text-[13px] md:flex-none md:px-[18px] md:text-[14px]"
               >
                 <span className="truncate lg:text-[25px]">
                   Find Our Store
@@ -54,12 +54,12 @@ export default function PhysicalStores() {
               <button
                 type="button"
                 aria-label="Search stores"
-                className="flex h-[36px] w-[36px] shrink-0 items-center justify-center rounded-r-[4px] bg-[#EF9919] p-0 text-white transition-colors duration-200 hover:bg-[#43A047] min-[320px]:h-[38px] min-[320px]:w-[38px] sm:h-[42px] sm:w-[44px]   "
+                className="flex h-[36px] w-[36px] shrink-0 items-center justify-center rounded-r-[4px] bg-[#EF9919]  text-white transition-colors duration-200 hover:bg-[#43A047] min-[320px]:h-[38px] min-[320px]:w-[38px] sm:h-[42px] sm:w-[44px]   "
               >
                 <Search
                   size={16}
                   strokeWidth={2}
-                  className="min-[320px]:h-[17px] min-[320px]:w-[17px] sm:h-[20px] sm:w-[20px]"
+                  className="min-[320px]:h-[17px] min-[320px]:w-[17px] sm:h-[20px] sm:w-[20px] "
                 />
               </button>
 

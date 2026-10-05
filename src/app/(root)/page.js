@@ -1,5 +1,6 @@
 import Announcement from "../../../components/banner/announcement";
 import HomeBanner from "../../../components/banner/banner";
+import TechShopContent from "../../../components/content/Content";
 import CustomerServices from "../../../components/customers-services/CustomerServices";
 import FeaturedProducts from "../../../components/featuredproducts/FeaturedProducts";
 import PhysicalStores from "../../../components/findstore/PhysicalStores";
@@ -22,7 +23,8 @@ export default function Home() {
      
        <CustomerServices />
       <PhysicalStores />
-         <FeaturedProducts/> 
+      <FeaturedProducts /> 
+      <TechShopContent/>
     
     
     </main>

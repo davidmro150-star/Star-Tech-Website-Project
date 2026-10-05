@@ -64,9 +64,9 @@ export default function FeaturedProducts() {
       <div className="mx-auto w-[92%] max-w-[1400px]">
 
         {/* Header */}
-        <div className="mb-7 flex items-end justify-between">
-          <div>
-            <h2 className="text-2xl font-bold text-[#222] md:text-[28px]">
+        <div className=" relative mb-7 flex items-end justify-between">
+          <div className ="w-full text-center">
+            <h2 className="text-2xl text-center font-bold text-[#222] md:text-[28px]">
               Featured Products
             </h2>
 
@@ -75,12 +75,6 @@ export default function FeaturedProducts() {
             </p>
           </div>
 
-          <Link
-            href="/featuredproducts"
-            className="rounded border border-[#ef4b4f] bg-white px-4 py-2 text-sm font-semibold text-[#ef4b4f] transition hover:bg-[#ef4b4f] hover:text-white"
-          >
-            View All
-          </Link>
         </div>
 
         {/* Product Grid */}

@@ -1,10 +1,12 @@
 import offers from "../../../../api/offers";
+import Container from "../../../../components/Container";
 import Offer from "../../../../components/OffersPage";
 
 export default function OffersPage() {
   return (
-    <main className="min-h-screen bg-[#f5f5f5] py-8">
-      <div className="mx-auto w-full max-w-[1320px] px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-[#f2f4f8] py-8">
+      <Container>
+          <div className="mx-auto px-4 sm:px-6 lg:px-8 bg-[#fff]">
 
         <div className="mb-7">
           <h1 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
@@ -23,6 +25,7 @@ export default function OffersPage() {
         </div>
 
       </div>
+    </Container>
     </main>
   );
 }
